@@ -1,6 +1,6 @@
 import React from "react";
 //import AboutUsOurValueCard from "../../../../components/AboutUsOurValueCard/AboutUsOurValueCard";
-import { useTranslation } from 'react-i18next';
+//import { useTranslation } from 'react-i18next';
 import "./AboutUsOurValuesSection.module.scss";
 
 
