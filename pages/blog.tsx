@@ -19,15 +19,15 @@ async function getPosts() {
   return posts;
 }
 
-export const getStaticProps = async ({ params }) => {
+/* export const getStaticProps = async ({ params }) => {
   const posts = await getPosts();
   return {
     props: { posts },
   };
-};
+}; */
 
 const Blog: React.FC<{ posts: Post[] }> = (props) => {
-  const { posts } = props;
+  const { posts = [] } = props;
 
   return (
     <div className={styles.container}>
