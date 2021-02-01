@@ -1,0 +1,22 @@
+.AboutUsOurValuesSection {
+    position: relative;
+  .values-list--first {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .values-list--second {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .about-us-our-values-dots1{
+      position: absolute;
+      left: 100px;
+      bottom: 100px;
+  }
+  .about-us-our-values-dots2{
+      position: absolute;
+      top: 100px;
+      right: 100px;
+  }
+}
