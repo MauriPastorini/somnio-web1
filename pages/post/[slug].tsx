@@ -2,9 +2,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.scss";
 
-const { BLOG_URL, CONTENT_API_KEY } = process.env;
-
-/* 
+const BLOG_URL = process.env.BLOG_URL;
+const CONTENT_API_KEY = process.env.CONTENT_API_KEY;
 
 async function getPost(slug: string) {
   const res = await fetch(
@@ -15,7 +14,7 @@ async function getPost(slug: string) {
 
   return posts[0];
 }
-
+/* 
 // Ghost CMS Request
 export const getStaticProps = async ({ params }) => {
   const post = await getPost(params.slug);
@@ -58,9 +57,9 @@ const Post: React.FC<{ post: Post }> = (props) => {
         </Link>
       </p>
       {/* <h1>{post.title}</h1> */}
-   {/*    <div dangerouslySetInnerHTML={{ __html: post.html }}></div> */}
+      {/*    <div dangerouslySetInnerHTML={{ __html: post.html }}></div> */}
     </div>
   );
 };
 
-export default Post; 
+export default Post;

@@ -1,7 +1,8 @@
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 
-const { BLOG_URL, CONTENT_API_KEY } = process.env
+const BLOG_URL = process.env.BLOG_URL;
+const CONTENT_API_KEY = process.env.CONTENT_API_KEY;
 
 type Post = {
   title: string;
