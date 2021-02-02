@@ -1,14 +1,14 @@
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 
-const { BLOG_URL, CONTENT_API_KEY } = process.env
+/* const { BLOG_URL, CONTENT_API_KEY } = process.env */
 
 type Post = {
   title: string;
   slug: string;
 };
 
-async function getPosts() {
+/* async function getPosts() {
   const res = await fetch(
     `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&fields=title,slug,custom_excerpt`
   ).then((res) => res.json());
@@ -18,7 +18,7 @@ async function getPosts() {
   
   return posts;
 }
-
+ */
 /* export const getStaticProps = async ({ params }) => {
   const posts = await getPosts();
   return {
