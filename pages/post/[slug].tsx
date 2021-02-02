@@ -2,9 +2,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.scss";
 
+const { BLOG_URL, CONTENT_API_KEY } = process.env;
 
 /* 
-const { BLOG_URL, CONTENT_API_KEY } = process.env;
 
 async function getPost(slug: string) {
   const res = await fetch(
