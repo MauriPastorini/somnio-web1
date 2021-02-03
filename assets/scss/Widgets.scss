@@ -1,0 +1,145 @@
+$primary-color: #001331;
+
+.title-1 {
+  font-weight: bold;
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.title-2 {
+  font-weight: bold;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.paragraph-1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.section-header-dark {
+  align-items: center;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 17px;
+  }
+}
+
+.section-header-light {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 17px;
+  }
+}
+
+.custom-button-1 {
+  background: rgb(0, 229, 203);
+  background: linear-gradient(90deg, rgba(0, 229, 203, 1) 50%, rgba(6, 191, 234, 1) 100%);
+  border-radius: 43px !important;
+  color: white !important;
+  font-size: 25px !important;
+  padding: 2px 25px !important;
+}
+
+.custom-button-2 {
+  color: #fff !important;
+  padding: 10px 35px !important;
+  background: transparent linear-gradient(90deg, #c673f2 0%, #5e55cb 100%) 0% 0% no-repeat padding-box;
+  border-radius: 79px !important;
+  font-size: 23px !important;
+  margin: 0 auto !important;
+
+  &:hover {
+    color: #fff !important;
+  }
+}
+
+.agency-say-content {
+  display: flex;
+  justify-content: center;
+}
+
+.agency-say-card {
+  max-width: 1200px;
+  padding: 125px;
+  border-radius: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: 15px 15px 48px -18px rgba(9, 167, 254, 1);
+  -moz-box-shadow: 15px 15px 48px -18px rgba(9, 167, 254, 1);
+  box-shadow: 15px 15px 48px -18px rgba(9, 167, 254, 1);
+
+  .agency-say-card__title {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+
+  .agency-say-card__text {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 70px;
+  }
+
+  .agency-say-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .card__footer-logo {
+    }
+
+    .card__footer-person {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-left: 35px;
+        margin-bottom: 0;
+        font-size: 25px;
+        color: #ffffff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.splide__pagination {
+  .splide__pagination__page {
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #29218c;
+    background: #fff;
+    opacity: 1;
+  }
+
+  .is-active {
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #29218c;
+    background: #29218c !important;
+  }
+}

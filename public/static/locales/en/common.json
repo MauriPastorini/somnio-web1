@@ -1,0 +1,374 @@
+{
+  "common": {
+    "navbar": {
+      "about_us": "About us",
+      "services": "Services",
+      "services_mobile": "Mobile App Development",
+      "services_web": "Web Development",
+      "services_uxui": "UX/UI",
+      "why_flutter": "Why Flutter",
+      "our_work": "Our work",
+      "faq": "FAQ",
+      "blog": "Blog",
+      "button": "Get in touch"
+    },
+    "footer": {
+      "about": "About",
+      "our_values": "Our values",
+      "how_we_work": "How we work",
+      "team": "Team",
+      "work": "Work",
+      "working_modalities": "Working modalities",
+      "community": "Community",
+      "meetup": "Meetup",
+      "office": "Office",
+      "contact": "Contact"
+    },
+
+    "form_contact": {
+      "title": "Let’s create successful apps together!",
+      "name": "What is your name?",
+      "email": "How is your e-mail?",
+      "tell_us": "Tell us about your proyect",
+      "meeting": "Or schedule a meeting"
+    },
+    "button_1": "Let's talk",
+    "button_2": "Explore our work",
+    "text_1": "Read more"
+  },
+  "home": {
+    "header": {
+      "text_1": "Let's transform your ideas into sky-reaching apps"
+    },
+    "services": {
+      "title": "Services",
+      "mobile": {
+        "title": "Mobile App Development",
+        "text": "We build high-quality mobile applications with Flutter for both Android & iOS mobile devices in record time."
+      },
+      "web": {
+        "title": "Web development",
+        "text": "​​We develop unique web apps with modern approaches and latest technologies to meet your business’s needs."
+      },
+      "ux_ui": {
+        "title": "UX/UI",
+        "text": "We are passionate about creating beautiful and practical user interfaces that provide a smooth and intuitive experience."
+      }
+    },
+    "why_flutter": {
+      "title": "Why we use Flutter to create beautiful apps",
+      "text": "Flutter has changed the game. Now you can transform your great ideas into applications from a single codebase that natively compiles for iOS, Android, Desktop, and Web. You can make the most of your productivity without having to waste time setting things up and still getting top-notch results."
+    },
+    "modalities": {
+      "title": "Working Modalities",
+      "development": {
+        "title": "Full Product Development",
+        "text": "Transform your ideas into high-quality products through a full development cycle. Together we can build your dreamed mobile app or web from scratch and achieve a before-and-after in your industry. From strategy and design to development and delivery we are your trusted Software Development team."
+      },
+      "augmentation": {
+        "title": "Staff Augmentation",
+        "text": "Finding the right person with the precise skills to join your in-house team is an incredible hard and expensive task, plus it takes time. We have a solution to that! We can reinforce your existing team with ours by bringing experienced developers to effectively meet project timelines."
+      }
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "jaac": {
+        "title": "Jaac",
+        "text": "Jaac is a platform that improves customer service for restaurants and at the same time helps the restaurant to manage better and save revenue."
+      },
+      "crimedoor": {
+        "title": "CrimeDoor",
+        "text": "Crime database for the most notorious unsolved mysteries. You can be the detective and investigate the crime scenes with the use of augmented reality and other formats"
+      },
+      "pay_my_trades": {
+        "title": "Pay my trades",
+        "text": "Pay My Trades is an instant payment solution for the construction industry that digitalizes and facilitates payment processes"
+      }
+    },
+    "what_our_clients_say": {
+      "title": "What our clients say"
+    },
+    "about_us": {
+      "title": "About us",
+      "text_1": "Somnio Software is a Software development Company mainly focused on creating Mobile Applications with Flutter. Our mission is to help grow your business by transforming your ideas into high-quality products.",
+      "text_2": "We are a team of passionate and creative engineers, developers and designers that work hand in hand with our clients in order to build the best solutions that meet their needs."
+    },
+    "our_blog": {
+      "title": "Our blog"
+    }
+  },
+  "about_us": {
+    "header": {
+      "text_1": "About us",
+      "text_2": "We are passionate engineers for passionate projects"
+    },
+    "info": {
+      "text": "We don't just create apps, we create world-class apps to help your business grow. Whether you want to create a product from scratch or you need an addition to your in-house team for a project, we are your trusted partner."
+    },
+    "how_we_work": {
+      "title": "How we work",
+      "text_1": "Agile Engineering",
+      "text_2": "We focus on an agile approach which helps organize and create a better product. It’s based on adaptive planning, evolutionary development, early delivery, and continual improvement. Teams can quickly iterate, test and gather feedback. This helps not only to identify and solve problems more quickly and effectively but also encourages flexible responses to changes.",
+      "text_3": "Design Thinking",
+      "text_4": "It’s a human-centered way of thinking and working as well as a collection of methods. It promotes a deep interest in anticipating and better understanding the needs of the people you’re creating for. It involves a process of brainstorming and adopting a hands-on approach in prototyping and testing. This helps us observe and develop empathy with the target user in order to define it’s needs and challenges to ideate innovative solutions."
+    },
+    "our_values": {
+      "title": "Our values",
+      "value_1": {
+        "title": "Passion",
+        "text": "We are passionate about technology and it motivates us to keep growing and learning. We are a proactive and energetic team that really enjoys what they do."
+      },
+      "value_2": {
+        "title": "Quality",
+        "text": "We take each project with great responsibility and commitment in order to achieve the best result. Our dedication together with our experience and knowledge delivers excellence."
+      },
+      "value_3": {
+        "title": "Empathy",
+        "text": "We are centered in listening and deeply understanding the necessities of the client to provide advice and suggestions during the whole work process."
+      },
+      "value_4": {
+        "title": "Clear Communication",
+        "text": "We strongly believe that good and transparent communication can achieve a better understanding. That’s why we always maintain a fluent and careful dialogue."
+      },
+      "value_5": {
+        "title": "Team",
+        "text": "We trust that with a collaborative team we can achieve better results through the combination of knowledge, experiences, ideas and complementary talents."
+      }
+    },
+    "why_us": {
+      "title": "Why us",
+      "text_1": "We work with an empathetic approach to take the client’s needs as a priority and encourage the exchange of ideas and suggestions in order to achieve the best result.",
+      "text_2": "Our team is continuously learning and staying updated with the latest technologies to keep improving and building better products.",
+      "text_3": "Our experience and success stories are proof of what we are capable of achieving together. We are ready for new projects to help transform and succeed your business!"
+    },
+    "our_team": {
+      "title": "Meet the team"
+    }
+  },
+  "services": {
+    "header": {
+      "text_1": "Working Modalities",
+      "text_2": "This is how we achieve outstanding results",
+      "how_we_work": {
+        "title": "How we work",
+        "text_1": "Full Product Development",
+        "text_2": "Increase your productivity with engineers prepared to successfully integrate with your team, process and workflow. We make outsourcing software development to Uruguay your best solution: talented professionals, reasonable time zone, cost-effective, high-quality work, similar work cultures with great English communication skills.",
+        "text_3": "We focus on maintaining real-time communication to feel near and present at all times. It will feel as if we were working sitting side by side.",
+        "text_4": "Staff Augmentation",
+        "text_5": "Increase your productivity with engineers prepared to successfully integrate with your your team, process and workflow. We make outsourcing software development to Uruguay your best solution: talented professionals, reasonable time zone, cost-effective, high-quality work, similar work cultures with great English communication skills.",
+        "text_6": "We focus on maintaining real-time communication to feel near and present at all times. It will feel as if we were working sitting side by side."
+      }
+    },
+    "what_agency_say": {
+      "title": "What agencies say",
+      "text": "“Great IT teams are invaluable, you don’t always find IT team with agile mindset, customer focused, yet, with market insights, and great talent. Enjoy working with you, and looking forward to create a lasting success story.”",
+      "name": "Mohamad Dawas",
+      "position": "Product Manager",
+      "proyect": "Quran"
+    },
+    "process": {
+      "title": "Process",
+      "process_1": {
+        "title": "Design Thinking",
+        "text": "We focus on deeply understanding your business goals and user’s needs. Through this human-centered method we have a deep understanding of the user's needs and we are able to anticipate conduct and challenges in an effective and strategic way."
+      },
+      "process_2": {
+        "title": "Requirements Survey",
+        "text": "We use agile and SCRUM methodologies to gather requirements and start project management. We provide several tools so clients have insight of the project’s process and the possibility to directly and in real-time validate decisions or propose changes."
+      },
+      "process_3": {
+        "title": "UX/UI",
+        "text": "The UX/UI design process begins once the first version has been determined in the design thinking phase. We create the final interfaces and enable the client the possibility to test, interact and offer incremental feedback."
+      },
+      "process_4": {
+        "title": "Software Architecture and Design",
+        "text": "We use agile and SCRUM methodologies to gather requirements and start project management. We provide several tools so clients have insight of the project’s process and the possibility to directly and in real-time validate decisions or propose changes."
+      },
+      "process_5": {
+        "title": "Development",
+        "text": "We began to develop the functionalities considering all the previous steps. We start to develop based on what we decided in the previous steps. In this way the developers can effectively create the product and arrive at the planned outcome."
+      },
+      "process_6": {
+        "title": "QA Testing",
+        "text": "During this stage, QA experts test the application and ensure the quality of the product. They build automated processes of these tests in order to be more time productive and cost-efficient. This prevents errors in production and causing discomfort in users when using the application."
+      },
+      "process_7": {
+        "title": "Launch and Maintenance",
+        "text": "The application is finally released to the world! We take care of the launch and make sure that it’s as optimal as possible. We completely have your back so there is no need for you to stress or worry. After the application is launched and running we continue to support it by taking care of the maintenance."
+      }
+    },
+    "tools": {
+      "title": "Working tools",
+      "tool_1": {
+        "type": "Communication",
+        "tool": "Slack",
+        "text": "Slack, a business internal communication tool, is the engine of our work. With this platform we gather our whole team and clients to stay connected, informed and updated."
+      },
+      "tool_2": {
+        "type": "Management",
+        "tool": "Jira",
+        "text": "Jira is a project management tool for agile teams. It helps manage every project workflow as well as keeping every detail in sight in real-time so your team and client can stay on the same page through the whole process."
+      },
+      "tool_3": {
+        "type": "Management",
+        "tool": "Clockify",
+        "text": "Clockify is a time tracking app that helps us follow our work and our time on projects. It helps keep and eye on the our working progress and what the team is working on specifically."
+      },
+      "tool_4": {
+        "type": "Collaboration and documentation",
+        "tool": "Confluence",
+        "text": "Confluence is a working tool that allows our team to create, collaborate and organize all of our work in one place. It not only centralizes our information, ideas and work, but also encourages contructive feedback between the team."
+      },
+      "tool_5": {
+        "type": "Collaboration and documentation",
+        "tool": "Gsuite",
+        "text": "Gsuite is a collection of enterprise-based products developed by Google. It is an incredible servce for communication, storage, administration, productivity and collaboration for our team and clients."
+      }
+    }
+  },
+  "services_mobile": {
+    "header": {
+      "text_1": "Mobile App Development",
+      "text_2": "We create apps that transform businesses and simplify user’s lives"
+    },
+    "info": {
+      "text_1": "In Somnio Software we focus on creating high-quality, engaging and user-friendly apps to take your business to the next level. We offer an entire range of mobile app solutions, including UX/UI design, development, testing and maintenance."
+    },
+    "covered": {
+      "title": "We’ve got you covered",
+      "text_1": "Back-End Development",
+      "text_2": "It’s the “behind the scenes” part of the development. Our back-end developers create the logic on which the app works and select the best technologies for each project.",
+      "text_3": "Front-End Development",
+      "text_4": "It’s what you see and what you use. Our developers take care of the layout, design and interactivity with modern technologies that allow faster programming with expressive interfaces and a native performance."
+    },
+    "flutter_change_game": {
+      "title": "Flutter has changed the game",
+      "text_1": "Somnio Software’s developers specialize in cross-platform application development with Flutter. We are experts in building better apps, faster and for any platform.",
+      "text_2": "Flutter is our solution for productive, high-quality, and modern app development. We save the trouble of having multiple codes for different platforms and different working teams. This means Flutter improves efficiency while reducing costs and still achieving outstanding apps with native performance."
+    },
+    "tech_list": {
+      "title": "We care about maintaing an excellent quality for your App"
+    },
+    "our_knowledge": {
+      "title": "Our knowledge and experience at your service",
+      "text_1": "Our work is oriented by the passion we have about what we do along with the dedication and commitment we assume to every project.",
+      "text_2": "To this day, Somnio Software has helped transform lots of ideas into high-reaching products. Use our experience to your advantage."
+    },
+    "some_apps": {
+      "title": "Some Apps we built",
+      "agency_say": {
+        "text_1": "“The project was successful. Somnio Software tackled challenges head-on and created client-oriented solutions.”"
+      }
+    }
+  },
+  "services_web": {
+    "header": {
+      "text_1": "Web Development",
+      "text_2": "We love creating webs that cause impact"
+    },
+    "info": "Your website is the visible face of your brand. This is why it needs to be powerful, eye-catching and highly responsive. We create high-value solutions working with the latest technologies so you website is unforgettable.",
+    "some_apps": {
+      "title": "Some Apps we built",
+      "agency_say": {
+        "text_1": "“They succesfully help us to increase our monthly incomes. We are completely satisfied with their services and we’d like to continue working with them.”"
+      }
+    }
+  },
+  "services_uxui": {
+    "header": {
+      "text_1": "Our designs speak to people"
+    },
+    "info": {
+      "text_1": "It’s all about appearance",
+      "text_2": "UI design will result in an instant attraction to you app/web. It is the process of creating the presentation and communication. It centers on the product’s look and interaction with the users. It includes each screen, page, buttons and other visual elements such as colors and typography. All in all, it’s the relationship between a person and the system they are using.",
+      "text_3": "It’s all about the experience",
+      "text_4": "UX design is the process of creating a app/web that users want to use. It is the procedure of improving their experience when they interact with the product in order to achieve their maximum satisfaction. It mainly focuses on structuring all the components while taking into account functionality, design, integration and usability to create the user flow."
+    },
+    "important": {
+      "title": "Why is UI/UX so important?",
+      "text_1": "Design speaks to people and it’s the way they come to interpret your company. It’s important to create a human-centered design where you understand the needs of your users and the problems you intend to solve with your product.",
+      "text_2": "Always keep in mind that users like apps and webs that are captivating, pleasing and easy to use. Developing an efficient UX/UI design will help improve the user experience and customer satisfaction, which will be the starting point for a successful product!"
+    },
+    "services": {
+      "title": "Services",
+      "service_1": {
+        "title": "Information Architecture",
+        "text": "IA focuses on designing the information structure of the product. It’s based on the business’s strategies to provide a clear and easy navigation for users."
+      },
+      "service_2": {
+        "title": "Interactive Design",
+        "text": "It’s all about creating a design that builds a beneficial relationship between the users and the product they interact with."
+      },
+      "service_3": {
+        "title": "Usability Engineering",
+        "text": "Apps and webs must be user-friendly and easy to navigate. Users need a simple and direct way of understanding information."
+      },
+      "service_4": {
+        "title": "Wireframing",
+        "text": "We create a sample of the application to test the look, usability and features."
+      },
+      "service_5": {
+        "title": "Visual Design",
+        "text": "It includes the whole appearance of the product. It has the power of affecting user’s behavior and therefore is one of the most important elements of UI design."
+      },
+      "service_6": {
+        "title": "Prototype Development",
+        "text": "The use of design samples enables quick changes and experiments upon constructive feedback."
+      }
+    },
+    "vital": {
+      "title": "UX/UI is a vital part of our work process",
+      "text_1": "We take user experience and interface design very seriously in Somnio Software. We know that it plays a decisive part in your application or website being successful.",
+      "text_2": "That’s why we emphasize on researching the users needs, exchanging feedback with the client and being fully dedicated to achieving an attractive and engaging UX/UI design for your product."
+    }
+  },
+  "why_flutter": {
+    "header": {
+      "text_1": "Flutter transformed the future of Software Development"
+    },
+    "what_is_flutter": {
+      "title": "What is Flutter?",
+      "text_1": "Flutter is a software development kit created by Google for building beautiful, natively compiled and high-performance applications for mobile, web and desktop from a single codebase.",
+      "characteristics": {
+        "characteristic_1": {
+          "title": "Fast programming and time-to-market",
+          "text": "Flutter’s hot reload feature enables seeing changes in real-time. It allows building UIs and experimentation in a quick and easy way, as well as fixing bugs faster. This results in a faster code development and allows you to skip many time-consuming steps which makes the process faster, more productive and speeds up time-to-market."
+        },
+        "characteristic_2": {
+          "title": "Cross-platform",
+          "text": "It’s possible to build apps for all devices with a single codebase when using Flutter. With Flutter the app UI and logic maintain it’s consistency and don’t change depending on the platform. You need a single codebase and working team to create your product. The use of a cross-platform technology as Flutter saves time, effort and costs while achieving the same results."
+        },
+        "characteristic_3": {
+          "title": "Native and smooth performance",
+          "text": "Flutter’s performance is indistinguishable from a native app, it not only has a native look but it provides a native performance. Contrary to most cross-platform frameworks, Flutter doesn’t rely on any intermediate code representations or interpretations. The app is built directly into the machine code which means it eliminates any performance bugs. As a result, the app will be fully compiled ahead of time, with a native performance and ready to launch."
+        },
+        "characteristic_4": {
+          "title": "Better compatibility",
+          "text": "Flutter has its own widgets, which implies less communication between the app and the platform. Since they are part of the application and not the platform, you are likely to experience fewer or no compatibility issues in different versions. This means: fast application startup times, fewer overall performance issues and less time spent testing."
+        },
+        "characteristic_5": {
+          "title": "Less testing",
+          "text": "Flutter not only saves time while writing code but also in testing and compiling data. The Quality Assurance process is faster because developers write automated tests only once since its the same codebase for multiple platform."
+        },
+        "characteristic_6": {
+          "title": "Expressive and flexible UI",
+          "text": "The UI process is more flexible and versatile since it provides the possibility of customizing anything you see on screen. With Flutter this procedure is simple and adjustable regardless of the complexity of the components. It includes the use of elements for transitions, clipping, transformations and shape/color/shadow manipulations in a no-sweat way."
+        }
+      }
+    },
+    "change_how_we_work": {
+      "title": "Flutter has changed the way we work",
+      "text": "Google’s toolkit brings together the best of different languages ​​and frameworks to create the future of mobile business development. Even though, we can use other technologies if needed, it’s safe to say that Flutter has forever changed the way we develop apps."
+    },
+    "trust_flutter": {
+      "title": "Brands that trust Flutter"
+    },
+    "some_our_projects": {
+      "title": "Some of our Flutter projects"
+    },
+    "card": {
+      "text_1": "If you want to know more about Flutter, don't miss our next Meetup",
+      "button_1": "Take me there"
+    }
+  }
+}

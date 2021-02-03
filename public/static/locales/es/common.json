@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "about_us": "Acerca de nosotros",
+    "services": "Servicios",
+    "services_mobile": "Desarrollo movil",
+    "services_web": "Desarrollo web",
+    "services_uxui": "UX/UI",
+    "why_flutter": "Porque Flutter",
+    "our_work": "Nuestro trabajo",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "button": "Ponerse en contacto"
+  }
+}
