@@ -78,6 +78,7 @@ $primary-color: #001331;
   max-width: 1200px;
   padding: 125px;
   border-radius: 24px;
+  background-image: url(/assets/images/services/services-agency-say-bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -142,4 +143,54 @@ $primary-color: #001331;
     border: 2px solid #29218c;
     background: #29218c !important;
   }
+}
+
+
+
+.slick-list {
+  padding: 90px 200px !important;
+}
+
+.slick-dots {
+  bottom: -100px;
+
+  li {
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 1;
+    padding: 0 5px;
+    
+    button::before {
+      opacity: 0 !important;
+      color: transparent !important;
+    }
+  }
+
+  li.slick-active {
+    background: #ffffff !important;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 5px;
+    button::before {
+      opacity: 0 !important;
+      color: transparent !important;
+    }
+  }
+}
+
+.center .agency-card {
+  transition: all 0.3s ease;
+}
+
+.center .slick-center .agency-card {
+  opacity: 1;
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }

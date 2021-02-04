@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import HomeModalityCard from "../components/HomeModalityCard";
-import { withTranslation } from "../i18n";
+import HomeModalityCard from "../../components/HomeModalityCard";
+import { withTranslation } from "../../i18n";
 
 const HomeModalitiesSection = ({t}) => {
 

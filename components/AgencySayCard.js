@@ -93,16 +93,6 @@ const AgencySayCard = ({ comment }) => {
             margin-top: 38px;
           }
         }
-
-        .center .agency-card {
-          transition: all 0.3s ease;
-        }
-
-        .center .slick-center .agency-card {
-          opacity: 1;
-          -ms-transform: scale(1.1);
-          transform: scale(1.1);
-        }
       `}</style>
     </div>
   );

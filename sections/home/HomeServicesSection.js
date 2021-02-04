@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import HomeServiceCard from "../components/HomeServiceCard";
-import { withTranslation } from "../i18n";
+import HomeServiceCard from "../../components/HomeServiceCard";
+import { withTranslation } from "../../i18n";
 
 const HomeServicesSection = ({ t }) => {
   const data = [

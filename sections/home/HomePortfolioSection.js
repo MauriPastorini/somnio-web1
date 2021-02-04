@@ -1,8 +1,6 @@
-import { withTranslation } from "../i18n";
+import { withTranslation } from "../../i18n";
 import PropTypes from "prop-types";
-import AgencySayCard from "../components/AgencySayCard";
-import Slider from "react-slick";
-import HomePorfolioSlide from "../components/HomePorfolioSlide";
+import HomePorfolioSlide from "../../components/HomePorfolioSlide";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const HomePortfolioSection = ({ t }) => {
@@ -23,20 +21,6 @@ const HomePortfolioSection = ({ t }) => {
       img: "./assets/images/home/home-portfolio-paymytrades.png",
     },
   ];
-
-  const settings = {
-    className: "center",
-    centerMode: true,
-    centerPadding: "60px",
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
-    // pauseOnHover: true,
-  };
 
   return (
     <div className="HomePortfolioSection">
@@ -59,13 +43,6 @@ const HomePortfolioSection = ({ t }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* <Slider {...settings}>
-        {portfolio.map((_slide, i) => (
-          <p>{_slide.text}</p>
-          // <HomePorfolioSlide key={i} title={_slide.title} text={_slide.text} img={_slide.img} />
-        ))}
-      </Slider> */}
 
       <div className="d-flex justify-content-center mt-40 mb-50">
         <button className="btn custom-button-2">{t("common.button_2")}</button>

@@ -1,6 +1,3 @@
-import React from "react";
-import "./ServicesHowWeWorkCard.scss";
-
 const ServicesHowWeWorkCard = ({ data }) => (
   <div className="ServicesHowWeWorkCard">
     <img src={`./assets/images/services/${data.img}`} className="how-we-work-card__img" alt="" />

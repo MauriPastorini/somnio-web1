@@ -6,9 +6,6 @@ const localeSubpaths = {}
 const { nextI18NextRewrites } = require('next-i18next/rewrites')
 module.exports = withCSS(withImages(withSass({
   rewrites: async () => nextI18NextRewrites(localeSubpaths),
-  env: {
-    // ANY_ENV_KEY: "ANY_ENV_VARIABLE"
-  },
   publicRuntimeConfig: {
     localeSubpaths,
   },

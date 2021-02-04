@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { withTranslation } from "../i18n";
+import { withTranslation } from "../../i18n";
 import PropTypes from "prop-types";
 
 const HomeWhyFlutterSection = ({ t }) => {

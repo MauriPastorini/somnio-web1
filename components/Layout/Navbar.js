@@ -50,14 +50,14 @@ const Navbar = ({ t }) => {
               </Link>
             </li>
             <li className="nav-item nav-item-dropable">
-              <Link href="/services">
+              <Link href="/services-modalities">
                 <a className={`${scrolled ? "nav-link-scrolled" : "nav-link-unscrolled"} nav-link dropdown-toggle`}>
                   {t("common.navbar.services")}
                 </a>
               </Link>
               <ul className="nav__submenu" style={SubMenuStyle}>
                 <li className="nav__submenu-item">
-                  <Link href="/movile-development">
+                  <Link href="/movile-app-development">
                     <a className="nav__submenu-link" style={SubMenuItemStyle}>
                       {t("common.navbar.services_mobile")}
                     </a>

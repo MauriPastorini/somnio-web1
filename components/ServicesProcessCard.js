@@ -1,6 +1,3 @@
-import React from "react";
-import "./ServicesProcessCard.scss";
-
 const ServicesProcessCard = ({ data }) => (
   <div className="ServicesProcessCard">
     <img className="process-card-img" src={`./assets/images/services/${data.img}`} alt="" />
@@ -11,12 +8,17 @@ const ServicesProcessCard = ({ data }) => (
     <style jsx>{`
       .ServicesProcessCard {
         display: flex;
+        position: relative;
 
         .process-card-img {
           max-width: 170px;
-          margin-right: 90px;
         }
+
         .process-card-text-wrapper {
+          position: absolute;
+          left: 260px;
+          top: 0;
+
           max-width: 430px;
 
           h3 {

@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
-import { withTranslation } from "../i18n";
-import { useTranslation } from "react-i18next";
-import AgencySaySlider from "../components/AgencySaySlider";
-// import AgencySaySlider from "../../../../components/AgencySaySlider/AgencySaySlider";
+import { withTranslation } from "../../i18n";
+import AgencySaySlider from "../../components/AgencySaySlider";
 
 const HomeWhatClientSaySection = ({ t }) => {
   const comments = [

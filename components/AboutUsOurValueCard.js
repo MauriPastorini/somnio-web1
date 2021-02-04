@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./AboutUsOurValueCard.scss";
 
 const AboutUsOurValueCard = ({ img, title, text, classImgName }) => (
   <div className="AboutUsOurValueCard">
