@@ -1,9 +1,9 @@
 const withSass = require('@zeit/next-sass');
 const withImages = require('next-images');
 const withCSS = require('@zeit/next-css')
+const { nextI18NextRewrites } = require('next-i18next/rewrites')
 const localeSubpaths = {}
 
-const { nextI18NextRewrites } = require('next-i18next/rewrites')
 module.exports = withCSS(withImages(withSass({
   rewrites: async () => nextI18NextRewrites(localeSubpaths),
   publicRuntimeConfig: {

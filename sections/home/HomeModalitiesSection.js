@@ -2,8 +2,7 @@ import PropTypes from "prop-types";
 import HomeModalityCard from "../../components/HomeModalityCard";
 import { withTranslation } from "../../i18n";
 
-const HomeModalitiesSection = ({t}) => {
-
+const HomeModalitiesSection = ({ t }) => {
   const data = [
     {
       headerImg: "assets/images/home/home-modality-img2.svg",
@@ -20,7 +19,7 @@ const HomeModalitiesSection = ({t}) => {
   ];
 
   return (
-    <div className="HomeModalitiesSection custom-container">
+    <div className="HomeModalitiesSection">
       <div className="section-header-dark mt-100" data-aos="fade-in">
         <h2>{t("home.modalities.title")}</h2>
         <img src={"./assets/images/home-services-line.svg"} alt="" />
@@ -39,8 +38,10 @@ const HomeModalitiesSection = ({t}) => {
 
           .modality-list {
             display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
+            justify-content: space-evenly;
+
+            margin: 20px auto 0 auto;
+            max-width: 1300px;
           }
 
           @media screen and (max-width: 1200px) {
@@ -63,4 +64,3 @@ HomeModalitiesSection.propTypes = {
 };
 
 export default withTranslation("common")(HomeModalitiesSection);
-

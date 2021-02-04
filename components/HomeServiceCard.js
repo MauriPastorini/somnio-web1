@@ -28,7 +28,8 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
           text-align: center;
           font-size: 25px;
           margin-bottom: 41px;
-          max-width: 229px;
+          max-width: 200px;
+          min-height: 60px;
         }
 
         .service-card-text {

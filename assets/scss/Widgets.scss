@@ -15,6 +15,7 @@ $primary-color: #001331;
 .paragraph-1 {
   font-size: 30px;
   color: #ffffff;
+  font-weight: 500;
 }
 
 .section-header-dark {
@@ -122,8 +123,8 @@ $primary-color: #001331;
   }
 }
 
-.splide__pagination {
-  .splide__pagination__page {
+.swiper-pagination-bullets {
+  .swiper-pagination-bullet {
     padding: 5px;
     margin-left: 10px;
     margin-right: 10px;
@@ -134,7 +135,7 @@ $primary-color: #001331;
     opacity: 1;
   }
 
-  .is-active {
+  .swiper-pagination-bullet-active {
     padding: 5px;
     margin-left: 10px;
     margin-right: 10px;

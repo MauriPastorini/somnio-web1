@@ -88,4 +88,12 @@ const ServicesUxUiInfoSection = ({ t }) => {
   );
 };
 
-export default ServicesUxUiInfoSection;
+ServicesUxUiInfoSection.getInitialProps = async () => ({
+  namespacesRequired: ["common"],
+});
+
+ServicesUxUiInfoSection.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation("common")(ServicesUxUiInfoSection);

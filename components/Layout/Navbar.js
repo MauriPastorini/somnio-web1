@@ -2,6 +2,34 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
+import { useRouter } from "next/router";
+
+const CustomLink = ({ href, children, scrolled }) => {
+  const router = useRouter();
+
+  let className = children.props.className || "";
+  if (router.pathname === href) {
+    className = `${className} nav-link-active`;
+  }
+
+  return <Link href={href}>{React.cloneElement(children, { className })}</Link>;
+};
+
+const CustomDropdownLink = ({ href, children, scrolled }) => {
+  const router = useRouter();
+
+  let className = children.props.className || "";
+  if (
+    router.pathname === "/services-modalities" ||
+    router.pathname === "/mobile-app-development" ||
+    router.pathname === "/web-development" ||
+    router.pathname === "/ux-ui"
+  ) {
+    className = `${className} nav-link-active`;
+  }
+
+  return <Link href={href}>{React.cloneElement(children, { className })}</Link>;
+};
 
 const Navbar = ({ t }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,8 +50,10 @@ const Navbar = ({ t }) => {
   const logo = `./assets/images/common/${scrolled ? "logo-2" : "logo"}.png`;
   const NavStyle = `${scrolled ? "nav-scrolled" : ""} navbar navbar-expand-lg`;
   const NavLinkStyle = `${scrolled ? "nav-link-scrolled" : "nav-link-unscrolled"} nav-link`;
+  const NavLinkDropDownStyle = `${scrolled ? "nav-link-scrolled" : "nav-link-unscrolled"} nav-link dropdown-toggle`;
   const SubMenuStyle = { backgroundColor: `${scrolled ? "#29218c" : "#fff"}` };
   const SubMenuItemStyle = { color: `${scrolled ? "#fff" : "#29218c"}` };
+  const ButtonStyle = `${scrolled ? "btn-outline-navbar-scrolled" : "btn-outline-navbar"} btn`;
 
   return (
     <nav className={NavStyle}>
@@ -45,19 +75,17 @@ const Navbar = ({ t }) => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link href="/about-us">
+              <CustomLink scrolled={scrolled} href="/about-us">
                 <a className={NavLinkStyle}>{t("common.navbar.about_us")}</a>
-              </Link>
+              </CustomLink>
             </li>
             <li className="nav-item nav-item-dropable">
-              <Link href="/services-modalities">
-                <a className={`${scrolled ? "nav-link-scrolled" : "nav-link-unscrolled"} nav-link dropdown-toggle`}>
-                  {t("common.navbar.services")}
-                </a>
-              </Link>
+              <CustomDropdownLink scrolled={scrolled} href="/services-modalities">
+                <a className={NavLinkDropDownStyle}>{t("common.navbar.services")}</a>
+              </CustomDropdownLink>
               <ul className="nav__submenu" style={SubMenuStyle}>
                 <li className="nav__submenu-item">
-                  <Link href="/movile-app-development">
+                  <Link href="/mobile-app-development">
                     <a className="nav__submenu-link" style={SubMenuItemStyle}>
                       {t("common.navbar.services_mobile")}
                     </a>
@@ -81,30 +109,28 @@ const Navbar = ({ t }) => {
             </li>
 
             <li className="nav-item">
-              <Link href="/why-flutter">
+              <CustomLink scrolled={scrolled} href="/why-flutter">
                 <a className={NavLinkStyle}>{t("common.navbar.why_flutter")}</a>
-              </Link>
+              </CustomLink>
             </li>
             <li className="nav-item">
-              <Link href="/our-work">
+              <CustomLink scrolled={scrolled} href="/our-work">
                 <a className={NavLinkStyle}>{t("common.navbar.our_work")}</a>
-              </Link>
+              </CustomLink>
             </li>
             <li className="nav-item">
-              <Link href="/faq">
+              <CustomLink scrolled={scrolled} href="/faq">
                 <a className={NavLinkStyle}>{t("common.navbar.faq")}</a>
-              </Link>
+              </CustomLink>
             </li>
             <li className="nav-item">
-              <Link href="/blog">
+              <CustomLink scrolled={scrolled} href="/blog">
                 <a className={NavLinkStyle}>{t("common.navbar.blog")}</a>
-              </Link>
+              </CustomLink>
             </li>
           </ul>
         </div>
-        <button className={`${scrolled ? "btn-outline-navbar-scrolled" : "btn-outline-navbar"} btn`}>
-          {t("common.navbar.button")}
-        </button>
+        <button className={ButtonStyle}>{t("common.navbar.button")}</button>
       </div>
 
       <style jsx>
@@ -124,6 +150,7 @@ const Navbar = ({ t }) => {
           .somnio-logo {
             max-width: 217px;
             height: auto;
+            cursor: pointer;
           }
 
           .btn-outline-navbar {
@@ -155,6 +182,18 @@ const Navbar = ({ t }) => {
 
           .nav-link-active {
             font-weight: bold;
+            position: relative;
+          }
+
+          .nav-link-active::before {
+            display: block;
+            content: "";
+            width: 46px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 23px);
           }
 
           .nav-item-dropable {

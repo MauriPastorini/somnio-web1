@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 import IconChevronRight from "./IconChevronRight";
 
-const HomePorfolioSlide = ({ title, text, img, width }) => (
+const HomePorfolioSlide = ({ title, text, img }) => (
   <div className="HomePorfolioSlide" style={{ width: `100%` }}>
     <div className="slide-text-content custom-container">
       <h2 className="slide-text-title">{title}</h2>
@@ -82,9 +82,5 @@ const HomePorfolioSlide = ({ title, text, img, width }) => (
     `}</style>
   </div>
 );
-
-HomePorfolioSlide.propTypes = {
-  width: PropTypes.number.isRequired,
-};
 
 export default HomePorfolioSlide;

@@ -48,7 +48,7 @@ const HomeHeaderSection = ({ t }) => {
               width: 45%;
 
               .home-header-text {
-                width: 594px;
+                width: 554px;
                 font-weight: bold;
                 font-size: 60px;
                 color: #ffffff;

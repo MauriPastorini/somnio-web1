@@ -1,3 +1,19 @@
+@import './Fonts.scss';
+@import './Widgets.scss';
+
+body {
+  margin: 0 !important;
+  font-family: "Montserrat" !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* cursor: auto; */
+}
 
 .mt-10 {
   margin-top: 10px;
@@ -78,6 +94,7 @@
 .pb-200 {
   padding-bottom: 200px;
 }
+
 
 .custom-container {
   max-width: 1500px !important;

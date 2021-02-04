@@ -2,6 +2,9 @@ import { withTranslation } from "../../i18n";
 import PropTypes from "prop-types";
 import HomePorfolioSlide from "../../components/HomePorfolioSlide";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination } from "swiper";
+
+SwiperCore.use([Pagination]);
 
 const HomePortfolioSection = ({ t }) => {
   const portfolio = [
@@ -31,15 +34,10 @@ const HomePortfolioSection = ({ t }) => {
         <img src={"./assets/images/home-services-line.svg"} alt="" />
       </div>
 
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        pagination
-        loop
-      >
+      <Swiper spaceBetween={50} slidesPerView={1} pagination loop>
         {portfolio.map((_slide, i) => (
-          <SwiperSlide>
-            <HomePorfolioSlide key={i} title={_slide.title} text={_slide.text} img={_slide.img} />
+          <SwiperSlide key={i}>
+            <HomePorfolioSlide title={_slide.title} text={_slide.text} img={_slide.img} />
           </SwiperSlide>
         ))}
       </Swiper>
