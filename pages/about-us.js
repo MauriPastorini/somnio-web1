@@ -1,16 +1,24 @@
 import React from "react";
-import { Container } from "../components/Layout/Container";
-import AboutUsHeaderSection from "../sections/aboutus/AboutUsHeaderSection";
-import AboutUsInfoSection from "../sections/aboutus/AboutUsInfoSection";
-import AboutUsHowWeWorkSection from "../sections/aboutus/AboutUsHowWeWorkSection";
-import AboutUsOurValuesSection from "../sections/aboutus/AboutUsOurValuesSection";
-import AboutUsWhyUsSection from "../sections/aboutus/AboutUsWhyUsSection";
-import AboutUsTeamSection from "../sections/aboutus/AboutUsTeamSection";
-import ContactSection from "../components/Sections/ContactSection";
-
+import Head from "next/head";
+import { Container } from "../components/common/Layout/Container";
+import AboutUsHeaderSection from "../components/aboutus/AboutUsHeaderSection";
+import AboutUsInfoSection from "../components/aboutus/AboutUsInfoSection";
+import AboutUsHowWeWorkSection from "../components/aboutus/AboutUsHowWeWorkSection";
+import AboutUsOurValuesSection from "../components/aboutus/AboutUsOurValuesSection";
+import AboutUsWhyUsSection from "../components/aboutus/AboutUsWhyUsSection";
+import AboutUsTeamSection from "../components/aboutus/AboutUsTeamSection";
+import ContactSection from "../components/common/ContactSection";
 
 const AboutUs = () => (
   <Container>
+    <Head>
+      <title>About us</title>
+      <meta
+        name="description"
+        content="We are a team of passionate and creative engineers, developers, and designers that work hand in hand with our clients to build high-quality products."
+      />
+    </Head>
+
     <AboutUsHeaderSection />
     <AboutUsInfoSection />
     <AboutUsHowWeWorkSection />

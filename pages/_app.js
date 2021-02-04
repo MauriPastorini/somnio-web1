@@ -1,5 +1,6 @@
 import { appWithTranslation } from "../i18n.js";
 import App from "next/app";
+import Head from "next/head";
 import "../assets/scss/Global.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -10,7 +11,14 @@ import "swiper/swiper.scss";
 import "swiper/components/pagination/pagination.scss";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
+      <Component {...pageProps} />;
+    </>
+  );
 }
 
 MyApp.getInitialProps = async (appContext) => ({ ...(await App.getInitialProps(appContext)) });

@@ -1,15 +1,21 @@
 import React from "react";
-import { Container } from "../components/Layout/Container";
-import ContactSection from "../components/Sections/ContactSection";
-import ServicesWebHeaderSection from "../sections/services-web/ServicesWebHeaderSection";
-import ServicesWebInfoSection from "../sections/services-web/ServicesWebInfoSection";
-import ServicesWebCoveredSection from "../sections/services-web/ServicesWebCoveredSection";
-import ServicesWebTechnologiesSection from "../sections/services-web/ServicesWebTechnologiesSection";
-import ServicesWebOurKnowledgeSection from "../sections/services-web/ServicesWebOurKnowledgeSection";
-import ServicesWebSomeAppsSection from "../sections/services-web/ServicesWebSomeAppsSection";
+import Head from "next/head";
+import { Container } from "../components/common/Layout/Container";
+import ContactSection from "../components/common/ContactSection";
+import ServicesWebHeaderSection from "../components/services-web/ServicesWebHeaderSection";
+import ServicesWebInfoSection from "../components/services-web/ServicesWebInfoSection";
+import ServicesWebCoveredSection from "../components/services-web/ServicesWebCoveredSection";
+import ServicesWebTechnologiesSection from "../components/services-web/ServicesWebTechnologiesSection";
+import ServicesWebOurKnowledgeSection from "../components/services-web/ServicesWebOurKnowledgeSection";
+import ServicesWebSomeAppsSection from "../components/services-web/ServicesWebSomeAppsSection";
 
 const WebDevelopment = () => (
   <Container>
+    <Head>
+      <title>Web Development</title>
+      <meta name="description" content="Successful Web Apps created in record time and with modern technologies." />
+    </Head>
+
     <ServicesWebHeaderSection />
     <ServicesWebInfoSection />
     <ServicesWebCoveredSection />
@@ -21,6 +27,3 @@ const WebDevelopment = () => (
 );
 
 export default WebDevelopment;
-
-
-

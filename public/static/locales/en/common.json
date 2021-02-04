@@ -247,7 +247,7 @@
       "text_2": "Flutter is our solution for productive, high-quality, and modern app development. We save the trouble of having multiple codes for different platforms and different working teams. This means Flutter improves efficiency while reducing costs and still achieving outstanding apps with native performance."
     },
     "tech_list": {
-      "title": "We care about maintaing an excellent quality for your App"
+      "title": "We care about maintaining an excellent quality for your App"
     },
     "our_knowledge": {
       "title": "Our knowledge and experience at your service",
@@ -267,8 +267,11 @@
       "text_2": "We love creating webs that cause impact"
     },
     "info": "Your website is the visible face of your brand. This is why it needs to be powerful, eye-catching and highly responsive. We create high-value solutions working with the latest technologies so you website is unforgettable.",
+    "tech_list": {
+      "title": "We care about maintaining an excellent quality for your Web"
+    },
     "some_apps": {
-      "title": "Some Apps we built",
+      "title": "Some Webs we built",
       "agency_say": {
         "text_1": "“They succesfully help us to increase our monthly incomes. We are completely satisfied with their services and we’d like to continue working with them.”"
       }
@@ -276,7 +279,8 @@
   },
   "services_uxui": {
     "header": {
-      "text_1": "Our designs speak to people"
+      "text_1": "UX/UI",
+      "text_2": "Our designs speak to people"
     },
     "info": {
       "text_1": "It’s all about appearance",
@@ -285,7 +289,7 @@
       "text_4": "UX design is the process of creating a app/web that users want to use. It is the procedure of improving their experience when they interact with the product in order to achieve their maximum satisfaction. It mainly focuses on structuring all the components while taking into account functionality, design, integration and usability to create the user flow."
     },
     "important": {
-      "title": "Why is UI/UX so important?",
+      "title": "Why is UX/UI so important?",
       "text_1": "Design speaks to people and it’s the way they come to interpret your company. It’s important to create a human-centered design where you understand the needs of your users and the problems you intend to solve with your product.",
       "text_2": "Always keep in mind that users like apps and webs that are captivating, pleasing and easy to use. Developing an efficient UX/UI design will help improve the user experience and customer satisfaction, which will be the starting point for a successful product!"
     },
@@ -358,7 +362,7 @@
     },
     "change_how_we_work": {
       "title": "Flutter has changed the way we work",
-      "text": "Google’s toolkit brings together the best of different languages ​​and frameworks to create the future of mobile business development. Even though, we can use other technologies if needed, it’s safe to say that Flutter has forever changed the way we develop apps."
+      "text": "Google’s toolkit brings together the best of different languages ​​and frameworks to create the future of mobile business development. Even though, we can use other technologies if needed, it´s safe to say that flutter has definitely changed the way we develop apps. "
     },
     "trust_flutter": {
       "title": "Brands that trust Flutter"
