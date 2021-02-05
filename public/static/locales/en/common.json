@@ -374,5 +374,12 @@
       "text_1": "If you want to know more about Flutter, don't miss our next Meetup",
       "button_1": "Take me there"
     }
+  },
+  "get_in_touch":{
+    "header": {
+      "text_1": "Let's work together!",
+      "text_2": "Tell us your ideas and get started"
+    }
   }
+
 }

@@ -130,7 +130,12 @@ const Navbar = ({ t }) => {
             </li>
           </ul>
         </div>
-        <button className={ButtonStyle}>{t("common.navbar.button")}</button>
+        <Link href="/get-in-touch">
+          <a type="button" className={ButtonStyle}>
+            {t("common.navbar.button")}
+          </a>
+          {/* <button className={ButtonStyle}>{t("common.navbar.button")}</button> */}
+        </Link>
       </div>
 
       <style jsx>
