@@ -23,13 +23,14 @@ $primary-color: #001331;
   color: $primary-color;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 125px;
 
   h2 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 17px;
+    margin-bottom: 22px;
+    letter-spacing: 4px;
   }
 }
 
@@ -38,13 +39,14 @@ $primary-color: #001331;
   color: #fff;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 125px;
 
   h2 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 17px;
+    margin-bottom: 22px;
+    letter-spacing: 4px;
   }
 }
 
@@ -54,13 +56,18 @@ $primary-color: #001331;
   border-radius: 43px !important;
   color: white !important;
   font-size: 25px !important;
-  padding: 2px 25px !important;
+  padding: 9px 35px !important;
 }
 
 .custom-button-2 {
   color: #fff !important;
-  padding: 10px 35px !important;
+  padding: 15px 39px !important;
   background: transparent linear-gradient(90deg, #c673f2 0%, #5e55cb 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 4px 40px -14px rgba(198,115,242,1);
+  -moz-box-shadow: 0px 4px 40px -14px rgba(198,115,242,1);
+  box-shadow: 0px 4px 40px -14px rgba(198,115,242,1);
+  border: none !important;
+
   border-radius: 79px !important;
   font-size: 23px !important;
   margin: 0 auto !important;
@@ -123,6 +130,10 @@ $primary-color: #001331;
   }
 }
 
+.swiper-container{
+  max-height: 860px;
+}
+
 .swiper-pagination-bullets {
   .swiper-pagination-bullet {
     padding: 5px;
@@ -146,14 +157,12 @@ $primary-color: #001331;
   }
 }
 
-
-
 .slick-list {
-  padding: 90px 200px !important;
+  padding: 90px 440px !important;
 }
 
 .slick-dots {
-  bottom: -100px;
+  bottom: -50px !important;
 
   li {
     background: transparent;

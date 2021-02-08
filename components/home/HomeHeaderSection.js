@@ -42,17 +42,18 @@ const HomeHeaderSection = ({ t }) => {
           .text-and-image {
             display: flex;
             align-items: center;
-            margin-top: 130px;
+            margin-top: 100px;
 
             .home-header-text-wrapper {
               width: 45%;
+              margin-top: 55px;
 
               .home-header-text {
-                width: 554px;
+                width: 584px;
                 font-weight: bold;
                 font-size: 60px;
                 color: #ffffff;
-                margin-bottom: 50px;
+                margin-bottom: 80px;
               }
             }
 
@@ -60,8 +61,8 @@ const HomeHeaderSection = ({ t }) => {
               width: 55%;
 
               .home-header-img {
-                width: 95%;
-                margin-left: 5%;
+                width: 97%;
+                margin-left: 3%;
               }
             }
           }

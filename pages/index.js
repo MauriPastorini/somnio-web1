@@ -27,8 +27,8 @@ const Home = () => (
     <HomeModalitiesSection />
     <HomePortfolioSection />
     <HomeWhatClientSaySection />
-    <HomeOurBlogSection />
     <HomeAboutUsSection />
+    <HomeOurBlogSection />
     <ContactSection />
   </Container>
 );

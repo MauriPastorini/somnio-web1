@@ -15,7 +15,7 @@ const ServicesWebCoveredSection = ({ t }) => {
   ];
 
   return (
-    <div className="ServicesWebCoveredSection pt-100 pb-100">
+    <div className="ServicesWebCoveredSection pt-100 pb-200">
       <div className="sub__bg"></div>
       <div className="content custom-container">
         <div className="section-header-light" data-aos="fade-in">
@@ -36,11 +36,13 @@ const ServicesWebCoveredSection = ({ t }) => {
           .content {
             position: relative;
             z-index: 1;
-            margin-top: 122px;
+            margin-top: 123px;
 
             .services-covered-card-list {
               display: flex;
               justify-content: space-between;
+              max-width: 1360px;
+              margin: 0 auto;
             }
           }
 

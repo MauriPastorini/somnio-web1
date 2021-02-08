@@ -3,10 +3,10 @@ import { withTranslation } from "../../i18n";
 
 const ServicesMobileInfoSection = ({ t }) => {
   return (
-    <div className="ServicesMobileInfoSection mt-200 mb-200">
+    <div className="ServicesMobileInfoSection">
       <div className="mobile-text-and-img custom-container">
         <div className="mobile-img-wrapper">
-          <img src={`./assets/images/home/home-our-img1.svg`} className="path-img img-fluid" alt="" />
+          <img src={`./assets/images/services-mobile/info-img-bg.svg`} className="path-img img-fluid" alt="" />
           <img src={`./assets/images/services-mobile/info-img.png`} className="group-img" alt="" />
         </div>
         <p className="mobile-text" data-aos="fade-left">
@@ -15,6 +15,8 @@ const ServicesMobileInfoSection = ({ t }) => {
       </div>
       <style jsx>{`
         .ServicesMobileInfoSection {
+          margin-top: 200px;
+          margin-bottom: 180px;
         }
 
         .mobile-text-and-img {
@@ -36,8 +38,8 @@ const ServicesMobileInfoSection = ({ t }) => {
             }
             .group-img {
               position: absolute;
-              top: 50px;
-              left: 50px;
+              top: 11px;
+              left: 33px;
               max-width: 90%;
               height: auto;
             }

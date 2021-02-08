@@ -31,7 +31,7 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
       <img src="./assets/images/services-mobile/tecgnologies-bg.svg" alt="" className="technologies__bg" />
       <div className="technologies__content">
         <div className="section-header-light mt-50" data-aos="fade-in">
-          <h2 style={{ maxWidth: 650 }}>{t("services_mobile.tech_list.title")}</h2>
+          <h2 style={{ maxWidth: 800 }}>{t("services_mobile.tech_list.title")}</h2>
           <img src={"./assets/images/home-services-line-light.svg"} alt="" />
         </div>
 

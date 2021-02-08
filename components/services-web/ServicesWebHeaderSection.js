@@ -40,13 +40,13 @@ const ServicesWebHeaderSection = ({ t }) => {
           .text-and-image {
             display: flex;
             align-items: center;
-            margin-top: 70px;
+            margin-top: 83px;
 
             .services-web-header-text-wrapper {
               display: flex;
               flex-direction: column;
               align-items: flex-end;
-
+              margin-top: 26px;
               width: 45%;
 
               .services-web-header-title {
@@ -70,8 +70,8 @@ const ServicesWebHeaderSection = ({ t }) => {
               width: 55%;
 
               .header-img {
-                width: 95%;
-                margin-right: 5%;
+                width: 100%;
+                // margin-right: 5%;
               }
             }
           }

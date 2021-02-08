@@ -28,20 +28,23 @@ const HomePorfolioSlide = ({ title, text, img }) => (
         .slide-text-title {
           color: #001739;
           font-size: 55px;
-          margin-bottom: 60px;
+          font-weight: bold;
+          margin-bottom: 50px;
         }
 
         .slide-text-paragraph {
           color: #001739;
-          font-size: 24px;
-          max-width: 450px;
-          margin-bottom: 100px;
+          font-size: 20px;
+          max-width: 400px;
+          margin-bottom: 130px;
+          line-height : 25px;
         }
 
         .slide-text-link {
           color: #1681e3;
           text-decoration: none;
           font-size: 27px;
+          font-weight: 700;
         }
       }
 

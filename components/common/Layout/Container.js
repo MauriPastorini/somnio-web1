@@ -5,9 +5,9 @@ import Navbar from "./Navbar";
 export const Container = ({ children }) => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <div>{children}</div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -4,7 +4,7 @@ import { withTranslation } from "../../i18n";
 const ServicesMobileSomeAppsSection = ({ t }) => {
   return (
     <div className="ServicesMobileSomeAppsSection d-flex flex-column align-items-center pb-100">
-      <div className="section-header-dark mt-100" data-aos="fade-in">
+      <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("services_mobile.some_apps.title")}</h2>
         <img src={"./assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -40,6 +40,11 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
       </div>
       <style jsx>{`
         .ServicesMobileSomeAppsSection {
+
+          .header-wrapper{
+            margin-bottom: 62px;
+          }
+
           .app-wrapper-1 {
             display: flex;
             justify-content: flex-end;

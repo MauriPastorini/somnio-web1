@@ -15,6 +15,7 @@ const ServicesMobileFlutterChangeGameSection = ({ t }) => {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          padding-top: 100px;
 
           .text-wrapper {
             h2 {
@@ -22,9 +23,12 @@ const ServicesMobileFlutterChangeGameSection = ({ t }) => {
               font-size: 40px;
               font-weight: bold;
               margin-bottom: 30px;
+              max-width: 570px;
             }
             p {
               font-size: 20px;
+              max-width: 582px;
+              margin-bottom: 40px;
             }
           }
 

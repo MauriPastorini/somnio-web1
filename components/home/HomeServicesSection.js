@@ -28,9 +28,9 @@ const HomeServicesSection = ({ t }) => {
   ];
 
   return (
-    <div className="HomeServicesSection mt-100 mb-200 custom-container">
+    <div className="HomeServicesSection custom-container">
       <img src={`./assets/images/home/home-dots-1.svg`} className="home-dots-1" alt="" />
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="section-header-dark service-header" data-aos="fade-in">
         <h2>{t("home.services.title")}</h2>
         <img src={"./assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -50,25 +50,20 @@ const HomeServicesSection = ({ t }) => {
         {`
           .HomeServicesSection {
             position: relative;
+            margin-top: 53px;
+            margin-bottom: 191px;
           }
 
           .service-header {
-            align-items: center;
-            color: #001331;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 150px;
-          }
-
-          .service-title {
-            text-align: center;
-            font-size: 40px;
-            font-weight: bold;
+            margin-bottom: 138px !important;
           }
 
           .service-list {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            max-width: 1150px;
+            margin: 0 auto;
+            width: 100% !important;
           }
 
           .home-dots-1 {

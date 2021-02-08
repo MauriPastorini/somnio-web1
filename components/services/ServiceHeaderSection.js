@@ -38,12 +38,12 @@ const ServiceHeaderSection = ({ t }) => {
           </div>
         </div>
 
-        <div className="section-header-light mt-200" data-aos="fade-in">
+        <div className="section-header-light mt-250" data-aos="fade-in">
           <h2>{t("services.header.how_we_work.title")}</h2>
           <img src={"./assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
-        <div className="services-header-how-we-work__content mt-100">
+        <div className="services-header-how-we-work__content">
           <ServicesHowWeWorkCard data={cardContent1} />
           <span className="mt-200">
             <ServicesHowWeWorkCard data={cardContent2} />
@@ -54,6 +54,7 @@ const ServiceHeaderSection = ({ t }) => {
         .ServiceHeaderSection {
           overflow: hidden;
         }
+
         .services-header__bg {
           width: 100%;
           top: 0;
@@ -72,13 +73,14 @@ const ServiceHeaderSection = ({ t }) => {
         .text-and-image {
           display: flex;
           align-items: center;
+          margin-top: 70px;
 
           .services-header-text__wrapper {
             width: 45%;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-
+            margin-top: 85px;
             .services-header-text {
               width: 450px;
             }
@@ -93,8 +95,8 @@ const ServiceHeaderSection = ({ t }) => {
             width: 55%;
 
             .services-header-img {
-              width: 95%;
-              margin-right: 5%;
+              // width: 95%;
+              // margin-right: 5%;
             }
           }
         }
@@ -102,6 +104,9 @@ const ServiceHeaderSection = ({ t }) => {
         .services-header-how-we-work__content {
           display: flex;
           justify-content: space-between;
+          width: 100%;
+          max-width: 1280px;
+          margin: 0 auto;
         }
 
         @media screen and (max-width: 1800px) {

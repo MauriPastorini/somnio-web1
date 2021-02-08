@@ -48,10 +48,11 @@ const ServicesUxUiHeaderSection = ({ t }) => {
           .text-and-image {
             display: flex;
             align-items: center;
-            margin-top: 70px;
+            margin-top: 155px;
 
             .header-text-wrapper {
               width: 45%;
+              margin-bottom: 175px;
 
               .header-title {
                 width: 580px;

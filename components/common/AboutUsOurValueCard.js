@@ -30,7 +30,7 @@ const AboutUsOurValueCard = ({ img, title, text, classImgName }) => (
       .our-value-card__text {
         color: #707070;
         font-size: 18px;
-        max-width: 300px;
+        max-width: 294px;
         text-align: center;
       }
 

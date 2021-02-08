@@ -7,7 +7,7 @@ const AgencySaySlider = ({ comments }) => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "200px",
+    centerPadding: "440px",
     slidesToShow: 1,
     speed: 500,
     // autoplay: true,

@@ -8,7 +8,7 @@ const ServicesUxUiVitalSection = ({ t }) => {
       <div className="content custom-container">
         <h2>{t("services_uxui.vital.title")}</h2>
         <p>{t("services_uxui.vital.text_1")}</p>
-        <p className="mb-150">{t("services_uxui.vital.text_2")}</p>
+        <p className="last-text">{t("services_uxui.vital.text_2")}</p>
       </div>
       <style jsx>{`
         .ServicesUxUiVitalSection {
@@ -16,7 +16,6 @@ const ServicesUxUiVitalSection = ({ t }) => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding-top: 180px;
 
           .sub__bg {
             position: absolute;
@@ -26,7 +25,7 @@ const ServicesUxUiVitalSection = ({ t }) => {
           }
 
           .content {
-            margin-top: 122px;
+            margin-top: 175px;
             position: relative;
             z-index: 1;
             display: flex;
@@ -46,6 +45,9 @@ const ServicesUxUiVitalSection = ({ t }) => {
             color: #fff;
             text-align: center;
             max-width: 1065px;
+          }
+          .last-text {
+            margin-bottom: 131px !important;
           }
         }
       `}</style>

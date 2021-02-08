@@ -6,9 +6,8 @@ const AboutUsWhyUsSection = ({ t }) => {
     <div className="AboutUsWhyUsSection">
       <img className="bg" src="./assets/images/about-us/about-us-why-us-bg.svg"/>
       <div className="about-us__content">
-        <div className="section-header-light pt-100" data-aos="fade-in">
+        <div className="section-header-light header-wrapper" data-aos="fade-in">
           <h2>{t("about_us.why_us.title")}</h2>
-          <img src={"./assets/images/home-services-line-light.svg"} alt="" />
         </div>
         <p className="about-us__text custom-container">{t("about_us.why_us.text_1")}</p>
         <p className="about-us__text custom-container">{t("about_us.why_us.text_2")}</p>
@@ -42,12 +41,23 @@ const AboutUsWhyUsSection = ({ t }) => {
             position: absolute;
             width: 100%;
             z-index:2;
-            top:0;
+            top:125px;
+
+            .header-wrapper{
+              margin-bottom: 62px !important;
+
+              h2{
+                margin: 0;
+              }
+            }
 
             .about-us__text {
               color: #efefef;
               font-size: 25px;
               text-align: center;
+              font-weight: 500;
+              max-width: 1150px !important;
+              margin-bottom: 22px;
             }
           }
 

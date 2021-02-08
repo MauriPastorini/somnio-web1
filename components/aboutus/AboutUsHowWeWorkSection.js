@@ -21,7 +21,7 @@ const AboutUsHowWeWorkSection = ({ t }) => {
     <div className="AboutUsHowWeWorkSection">
       <img className="bg" src="./assets/images/about-us/about-us-how-we-work-bg.svg" />
       <div className="how-we-work__content">
-        <div className="section-header-light pt-100" data-aos="fade-in">
+        <div className="section-header-light" data-aos="fade-in">
           <h2>{t("about_us.how_we_work.title")}</h2>
           <img src={"./assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -48,17 +48,18 @@ const AboutUsHowWeWorkSection = ({ t }) => {
 
           .how-we-work__content {
             position: absolute;
-            top: 0;
+            top: 122px;
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-          }
-
-          .how-we-work__card-list {
-            display: flex;
-            justify-content: space-between;
+            
+            .how-we-work__card-list {
+              display: flex;
+              justify-content: space-between;
+              max-width: 1430px !important;
+            }
           }
 
 

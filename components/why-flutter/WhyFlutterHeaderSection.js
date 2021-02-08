@@ -23,7 +23,7 @@ const WhyFlutterHeaderSection = ({ t }) => {
           .header__path {
             position: absolute;
             top: -620px;
-            left: -600px;
+            left: -651px;
             z-index: 0;
             max-width: 90%;
             height: auto;
@@ -36,7 +36,8 @@ const WhyFlutterHeaderSection = ({ t }) => {
             text-align: center;
             z-index: 1;
             max-width: 1348px;
-            margin-top: 300px;
+            margin-top: 376px;
+            max-width: 1410px !important;
           }
 
           @media screen and (max-width: 1700px) {

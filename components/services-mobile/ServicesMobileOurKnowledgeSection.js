@@ -3,12 +3,12 @@ import { withTranslation } from "../../i18n";
 
 const ServicesMobileOurKnowledgeSection = ({ t }) => {
   return (
-    <div className="ServicesMobileOurKnowledgeSection custom-container pt-200 pb-100">
+    <div className="ServicesMobileOurKnowledgeSection custom-container">
       <div className="text-wrapper" data-aos="fade-right">
         <h3 className="mb-50"> {t("services_mobile.our_knowledge.title")}</h3>
         <p>{t("services_mobile.our_knowledge.text_1")}</p>
-        <p className="mb-50">{t("services_mobile.our_knowledge.text_2")}</p>
-        <button className="btn custom-button-1"> {t("common.button_2")}</button>
+        <p className="mb-100">{t("services_mobile.our_knowledge.text_2")}</p>
+        <button className="btn custom-button-1"> {t("common.navbar.button")}</button>
       </div>
       <div className="img-wrapper">
         <img src="./assets/images/services-mobile/knowledge-img.png" className="group-img" alt="" />
@@ -19,6 +19,8 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          padding-top: 300px;
+          padding-bottom: 100px;
 
           .text-wrapper {
             width: 50%;
@@ -32,6 +34,7 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
             p {
               font-size: 20px;
               max-width: 550px;
+              margin-bottom: 40px;
             }
           }
 
