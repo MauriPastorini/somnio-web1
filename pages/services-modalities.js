@@ -1,13 +1,22 @@
 import React from "react";
-import { Container } from "../components/Layout/Container";
-import ServiceHeaderSection from "../sections/services/ServiceHeaderSection";
-import ServicesAgencySaySection from "../sections/services/ServicesAgencySaySection";
-import ServicesProcessSection from "../sections/services/ServicesProcessSection";
-import ServiceWorkingToolsSection from "../sections/services/ServiceWorkingToolsSection";
-import ContactSection from "../components/Sections/ContactSection";
+import Head from "next/head";
+import { Container } from "../components/common/Layout/Container";
+import ServiceHeaderSection from "../components/services/ServiceHeaderSection";
+import ServicesAgencySaySection from "../components/services/ServicesAgencySaySection";
+import ServicesProcessSection from "../components/services/ServicesProcessSection";
+import ServiceWorkingToolsSection from "../components/services/ServiceWorkingToolsSection";
+import ContactSection from "../components/common/ContactSection";
 
 const AboutUs = () => (
   <Container>
+    <Head>
+      <title>Working Modalities</title>
+      <meta
+        name="description"
+        content="We work with agile methodologies and human-centered approaches to successfully meet our client's needs."
+      />
+    </Head>
+
     <ServiceHeaderSection />
     <ServicesAgencySaySection />
     <ServicesProcessSection />
@@ -17,6 +26,3 @@ const AboutUs = () => (
 );
 
 export default AboutUs;
-
-
-
