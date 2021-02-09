@@ -4,8 +4,8 @@ import { withTranslation } from "../../i18n";
 const ServicesMobileHeaderSection = ({ t }) => {
   return (
     <div className="ServicesMobileHeaderSection">
-      <img src="./assets/images/services-mobile/header-bg.svg" alt="" className="services-mobile-header__bg" />
-      <img src="./assets/images/services-mobile/header-path.svg" alt="" className="services-mobile-header__path" />
+      <img src="/assets/images/services-mobile/header-bg.svg" alt="" className="services-mobile-header__bg" />
+      <img src="/assets/images/services-mobile/header-path.svg" alt="" className="services-mobile-header__path" />
       <div className="wrapper-content">
         <div className="text-and-image custom-container">
           <div className="services-mobile-header-text-wrapper" data-aos="fade-right">
@@ -13,7 +13,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
             <p className="services-mobile-header-text">{t("services_mobile.header.text_2")}</p>
           </div>
           <div className="services-mobile-header-img-wrapper">
-            <img src={`./assets/images/services-mobile/header-img.svg`} alt="" className="header-img img-fluid" />
+            <img src={`/assets/images/services-mobile/header-img.svg`} alt="" className="header-img img-fluid" />
           </div>
         </div>
       </div>

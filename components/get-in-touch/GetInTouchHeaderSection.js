@@ -5,9 +5,9 @@ import ContactForm from "../common/ContactForm";
 const GetInTouchHeaderSection = ({ t }) => {
   return (
     <div className="GetInTouchHeaderSection">
-      <img src="./assets/images/get-in-touch/header-bg.svg" alt="" className="header__bg" />
-      <img src="./assets/images/common/contact-points-1.svg" alt="" className="dots1" />
-      <img src="./assets/images/common/contact-points-2.svg" alt="" className="dots2" />
+      <img src="/assets/images/get-in-touch/header-bg.svg" alt="" className="header__bg" />
+      <img src="/assets/images/common/contact-points-1.svg" alt="" className="dots1" />
+      <img src="/assets/images/common/contact-points-2.svg" alt="" className="dots2" />
       <div className="wrapper-content">
         <div className="text-and-image custom-container">
           <div className="header-text-wrapper" data-aos="fade-right">
@@ -15,7 +15,7 @@ const GetInTouchHeaderSection = ({ t }) => {
             <p className="header-text">{t("get_in_touch.header.text_2")}</p>
           </div>
           <div className="header-img-wrapper">
-            <img src={`./assets/images/get-in-touch/header-img.svg`} alt="" className="header-img" />
+            <img src={`/assets/images/get-in-touch/header-img.svg`} alt="" className="header-img" />
           </div>
         </div>
 

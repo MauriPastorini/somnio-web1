@@ -3,7 +3,7 @@ const AgencySayCard = ({ comment }) => {
     <div className="agency-card">
       <div className="agency-corn__card">
         <div className="agency-corn__content">
-          <img className="agency-corn__bg" src="./assets/images/common/corn-card.svg" alt="" />
+          <img className="agency-corn__bg" src="/assets/images/common/corn-card.svg" alt="" />
           <h3 className="agency-corn__text">{comment.project}</h3>
         </div>
       </div>
@@ -12,7 +12,7 @@ const AgencySayCard = ({ comment }) => {
         <div className="agency-card__header-info">
           <h3>{comment.name}</h3>
           <h3>{`${comment.position}, ${comment.project}`}</h3>
-          <img className="mt-10" src="./assets/images/common/stars.svg" />
+          <img className="mt-10" src="/assets/images/common/stars.svg" />
         </div>
       </div>
       <p className="agency-card__text">{comment.comment}</p>

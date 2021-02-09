@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
-import { Container } from "../components/common/Layout/Container";
-import ServiceHeaderSection from "../components/services/ServiceHeaderSection";
-import ServicesAgencySaySection from "../components/services/ServicesAgencySaySection";
-import ServicesProcessSection from "../components/services/ServicesProcessSection";
-import ServiceWorkingToolsSection from "../components/services/ServiceWorkingToolsSection";
-import ContactSection from "../components/common/ContactSection";
+import { Container } from "../../components/common/Layout/Container";
+import ServiceHeaderSection from "../../components/services/ServiceHeaderSection";
+import ServicesAgencySaySection from "../../components/services/ServicesAgencySaySection";
+import ServicesProcessSection from "../../components/services/ServicesProcessSection";
+import ServiceWorkingToolsSection from "../../components/services/ServiceWorkingToolsSection";
+import ContactSection from "../../components/common/ContactSection";
 
 const AboutUs = () => (
   <Container>

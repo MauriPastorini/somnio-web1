@@ -5,7 +5,7 @@ const ServicesUxUiWhySection = ({ t }) => {
   return (
     <div
       className="ServicesUxUiWhySection pt-150"
-      style={{ backgroundImage: `url(./assets/images/services-uxui/franja1.svg)` }}
+      style={{ backgroundImage: `url(/assets/images/services-uxui/franja1.svg)` }}
     >
       <div className="uxui__content">
         <h2>{t("services_uxui.important.title")}</h2>

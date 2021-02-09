@@ -9,8 +9,8 @@ const ServicesWebInfoSection = ({ t }) => {
           {t("services_web.info")}
         </p>
         <div className="web-img-wrapper">
-          <img src={`./assets/images/services-web/info-path.svg`} className="path-img img-fluid" alt="" />
-          <img src={`./assets/images/services-web/info-img.png`} className="group-img" alt="" />
+          <img src={`/assets/images/services-web/info-path.svg`} className="path-img img-fluid" alt="" />
+          <img src={`/assets/images/services-web/info-img.png`} className="group-img" alt="" />
         </div>
       </div>
       <style jsx>{`

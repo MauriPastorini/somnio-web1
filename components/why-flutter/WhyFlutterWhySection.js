@@ -5,7 +5,7 @@ const WhyFlutterWhySection = ({ t }) => {
   return (
     <div
       className="WhyFlutterWhySection"
-      style={{ backgroundImage: `url(./assets/images/why-flutter/whyflutter-banner-bg.svg)` }}
+      style={{ backgroundImage: `url(/assets/images/why-flutter/whyflutter-banner-bg.svg)` }}
     >
       <h1 className="whyflutter-title" data-aos="fade-in">
         {t("why_flutter.change_how_we_work.title")}
@@ -20,6 +20,9 @@ const WhyFlutterWhySection = ({ t }) => {
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
 
           .whyflutter-title {
             font-size: 54px;

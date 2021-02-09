@@ -3,7 +3,7 @@ import { withTranslation } from "../../i18n";
 
 const ServiceCard = ({ img, title, text }) => (
   <div className="uxui-service-card">
-    <img src={`./assets/images/services-uxui/${img}`} alt="" />
+    <img src={`/assets/images/services-uxui/${img}`} alt="" />
     <div className="uxui-service-card__text">
       <h4>{title}</h4>
       <p>{text}</p>
@@ -73,7 +73,7 @@ const ServicesUxUiServicesSection = ({ t }) => {
         <ServiceCard img={card_1.img} title={card_1.title} text={card_1.text} />
       </div>
       <div className="service_item">
-        <img src="./assets/images/services-uxui/arrow_1.svg" alt="" />
+        <img src="/assets/images/services-uxui/arrow_1.svg" alt="" />
       </div>
       <div className="service_item">
         <ServiceCard img={card_6.img} title={card_6.title} text={card_6.text} />
@@ -83,14 +83,14 @@ const ServicesUxUiServicesSection = ({ t }) => {
         <ServiceCard img={card_2.img} title={card_2.title} text={card_2.text} />
       </div>
       <div className="service_item">
-        <img src="./assets/images/services-uxui/arrow_5.svg" alt="" />
+        <img src="/assets/images/services-uxui/arrow_5.svg" alt="" />
       </div>
       <div className="service_item">
         <h2>UX/UI</h2>
         <p>{t("services_uxui.services.title")}</p>
       </div>
       <div className="service_item">
-        <img src="./assets/images/services-uxui/arrow_2.svg" alt="" />
+        <img src="/assets/images/services-uxui/arrow_2.svg" alt="" />
       </div>
       <div className="service_item">
         <ServiceCard img={card_5.img} title={card_5.title} text={card_5.text} />
@@ -100,13 +100,13 @@ const ServicesUxUiServicesSection = ({ t }) => {
         <ServiceCard img={card_3.img} title={card_3.title} text={card_3.text} />
       </div>
       <div className="service_item">
-        <img src="./assets/images/services-uxui/arrow_4.svg" alt="" />
+        <img src="/assets/images/services-uxui/arrow_4.svg" alt="" />
       </div>
       <div className="service_item">
         <ServiceCard img={card_4.img} title={card_4.title} text={card_4.text} />
       </div>
       <div className="service_item">
-        <img src="./assets/images/services-uxui/arrow_3.svg" alt="" />
+        <img src="/assets/images/services-uxui/arrow_3.svg" alt="" />
       </div>
       <style jsx>{`
         .ServicesUxUiServicesSection {

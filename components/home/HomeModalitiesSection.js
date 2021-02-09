@@ -22,7 +22,7 @@ const HomeModalitiesSection = ({ t }) => {
     <div className="HomeModalitiesSection">
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("home.modalities.title")}</h2>
-        <img src={"./assets/images/home-services-line.svg"} alt="" />
+        <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
       <div className="modality-list" data-aos="slide-up">
         {data.map((d, i) => (

@@ -6,8 +6,8 @@ const ServicesMobileInfoSection = ({ t }) => {
     <div className="ServicesMobileInfoSection">
       <div className="mobile-text-and-img custom-container">
         <div className="mobile-img-wrapper">
-          <img src={`./assets/images/services-mobile/info-img-bg.svg`} className="path-img img-fluid" alt="" />
-          <img src={`./assets/images/services-mobile/info-img.png`} className="group-img" alt="" />
+          <img src={`/assets/images/services-mobile/info-img-bg.svg`} className="path-img img-fluid" alt="" />
+          <img src={`/assets/images/services-mobile/info-img.png`} className="group-img" alt="" />
         </div>
         <p className="mobile-text" data-aos="fade-left">
           {t("services_mobile.info.text_1")}

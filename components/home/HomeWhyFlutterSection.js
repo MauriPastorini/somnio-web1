@@ -7,7 +7,7 @@ import IconChevronRight from "../../components/common/IconChevronRight";
 const HomeWhyFlutterSection = ({ t }) => {
   return (
     <div className="HomeWhyFlutterSection">
-      <img className="bg" src="./assets/images/home/home-bg-why-flutter.svg" />
+      <img className="bg" src="/assets/images/home/home-bg-why-flutter.svg" />
 
       <div className="content">
         <h1 className="whyflutter-title custom-container" data-aos="fade-in">
@@ -19,8 +19,7 @@ const HomeWhyFlutterSection = ({ t }) => {
         <Link href="/why-flutter" data-aos="fade-in">
           <a className="whyflutter-link">
             {t("common.text_1")}
-
-            <IconChevronRight />
+            <img src="/assets/images/common/arrow1.svg" alt="" />
           </a>
         </Link>
       </div>
@@ -67,7 +66,7 @@ const HomeWhyFlutterSection = ({ t }) => {
 
           .whyflutter-text {
             font-size: 25px;
-            color: #EFEFEF;
+            color: #efefef;
             text-align: center;
             max-width: 1024px;
             margin-bottom: 70px;
@@ -80,6 +79,10 @@ const HomeWhyFlutterSection = ({ t }) => {
             color: #ffffff;
             text-align: center;
             text-decoration: none;
+
+            img{
+              margin-left: 12px;
+            }
           }
         `}
       </style>

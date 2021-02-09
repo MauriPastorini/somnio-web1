@@ -9,7 +9,7 @@ const ServicesWorkingToolsSlide = ({ slide }) => {
         <p className="tool-slide-text__text">{slide.text}</p>
       </div>
 
-      <img src={`./assets/images/services/${slide.img}`} className="img-fluid" alt="" />
+      <img src={`/assets/images/services/${slide.img}`} className="img-fluid" alt="" />
 
       <style jsx>{`
         .ServicesWorkingToolsSlide {

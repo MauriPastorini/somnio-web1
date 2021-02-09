@@ -29,10 +29,10 @@ const HomeServicesSection = ({ t }) => {
 
   return (
     <div className="HomeServicesSection custom-container">
-      <img src={`./assets/images/home/home-dots-1.svg`} className="home-dots-1" alt="" />
+      <img src={`/assets/images/home/home-dots-1.svg`} className="home-dots-1" alt="" />
       <div className="section-header-dark service-header" data-aos="fade-in">
         <h2>{t("home.services.title")}</h2>
-        <img src={"./assets/images/home-services-line.svg"} alt="" />
+        <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
       <div className="service-list" data-aos="slide-up">
         {data.map((d, i) => (

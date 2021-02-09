@@ -120,12 +120,12 @@ const ServicesWebTechnologiesSection = ({ t }) => {
   const topCal = 452;
   return (
     <div className="ServicesWebTechnologiesSection">
-      <img src="./assets/images/services-mobile/tecgnologies-bg.svg" alt="" className="technologies__bg" />
+      <img src="/assets/images/services-mobile/tecgnologies-bg.svg" alt="" className="technologies__bg" />
 
       <div className="technologies__content">
         <div className="section-header-light header-wrapper" data-aos="fade-in">
           <h2 style={{ maxWidth: 800 }}>{t("services_web.tech_list.title")}</h2>
-          <img src={"./assets/images/home-services-line-light.svg"} alt="" />
+          <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
         <div className="tech-list">
@@ -135,7 +135,7 @@ const ServicesWebTechnologiesSection = ({ t }) => {
               className="tech-item"
               style={{ width: tech.size, height: tech.size, top: tech.top - topCal, left: tech.left - leftCal }}
             >
-              <img src={`./assets/images/services-web/${tech.img}`} alt="" />
+              <img src={`/assets/images/services-web/${tech.img}`} alt="" />
             </div>
           ))}
         </div>

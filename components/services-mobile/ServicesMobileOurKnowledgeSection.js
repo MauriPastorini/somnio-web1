@@ -11,8 +11,8 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
         <button className="btn custom-button-1"> {t("common.navbar.button")}</button>
       </div>
       <div className="img-wrapper">
-        <img src="./assets/images/services-mobile/knowledge-img.png" className="group-img" alt="" />
-        <img src="./assets/images/services-mobile/knowledge-img-bg.svg" className="path-img img-fluid" alt="" />
+        <img src="/assets/images/services-mobile/knowledge-img.png" className="group-img" alt="" />
+        <img src="/assets/images/services-mobile/knowledge-img-bg.svg" className="path-img img-fluid" alt="" />
       </div>
       <style jsx>{`
         .ServicesMobileOurKnowledgeSection {

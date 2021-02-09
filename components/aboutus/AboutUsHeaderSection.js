@@ -4,13 +4,13 @@ import { withTranslation } from "../../i18n";
 const AboutUsHeaderSection = ({ t }) => {
   return (
     <div className="AboutUsHeaderSection">
-      <img src={`./assets/images/about-us/about-us-header-bg.svg`} alt="" className="about-us-header__bg" />
-      <img src={`./assets/images/about-us/about-us-header-path-1.svg`} alt="" className="about-us-header__path" />
+      <img src={`/assets/images/about-us/about-us-header-bg.svg`} alt="" className="about-us-header__bg" />
+      <img src={`/assets/images/about-us/about-us-header-path-1.svg`} alt="" className="about-us-header__path" />
 
       <div className="wrapper-content">
         <div className="text-and-image custom-container">
           <div className="about-us-header-img__wrapper">
-            <img src={`./assets/images/about-us/header-img.svg`} alt="" className="about-us-header-img img-fluid" />
+            <img src={`/assets/images/about-us/header-img.svg`} alt="" className="about-us-header-img img-fluid" />
           </div>
 
           <div className="about-us-header-text__wrapper" data-aos="fade-left">

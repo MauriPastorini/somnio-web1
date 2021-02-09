@@ -68,14 +68,14 @@ const data = [
 const AboutUsTeamSection = ({ t }) => {
   return (
     <div className="AboutUsTeamSection">
-      <img src="./assets/images/about-us/about-us-team-path1.svg" className="about-us-team-path1" alt="" />
-      <img src="./assets/images/about-us/about-us-team-path2.png" className="about-us-team-path2" alt="" />
-      <img src="./assets/images/about-us/about-us-team-dots1.svg" className="about-us-team-dots1" alt="" />
-      <img src="./assets/images/about-us/about-us-team-dots2.svg" className="about-us-team-dots2" alt="" />
+      <img src="/assets/images/about-us/about-us-team-path1.svg" className="about-us-team-path1" alt="" />
+      <img src="/assets/images/about-us/about-us-team-path2.png" className="about-us-team-path2" alt="" />
+      <img src="/assets/images/about-us/about-us-team-dots1.svg" className="about-us-team-dots1" alt="" />
+      <img src="/assets/images/about-us/about-us-team-dots2.svg" className="about-us-team-dots2" alt="" />
       <div className="custom-container">
         <div className="section-header-dark header-wrapper" data-aos="fade-in">
           <h2>{t("about_us.our_team.title")}</h2>
-          <img src={"./assets/images/home-services-line.svg"} alt="" />
+          <img src={"/assets/images/home-services-line.svg"} alt="" />
         </div>
         <div className="row team-card-list">
           {data.map((d, i) => (

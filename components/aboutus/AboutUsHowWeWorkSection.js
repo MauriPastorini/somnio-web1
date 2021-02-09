@@ -19,11 +19,11 @@ const AboutUsHowWeWorkSection = ({ t }) => {
 
   return (
     <div className="AboutUsHowWeWorkSection">
-      <img className="bg" src="./assets/images/about-us/about-us-how-we-work-bg.svg" />
+      <img className="bg" src="/assets/images/about-us/about-us-how-we-work-bg.svg" />
       <div className="how-we-work__content">
         <div className="section-header-light" data-aos="fade-in">
           <h2>{t("about_us.how_we_work.title")}</h2>
-          <img src={"./assets/images/home-services-line-light.svg"} alt="" />
+          <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
         <div className="how-we-work__card-list custom-container mb-150" data-aos="fade-up">

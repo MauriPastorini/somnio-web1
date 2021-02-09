@@ -9,8 +9,11 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
     <p className="service-card-text">{text}</p>
     <Link href={link}>
       <a className="service-card-link">
+        <p>
+
         Read more
-        <IconChevronRight />
+        <img src="/assets/images/common/arrow2.svg" alt=""/>
+        </p>
       </a>
     </Link>
     <img className="service-card-footer" src={footerImg} alt="" />
@@ -53,6 +56,12 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
           margin-bottom: 60px;
           text-decoration: none;
           font-weight: 700;
+
+          img{
+            width: 9px;
+            height: 15px;
+            margin-left: 16px;
+          }
         }
 
         .service-card-footer {

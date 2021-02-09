@@ -9,38 +9,38 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
           <h3>{t("why_flutter.what_is_flutter.title")}</h3>
           <p>{t("why_flutter.what_is_flutter.text_1")}</p>
         </div>
-        <img src="./assets/images/why-flutter/flutter-logo.svg" alt="" />
+        <img src="/assets/images/why-flutter/flutter-logo.svg" alt="" />
       </div>
 
       <div className="row charasteristic-row">
         <div className="charasteristic-item col-lg-8">
-          <img src="./assets/images/why-flutter/check.svg" alt="" />
+          <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_1.title")}</h4>
         </div>
         <div className="charasteristic-item col-lg-4">
-          <img src="./assets/images/why-flutter/check.svg" alt="" />
+          <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_4.title")}</h4>
         </div>
       </div>
 
       <div className="row charasteristic-row">
         <div className="charasteristic-item col-lg-8">
-          <img src="./assets/images/why-flutter/check.svg" alt="" />
+          <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_2.title")}</h4>
         </div>
         <div className="charasteristic-item col-lg-4">
-          <img src="./assets/images/why-flutter/check.svg" alt="" />
+          <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_5.title")}</h4>
         </div>
       </div>
 
       <div className="row charasteristic-row">
         <div className="charasteristic-item col-lg-8">
-          <img src="./assets/images/why-flutter/check.svg" alt="" />
+          <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_3.title")}</h4>
         </div>
         <div className="charasteristic-item col-lg-4">
-          <img src="./assets/images/why-flutter/check.svg" alt="" />
+          <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_6.title")}</h4>
         </div>
       </div>
@@ -48,7 +48,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
       <div className="charasteristic-detail-list">
         <div className="charasteristic-detail-item mb-100">
           <div className="img-content">
-            <img src="./assets/images/why-flutter/characteristic_1.svg" alt="" />
+            <img src="/assets/images/why-flutter/characteristic_1.svg" alt="" />
           </div>
           <div className="text-content">
             <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_1.title")}</h4>
@@ -62,13 +62,13 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
             <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_2.text")}</p>
           </div>
           <div className="img-content">
-            <img src="./assets/images/why-flutter/characteristic_2.svg" alt="" />
+            <img src="/assets/images/why-flutter/characteristic_2.svg" alt="" />
           </div>
         </div>
 
         <div className="charasteristic-detail-item mb-100">
           <div className="img-content">
-            <img src="./assets/images/why-flutter/characteristic_3.svg" alt="" />
+            <img src="/assets/images/why-flutter/characteristic_3.svg" alt="" />
           </div>
           <div className="text-content">
             <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_3.title")}</h4>
@@ -82,13 +82,13 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
             <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_4.text")}</p>
           </div>
           <div className="img-content">
-            <img src="./assets/images/why-flutter/characteristic_4.svg" alt="" />
+            <img src="/assets/images/why-flutter/characteristic_4.svg" alt="" />
           </div>
         </div>
 
         <div className="charasteristic-detail-item mb-100">
           <div className="img-content">
-            <img src="./assets/images/why-flutter/characteristic_5.svg" alt="" />
+            <img src="/assets/images/why-flutter/characteristic_5.svg" alt="" />
           </div>
           <div className="text-content">
             <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_5.title")}</h4>
@@ -102,7 +102,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
             <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_6.text")}</p>
           </div>
           <div className="img-content">
-            <img src="./assets/images/why-flutter/characteristic_6.svg" alt="" />
+            <img src="/assets/images/why-flutter/characteristic_6.svg" alt="" />
           </div>
         </div>
       </div>
