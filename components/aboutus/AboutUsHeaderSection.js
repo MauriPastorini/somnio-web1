@@ -43,6 +43,7 @@ const AboutUsHeaderSection = ({ t }) => {
           .text-and-image {
             align-items: center;
             display: flex;
+            margin-top: 100px;
 
             .about-us-header-text__wrapper {
               width: 45%;

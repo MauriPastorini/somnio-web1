@@ -20,7 +20,7 @@ const HomeModalitiesSection = ({ t }) => {
 
   return (
     <div className="HomeModalitiesSection">
-      <div className="section-header-dark mt-100" data-aos="fade-in">
+      <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("home.modalities.title")}</h2>
         <img src={"./assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -36,12 +36,17 @@ const HomeModalitiesSection = ({ t }) => {
             margin-bottom: 280px;
           }
 
+          .header-wrapper{
+            margin-top: 134px !important;
+            margin-bottom: 120px !important;
+          }
+
           .modality-list {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
 
             margin: 20px auto 0 auto;
-            max-width: 1300px;
+            max-width: 1129px;
           }
 
           @media screen and (max-width: 1200px) {

@@ -42,7 +42,7 @@ const ServiceWorkingToolsSection = ({ t }) => {
 
   return (
     <div className="ServiceWorkingToolsSection">
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("services.tools.title")}</h2>
         <img src={"./assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -54,6 +54,15 @@ const ServiceWorkingToolsSection = ({ t }) => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <style jsx>{`
+        .ServiceWorkingToolsSection {
+          margin-bottom: 86px;
+        }
+        .header-wrapper {
+          margin-bottom: 70px !important;
+        }
+      `}</style>
     </div>
   );
 };

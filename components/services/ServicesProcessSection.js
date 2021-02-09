@@ -43,7 +43,7 @@ const ServicesProcessSection = ({ t }) => {
 
   return (
     <div className="ServicesProcessSection custom-container">
-      <div className="section-header-dark mt-200" data-aos="fade-in">
+      <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("services.process.title")}</h2>
         <img src={"./assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -63,9 +63,14 @@ const ServicesProcessSection = ({ t }) => {
 
           .process-line-bg {
             position: absolute;
-            top: 340px;
+            top: 378px;
             left: 90px;
           }
+        }
+
+        .header-wrapper{
+          margin-top: 213px;
+          margin-bottom: 140px !important;
         }
 
         .process-card-wrapper {

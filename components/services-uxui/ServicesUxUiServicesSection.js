@@ -8,6 +8,29 @@ const ServiceCard = ({ img, title, text }) => (
       <h4>{title}</h4>
       <p>{text}</p>
     </div>
+    <style jsx>{`
+      .uxui-service-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 200px;
+        img {
+          margin-right: 40px;
+        }
+        .uxui-service-card__text {
+          h4 {
+            color: #001739;
+            font-size: 23px;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+          p {
+            color: #707070;
+            font-size: 16px;
+          }
+        }
+      }
+    `}</style>
   </div>
 );
 
@@ -44,7 +67,7 @@ const ServicesUxUiServicesSection = ({ t }) => {
   };
 
   return (
-    <div className="ServicesUxUiServicesSection mt-200 mb-200 container custom-container">
+    <div className="ServicesUxUiServicesSection container custom-container">
       <div className="service_item"></div>
       <div className="service_item">
         <ServiceCard img={card_1.img} title={card_1.title} text={card_1.text} />
@@ -87,31 +110,12 @@ const ServicesUxUiServicesSection = ({ t }) => {
       </div>
       <style jsx>{`
         .ServicesUxUiServicesSection {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+          padding-top: 200px;
+          padding-bottom: 105px;
 
-          .uxui-service-card {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            min-height: 200px;
-            img {
-              margin-right: 40px;
-            }
-            .uxui-service-card__text {
-              h4 {
-                color: #001739;
-                font-size: 23px;
-                font-weight: 700;
-                margin-bottom: 20px;
-              }
-              p {
-                color: #707070;
-                font-size: 16px;
-              }
-            }
-          }
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-rows: auto auto auto auto auto;
 
           .service_item {
             display: flex;
@@ -119,12 +123,28 @@ const ServicesUxUiServicesSection = ({ t }) => {
             align-items: center;
           }
 
+          .service_item:nth-of-type(2) {
+            margin-bottom: 25px;
+          }
+
           .service_item:nth-of-type(3) {
             position: relative;
             img {
               position: absolute;
-              top: 30px;
+              top: 40px;
               left: 50px;
+            }
+          }
+          .service_item:nth-of-type(9) {
+            position: relative;
+            img {
+              margin-left: 50px;
+            }
+          }
+          .service_item:nth-of-type(10) {
+            position: relative;
+            img {
+              margin-right: 25px;
             }
           }
           .service_item:nth-of-type(8) {
@@ -151,6 +171,7 @@ const ServicesUxUiServicesSection = ({ t }) => {
             }
           }
           .service_item:nth-of-type(14) {
+            padding-top: 90px;
             .uxui-service-card {
               align-items: flex-end;
             }

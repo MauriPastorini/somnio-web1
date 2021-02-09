@@ -24,8 +24,8 @@ const AgencySayCard = ({ comment }) => {
           border-radius: 34px;
           position: relative;
           padding: 62px 113px;
-          margin-left: 80px;
-          margin-right: 80px;
+          margin-left: 85px;
+          margin-right: 85px;
           -webkit-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
           -moz-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);

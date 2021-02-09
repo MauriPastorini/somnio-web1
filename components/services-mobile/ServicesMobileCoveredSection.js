@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import CommonCoveredCard from "../../components/common/CommonCoveredCard";
 import { withTranslation } from "../../i18n";
 
-const ServicesMobileCoveredSection = ({t}) => {
+const ServicesMobileCoveredSection = ({ t }) => {
   const cardInfo = [
     {
       title: t("services_mobile.covered.text_1"),
@@ -15,9 +15,9 @@ const ServicesMobileCoveredSection = ({t}) => {
   ];
 
   return (
-    <div className="ServicesMobileCoveredSection pt-100 pb-100">
+    <div className="ServicesMobileCoveredSection">
       <div className="custom-container">
-        <div className="section-header-light" data-aos="fade-in">
+        <div className="section-header-light mb-100" data-aos="fade-in">
           <h2>{t("services_mobile.covered.title")}</h2>
           <img src={"./assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -30,11 +30,15 @@ const ServicesMobileCoveredSection = ({t}) => {
       </div>
       <style jsx>{`
         .ServicesMobileCoveredSection {
+          padding-top: 122px;
+          padding-bottom: 226px;
           background: transparent linear-gradient(119deg, #1783e3 0%, #003ba8 100%) 0% 0% no-repeat padding-box;
 
           .services-covered-card-list {
             display: flex;
             justify-content: space-between;
+            max-width: 1360px;
+            margin: 0 auto;
           }
         }
       `}</style>

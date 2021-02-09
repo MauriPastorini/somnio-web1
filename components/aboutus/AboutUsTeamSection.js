@@ -67,17 +67,17 @@ const data = [
 
 const AboutUsTeamSection = ({ t }) => {
   return (
-    <div className="AboutUsTeamSection mt-100  mb-100">
+    <div className="AboutUsTeamSection">
       <img src="./assets/images/about-us/about-us-team-path1.svg" className="about-us-team-path1" alt="" />
       <img src="./assets/images/about-us/about-us-team-path2.png" className="about-us-team-path2" alt="" />
       <img src="./assets/images/about-us/about-us-team-dots1.svg" className="about-us-team-dots1" alt="" />
       <img src="./assets/images/about-us/about-us-team-dots2.svg" className="about-us-team-dots2" alt="" />
       <div className="custom-container">
-        <div className="section-header-dark" data-aos="fade-in">
+        <div className="section-header-dark header-wrapper" data-aos="fade-in">
           <h2>{t("about_us.our_team.title")}</h2>
           <img src={"./assets/images/home-services-line.svg"} alt="" />
         </div>
-        <div className="row">
+        <div className="row team-card-list">
           {data.map((d, i) => (
             <div key={i} className="col-sm-4 col-md-3">
               <AboutUsTeamPersonCard img={d.img} name={d.name} position={d.position} />
@@ -88,6 +88,8 @@ const AboutUsTeamSection = ({ t }) => {
       <style jsx>{`
         .AboutUsTeamSection {
           position: relative;
+          padding-top: 125px;
+          padding-bottom: 50px
         }
 
         .about-us-team-path1 {
@@ -102,16 +104,23 @@ const AboutUsTeamSection = ({ t }) => {
 
         .about-us-team-dots1 {
           position: absolute;
-          top: 100px;
-          right: 100px;
+          top: 107px;
+          right: 156px;
         }
+
         .about-us-team-dots2 {
           position: absolute;
-          bottom: 100px;
-          left: 100px;
+          bottom: 71px;
+          left: 55px;
+        }
+
+        .header-wrapper {
+          margin-bottom: 125px !important;
         }
 
         .team-card-list {
+          max-width: 1350px !important;
+          margin: 0 auto;
         }
       `}</style>
     </div>

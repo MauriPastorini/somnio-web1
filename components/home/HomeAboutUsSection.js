@@ -3,7 +3,7 @@ import { withTranslation } from "../../i18n";
 
 const HomeAboutUsSection = ({ t }) => {
   return (
-    <div className="HomeAboutUsSection pt-100">
+    <div className="HomeAboutUsSection">
       <img src={`./assets/images/home/home-dots-3.svg`} className="path-img-1" alt="" />
       <img src={`./assets/images/home/home-path-about-us.png`} className="path-img-2" alt="" />
 
@@ -26,6 +26,7 @@ const HomeAboutUsSection = ({ t }) => {
           height: 100vh;
           max-height: 900px;
           position: relative;
+          padding-top: 71px;
 
           .text-and-image {
             display: flex;

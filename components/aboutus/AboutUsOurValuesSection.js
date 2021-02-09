@@ -43,16 +43,16 @@ const AboutUsOurValuesSection = ({ t }) => {
     <div className="AboutUsOurValuesSection">
       <img src="./assets/images/about-us/about-us-our-values-dots1.svg" className="about-us-our-values-dots1" alt="" />
       <img src="./assets/images/about-us/about-us-our-values-dots2.svg" className="about-us-our-values-dots2" alt="" />
-      <div className="section-header-dark pt-100 mb-100" data-aos="fade-in">
+      <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("about_us.our_values.title")}</h2>
         <img src={"./assets/images/home-services-line.svg"} alt="" />
       </div>
-      <div className="values-list--first mb-50 custom-container">
+      <div className="values-list--first">
         {firstRecord.map((r, i) => (
           <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} />
         ))}
       </div>
-      <div className="values-list--second mb-100 custom-container">
+      <div className="values-list--second">
         {secondRecord.map((r, i) => (
           <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} />
         ))}
@@ -60,24 +60,37 @@ const AboutUsOurValuesSection = ({ t }) => {
       <style jsx>{`
         .AboutUsOurValuesSection {
           position: relative;
+          padding-top: 122px;
+          padding-bottom: 160px;
+
           .values-list--first {
             display: flex;
-            justify-content: space-evenly;
-          }
-          .values-list--second {
-            display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto 110px auto;
           }
 
+          .values-list--second {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 0 auto 0 auto;
+          }
+
+          .header-wrapper{
+
+            margin-bottom: 129px;
+          }
+          
           .about-us-our-values-dots1 {
             position: absolute;
-            left: 100px;
-            bottom: 100px;
+            left: 174px;
+            bottom: 129px;
           }
           .about-us-our-values-dots2 {
             position: absolute;
-            top: 100px;
-            right: 100px;
+            top: 102px;
+            right: 108px;
           }
         }
       `}</style>

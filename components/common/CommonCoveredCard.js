@@ -12,7 +12,8 @@ const CommonCoveredCard = ({ title, description }) => (
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 45%;
+        max-width: 640px;
+        width: 100%;
         padding: 54px;
 
         -webkit-box-shadow: 0px 0px 50px -4px rgba(0, 0, 0, 0.75);

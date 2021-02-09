@@ -29,6 +29,7 @@ const AboutUsInfoSection = ({ t }) => {
           .info-text {
             color: #001331;
             font-size: 23px;
+            font-weight: 500;
             max-width: 600px;
           }
         }

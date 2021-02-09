@@ -11,11 +11,11 @@ const AboutUsTeamPersonCard = ({ img, name, position }) => (
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 80px;
+        margin-bottom: 103px;
       }
 
       .team-person__img {
-        margin-bottom: 20px;
+        margin-bottom: 49px;
       }
 
       .team-person__name {

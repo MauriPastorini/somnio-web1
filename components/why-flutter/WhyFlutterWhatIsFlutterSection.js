@@ -3,7 +3,7 @@ import { withTranslation } from "../../i18n";
 
 const WhyFlutterWhatIsFlutterSection = ({ t }) => {
   return (
-    <div className="WhyFlutterWhatIsFlutterSection mt-200 custom-container">
+    <div className="WhyFlutterWhatIsFlutterSection mt-200">
       <div className="text-and-images">
         <div className="text-content">
           <h3>{t("why_flutter.what_is_flutter.title")}</h3>
@@ -45,7 +45,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
         </div>
       </div>
 
-      <div className="charasteristic-detail-list mt-200">
+      <div className="charasteristic-detail-list">
         <div className="charasteristic-detail-item mb-100">
           <div className="img-content">
             <img src="./assets/images/why-flutter/characteristic_1.svg" alt="" />
@@ -96,7 +96,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
           </div>
         </div>
 
-        <div className="charasteristic-detail-item mb-100">
+        <div className="charasteristic-detail-item">
           <div className="text-content">
             <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_6.title")}</h4>
             <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_6.text")}</p>
@@ -108,10 +108,13 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
       </div>
       <style jsx>{`
         .WhyFlutterWhatIsFlutterSection {
+          max-width: 1220px;
+          margin: 0 auto;
+
           .text-and-images {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 120px;
+            margin-bottom: 77px;
 
             .text-content {
               max-width: 570px;
@@ -147,6 +150,9 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
           }
 
           .charasteristic-detail-list {
+
+            margin-top: 235px;
+
             .charasteristic-detail-item {
               display: flex;
               justify-content: space-between;
@@ -172,6 +178,10 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+              }
+
+              &:last-of-type{
+                margin-bottom:180px;
               }
             }
           }

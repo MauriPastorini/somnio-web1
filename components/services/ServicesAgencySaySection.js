@@ -6,7 +6,7 @@ import { withTranslation } from "../../i18n";
 const ServicesAgencySaySection = ({ t }) => {
   return (
     <div className="ServicesAgencySaySection">
-      <div className="section-header-dark mt-100" data-aos="fade-in">
+      <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("services.what_agency_say.title")}</h2>
         <img src={"./assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -35,6 +35,10 @@ const ServicesAgencySaySection = ({ t }) => {
         .ServicesAgencySaySection {
         }
 
+        .header-wrapper{
+          margin-top: 106px;
+        }
+        
         .agency-say-content {
           display: flex;
           justify-content: center;

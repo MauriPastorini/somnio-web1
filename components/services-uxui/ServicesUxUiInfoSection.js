@@ -3,7 +3,7 @@ import { withTranslation } from "../../i18n";
 
 const ServicesUxUiInfoSection = ({ t }) => {
   return (
-    <div className="ServicesUxUiInfoSection custom-container mt-100 mb-150">
+    <div className="ServicesUxUiInfoSection custom-container mt-100">
       <div className="uxui-card">
         <h2>UI</h2>
         <div className="uxui-card-image-content_1">
@@ -26,7 +26,8 @@ const ServicesUxUiInfoSection = ({ t }) => {
         .ServicesUxUiInfoSection {
           display: flex;
           justify-content: space-evenly;
-
+          margin-bottom: 135px !important;
+          
           .uxui-card {
             display: flex;
             flex-direction: column;

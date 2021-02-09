@@ -50,7 +50,7 @@ const GetInTouchHeaderSection = ({ t }) => {
           .text-and-image {
             display: flex;
             align-items: center;
-            margin-top: 70px;
+            margin-top: 77px;
 
             .header-text-wrapper {
               display: flex;
@@ -58,6 +58,7 @@ const GetInTouchHeaderSection = ({ t }) => {
               align-items: flex-start;
               width: 67%;
               margin-right: 2%;
+              margin-top: 92px;
 
               .header-title {
                 max-width: 858px;
@@ -84,7 +85,7 @@ const GetInTouchHeaderSection = ({ t }) => {
           }
 
           .form-wrapper {
-            margin-top: 370px;
+            margin-top: 395px;
             max-width: 900px;
             width: 100%;
           }

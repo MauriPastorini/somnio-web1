@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
 const ContactForm = ({ t }) => (
-  <div className="ContactForm content-form container">
+  <div className="ContactForm">
     <form>
       <div className="contact-form-group mb-50">
         <label className="contact-label">What is your name?</label>
@@ -15,7 +15,7 @@ const ContactForm = ({ t }) => (
       </div>
       <div className="contact-form-group mb-50">
         <label className="contact-label">Tell us about your proyect</label>
-        <textarea rows="6" className="contact-textarea"></textarea>
+        <textarea rows="4" className="contact-textarea"></textarea>
       </div>
       <div className="contact-button-wrapper">
         <button className="btn custom-button-1 mb-2">Let's talk</button>
@@ -31,11 +31,8 @@ const ContactForm = ({ t }) => (
         width: 100%;
         overflow: hidden;
         color: white;
-        
-        .content-form {
-          max-width: 844px;
-        }
-
+        max-width: 844px !important;
+        margin: 0 auto;
         .contact-form-group {
           display: flex;
           flex-direction: column;

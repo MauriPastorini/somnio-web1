@@ -29,7 +29,7 @@ const HomePortfolioSection = ({ t }) => {
     <div className="HomePortfolioSection">
       <img src={"./assets/images/home/home-dots-2.svg"} alt="" className="home-dots-2" />
       <img src={"./assets/images/home/home-porfolio-path.png"} alt="" className="home-porfolio-path" />
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="section-header-dark mb-0" data-aos="fade-in">
         <h2>{t("home.portfolio.title")}</h2>
         <img src={"./assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -42,25 +42,26 @@ const HomePortfolioSection = ({ t }) => {
         ))}
       </Swiper>
 
-      <div className="d-flex justify-content-center mt-40 mb-50">
+      <div className="d-flex justify-content-center mt-30">
         <button className="btn custom-button-2">{t("common.button_2")}</button>
       </div>
       <style jsx>
         {`
           .HomePortfolioSection {
             position: relative;
+            margin-bottom: 92px;
           }
 
           .home-dots-2 {
             position: absolute;
             top: 0;
-            left: 350px;
+            left: 294px;
           }
 
           .home-porfolio-path {
             position: absolute;
-            top: -800px;
-            left: 0;
+            top: -850px;
+            left: -50px;
           }
         `}
       </style>

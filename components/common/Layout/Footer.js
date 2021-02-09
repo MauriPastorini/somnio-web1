@@ -3,8 +3,28 @@ import PropTypes from "prop-types";
 import { withTranslation } from "../../../i18n";
 
 const Footer = ({ t }) => {
+  const handleToUp = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="Footer pt-100">
+      <div onClick={handleToUp} className="to-up">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          className="bi bi-chevron-up"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fillRule="evenodd"
+            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+          />
+        </svg>
+      </div>
+
       <div className="footer-content mb-100 custom-container" data-aos="fade-in">
         <div className="row-footer">
           <div className="row-footer-header">
@@ -34,7 +54,7 @@ const Footer = ({ t }) => {
             </Link>
           </div>
         </div>
-        
+
         <div className="row-footer">
           <div className="row-footer-header">
             <h4 className="row-footer-title">{t("common.footer.work")}</h4>
@@ -69,7 +89,7 @@ const Footer = ({ t }) => {
             </Link>
           </div>
         </div>
-        
+
         <div className="row-footer">
           <div className="row-footer-header">
             <h4 className="row-footer-title">{t("common.footer.community")}</h4>
@@ -89,7 +109,7 @@ const Footer = ({ t }) => {
             </Link>
           </div>
         </div>
-        
+
         <div className="row-footer">
           <div className="row-footer-header">
             <h4 className="row-footer-title">{t("common.footer.office")}</h4>
@@ -101,7 +121,7 @@ const Footer = ({ t }) => {
           <p className="row-footer-description">Edificio Los Naranjos</p>
           <p className="row-footer-description">Montevideo, Uruguay</p>
         </div>
-        
+
         <div className="row-footer">
           <div className="row-footer-header">
             <h4 className="row-footer-title">{t("common.footer.contact")}</h4>
@@ -112,7 +132,7 @@ const Footer = ({ t }) => {
           <p className="row-footer-description">(+598) 98 168 142</p>
         </div>
       </div>
-      
+
       <div className="footer-content-network custom-container" data-aos="fade-up">
         <a target="_blank" href="https://clutch.co/profile/somnio-software">
           <img src="./assets/images/common/clutch.png" alt="" />
@@ -141,45 +161,52 @@ const Footer = ({ t }) => {
       </div>
 
       <div className="custom-container footer-certificatons-logos" data-aos="fade-up">
-        <img src="./assets/images/common/app-developer-itfirms-2021.png" style={{ height: 150, width: 150 }} />
-        <a href=" https://www.itfirms.co/top-web-development-companies/" target="_blank">
+        <a href="https://www.itfirms.co/top-mobile-app-development-companies/" target="_blank">
           <img
-            src="./assets/images/common/web-developer-itfirms-2021.png"
+            src="./assets/images/common/app-developer-itfirms-2021.png"
             alt="app developers uruguay"
             title="App Developers Uruguay"
+            style={{ height: 150, width: 150 }}
+          />
+        </a>
+        <a href="https://www.itfirms.co/top-web-development-companies/" target="_blank">
+          <img
+            src="./assets/images/common/web-developer-itfirms-2021.png"
+            alt="web developers uruguay"
+            title="Web Developers Uruguay"
             style={{ height: 150, width: 150 }}
           />
         </a>
         <a href="https://topappdevelopmentcompanies.com/uy/directory/app-developers/uruguay" target="_blank">
           <img
             src="./assets/images/common/top-app-development-companies.png"
-            alt="app developers uruguay"
-            title="App Developers Uruguay"
+            alt=""
             style={{ height: 150, width: 150 }}
           />
         </a>
-        <a href="https://www.itfirms.co/top-mobile-app-development-companies/" target="_blank">
+        <a href="https://clutch.co/press-releases/awards-best-b2b-companies-latin-america-2020" target="_blank">
           <img
             src="./assets/images/common/B2B_Companies_Uruguay_2020.png"
-            alt="app developers uruguay"
-            title="App Developers Uruguay"
+            alt=""
+            title=""
             style={{ height: 150, width: 150 }}
           />
         </a>
         <a href="https://themanifest.com/app-development/companies/latin-america#somniosoftware" target="_blank">
           <img
             src="./assets/images/common/App-Developers_Latin-America_2021.jpg"
-            alt="app developers uruguay"
-            title="App Developers Uruguay"
+            alt=""
+            title=""
             style={{ height: 150, width: 150 }}
           />
         </a>
       </div>
-      
+
       {/* <div className="mt-100">
-      <button className="btn" onClick={() => i18n.changeLanguage("es")}>Español</button>
+
+        <button className="btn" onClick={() => i18n.changeLanguage("es")}>Español</button>
       <button className="btn" onClick={() => i18n.changeLanguage("en")}>Ingles</button>
-    </div> */}
+      </div> */}
 
       <style jsx>
         {`
@@ -187,6 +214,46 @@ const Footer = ({ t }) => {
             background: #001739;
             height: 100vh;
             max-height: 900px;
+            position: relative;
+          }
+
+          .to-up {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            position: absolute !important;
+            width: 84px !important;
+            height: 84px !important;
+            background: transparent linear-gradient(135deg, #48c7e2 0%, #3bcee7 100%) 0% 0% no-repeat padding-box !important;
+            border: 4px solid #001739 !important;
+            top: -42px !important;
+            left: calc(50% - 42px) !important;
+            border-radius: 50% !important;
+
+            svg {
+              width: 30px;
+              height: 30px;
+              color: #fff;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .AnyClassForContainer {
+            position: fixed;
+            right: -100px;
+            bottom: 150px;
+            transition: right 0.5s;
+            cursor: pointer;
+            background-color: white;
+            font-size: 20px;
+            padding: 10px;
+          }
+
+          .AnyClassForTransition {
+            right: 20px;
           }
 
           .footer-content {

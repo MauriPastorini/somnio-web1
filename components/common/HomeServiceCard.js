@@ -5,7 +5,7 @@ import IconChevronRight from "./IconChevronRight";
 const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
   <div className="HomeServiceCard">
     <img className="service-card-header" src={headerImg} alt="" />
-    <h4 className="service-card-title">{title}</h4>
+    <h2 className="service-card-title">{title}</h2>
     <p className="service-card-text">{text}</p>
     <Link href={link}>
       <a className="service-card-link">
@@ -27,6 +27,8 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
           color: #001739;
           text-align: center;
           font-size: 25px;
+          font-weight: 500;
+          letter-spacing: 0.63px;
           margin-bottom: 41px;
           max-width: 200px;
           min-height: 60px;
@@ -35,21 +37,22 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
         .service-card-text {
           color: #707070;
           font-size: 18px;
-          margin-bottom: 35px;
+          margin-bottom: 26px;
           max-width: 320px;
           text-align: center;
         }
 
         .service-card-header {
-          margin-bottom: 30px;
+          margin-bottom: 41px;
           height: 130px;
         }
 
         .service-card-link {
           color: #1681e3;
           font-size: 20px;
-          margin-bottom: 40px;
+          margin-bottom: 60px;
           text-decoration: none;
+          font-weight: 700;
         }
 
         .service-card-footer {

@@ -6,9 +6,9 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
     <div className="ServicesWebOurKnowledgeSection container custom-container pt-200 pb-100">
       <div className="text-wrapper" data-aos="fade-right">
         <h3 className="mb-50">{t("services_mobile.our_knowledge.title")}</h3>
-        <p>{t("services_mobile.our_knowledge.text_1")}</p>
+        <p className="mb-30">{t("services_mobile.our_knowledge.text_1")}</p>
         <p className="mb-50">{t("services_mobile.our_knowledge.text_2")}</p>
-        <button className="btn custom-button-1">{t("common.navbar.button")}</button>
+        <button className="btn custom-button-1 mt-40">{t("common.navbar.button")}</button>
       </div>
       <div className="img-wrapper">
         <img src="./assets/images/services-web/knowledge-img.png" className="group-img" alt="" />
@@ -33,6 +33,11 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
               font-size: 20px;
               max-width: 550px;
             }
+            button{
+              -webkit-box-shadow: 0px 12px 59px -14px rgba(3,208,219,1);
+              -moz-box-shadow: 0px 12px 59px -14px rgba(3,208,219,1);
+              box-shadow: 0px 12px 59px -14px rgba(3,208,219,1);
+            }
           }
 
           .img-wrapper {
@@ -44,8 +49,8 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
 
             .path-img {
               position: absolute;
-              top: -90px;
-              left: 0;
+              top: -44px;
+              left: 10px;
             }
 
             .group-img {
@@ -57,6 +62,8 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
               z-index: 1;
             }
           }
+
+
         }
       `}</style>
     </div>

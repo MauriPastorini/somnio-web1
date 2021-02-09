@@ -17,6 +17,7 @@ const ServicesUxUiWhySection = ({ t }) => {
         <br />
         <br />
         <br />
+        <br />
       </div>
       <style jsx>{`
         .ServicesUxUiWhySection {
@@ -42,7 +43,9 @@ const ServicesUxUiWhySection = ({ t }) => {
               color: #efefef;
               font-size: 25px;
               text-align: center;
-              max-width: 1100px;
+              max-width: 1137px !important;
+              font-weight: 500;
+              margin-bottom: 25px;
             }
           }
         }

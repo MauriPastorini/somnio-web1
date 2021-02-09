@@ -13,7 +13,7 @@ const HomeWhyFlutterSection = ({ t }) => {
         <h1 className="whyflutter-title custom-container" data-aos="fade-in">
           {t("home.why_flutter.title")}
         </h1>
-        <p className="whyflutter-text custom-container" data-aos="fade-in">
+        <p className="whyflutter-text" data-aos="fade-in">
           {t("home.why_flutter.text")}
         </p>
         <Link href="/why-flutter" data-aos="fade-in">
@@ -62,14 +62,16 @@ const HomeWhyFlutterSection = ({ t }) => {
             color: #ffffff;
             text-align: center;
             margin-bottom: 70px;
+            letter-spacing: 0px;
           }
 
           .whyflutter-text {
             font-size: 25px;
-            color: #ffffff;
+            color: #EFEFEF;
             text-align: center;
             max-width: 1024px;
             margin-bottom: 70px;
+            letter-spacing: 0px;
           }
 
           .whyflutter-link {

@@ -33,7 +33,7 @@ const HomeWhatClientSaySection = ({ t }) => {
     <div className="HomeWhatClientSaySection">
       <img src="./assets/images/home/home-say-client-bg.svg" className="home-clientsay__bg" alt=""></img>
       <div className="home-clientsay__content">
-        <div className="section-header-light mt-100 pt-100" data-aos="fade-in">
+        <div className="section-header-light header-wrapper" data-aos="fade-in">
           <h2>{t("home.what_our_clients_say.title")}</h2>
           <img src={"./assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -59,9 +59,12 @@ const HomeWhatClientSaySection = ({ t }) => {
 
           .home-clientsay__bg {
             width: auto;
-            min-height: 1500px;
+            min-height: 1350px;
           }
 
+          .header-wrapper{
+            margin-top: 170px;
+          }
           .home-clientsay__content {
             position: absolute;
             z-index: 2;
@@ -74,7 +77,7 @@ const HomeWhatClientSaySection = ({ t }) => {
               display: flex;
               justify-content: space-between;
               max-width: 470px;
-              margin: 50px auto 0 auto;
+              margin: 40px auto 0 auto;
             }
           }
 
@@ -82,7 +85,7 @@ const HomeWhatClientSaySection = ({ t }) => {
             text-align: center;
             font-size: 39px;
             font-weight: 700;
-            margin-top: 146px;
+            margin-top: 110px;
           }
         }
       `}</style>

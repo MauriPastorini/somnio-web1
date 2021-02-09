@@ -49,7 +49,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
             .services-mobile-header-title {
               width: 580px;
               font-weight: bold;
-              font-size: 50px;
+              font-size: 80px;
               color: #ffffff;
               margin-bottom: 50px;
             }
@@ -61,7 +61,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
           }
 
           .services-mobile-header-img-wrapper {
-            margin-top: 50px;
+            margin-top: 90px;
             width: 55%;
 
             .services-mobile-header-img {

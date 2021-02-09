@@ -84,7 +84,7 @@ const Navbar = ({ t }) => {
                 <a className={NavLinkDropDownStyle}>{t("common.navbar.services")}</a>
               </CustomDropdownLink>
               <ul className="nav__submenu" style={SubMenuStyle}>
-                <li className="nav__submenu-item">
+                <li className={`nav__submenu-item triangle ${scrolled ? 'triangle-scrolled' : ''}`}>
                   <Link href="/mobile-app-development">
                     <a className="nav__submenu-link" style={SubMenuItemStyle}>
                       {t("common.navbar.services_mobile")}
@@ -145,7 +145,7 @@ const Navbar = ({ t }) => {
             top: 0;
             width: 100%;
             z-index: 1;
-            height: 130px;
+            height: 156px;
             -webkit-transition: height 0.5s linear, background-color 0.5s linear;
             -moz-transition: height 0.5s linear, background-color 0.5s linear;
             -o-transition: height 0.5s linear, background-color 0.5s linear;
@@ -164,6 +164,8 @@ const Navbar = ({ t }) => {
             min-width: 200px;
             font-size: 20px;
             color: #ffffff;
+            padding: 15px 43px;
+            font-weight: 500;
 
             &:hover {
               background-color: #ffffff !important;
@@ -172,13 +174,14 @@ const Navbar = ({ t }) => {
           }
 
           .nav-item {
-            margin-left: 15px;
-            margin-right: 15px;
+            margin-left: 16px;
+            margin-right: 16px;
           }
 
           .nav-link {
             font-size: 24px;
             color: #ffffff;
+            font-weight: 500;
           }
 
           .transition-nav {
@@ -257,6 +260,8 @@ const Navbar = ({ t }) => {
             min-width: 200px;
             font-size: 20px;
             color: #003ba8;
+            padding: 15px 43px;
+            font-weight: 500;
 
             &:hover {
               background-color: #003ba8 !important;
@@ -272,13 +277,30 @@ const Navbar = ({ t }) => {
             width: 300px;
             padding: 0;
             border-radius: 5px;
+            // left: 25px;
+            // top: 65px;
           }
+
+          // .triangle::before{
+          //   content: '';
+          //   position: absolute;
+          //   border-style: solid;
+          //   border-width: 0 10px 15px 10px;
+          //   border-color: transparent transparent #fff transparent;
+          //   top: -15px;
+          //   left: 84px;
+          // }
+
+          // .triangle-scrolled::before{
+          //   border-color: transparent transparent #29218c transparent;
+          // }
 
           .nav__submenu-item {
             list-style: none;
             margin: 0;
             padding: 10px 20px;
-
+            position: relative;
+            
             &:hover {
               font-weight: 700;
             }
