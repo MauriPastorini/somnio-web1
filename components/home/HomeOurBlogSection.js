@@ -4,10 +4,10 @@ import { withTranslation } from "../../i18n";
 const HomeOurBlogSection = ({ t }) => {
   return (
     <div className="HomeOurBlogSection pt-100">
-      <img src={`./assets/images/home-path-blog.svg`} alt="" className="path-blog-img-1" />
+      <img src={`/assets/images/home-path-blog.svg`} alt="" className="path-blog-img-1" />
       <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("home.our_blog.title")}</h2>
-        <img src={"./assets/images/home-services-line.svg"} alt="" />
+        <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
       <style jsx>
         {`

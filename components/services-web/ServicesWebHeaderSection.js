@@ -4,12 +4,12 @@ import { withTranslation } from "../../i18n";
 const ServicesWebHeaderSection = ({ t }) => {
   return (
     <div className="ServicesWebHeaderSection">
-      <img src="./assets/images/services-web/header-bg.svg" alt="" className="services-web-header__bg" />
-      <img src="./assets/images/services-web/header-path.svg" alt="" className="services-web-header__path" />
+      <img src="/assets/images/services-web/header-bg.svg" alt="" className="services-web-header__bg" />
+      <img src="/assets/images/services-web/header-path.svg" alt="" className="services-web-header__path" />
       <div className="wrapper-content">
         <div className="text-and-image custom-container">
           <div className="services-web-header-img-wrapper">
-            <img src={`./assets/images/services-web/header-img.svg`} alt="" className="header-img" />
+            <img src={`/assets/images/services-web/header-img.svg`} alt="" className="header-img" />
           </div>
           <div className="services-web-header-text-wrapper" data-aos="fade-right">
             <h1 className="services-web-header-title">{t("services_web.header.text_1")}</h1>

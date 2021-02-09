@@ -20,7 +20,7 @@ const ServicesWebCoveredSection = ({ t }) => {
       <div className="content custom-container">
         <div className="section-header-light" data-aos="fade-in">
           <h2>We’ve got you covered</h2>
-          <img src={"./assets/images/home-services-line-light.svg"} alt="" />
+          <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
         <div className="services-covered-card-list">

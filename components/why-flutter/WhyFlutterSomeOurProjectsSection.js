@@ -3,27 +3,30 @@ import { withTranslation } from "../../i18n";
 
 const WhyFlutterSomeOurProjectsSection = ({ t }) => {
   return (
-    <div className="WhyFlutterSomeOurProjectsSection">
+    <div className="WhyFlutterSomeOurProjectsSection">  
+      <img className="path" src="/assets/images/why-flutter/path.svg" alt=""/>
+      <img className="dots" src="/assets/images/why-flutter/dots.svg" alt=""/>
+
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("why_flutter.some_our_projects.title")}</h2>
-        <img src={"./assets/images/home-services-line.svg"} alt="" />
+        <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
       <div className="flutter-projects-card">
         <div className="project-card">
-          <img src="./assets/images/why-flutter/phone-jaac.png" alt="" />
+          <img src="/assets/images/why-flutter/phone-jaac.png" alt="" />
           <h4>Jaac</h4>
           <div className="store-button-content">
-            <img src="./assets/images/why-flutter/appstore.png" alt="" />
-            <img src="./assets/images/why-flutter/googleplay.png" alt="" />
+            <img src="/assets/images/why-flutter/appstore.png" alt="" />
+            <img src="/assets/images/why-flutter/googleplay.png" alt="" />
           </div>
         </div>
         <div className="project-card">
-          <img src="./assets/images/why-flutter/phone-crime.png" alt="" />
+          <img src="/assets/images/why-flutter/phone-crime.png" alt="" />
           <h4>CrimeDoor</h4>
           <div className="store-button-content">
-            <img src="./assets/images/why-flutter/appstore.png" alt="" />
-            <img src="./assets/images/why-flutter/googleplay.png" alt="" />
+            <img src="/assets/images/why-flutter/appstore.png" alt="" />
+            <img src="/assets/images/why-flutter/googleplay.png" alt="" />
           </div>
         </div>
       </div>
@@ -34,10 +37,10 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
         <div className="agency-say-card">
           <div className="agency-say-logos">
             <div className="burble meetup-wrapper">
-              <img src="./assets/images/why-flutter/meetup-logo.png" alt="" />
+              <img src="/assets/images/why-flutter/meetup-logo.png" alt="" />
             </div>
             <div className="burble flutter-wrapper">
-              <img src="./assets/images/why-flutter/flutter-logo-min.svg" alt="" />
+              <img src="/assets/images/why-flutter/flutter-logo-min.svg" alt="" />
             </div>
           </div>
           <h3 className="agency-say-card__title mb-2">{t("why_flutter.card.text_1")}</h3>
@@ -52,6 +55,20 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
           flex-direction: column;
           align-items: center;
           margin-bottom: 181px;
+          position: relative;
+
+          .dots{
+            position:absolute;
+            left: 113px;
+            top: 0;
+          }
+
+          .path{
+            position:absolute;
+            left: 0;
+            top: -39px;
+            z-index: -1;
+          }
 
           .header-wrapper {
             margin-bottom: 73px !important;

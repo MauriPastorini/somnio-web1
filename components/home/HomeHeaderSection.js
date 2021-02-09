@@ -5,16 +5,16 @@ import { withTranslation } from "../../i18n";
 const HomeHeaderSection = ({ t }) => {
   return (
     <div className="HomeHeaderSection">
-      <img src="./assets/images/home/home-header-bg.svg" alt="" className="home-header__bg" />
-      <img src="./assets/images/home/home-header-path.svg" alt="" className="home-header__path" />
+      <img src="/assets/images/home/home-header-bg.svg" alt="" className="home-header__bg" />
+      <img src="/assets/images/home/home-header-path.svg" alt="" className="home-header__path" />
       <div className="wrapper-content">
         <div className="text-and-image custom-container">
           <div className="home-header-text-wrapper" data-aos="fade-right">
             <h1 className="home-header-text">{t("home.header.text_1")}</h1>
-            <button className="btn custom-button-1">{t("common.button_1")}</button>
+            <button className="btn custom-button-1 shadow-button">{t("common.button_1")}</button>
           </div>
           <div className="home-header-img-wrapper">
-            <img src={`./assets/images/home/home-header-img.svg`} alt="" className="home-header-img img-fluid" />
+            <img src={`/assets/images/home/home-header-img.svg`} alt="" className="home-header-img img-fluid" />
           </div>
         </div>
       </div>
@@ -23,6 +23,14 @@ const HomeHeaderSection = ({ t }) => {
         .HomeHeaderSection {
           position: relative;
           overflow: hidden;
+
+          .shadow-button {
+            -webkit-box-shadow: 32px 32px 87px -20px rgba(0,0,0,1);
+            -moz-box-shadow: 32px 32px 87px -20px rgba(0,0,0,1);
+            box-shadow: 32px 32px 87px -20px rgba(0,0,0,1);
+
+
+          }
 
           .home-header__bg {
             width: 100%;

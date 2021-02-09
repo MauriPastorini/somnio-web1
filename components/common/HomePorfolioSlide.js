@@ -9,8 +9,10 @@ const HomePorfolioSlide = ({ title, text, img }) => (
       <p className="slide-text-paragraph">{text}</p>
       <Link href="/">
         <a className="slide-text-link">
-          Read more
-          <IconChevronRight />
+          <p>
+            Read more
+            <img src="/assets/images/common/arrow2.svg" alt="" />
+          </p>
         </a>
       </Link>
     </div>
@@ -37,7 +39,7 @@ const HomePorfolioSlide = ({ title, text, img }) => (
           font-size: 20px;
           max-width: 400px;
           margin-bottom: 130px;
-          line-height : 25px;
+          line-height: 25px;
         }
 
         .slide-text-link {
@@ -45,6 +47,12 @@ const HomePorfolioSlide = ({ title, text, img }) => (
           text-decoration: none;
           font-size: 27px;
           font-weight: 700;
+
+          img {
+            width: 13px;
+            height: 19px;
+            margin-left: 16px;
+          }
         }
       }
 

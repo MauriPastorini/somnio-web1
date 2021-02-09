@@ -47,7 +47,7 @@ const Navbar = ({ t }) => {
     window.addEventListener("scroll", handleScroll);
   });
 
-  const logo = `./assets/images/common/${scrolled ? "logo-2" : "logo"}.png`;
+  const logo = `/assets/images/common/${scrolled ? "logo-2" : "logo"}.png`;
   const NavStyle = `${scrolled ? "nav-scrolled" : ""} navbar navbar-expand-lg`;
   const NavLinkStyle = `${scrolled ? "nav-link-scrolled" : "nav-link-unscrolled"} nav-link`;
   const NavLinkDropDownStyle = `${scrolled ? "nav-link-scrolled" : "nav-link-unscrolled"} nav-link dropdown-toggle`;
@@ -80,26 +80,26 @@ const Navbar = ({ t }) => {
               </CustomLink>
             </li>
             <li className="nav-item nav-item-dropable">
-              <CustomDropdownLink scrolled={scrolled} href="/services-modalities">
+              <CustomDropdownLink scrolled={scrolled} href="/services/working-modalities">
                 <a className={NavLinkDropDownStyle}>{t("common.navbar.services")}</a>
               </CustomDropdownLink>
               <ul className="nav__submenu" style={SubMenuStyle}>
                 <li className={`nav__submenu-item triangle ${scrolled ? 'triangle-scrolled' : ''}`}>
-                  <Link href="/mobile-app-development">
+                  <Link href="/services/mobile-app-development">
                     <a className="nav__submenu-link" style={SubMenuItemStyle}>
                       {t("common.navbar.services_mobile")}
                     </a>
                   </Link>
                 </li>
                 <li className="nav__submenu-item">
-                  <Link href="/web-development">
+                  <Link href="/services/web-development">
                     <a className="nav__submenu-link" style={SubMenuItemStyle}>
                       {t("common.navbar.services_web")}
                     </a>
                   </Link>
                 </li>
                 <li className="nav__submenu-item">
-                  <Link href="/ux-ui">
+                  <Link href="/services/ux-ui">
                     <a className="nav__submenu-link" style={SubMenuItemStyle}>
                       {t("common.navbar.services_uxui")}
                     </a>
@@ -260,7 +260,7 @@ const Navbar = ({ t }) => {
             min-width: 200px;
             font-size: 20px;
             color: #003ba8;
-            padding: 15px 43px;
+            padding: 2px 43px;
             font-weight: 500;
 
             &:hover {

@@ -44,7 +44,7 @@ const ServiceWorkingToolsSection = ({ t }) => {
     <div className="ServiceWorkingToolsSection">
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("services.tools.title")}</h2>
-        <img src={"./assets/images/home-services-line.svg"} alt="" />
+        <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
       <Swiper spaceBetween={50} slidesPerView={1} pagination loop>

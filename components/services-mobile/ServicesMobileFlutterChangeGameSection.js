@@ -9,7 +9,7 @@ const ServicesMobileFlutterChangeGameSection = ({ t }) => {
         <p>{t("services_mobile.flutter_change_game.text_1")}</p>
         <p>{t("services_mobile.flutter_change_game.text_2")}</p>
       </div>
-      <img src="./assets/images/services-mobile/change-game-img.svg" alt="" />
+      <img src="/assets/images/services-mobile/change-game-img.svg" alt="" />
       <style jsx>{`
         .ServicesMobileFlutterChangeGameSection {
           display: flex;

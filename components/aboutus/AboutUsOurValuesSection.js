@@ -41,11 +41,11 @@ const AboutUsOurValuesSection = ({ t }) => {
 
   return (
     <div className="AboutUsOurValuesSection">
-      <img src="./assets/images/about-us/about-us-our-values-dots1.svg" className="about-us-our-values-dots1" alt="" />
-      <img src="./assets/images/about-us/about-us-our-values-dots2.svg" className="about-us-our-values-dots2" alt="" />
+      <img src="/assets/images/about-us/about-us-our-values-dots1.svg" className="about-us-our-values-dots1" alt="" />
+      <img src="/assets/images/about-us/about-us-our-values-dots2.svg" className="about-us-our-values-dots2" alt="" />
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("about_us.our_values.title")}</h2>
-        <img src={"./assets/images/home-services-line.svg"} alt="" />
+        <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
       <div className="values-list--first">
         {firstRecord.map((r, i) => (

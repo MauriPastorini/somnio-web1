@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const AboutUsTeamPersonCard = ({ img, name, position }) => (
   <div className="AboutUsTeamPersonCard">
-    <img src={`./assets/images/about-us/${img}`} className="team-person__img" alt="" />
+    <img src={`/assets/images/about-us/${img}`} className="team-person__img" alt="" />
     <h4 className="team-person__name">{name}</h4>
     <p className="team-person__position">{position}</p>
     <style jsx>{`

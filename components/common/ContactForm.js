@@ -18,9 +18,9 @@ const ContactForm = ({ t }) => (
         <textarea rows="4" className="contact-textarea"></textarea>
       </div>
       <div className="contact-button-wrapper">
-        <button className="btn custom-button-1 mb-2">Let's talk</button>
+        <button className="btn custom-button-1">Let's talk</button>
         <Link href="/">
-          <a>Or schedule a meeting</a>
+          <a className="link-meeting">Or schedule a meeting</a>
         </Link>
       </div>
     </form>
@@ -81,7 +81,17 @@ const ContactForm = ({ t }) => (
           justify-content: flex-end;
           align-items: flex-end;
           margin-bottom: 24px;
+
+          button{
+            margin-bottom: 23px;
+          }
+
+          .link-meeting{
+            color: #3BCEE7;
+            font-size: 20px;
+          }
         }
+
       }
     `}</style>
   </div>

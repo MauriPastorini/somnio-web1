@@ -1,6 +1,6 @@
 const ServicesHowWeWorkCard = ({ data }) => (
   <div className="ServicesHowWeWorkCard">
-    <img src={`./assets/images/services/${data.img}`} className="how-we-work-card__img" alt="" />
+    <img src={`/assets/images/services/${data.img}`} className="how-we-work-card__img" alt="" />
     <h3 className="how-we-work-card__title">{data.title}</h3>
     <p className="how-we-work-card__text">{data.text1}</p>
     <p className="how-we-work-card__text">{data.text2}</p>

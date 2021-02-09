@@ -1,44 +1,141 @@
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
-const small = 195;
+const small = 145;
 // const medium = 180;
 // const big = 240;
 
 const tech_list = [
   {
-    img: "tech_firebase.png",
-    size: small,
+    img: "tech_html.png",
+    size: 140,
+    top: 452,
+    left: 463,
   },
   {
-    img: "tech_fastlane.png",
-    size: small,
+    img: "tech_dev_ops.png",
+    size: 200,
+    top: 485,
+    left: 862,
+  },
+  {
+    img: "tech_vue.png",
+    size: 140,
+    top: 481,
+    left: 1203,
+  },
+  {
+    img: "tech_typescript.png",
+    size: 150,
+    top: 517,
+    left: 1455,
+  },
+  {
+    img: "tech_mongo.png",
+    size: 200,
+    top: 537,
+    left: 618,
+  },
+  {
+    img: "tech_pwa.png",
+    size: 150,
+    top: 584,
+    left: 266,
+  },
+  {
+    img: "tech_js.png",
+    size: 150,
+    top: 658,
+    left: 440,
+  },
+  {
+    img: "tech_react.png",
+    size: 200,
+    top: 709,
+    left: 809,
+  },
+  {
+    img: "tech_node.png",
+    size: 200,
+    top: 624,
+    left: 1035,
   },
   {
     img: "tech_github.png",
-    size: small,
+    size: 150,
+    top: 629,
+    left: 1308,
   },
   {
-    img: "tech_java.png",
-    size: small,
+    img: "tech_stack.png",
+    size: 150,
+    top: 839,
+    left: 322,
+  },
+  {
+    img: "tech_postgresql.png",
+    size: 200,
+    top: 781,
+    left: 546,
+  },
+  {
+    img: "tech_jenkins.png",
+    size: 200,
+    top: 924,
+    left: 743,
+  },
+
+  {
+    img: "tech_aws.png",
+    size: 200,
+    top: 880,
+    left: 992,
+  },
+
+  {
+    img: "tech_css.png",
+    size: 150,
+    top: 797,
+    left: 1228,
+  },
+
+  {
+    img: "tech_npm.png",
+    size: 150,
+    top: 996,
+    left: 1225,
+  },
+
+  {
+    img: "tech_redis.svg",
+    size: 150,
+    top: 768,
+    left: 1430,
   },
 ];
 
 const ServicesWebTechnologiesSection = ({ t }) => {
+  const leftCal = 266;
+  const topCal = 452;
   return (
     <div className="ServicesWebTechnologiesSection">
-      <img src="./assets/images/services-mobile/tecgnologies-bg.svg" alt="" className="technologies__bg" />
-      {/* <div className="sub__bg"></div> */}
+      <img src="/assets/images/services-mobile/tecgnologies-bg.svg" alt="" className="technologies__bg" />
+
       <div className="technologies__content">
-        <div className="section-header-light mt-50" data-aos="fade-in">
-          <h2 style={{ maxWidth: 650 }}>{t("services_web.tech_list.title")}</h2>
-          <img src={"./assets/images/home-services-line-light.svg"} alt="" />
+        <div className="section-header-light header-wrapper" data-aos="fade-in">
+          <h2 style={{ maxWidth: 800 }}>{t("services_web.tech_list.title")}</h2>
+          <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
-        <div className="tech-list custom-container">
+        <div className="tech-list">
           {tech_list.map((tech, index) => (
-            <div key={index} className="tech-item" style={{ width: tech.size, height: tech.size }}>
-              <img src={`./assets/images/services-mobile/${tech.img}`} alt="" />
+            <div
+              key={index}
+              className="tech-item"
+              style={{ width: tech.size, height: tech.size, top: tech.top - topCal, left: tech.left - leftCal }}
+            >
+              <img src={`/assets/images/services-web/${tech.img}`} alt="" />
             </div>
           ))}
         </div>
@@ -49,14 +146,10 @@ const ServicesWebTechnologiesSection = ({ t }) => {
           overflow: hidden;
         }
 
-        .sub__bg {
-          background: rgb(23, 131, 227);
-          background: linear-gradient(90deg, rgba(23, 131, 227, 1) 50%, rgba(0, 59, 168, 1) 100%);
-          position: absolute;
+        .header-wrapper {
           width: 100%;
-          height: 300px;
-          z-index: -1;
-          top: 0;
+          z-index: 0;
+          margin-top: 221px;
         }
 
         .technologies__bg {
@@ -66,16 +159,18 @@ const ServicesWebTechnologiesSection = ({ t }) => {
         .technologies__content {
           position: absolute;
           width: 100%;
-          height: 1000px;
-          top: 100px;
+          height: 100%;
+          top: 0;
           z-index: 2;
         }
 
         .tech-list {
-          position: relative;
-          width: 100%;
+          width: 1343px;
+
           background-color: red;
           top: 0;
+          position: relative;
+          margin: 0 auto;
 
           .tech-item {
             border-radius: 50%;
@@ -87,30 +182,20 @@ const ServicesWebTechnologiesSection = ({ t }) => {
             -webkit-box-shadow: 10px 10px 28px -13px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 28px -13px rgba(0, 0, 0, 0.75);
             box-shadow: 10px 10px 28px -13px rgba(0, 0, 0, 0.75);
+            overflow: hidden;
 
-            &:nth-child(1) {
-              top: 150px;
-              left: 0;
-            }
-            &:nth-child(2) {
-              top: 0;
-              left: 300px;
-            }
-            &:nth-child(3) {
-              top: 30px;
-              right: 300px;
-            }
             &:nth-child(4) {
-              top: 100px;
-              right: 0;
+              img {
+                width: 50%;
+              }
             }
           }
         }
 
-        @media screen and (max-width: 1400px) {
+        @media screen and (max-width: 1919px) {
           .technologies__bg {
             width: auto;
-            min-height: 1500px;
+            min-height: 1425px;
           }
         }
       `}</style>

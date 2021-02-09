@@ -4,12 +4,12 @@ import { withTranslation } from "../../i18n";
 const HomeAboutUsSection = ({ t }) => {
   return (
     <div className="HomeAboutUsSection">
-      <img src={`./assets/images/home/home-dots-3.svg`} className="path-img-1" alt="" />
-      <img src={`./assets/images/home/home-path-about-us.png`} className="path-img-2" alt="" />
+      <img src={`/assets/images/home/home-dots-3.svg`} className="path-img-1" alt="" />
+      <img src={`/assets/images/home/home-path-about-us.png`} className="path-img-2" alt="" />
 
       <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("home.about_us.title")}</h2>
-        <img src={"./assets/images/home-services-line.svg"} alt="" />
+        <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
       <div className="text-and-image custom-container">
         <div className="home-aboutus-text-wrapper" data-aos="fade-right">
@@ -17,8 +17,8 @@ const HomeAboutUsSection = ({ t }) => {
           <p className="home-aboutus-text">{t("home.about_us.text_2")}</p>
         </div>
         <div className="home-aboutus-img-wrapper">
-          <img src={`./assets/images/home/home-our-img1.svg`} className="path-img img-fluid" alt="" />
-          <img src={`./assets/images/home/home-our-img2.png`} className="group-img" alt="" />
+          <img src={`/assets/images/home/home-our-img1.svg`} className="path-img img-fluid" alt="" />
+          <img src={`/assets/images/home/home-our-img2.png`} className="group-img" alt="" />
         </div>
       </div>
       <style jsx>{`
