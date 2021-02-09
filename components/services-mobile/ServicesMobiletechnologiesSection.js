@@ -132,8 +132,6 @@ const tech_list = [
 const ServicesMobiletechnologiesSection = ({ t }) => {
   const leftCal = 249;
   const topCal = 427;
-
-
   return (
     <div className="ServicesMobiletechnologiesSection">
       <img src="./assets/images/services-mobile/tecgnologies-bg.svg" alt="" className="technologies__bg" />
