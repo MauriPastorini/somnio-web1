@@ -80,8 +80,14 @@ const HomeWhyFlutterSection = ({ t }) => {
             text-align: center;
             text-decoration: none;
 
-            img{
+            img {
               margin-left: 12px;
+            }
+          }
+          @media screen and (max-width: 1920px) {
+            .bg {
+              width: auto;
+              mim-height: 646px !important;
             }
           }
         `}
