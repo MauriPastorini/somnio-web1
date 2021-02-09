@@ -13,7 +13,7 @@ const HomeWhatClientSaySection = ({ t }) => {
         "The project was successful. Somnio Software tackled challenges head-on and created client-oriented solutions.",
     },
     {
-      img: "",
+      img: "./assets/images/common/hassan.jpg",
       name: "Hassan Lahlow",
       position: "Founder",
       project: "Cryptazar",
@@ -21,7 +21,7 @@ const HomeWhatClientSaySection = ({ t }) => {
         "I was surprised to see the level of achievement reached for such a heavy project. I selected Somnio because we knew that they are not just regular programmers but mostly engineers that can think through any challenge.",
     },
     {
-      img: "",
+      img: "./assets/images/common/nicolesanz.png",
       name: "Nicole Sanz",
       position: "Proyect Manager",
       project: "Fórmula",

@@ -24,8 +24,8 @@ const AgencySayCard = ({ comment }) => {
           border-radius: 34px;
           position: relative;
           padding: 62px 113px;
-          margin-left: 85px;
-          margin-right: 85px;
+          margin-left: 100px;
+          margin-right: 100px;
           -webkit-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
           -moz-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
@@ -65,6 +65,9 @@ const AgencySayCard = ({ comment }) => {
 
             .agency-card__header-img {
               margin-right: 41px;
+              width:118px;
+              height: 118px;
+              border-radius: 50%;
             }
 
             .agency-card__header-info {
@@ -81,7 +84,7 @@ const AgencySayCard = ({ comment }) => {
               }
 
               img {
-                max-width: 185px;
+                max-width: 122px;
               }
             }
           }
