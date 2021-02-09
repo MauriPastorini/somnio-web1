@@ -26,7 +26,7 @@ const ServicesWebSomeAppsSection = ({ t }) => {
           <div className="agency-say-card__footer">
             <img src="/assets/images/common/clutch.png" className="card__footer-logo" alt="" />
             <div className="card__footer-person">
-              <img src="/assets/images/services-web/falta_imagen.png" alt="" />
+              <img style={{ width: 118, height: 118 }} src="/assets/images/common/nicolesanz.png" alt="" />
               <div className="card__footer-name">
                 <p>Nicole Sanz</p>
                 <p>Project Manager</p>
