@@ -3,7 +3,7 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../../i18n";
 import { useRouter } from "next/router";
-import styles from '../../../styles/modules/common/layout/Navbar.module.scss'
+import styles from "../../../styles/modules/common/layout/Navbar.module.scss";
 
 const CustomLink = ({ href, children, scrolled }) => {
   const router = useRouter();
@@ -85,7 +85,7 @@ const Navbar = ({ t }) => {
                 <a className={NavLinkDropDownStyle}>{t("common.navbar.services")}</a>
               </CustomDropdownLink>
               <ul className="nav__submenu" style={SubMenuStyle}>
-                <li className={`nav__submenu-item triangle ${scrolled ? 'triangle-scrolled' : ''}`}>
+                <li className={`nav__submenu-item triangle ${scrolled ? "triangle-scrolled" : ""}`}>
                   <Link href="/services/mobile-app-development">
                     <a className="nav__submenu-link" style={SubMenuItemStyle}>
                       {t("common.navbar.services_mobile")}
@@ -138,6 +138,185 @@ const Navbar = ({ t }) => {
           {/* <button className={ButtonStyle}>{t("common.navbar.button")}</button> */}
         </Link>
       </div>
+      <style jsx>{`
+        .navbar {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: 1;
+          height: 156px;
+          -webkit-transition: height 0.5s linear, background-color 0.5s linear;
+          -moz-transition: height 0.5s linear, background-color 0.5s linear;
+          -o-transition: height 0.5s linear, background-color 0.5s linear;
+          transition: height 0.5s linear, background-color 0.5s linear;
+        }
+
+        .somnio-logo {
+          max-width: 217px;
+          height: auto;
+          cursor: pointer;
+        }
+
+        .btn-outline-navbar {
+          border: 2px solid #ffffff;
+          border-radius: 43px;
+          min-width: 200px;
+          font-size: 20px;
+          color: #ffffff;
+          padding: 15px 43px;
+          font-weight: 500;
+
+          &:hover {
+            background-color: #ffffff !important;
+            color: #003ba8;
+          }
+        }
+
+        .nav-item {
+          margin-left: 16px;
+          margin-right: 16px;
+        }
+
+        .nav-link {
+          font-size: 24px;
+          color: #ffffff;
+          font-weight: 500;
+        }
+
+        .transition-nav {
+          transition: all 1s ease-in;
+        }
+
+        .nav-link-active {
+          font-weight: bold;
+          position: relative;
+        }
+
+        .nav-link-active::before {
+          display: block;
+          content: "";
+          width: 46px;
+          height: 2px;
+          background: #fff;
+          position: absolute;
+          bottom: 0;
+          left: calc(50% - 23px);
+        }
+
+        .nav-item-dropable {
+          display: inline-block;
+          position: relative;
+
+          &:hover {
+            .nav__submenu {
+              display: block;
+            }
+          }
+        }
+
+        .nav-scrolled {
+          background: white;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0.85;
+          z-index: 3;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          height: 100px !important;
+          -webkit-transition: height 0.5s linear, background-color 0.5s linear;
+          -moz-transition: height 0.5s linear, background-color 0.5s linear;
+          -o-transition: height 0.5s linear, background-color 0.5s linear;
+          transition: height 0.5s linear, background-color 0.5s linear;
+        }
+
+        .nav-link-scrolled {
+          color: #003ba8;
+          &:hover {
+            color: #003ba891 !important;
+            -webkit-transition: color 0.35s ease-in;
+            -moz-transition: color 0.35s ease-in;
+            -o-transition: color 0.35s ease-in;
+            transition: color 0.35s ease-in;
+          }
+        }
+
+        .nav-link-unscrolled {
+          color: #ffffff;
+          &:hover {
+            color: #ffffffad !important;
+            -webkit-transition: color 0.35s ease-in;
+            -moz-transition: color 0.35s ease-in;
+            -o-transition: color 0.35s ease-in;
+            transition: color 0.35s ease-in;
+          }
+        }
+
+        .btn-outline-navbar-scrolled {
+          border: 2px solid #003ba8;
+          border-radius: 43px;
+          min-width: 200px;
+          font-size: 20px;
+          color: #003ba8;
+          padding: 2px 43px;
+          font-weight: 500;
+
+          &:hover {
+            background-color: #003ba8 !important;
+            color: #fff;
+          }
+        }
+
+        .nav__submenu {
+          font-weight: 300;
+          text-transform: none;
+          display: none;
+          position: absolute;
+          width: 300px;
+          padding: 0;
+          border-radius: 5px;
+          // left: 25px;
+          // top: 65px;
+        }
+
+        // .triangle::before{
+        //   content: '';
+        //   position: absolute;
+        //   border-style: solid;
+        //   border-width: 0 10px 15px 10px;
+        //   border-color: transparent transparent #fff transparent;
+        //   top: -15px;
+        //   left: 84px;
+        // }
+
+        // .triangle-scrolled::before{
+        //   border-color: transparent transparent #29218c transparent;
+        // }
+
+        .nav__submenu-item {
+          list-style: none;
+          margin: 0;
+          padding: 10px 20px;
+          position: relative;
+
+          &:hover {
+            font-weight: 700;
+          }
+
+          &:nth-child(1) {
+            border-bottom: 1px solid #d8d8d877;
+          }
+
+          &:nth-child(2) {
+            border-bottom: 1px solid #d8d8d877;
+          }
+        }
+
+        .nav__submenu-link {
+          text-decoration: none;
+        }
+      `}</style>
     </nav>
   );
 };
