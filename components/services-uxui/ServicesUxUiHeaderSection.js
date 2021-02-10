@@ -4,9 +4,9 @@ import { withTranslation } from "../../i18n";
 const ServicesUxUiHeaderSection = ({ t }) => {
   return (
     <div className="ServicesUxUiHeaderSection">
-      <img src="./assets/images/services-uxui/header-bg.svg" alt="" className="header__bg" />
-      <img src="./assets/images/services-uxui/header-path.svg" alt="" className="header__path" />
-      <img src="./assets/images/services-uxui/header-path2.svg" alt="" className="header__path2" />
+      <img src="/assets/images/services-uxui/header-bg.svg" alt="" className="header__bg" />
+      <img src="/assets/images/services-uxui/header-path.svg" alt="" className="header__path" />
+      <img src="/assets/images/services-uxui/header-path2.svg" alt="" className="header__path2" />
       <div className="wrapper-content">
         <div className="text-and-image custom-container">
           <div className="header-text-wrapper" data-aos="fade-right">
@@ -14,7 +14,7 @@ const ServicesUxUiHeaderSection = ({ t }) => {
             <p className="header-text">{t("services_uxui.header.text_2")}</p>
           </div>
           <div className="header-img-wrapper">
-            <img src={`./assets/images/services-uxui/header-img.svg`} alt="" className="header-img img-fluid" />
+            <img src={`/assets/images/services-uxui/header-img.svg`} alt="" className="header-img img-fluid" />
           </div>
         </div>
       </div>

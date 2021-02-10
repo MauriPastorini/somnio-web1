@@ -4,8 +4,8 @@ import { withTranslation } from "../../i18n";
 const WhyFlutterHeaderSection = ({ t }) => {
   return (
     <div className="WhyFlutterHeaderSection">
-      <img src="./assets/images/why-flutter/header-bg.svg" alt="" className="header__bg" />
-      <img src="./assets/images/why-flutter/header-path.svg" alt="" className="header__path" />
+      <img src="/assets/images/why-flutter/header-bg.svg" alt="" className="header__bg" />
+      <img src="/assets/images/why-flutter/header-path.svg" alt="" className="header__path" />
       <div className="wrapper-content">
         <h1 className="header-title custom-container">{t("why_flutter.header.text_1")}</h1>
       </div>
@@ -22,8 +22,8 @@ const WhyFlutterHeaderSection = ({ t }) => {
 
           .header__path {
             position: absolute;
-            top: -620px;
-            left: -651px;
+            top: -653px;
+            left: -659px;
             z-index: 0;
             max-width: 90%;
             height: auto;

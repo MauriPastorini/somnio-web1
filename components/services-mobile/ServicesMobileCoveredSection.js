@@ -19,7 +19,7 @@ const ServicesMobileCoveredSection = ({ t }) => {
       <div className="custom-container">
         <div className="section-header-light mb-100" data-aos="fade-in">
           <h2>{t("services_mobile.covered.title")}</h2>
-          <img src={"./assets/images/home-services-line-light.svg"} alt="" />
+          <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
         <div className="services-covered-card-list">

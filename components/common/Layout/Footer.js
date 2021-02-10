@@ -9,21 +9,9 @@ const Footer = ({ t }) => {
   };
 
   return (
-    <div className="Footer pt-100">
+    <div className="Footer">
       <div onClick={handleToUp} className="to-up">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          className="bi bi-chevron-up"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fillRule="evenodd"
-            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-          />
-        </svg>
+        <img src="/assets/images/common/arrow3.svg" alt="" />
       </div>
 
       <div className="footer-content mb-100 custom-container" data-aos="fade-in">
@@ -136,27 +124,27 @@ const Footer = ({ t }) => {
 
       <div className="footer-content-network custom-container" data-aos="fade-up">
         <a target="_blank" href="https://clutch.co/profile/somnio-software">
-          <img src="./assets/images/common/clutch.png" alt="" />
+          <img style={{ width: 107, height: 54 }} src="/assets/images/common/clutch.png" alt="" />
         </a>
         <a href="/">
-          <img src="./assets/images/common/logo.png" alt="" />
+          <img style={{ width: 187, height: 57 }} src="/assets/images/common/logo.png" alt="" />
         </a>
 
         <div className="social-network-group">
           <a target="_blank" href=" https://www.facebook.com/Somnio-Software-101920285002535">
-            <img src="./assets/images/common/facebook.svg" alt="" />
+            <img src="/assets/images/common/facebook.svg" alt="" />
           </a>
           <a target="_blank" href="https://www.instagram.com/somnio_software/">
-            <img src="./assets/images/common/instagram.svg" alt="" />
+            <img src="/assets/images/common/instagram.svg" alt="" />
           </a>
           <a target="_blank" href="https://www.linkedin.com/company/somniosoftware">
-            <img src="./assets/images/common/linkedin.svg" alt="" />
+            <img src="/assets/images/common/linkedin.svg" alt="" />
           </a>
           <a target="_blank" href="https://twitter.com/somnio_software">
-            <img src="./assets/images/common/twitter.svg" alt="" />
+            <img src="/assets/images/common/twitter.svg" alt="" />
           </a>
           <a target="_blank" href="https://github.com/somnio-software">
-            <img src="./assets/images/common/github.svg" alt="" />
+            <img src="/assets/images/common/github.svg" alt="" />
           </a>
         </div>
       </div>
@@ -164,7 +152,7 @@ const Footer = ({ t }) => {
       <div className="custom-container footer-certificatons-logos" data-aos="fade-up">
         <a href="https://www.itfirms.co/top-mobile-app-development-companies/" target="_blank">
           <img
-            src="./assets/images/common/app-developer-itfirms-2021.png"
+            src="/assets/images/common/app-developer-itfirms-2021.png"
             alt="app developers uruguay"
             title="App Developers Uruguay"
             style={{ height: 150, width: 150 }}
@@ -172,7 +160,7 @@ const Footer = ({ t }) => {
         </a>
         <a href="https://www.itfirms.co/top-web-development-companies/" target="_blank">
           <img
-            src="./assets/images/common/web-developer-itfirms-2021.png"
+            src="/assets/images/common/web-developer-itfirms-2021.png"
             alt="web developers uruguay"
             title="Web Developers Uruguay"
             style={{ height: 150, width: 150 }}
@@ -180,14 +168,14 @@ const Footer = ({ t }) => {
         </a>
         <a href="https://topappdevelopmentcompanies.com/uy/directory/app-developers/uruguay" target="_blank">
           <img
-            src="./assets/images/common/top-app-development-companies.png"
+            src="/assets/images/common/top-app-development-companies.png"
             alt=""
             style={{ height: 150, width: 150 }}
           />
         </a>
         <a href="https://clutch.co/press-releases/awards-best-b2b-companies-latin-america-2020" target="_blank">
           <img
-            src="./assets/images/common/B2B_Companies_Uruguay_2020.png"
+            src="/assets/images/common/B2B_Companies_Uruguay_2020.png"
             alt=""
             title=""
             style={{ height: 150, width: 150 }}
@@ -195,7 +183,7 @@ const Footer = ({ t }) => {
         </a>
         <a href="https://themanifest.com/app-development/companies/latin-america#somniosoftware" target="_blank">
           <img
-            src="./assets/images/common/App-Developers_Latin-America_2021.jpg"
+            src="/assets/images/common/App-Developers_Latin-America_2021.jpg"
             alt=""
             title=""
             style={{ height: 150, width: 150 }}

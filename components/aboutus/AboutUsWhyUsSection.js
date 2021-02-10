@@ -4,7 +4,7 @@ import { withTranslation } from "../../i18n";
 const AboutUsWhyUsSection = ({ t }) => {
   return (
     <div className="AboutUsWhyUsSection">
-      <img className="bg" src="./assets/images/about-us/about-us-why-us-bg.svg"/>
+      <img className="bg" src="/assets/images/about-us/about-us-why-us-bg.svg"/>
       <div className="about-us__content">
         <div className="section-header-light header-wrapper" data-aos="fade-in">
           <h2>{t("about_us.why_us.title")}</h2>

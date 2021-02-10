@@ -11,27 +11,27 @@ const HomePortfolioSection = ({ t }) => {
     {
       title: t("home.portfolio.jaac.title"),
       text: t("home.portfolio.jaac.text"),
-      img: "./assets/images/home/home-porfolio-jaac.png",
+      img: "/assets/images/home/home-porfolio-jaac.png",
     },
     {
       title: t("home.portfolio.crimedoor.title"),
       text: t("home.portfolio.crimedoor.text"),
-      img: "./assets/images/home/home-portfolio-crime.png",
+      img: "/assets/images/home/home-portfolio-crime.png",
     },
     {
       title: t("home.portfolio.pay_my_trades.title"),
       text: t("home.portfolio.pay_my_trades.text"),
-      img: "./assets/images/home/home-portfolio-paymytrades.png",
+      img: "/assets/images/home/home-portfolio-paymytrades.png",
     },
   ];
 
   return (
     <div className="HomePortfolioSection">
-      <img src={"./assets/images/home/home-dots-2.svg"} alt="" className="home-dots-2" />
-      <img src={"./assets/images/home/home-porfolio-path.png"} alt="" className="home-porfolio-path" />
+      <img src={"/assets/images/home/home-dots-2.svg"} alt="" className="home-dots-2" />
+      <img src={"/assets/images/home/home-porfolio-path.png"} alt="" className="home-porfolio-path" />
       <div className="section-header-dark mb-0" data-aos="fade-in">
         <h2>{t("home.portfolio.title")}</h2>
-        <img src={"./assets/images/home-services-line.svg"} alt="" />
+        <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
       <Swiper spaceBetween={50} slidesPerView={1} pagination loop>

@@ -16,9 +16,9 @@ const CommonCoveredCard = ({ title, description }) => (
         width: 100%;
         padding: 54px;
 
-        -webkit-box-shadow: 0px 0px 50px -4px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 0px 50px -4px rgba(0, 0, 0, 0.75);
-        box-shadow: 0px 0px 50px -4px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 62px -19px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 62px -19px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 62px -19px rgba(0,0,0,0.75);
 
         h2 {
           color: #fff;

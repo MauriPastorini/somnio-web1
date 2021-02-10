@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 const AboutUsHowWeWorkCard = ({ title, text, img }) => (
   <div className="AboutUsHowWeWorkCard">
-    <img src="./assets/images/about-us/howwework-card-corn.svg" className="how-we-work-card-corn" alt="" />
-    <img src={`./assets/images/about-us/${img}`} className="how-we-work-card-corn--img" alt="" />
+    <img src="/assets/images/about-us/howwework-card-corn.svg" className="how-we-work-card-corn" alt="" />
+    <img src={`/assets/images/about-us/${img}`} className="how-we-work-card-corn--img" alt="" />
     <h2>{title}</h2>
     <p>{text}</p>
     <style jsx>{`
@@ -17,6 +17,12 @@ const AboutUsHowWeWorkCard = ({ title, text, img }) => (
         margin-left: 20px;
         margin-right: 20px;
         width: 641px;
+
+        &:last-of-type {
+          .how-we-work-card-corn--img {
+            right: 19px !important;
+          }
+        }
 
         h2 {
           color: #ffffff;

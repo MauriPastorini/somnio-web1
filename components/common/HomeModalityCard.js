@@ -15,8 +15,10 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
     <p className="modality-card-text">{text}</p>
     <Link href={link}>
       <a className="modality-card-link">
-        Read more
-        <IconChevronRight />
+        <p>
+          Read more
+          <img src="/assets/images/common/arrow2.svg" alt="" />
+        </p>
       </a>
     </Link>
     <style jsx>{`
@@ -67,6 +69,12 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
         font-weight: 700;
         margin-bottom: 40px;
         text-decoration: none;
+
+        img {
+          width: 9px;
+          height: 15px;
+          margin-left: 16px;
+        }
       }
     `}</style>
   </div>

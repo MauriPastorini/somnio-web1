@@ -19,14 +19,14 @@ const ServiceHeaderSection = ({ t }) => {
 
   return (
     <div className="ServiceHeaderSection">
-      <img src={`./assets/images/services/services-header-bg.svg`} alt="" className="services-header__bg" />
-      <img src={`./assets/images/services/services-header-path.svg`} alt="" className="services-header__path" />
+      <img src={`/assets/images/services/services-header-bg.svg`} alt="" className="services-header__bg" />
+      <img src={`/assets/images/services/services-header-path.svg`} alt="" className="services-header__path" />
 
       <div className="wrapper-content">
         <div className="text-and-image custom-container">
           <div className="services-header-img__wrapper">
             <img
-              src={`./assets/images/services/services-header-img.svg`}
+              src={`/assets/images/services/services-header-img.svg`}
               alt=""
               className="services-header-img img-fluid"
             />
@@ -40,7 +40,7 @@ const ServiceHeaderSection = ({ t }) => {
 
         <div className="section-header-light mt-250" data-aos="fade-in">
           <h2>{t("services.header.how_we_work.title")}</h2>
-          <img src={"./assets/images/home-services-line-light.svg"} alt="" />
+          <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
         <div className="services-header-how-we-work__content">

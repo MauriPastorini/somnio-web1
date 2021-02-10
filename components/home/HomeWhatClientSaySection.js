@@ -5,7 +5,7 @@ import AgencySaySlider from "../../components/common/AgencySaySlider";
 const HomeWhatClientSaySection = ({ t }) => {
   const comments = [
     {
-      img: "./assets/images/services-mobile/tonyjaac.png",
+      img: "/assets/images/services-mobile/tonyjaac.png",
       name: "Tony Andris",
       position: "CEO",
       project: "Jaac",
@@ -13,7 +13,7 @@ const HomeWhatClientSaySection = ({ t }) => {
         "The project was successful. Somnio Software tackled challenges head-on and created client-oriented solutions.",
     },
     {
-      img: "",
+      img: "/assets/images/common/hassan.jpg",
       name: "Hassan Lahlow",
       position: "Founder",
       project: "Cryptazar",
@@ -21,7 +21,7 @@ const HomeWhatClientSaySection = ({ t }) => {
         "I was surprised to see the level of achievement reached for such a heavy project. I selected Somnio because we knew that they are not just regular programmers but mostly engineers that can think through any challenge.",
     },
     {
-      img: "",
+      img: "/assets/images/common/nicolesanz.png",
       name: "Nicole Sanz",
       position: "Proyect Manager",
       project: "Fórmula",
@@ -31,11 +31,11 @@ const HomeWhatClientSaySection = ({ t }) => {
   ];
   return (
     <div className="HomeWhatClientSaySection">
-      <img src="./assets/images/home/home-say-client-bg.svg" className="home-clientsay__bg" alt=""></img>
+      <img src="/assets/images/home/home-say-client-bg.svg" className="home-clientsay__bg" alt=""></img>
       <div className="home-clientsay__content">
         <div className="section-header-light header-wrapper" data-aos="fade-in">
           <h2>{t("home.what_our_clients_say.title")}</h2>
-          <img src={"./assets/images/home-services-line-light.svg"} alt="" />
+          <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
         <AgencySaySlider comments={comments} />
@@ -44,10 +44,10 @@ const HomeWhatClientSaySection = ({ t }) => {
 
         <div className="home-clientsay__content-logos">
           <a target="_blank" href="https://clutch.co/profile/somnio-software">
-            <img src="./assets/images/home/clutch_blanco.png" />
+            <img src="/assets/images/home/clutch_blanco.png" />
           </a>
           <a target="_blank" href="https://www.fiverr.com/mauriciopast?up_rollout=true">
-            <img src="./assets/images/home/feverr_logo.png" />
+            <img src="/assets/images/home/feverr_logo.png" />
           </a>
         </div>
       </div>
@@ -64,6 +64,7 @@ const HomeWhatClientSaySection = ({ t }) => {
 
           .header-wrapper{
             margin-top: 170px;
+            margin-bottom: 27px !important;
           }
           .home-clientsay__content {
             position: absolute;

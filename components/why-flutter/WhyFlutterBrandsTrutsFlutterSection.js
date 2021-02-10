@@ -6,15 +6,15 @@ const WhyFlutterBrandsTrutsFlutterSection = ({ t }) => {
     <div className="WhyFlutterBrandsTrutsFlutterSection">
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("why_flutter.trust_flutter.title")}</h2>
-        <img src={"./assets/images/home-services-line.svg"} alt="" />
+        <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
       <div className="brand-list custom-container">
-        <img src="./assets/images/why-flutter/google.png" alt="" />
-        <img src="./assets/images/why-flutter/ebay.png" alt="" />
-        <img src="./assets/images/why-flutter/bmw.png" alt="" />
-        <img src="./assets/images/why-flutter/square.png" alt="" />
-        <img src="./assets/images/why-flutter/alibaba.png" alt="" />
+        <img src="/assets/images/why-flutter/google.png" alt="" />
+        <img src="/assets/images/why-flutter/ebay.png" alt="" />
+        <img src="/assets/images/why-flutter/bmw.png" alt="" />
+        <img src="/assets/images/why-flutter/square.png" alt="" />
+        <img src="/assets/images/why-flutter/alibaba.png" alt="" />
       </div>
       <style jsx>{`
         .WhyFlutterBrandsTrutsFlutterSection {

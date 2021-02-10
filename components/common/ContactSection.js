@@ -5,13 +5,14 @@ import ContactForm from "./ContactForm";
 
 const ContactSection = ({ t }) => (
   <div className="ContactSection">
-    <img src="./assets/images/common/contact-bg.svg" className="contact__bg" alt=""></img>
-    <img src="./assets/images/common/contact-points-1.svg" className="contact__points-1" alt=""></img>
-    <img src="./assets/images/common/contact-points-2.svg" className="contact__points-2" alt=""></img>
+    <div className="line-bottom"></div>
+    <img src="/assets/images/common/contact-bg.svg" className="contact__bg" alt=""></img>
+    <img src="/assets/images/common/contact-points-1.svg" className="contact__points-1" alt=""></img>
+    <img src="/assets/images/common/contact-points-2.svg" className="contact__points-2" alt=""></img>
     <div className="contact__content">
-      <div className="section-header-light mt-100 pt-100" data-aos="fade-in">
+      <div className="section-header-light mb-100 mt-100 pt-100" data-aos="fade-in">
         <h2>Let’s create successful apps together!</h2>
-        <img src={"./assets/images/home-services-line-light.svg"} alt="" />
+        <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
 
       <ContactForm />
@@ -22,12 +23,22 @@ const ContactSection = ({ t }) => (
         width: 100%;
         overflow: hidden;
 
+        .line-bottom {
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          bottom: 0;
+          background: #001739;
+        }
+
         .content-form {
           max-width: 844px;
         }
 
         .contact__bg {
           width: 100%;
+          // border-bottom: 1px solid #001739;
+          // border-bottom: 5px solid red;
         }
 
         .contact__points-1 {
