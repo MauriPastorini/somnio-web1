@@ -1,6 +1,7 @@
 .Footer {
   background: #001739;
-  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 79px;
   max-height: 900px;
   position: relative;
 }
@@ -19,7 +20,7 @@
   left: calc(50% - 42px) !important;
   border-radius: 50% !important;
 
-  .svg {
+  svg {
     width: 30px;
     height: 30px;
     color: #fff;
