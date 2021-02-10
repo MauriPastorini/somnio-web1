@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
+import { I18nContext } from 'next-i18next'
 
 const HomeHeaderSection = ({ t }) => {
+  const { i18n: { language } } = useContext(I18nContext)
+  console.log("language", language)
   return (
     <div className="HomeHeaderSection">
       <img src="/assets/images/home/home-header-bg.svg" alt="" className="home-header__bg" />

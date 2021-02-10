@@ -23,7 +23,7 @@ const AgencySayCard = ({ comment }) => {
           height: 367px;
           border-radius: 34px;
           position: relative;
-          padding: 62px 113px;
+          padding: 62px 100px;
           margin-left: 100px;
           margin-right: 100px;
           -webkit-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
@@ -92,8 +92,9 @@ const AgencySayCard = ({ comment }) => {
           .agency-card__text {
             color: #001739;
             font-size: 20px;
-            // max-width: 646px;
+            max-width: 646px;
             margin-top: 38px;
+            line-height: 25px;
           }
         }
       `}</style>

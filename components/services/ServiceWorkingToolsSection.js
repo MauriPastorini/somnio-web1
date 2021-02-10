@@ -49,8 +49,8 @@ const ServiceWorkingToolsSection = ({ t }) => {
 
       <Swiper spaceBetween={50} slidesPerView={1} pagination loop>
         {workingTools.map((_slide, i) => (
-          <SwiperSlide>
-            <ServicesWorkingToolsSlide key={i} slide={_slide} />
+          <SwiperSlide key={i}>
+            <ServicesWorkingToolsSlide slide={_slide} />
           </SwiperSlide>
         ))}
       </Swiper>

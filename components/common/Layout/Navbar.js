@@ -3,7 +3,6 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../../i18n";
 import { useRouter } from "next/router";
-import styles from "../../../styles/modules/common/layout/Navbar.module.scss";
 
 const CustomLink = ({ href, children, scrolled }) => {
   const router = useRouter();
@@ -21,10 +20,10 @@ const CustomDropdownLink = ({ href, children, scrolled }) => {
 
   let className = children.props.className || "";
   if (
-    router.pathname === "/services-modalities" ||
-    router.pathname === "/mobile-app-development" ||
-    router.pathname === "/web-development" ||
-    router.pathname === "/ux-ui"
+    router.pathname === "/services/working-modalities" ||
+    router.pathname === "/services/mobile-app-development" ||
+    router.pathname === "/services/web-development" ||
+    router.pathname === "/services/ux-ui"
   ) {
     className = `${className} nav-link-active`;
   }
