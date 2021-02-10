@@ -12,7 +12,7 @@ import ServicesWebSomeAppsSection from "../../components/services-web/ServicesWe
 const WebDevelopment = () => (
   <Container>
     <Head>
-      <title>Web Development</title>
+      <title>Web Development Services | Somnio Software</title>
       <meta name="description" content="Successful Web Apps created in record time and with modern technologies." />
     </Head>
 

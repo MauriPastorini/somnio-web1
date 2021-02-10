@@ -11,7 +11,7 @@ import WhyFlutterSomeOurProjectsSection from "../components/why-flutter/WhyFlutt
 const WhyFlutter = () => (
   <Container>
     <Head>
-      <title>Why Flutter</title>
+      <title>Why Flutter has changed the way we develop apps | Somnio Software</title>
       <meta
         name="description"
         content="Flutter, Google's software development kit, has changed the future of software development."

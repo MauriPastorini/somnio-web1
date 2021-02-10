@@ -28,6 +28,14 @@ const HomeWhatClientSaySection = ({ t }) => {
       comment:
         "They succesfully help us to increase our monthly incomes. We are completely satisfied with their services and we’d like to continue working with them.",
     },
+    {
+      img: "/assets/images/common/hassan.jpg",
+      name: "Tony Loving",
+      position: "Co-Founder",
+      project: "Group Home Biz",
+      comment:
+        "Their breadth of knowledge and professionalism impressed us. There's nothing that i could think of for them to do better. They knew what they were doing and they did a good job on that. They were excellent.",
+    },
   ];
   return (
     <div className="HomeWhatClientSaySection">

@@ -12,11 +12,12 @@ import ServicesMobileSomeAppsSection from "../../components/services-mobile/Serv
 
 const MobileDevelopment = () => (
   <Container>
-        <Head>
-      <title>Working Modalities</title>
+    <Head>
+      <title>Mobile App Development Services | Somnio Software</title>
       <meta
         name="description"
-        content="We work with agile methodologies and human-centered approaches to successfully meet our client's needs."
+        content="We build innovative mobile applications with Flutter for both Android & iOS devices. We
+        focus on creating high-quality, engaging, and user-friendly apps."
       />
     </Head>
 
@@ -32,6 +33,3 @@ const MobileDevelopment = () => (
 );
 
 export default MobileDevelopment;
-
-
-

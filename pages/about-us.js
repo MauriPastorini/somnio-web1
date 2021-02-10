@@ -12,7 +12,7 @@ import ContactSection from "../components/common/ContactSection";
 const AboutUs = () => (
   <Container>
     <Head>
-      <title>About us</title>
+      <title>About us | Somnio Software</title>
       <meta
         name="description"
         content="We are a team of passionate and creative engineers, developers, and designers that work hand in hand with our clients to build high-quality products."

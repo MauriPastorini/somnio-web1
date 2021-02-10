@@ -24,8 +24,8 @@ const AgencySayCard = ({ comment }) => {
           border-radius: 34px;
           position: relative;
           padding: 62px 100px;
-          margin-left: 100px;
-          margin-right: 100px;
+          margin-left: 80px;
+          margin-right: 80px;
           -webkit-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
           -moz-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
@@ -53,9 +53,11 @@ const AgencySayCard = ({ comment }) => {
                 width: 162px;
               }
               .agency-corn__text {
-                font-size: 27px;
+                font-size: 23px;
                 font-weight: bold;
                 z-index: 1;
+                max-width: 151px;
+                padding: 17px;
               }
             }
           }

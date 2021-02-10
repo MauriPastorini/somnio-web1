@@ -11,7 +11,7 @@ import ContactSection from "../../components/common/ContactSection";
 const UxUi = () => (
   <Container>
     <Head>
-      <title>UI/UX Design</title>
+      <title>UX/UI Design Services | Somnio Software</title>
       <meta
         name="description"
         content="We create human-centered designs for mobile and web apps that users love to use."

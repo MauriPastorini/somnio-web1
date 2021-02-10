@@ -10,7 +10,7 @@ import ContactSection from "../../components/common/ContactSection";
 const AboutUs = () => (
   <Container>
     <Head>
-      <title>Working Modalities</title>
+      <title>Working Modalities | This is how we achieve top results in Somnio Software</title>
       <meta
         name="description"
         content="We work with agile methodologies and human-centered approaches to successfully meet our client's needs."
