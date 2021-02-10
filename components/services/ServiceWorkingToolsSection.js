@@ -1,10 +1,7 @@
 import ServicesWorkingToolsSlide from "../../components/common/ServicesWorkingToolsSlide";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper";
-
-SwiperCore.use([Pagination]);
+import Slider from "react-slick";
 
 const ServiceWorkingToolsSection = ({ t }) => {
   const workingTools = [
@@ -40,6 +37,17 @@ const ServiceWorkingToolsSection = ({ t }) => {
     },
   ];
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+  };
+
   return (
     <div className="ServiceWorkingToolsSection">
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
@@ -47,13 +55,11 @@ const ServiceWorkingToolsSection = ({ t }) => {
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
-      <Swiper spaceBetween={50} slidesPerView={1} pagination loop>
-        {workingTools.map((_slide, i) => (
-          <SwiperSlide key={i}>
-            <ServicesWorkingToolsSlide slide={_slide} />
-          </SwiperSlide>
+      <Slider {...settings}>
+        {workingTools.map((_slide, index) => (
+          <ServicesWorkingToolsSlide key={index} slide={_slide} />
         ))}
-      </Swiper>
+      </Slider>
 
       <style jsx>{`
         .ServiceWorkingToolsSection {

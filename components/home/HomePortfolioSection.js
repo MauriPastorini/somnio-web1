@@ -1,10 +1,7 @@
 import { withTranslation } from "../../i18n";
 import PropTypes from "prop-types";
 import HomePorfolioSlide from "../../components/common/HomePorfolioSlide";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper";
-
-SwiperCore.use([Pagination]);
+import Slider from "react-slick";
 
 const HomePortfolioSection = ({ t }) => {
   const portfolio = [
@@ -25,6 +22,17 @@ const HomePortfolioSection = ({ t }) => {
     },
   ];
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true
+  };
+
   return (
     <div className="HomePortfolioSection">
       <img src={"/assets/images/home/home-dots-2.svg"} alt="" className="home-dots-2" />
@@ -34,13 +42,11 @@ const HomePortfolioSection = ({ t }) => {
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
-      <Swiper spaceBetween={50} slidesPerView={1} pagination loop>
-        {portfolio.map((_slide, i) => (
-          <SwiperSlide key={i}>
-            <HomePorfolioSlide title={_slide.title} text={_slide.text} img={_slide.img} />
-          </SwiperSlide>
+      <Slider {...settings}>
+        {portfolio.map((_slide, index) => (
+          <HomePorfolioSlide key={index} title={_slide.title} text={_slide.text} img={_slide.img} />
         ))}
-      </Swiper>
+      </Slider>
 
       <div className="d-flex justify-content-center mt-30">
         <button className="btn custom-button-2">{t("common.button_2")}</button>

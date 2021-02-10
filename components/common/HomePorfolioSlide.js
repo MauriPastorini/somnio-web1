@@ -3,7 +3,7 @@ import Link from "next/link";
 import IconChevronRight from "./IconChevronRight";
 
 const HomePorfolioSlide = ({ title, text, img }) => (
-  <div className="HomePorfolioSlide" style={{ width: `100%` }}>
+  <div className="HomePorfolioSlide" style={{ width: `100vw` }}>
     <div className="slide-text-content custom-container">
       <h2 className="slide-text-title">{title}</h2>
       <p className="slide-text-paragraph">{text}</p>
@@ -20,7 +20,7 @@ const HomePorfolioSlide = ({ title, text, img }) => (
     <style jsx>{`
       .HomePorfolioSlide {
         max-height: 100vh;
-        height: 990px;
+        height: 874px;
         position: relative;
         display: flex;
         align-items: center;
@@ -48,6 +48,10 @@ const HomePorfolioSlide = ({ title, text, img }) => (
           font-size: 27px;
           font-weight: 700;
 
+          p {
+            display: flex;
+            align-items: center;
+          }
           img {
             width: 13px;
             height: 19px;

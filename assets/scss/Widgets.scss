@@ -136,7 +136,7 @@ $primary-color: #001331;
 
 .swiper-pagination-bullets {
   .swiper-pagination-bullet {
-    padding: 5px;
+    // padding: 5px;
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
@@ -147,7 +147,6 @@ $primary-color: #001331;
   }
 
   .swiper-pagination-bullet-active {
-    padding: 5px;
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
@@ -157,11 +156,11 @@ $primary-color: #001331;
   }
 }
 
-.slick-list {
+.HomeWhatClientSaySection .slick-list {
   padding: 90px 440px !important;
 }
 
-.slick-dots {
+.HomeWhatClientSaySection .slick-dots {
   bottom: -50px !important;
 
   li {
@@ -169,10 +168,7 @@ $primary-color: #001331;
     border-radius: 50%;
     border: 2px solid #ffffff;
     cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
     opacity: 1;
-    padding: 0 5px;
     
     button::before {
       opacity: 0 !important;
@@ -185,9 +181,35 @@ $primary-color: #001331;
     border: 2px solid #ffffff;
     border-radius: 50%;
     cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 0 5px;
+    button::before {
+      opacity: 0 !important;
+      color: transparent !important;
+    }
+  }
+}
+
+.ServiceWorkingToolsSection, .HomePortfolioSection .slick-dots {
+  bottom: 12px !important;
+
+  li {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #29218c;
+    background: #fff;
+    opacity: 1;
+    
+    button::before {
+      opacity: 0 !important;
+      color: transparent !important;
+    }
+  }
+
+  li.slick-active {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #29218c;
+    background: #29218c !important;
+
     button::before {
       opacity: 0 !important;
       color: transparent !important;

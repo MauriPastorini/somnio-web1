@@ -10,8 +10,8 @@ const AgencySaySlider = ({ comments }) => {
     centerPadding: "440px",
     slidesToShow: 1,
     speed: 500,
-    // autoplay: true,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     pauseOnHover: true
   };
 
