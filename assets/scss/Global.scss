@@ -1,5 +1,6 @@
 @import './Fonts.scss';
 @import './Widgets.scss';
+@import './Sliders.scss';
 
 body {
   margin: 0 !important;
@@ -122,4 +123,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .custom-container {
+    width: 100%;
+    padding-right: 37px !important;
+    padding-left: 37px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .custom-container {
+    width: 100%;
+    max-width: 1150px;
+    padding-right: 37px !important;
+    padding-left: 37px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

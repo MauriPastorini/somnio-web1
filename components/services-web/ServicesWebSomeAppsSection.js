@@ -17,7 +17,7 @@ const ServicesWebSomeAppsSection = ({ t }) => {
         <h2 className="custom-container">ICUC</h2>
       </div>
 
-      <button className="btn custom-button-2">{t("common.button_2")}</button>
+      <button className="btn btn-custom-2">{t("common.button_2")}</button>
 
       <div className="agency-say-content custom-container">
         <div className="agency-say-card">

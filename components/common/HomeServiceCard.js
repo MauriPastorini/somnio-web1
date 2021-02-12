@@ -10,9 +10,8 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
     <Link href={link}>
       <a className="service-card-link">
         <p>
-
-        Read more
-        <img src="/assets/images/common/arrow2.svg" alt=""/>
+          Read more
+          <img src="/assets/images/common/arrow2.svg" alt="" />
         </p>
       </a>
     </Link>
@@ -24,47 +23,69 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
           display: flex;
           flex-direction: column;
           align-items: center;
-        }
 
-        .service-card-title {
-          color: #001739;
-          text-align: center;
-          font-size: 25px;
-          font-weight: 500;
-          letter-spacing: 0.63px;
-          margin-bottom: 41px;
-          max-width: 200px;
-          min-height: 60px;
-        }
+          .service-card-title {
+            color: #001739;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            letter-spacing: 0.63px;
+            margin-bottom: 41px;
+            max-width: 200px;
+            min-height: 60px;
+          }
 
-        .service-card-text {
-          color: #707070;
-          font-size: 18px;
-          margin-bottom: 26px;
-          max-width: 320px;
-          text-align: center;
-        }
+          .service-card-text {
+            color: #707070;
+            font-size: 18px;
+            margin-bottom: 26px;
+            max-width: 320px;
+            text-align: center;
+          }
 
-        .service-card-header {
-          margin-bottom: 41px;
-          height: 130px;
-        }
+          .service-card-header {
+            margin-bottom: 41px;
+            height: 130px;
+          }
 
-        .service-card-link {
-          color: #1681e3;
-          font-size: 20px;
-          margin-bottom: 60px;
-          text-decoration: none;
-          font-weight: 700;
+          .service-card-link {
+            color: #1681e3;
+            font-size: 20px;
+            margin-bottom: 60px;
+            text-decoration: none;
+            font-weight: 700;
 
-          img{
-            width: 9px;
-            height: 15px;
-            margin-left: 16px;
+            p {
+              display: flex;
+              align-items: center;
+            }
+
+            img {
+              width: 9px;
+              height: 15px;
+              margin-left: 16px;
+            }
           }
         }
 
-        .service-card-footer {
+        @media screen and (max-width: 1280px) {
+          .HomeServiceCard {
+            .service-card-title {
+              font-size: 18px;
+              letter-spacing: 0.45px;
+              margin-bottom: 12px;
+            }
+
+            .service-card-text {
+              font-size: 14px;
+              margin-bottom: 17px;
+            }
+
+            .service-card-link {
+              font-size: 16px;
+              margin-bottom: 38px;
+            }
+          }
         }
       `}
     </style>

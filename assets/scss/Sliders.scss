@@ -1,0 +1,148 @@
+.center .agency-card {
+  transition: all 0.3s ease;
+}
+
+.center .slick-center .agency-card {
+  opacity: 1;
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.AgencySaySlider .slick-list {
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
+}
+
+// Ligth dots
+.AgencySaySlider .slick-dots {
+  bottom: -50px !important;
+
+  li {
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    opacity: 1;
+
+    button::before {
+      opacity: 0 !important;
+      color: transparent !important;
+    }
+  }
+
+  li.slick-active {
+    background: #ffffff !important;
+  }
+}
+
+// Purple dots
+.ServiceWorkingToolsSection,
+.HomePortfolioSection .slick-dots {
+  bottom: 12px !important;
+
+  li {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #29218c;
+    background: #fff;
+    opacity: 1;
+
+    button::before {
+      opacity: 0 !important;
+      color: transparent !important;
+    }
+  }
+
+  li.slick-active {
+    background: #29218c !important;
+  }
+}
+
+// Green dots
+.HomeServicesSection .slick-dots {
+  bottom: -73px !important;
+
+  li {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #0de1d0;
+    background: #fff;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    margin: 0 14px;
+
+    button::before {
+      opacity: 0 !important;
+      color: transparent !important;
+    }
+  }
+
+  li.slick-active {
+    background: #0de1d0 !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .center .slick-center .agency-card {
+    opacity: 1;
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .AgencySaySlider .slick-list {
+    padding-top: 50px !important;
+    padding-bottom: 60px !important;
+  }
+
+  // Ligth dots
+  .AgencySaySlider .slick-dots {
+    bottom: 0px !important;
+
+    li {
+      background: transparent;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      opacity: 1;
+      width: 12px;
+      height: 12px;
+      margin: 0 12px;
+
+      button::before {
+        opacity: 0 !important;
+        color: transparent !important;
+      }
+    }
+
+    li.slick-active {
+      background: #ffffff !important;
+    }
+  }
+
+  // Purple dots
+.ServiceWorkingToolsSection,
+.HomePortfolioSection .slick-dots {
+  bottom: -50px !important;
+
+  li {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #6056CC;
+    background: #fff;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    margin: 0 12px;
+
+    button::before {
+      opacity: 0 !important;
+      color: transparent !important;
+    }
+  }
+
+  li.slick-active {
+    background: #6056CC !important;
+  }
+}
+}

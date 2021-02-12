@@ -8,7 +8,7 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
         <h3 className="mb-50"> {t("services_mobile.our_knowledge.title")}</h3>
         <p>{t("services_mobile.our_knowledge.text_1")}</p>
         <p className="mb-100">{t("services_mobile.our_knowledge.text_2")}</p>
-        <button className="btn custom-button-1"> {t("common.navbar.button")}</button>
+        <button className="btn btn-custom-1"> {t("common.navbar.button")}</button>
       </div>
       <div className="img-wrapper">
         <img src="/assets/images/services-mobile/knowledge-img.png" className="group-img" alt="" />

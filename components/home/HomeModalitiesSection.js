@@ -8,13 +8,13 @@ const HomeModalitiesSection = ({ t }) => {
       headerImg: "assets/images/home/home-modality-img2.svg",
       title: t("home.modalities.development.title"),
       text: t("home.modalities.development.text"),
-      link: "/mobile-development",
+      link: "/services/working-modalities#full-product-development",
     },
     {
       headerImg: "assets/images/home/home-modality-img1.svg",
       title: t("home.modalities.augmentation.title"),
       text: t("home.modalities.augmentation.text"),
-      link: "/web-development",
+      link: "/services/working-modalities#staff-augmentation",
     },
   ];
 
@@ -34,24 +34,34 @@ const HomeModalitiesSection = ({ t }) => {
         {`
           .HomeModalitiesSection {
             margin-bottom: 280px;
-          }
 
-          .header-wrapper{
-            margin-top: 134px !important;
-            margin-bottom: 120px !important;
-          }
-
-          .modality-list {
-            display: flex;
-            justify-content: space-between;
-
-            margin: 20px auto 0 auto;
-            max-width: 1129px;
-          }
-
-          @media screen and (max-width: 1200px) {
+            .header-wrapper{
+              margin-top: 134px !important;
+              margin-bottom: 120px !important;
+            }
+  
             .modality-list {
-              flex-direction: column;
+              display: flex;
+              justify-content: space-between;
+  
+              margin: 20px auto 0 auto;
+              max-width: 1129px;
+            }
+          }
+          
+
+          @media screen and (max-width: 1280px) {
+            .HomeModalitiesSection {
+              margin-bottom: 100px;
+  
+              .header-wrapper{
+                margin-top: 62px !important;
+                margin-bottom: 63px !important;
+              }
+    
+              .modality-list {
+                flex-direction: column;
+              }
             }
           }
         `}

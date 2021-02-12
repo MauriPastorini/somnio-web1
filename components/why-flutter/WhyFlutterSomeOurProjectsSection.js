@@ -31,7 +31,7 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
         </div>
       </div>
 
-      <button className="btn custom-button-2"> {t("common.button_2")}</button>
+      <button className="btn btn-custom-2"> {t("common.button_2")}</button>
 
       <div className="agency-say-content">
         <div className="agency-say-card">

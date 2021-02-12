@@ -22,14 +22,14 @@ const Home = () => (
     </Head>
 
     <HomeHeaderSection />
-    <HomeServicesSection />
+     <HomeServicesSection />
     <HomeWhyFlutterSection />
     <HomeModalitiesSection />
     <HomePortfolioSection />
     <HomeWhatClientSaySection />
     <HomeAboutUsSection />
     <HomeOurBlogSection />
-    <ContactSection />
+    <ContactSection /> 
   </Container>
 );
 

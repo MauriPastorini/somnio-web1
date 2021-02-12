@@ -1,24 +1,19 @@
-import React, { useContext } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
-import { I18nContext } from 'next-i18next'
 
 const HomeHeaderSection = ({ t }) => {
-  const { i18n: { language } } = useContext(I18nContext)
-  console.log("language", language)
   return (
     <div className="HomeHeaderSection">
-      <img src="/assets/images/home/home-header-bg.svg" alt="" className="home-header__bg" />
       <img src="/assets/images/home/home-header-path.svg" alt="" className="home-header__path" />
-      <div className="wrapper-content">
-        <div className="text-and-image custom-container">
-          <div className="home-header-text-wrapper" data-aos="fade-right">
-            <h1 className="home-header-text">{t("home.header.text_1")}</h1>
-            <button className="btn custom-button-1 shadow-button">{t("common.button_1")}</button>
-          </div>
-          <div className="home-header-img-wrapper">
-            <img src={`/assets/images/home/home-header-img.svg`} alt="" className="home-header-img img-fluid" />
-          </div>
+      <div className="text-and-image custom-container">
+        <div className="home-header-text-wrapper" data-aos="fade-right">
+          <h1 className="home-header-text">{t("home.header.text_1")}</h1>
+          <button className="btn btn-custom-1 btn-shadow btn-desktop">{t("common.button_1")}</button>
+        </div>
+        <div className="home-header-img-wrapper">
+          <img src={`/assets/images/home/home-header-img.svg`} alt="" className="home-header-img img-fluid" />
+          <button className="btn btn-custom-1 btn-shadow btn-mobile">{t("common.button_1")}</button>
         </div>
       </div>
 
@@ -26,19 +21,15 @@ const HomeHeaderSection = ({ t }) => {
         .HomeHeaderSection {
           position: relative;
           overflow: hidden;
+          background-image: url(/assets/images/home/home-header-bg.svg);
+          background-repeat: no-repeat;
+          background-position: center; 
+          background-size: 200%; 
 
-          .shadow-button {
-            -webkit-box-shadow: 32px 32px 87px -20px rgba(0,0,0,1);
-            -moz-box-shadow: 32px 32px 87px -20px rgba(0,0,0,1);
-            box-shadow: 32px 32px 87px -20px rgba(0,0,0,1);
-
-
-          }
-
-          .home-header__bg {
-            width: 100%;
-            top: 0;
-            z-index: -2;
+          .btn-shadow {
+            -webkit-box-shadow: 32px 32px 87px -20px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 32px 32px 87px -20px rgba(0, 0, 0, 1);
+            box-shadow: 32px 32px 87px -20px rgba(0, 0, 0, 1);
           }
 
           .home-header__path {
@@ -53,7 +44,10 @@ const HomeHeaderSection = ({ t }) => {
           .text-and-image {
             display: flex;
             align-items: center;
-            margin-top: 100px;
+            margin-top: 220px;
+            margin-bottom: 340px;
+            z-index: 1;
+            position: relative;
 
             .home-header-text-wrapper {
               width: 45%;
@@ -76,13 +70,98 @@ const HomeHeaderSection = ({ t }) => {
                 margin-left: 3%;
               }
             }
+
+            .btn-desktop {
+              display: block;
+            }
+
+            .btn-mobile {
+              display: none;
+            }
           }
         }
 
-        @media screen and (max-width: 1700px) {
-          .home-header__bg {
-            width: auto;
-            min-height: 600px;
+        @media screen and (max-width: 1920px) {
+          .HomeHeaderSection {
+            background-repeat: no-repeat;
+            background-size: 200% 100%;
+            background-position: center;
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .HomeHeaderSection {
+            background-image: url(/assets/images/home/mobile/home-header-bg.svg);
+            background-repeat: no-repeat;
+            // background-size: auto 100%;
+            background-size: cover;
+
+            .home-header__bg {
+              width: 100%;
+              top: 0;
+              z-index: -2;
+            }
+
+            .home-header__path {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 0;
+              max-width: 42%;
+              height: auto;
+            }
+
+            .text-and-image {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 160px;
+              margin-bottom: 182px;
+
+              .home-header-text-wrapper {
+                width: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .home-header-text {
+                  width: 100%;
+                  font-weight: bold;
+                  font-size: 36px;
+                  color: #ffffff;
+                  margin-bottom: 43px;
+                  text-align: center;
+                  max-width: 600px;
+                }
+              }
+
+              .home-header-img-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .home-header-img {
+                  width: 100%;
+                  margin: 0;
+                  max-width: 800px;
+                }
+              }
+
+              .btn-desktop {
+                display: none;
+              }
+
+              .btn-mobile {
+                display: block;
+                margin-top: 55px;
+                width: 240px;
+                height: 49px;
+                font-size: 19px !important;
+              }
+            }
           }
         }
       `}</style>

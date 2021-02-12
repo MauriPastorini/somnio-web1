@@ -13,7 +13,7 @@ const Footer = ({ t }) => {
         <img src="/assets/images/common/arrow3.svg" alt="" />
       </div>
 
-      <div className="footer-content mb-100 custom-container" data-aos="fade-in">
+      <div className="footer-content custom-container" data-aos="fade-in">
         <div className="row-footer">
           <div className="row-footer-header">
             <h4 className="row-footer-title">{t("common.footer.about")}</h4>
@@ -123,10 +123,10 @@ const Footer = ({ t }) => {
 
       <div className="footer-content-network custom-container" data-aos="fade-up">
         <a target="_blank" href="https://clutch.co/profile/somnio-software">
-          <img style={{ width: 107, height: 54 }} src="/assets/images/common/clutch.png" alt="" />
+          <img className="clutch-logo" src="/assets/images/common/clutch.png" alt="" />
         </a>
         <a href="/">
-          <img style={{ width: 187, height: 57 }} src="/assets/images/common/logo.png" alt="" />
+          <img className="somnio-logo" src="/assets/images/common/logo.png" alt="" />
         </a>
 
         <div className="social-network-group">
@@ -154,7 +154,6 @@ const Footer = ({ t }) => {
             src="/assets/images/common/app-developer-itfirms-2021.png"
             alt="app developers uruguay"
             title="App Developers Uruguay"
-            style={{ height: 150, width: 150 }}
           />
         </a>
         <a href="https://www.itfirms.co/top-web-development-companies/" target="_blank">
@@ -162,14 +161,12 @@ const Footer = ({ t }) => {
             src="/assets/images/common/web-developer-itfirms-2021.png"
             alt="web developers uruguay"
             title="Web Developers Uruguay"
-            style={{ height: 150, width: 150 }}
           />
         </a>
         <a href="https://topappdevelopmentcompanies.com/uy/directory/app-developers/uruguay" target="_blank">
           <img
             src="/assets/images/common/top-app-development-companies.png"
             alt=""
-            style={{ height: 150, width: 150 }}
           />
         </a>
         <a href="https://clutch.co/press-releases/awards-best-b2b-companies-latin-america-2020" target="_blank">
@@ -177,7 +174,6 @@ const Footer = ({ t }) => {
             src="/assets/images/common/B2B_Companies_Uruguay_2020.png"
             alt=""
             title=""
-            style={{ height: 150, width: 150 }}
           />
         </a>
         <a href="https://themanifest.com/app-development/companies/latin-america#somniosoftware" target="_blank">
@@ -185,16 +181,50 @@ const Footer = ({ t }) => {
             src="/assets/images/common/App-Developers_Latin-America_2021.jpg"
             alt=""
             title=""
-            style={{ height: 150, width: 150 }}
           />
         </a>
       </div>
+      <div className="custom-container footer-certificatons-logos-mobile" data-aos="fade-up">
+        <span className="first-group">
+          <a href="https://www.itfirms.co/top-mobile-app-development-companies/" target="_blank">
+            <img
+              src="/assets/images/common/app-developer-itfirms-2021.png"
+              alt="app developers uruguay"
+              title="App Developers Uruguay"
+            />
+          </a>
+          <a href="https://www.itfirms.co/top-web-development-companies/" target="_blank">
+            <img
+              src="/assets/images/common/web-developer-itfirms-2021.png"
+              alt="web developers uruguay"
+              title="Web Developers Uruguay"
+            />
+          </a>
+          <a href="https://topappdevelopmentcompanies.com/uy/directory/app-developers/uruguay" target="_blank">
+            <img
+              src="/assets/images/common/top-app-development-companies.png"
+              alt=""
+            />
+          </a>
+        </span>
 
-      {/* <div className="mt-100">
-
-        <button className="btn" onClick={() => i18n.changeLanguage("es")}>Español</button>
-      <button className="btn" onClick={() => i18n.changeLanguage("en")}>Ingles</button>
-      </div> */}
+        <span className="second-group">
+          <a href="https://clutch.co/press-releases/awards-best-b2b-companies-latin-america-2020" target="_blank">
+            <img
+              src="/assets/images/common/B2B_Companies_Uruguay_2020.png"
+              alt=""
+              title=""
+            />
+          </a>
+          <a href="https://themanifest.com/app-development/companies/latin-america#somniosoftware" target="_blank">
+            <img
+              src="/assets/images/common/App-Developers_Latin-America_2021.jpg"
+              alt=""
+              title=""
+            />
+          </a>
+        </span>
+      </div>
 
       <style jsx>{`
         .Footer {
@@ -203,106 +233,198 @@ const Footer = ({ t }) => {
           padding-bottom: 79px;
           max-height: 900px;
           position: relative;
-        }
 
-        .to-up {
-          display: flex !important;
-          justify-content: center !important;
-          align-items: center !important;
-          position: absolute !important;
-          width: 84px !important;
-          height: 84px !important;
-          background: transparent linear-gradient(135deg, #48c7e2 0%, #3bcee7 100%) 0% 0% no-repeat padding-box !important;
-          border: 4px solid #001739 !important;
-          top: -42px !important;
-          left: calc(50% - 42px) !important;
-          border-radius: 50% !important;
+          .to-up {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            position: absolute !important;
+            width: 84px !important;
+            height: 84px !important;
+            background: transparent linear-gradient(135deg, #48c7e2 0%, #3bcee7 100%) 0% 0% no-repeat padding-box !important;
+            border: 4px solid #001739 !important;
+            top: -42px !important;
+            left: calc(50% - 42px) !important;
+            border-radius: 50% !important;
 
-          svg {
-            width: 30px;
-            height: 30px;
-            color: #fff;
+            svg {
+              width: 30px;
+              height: 30px;
+              color: #fff;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
           }
 
-          &:hover {
-            cursor: pointer;
-          }
-        }
-
-        .AnyClassForContainer {
-          position: fixed;
-          right: -100px;
-          bottom: 150px;
-          transition: right 0.5s;
-          cursor: pointer;
-          background-color: white;
-          font-size: 20px;
-          padding: 10px;
-        }
-
-        .AnyClassForTransition {
-          right: 20px;
-        }
-
-        .footer-content {
-          display: flex;
-          justify-content: space-between;
-
-          .row-footer-header {
+          .footer-content {
             display: flex;
-            flex-direction: column;
-            margin-bottom: 30px;
+            justify-content: space-between;
+            margin-bottom: 100px;
 
-            .under-line {
-              width: 50px;
-              height: 1px;
-              background-color: #fff;
-            }
-          }
-
-          .row-footer {
-            .row-footer-title {
-              color: #fff;
-            }
-            .row-footer-description {
-              color: #fff;
-              white-space: wrap;
-              margin-bottom: 0;
-            }
-
-            .row-footer-links {
+            .row-footer-header {
               display: flex;
               flex-direction: column;
+              margin-bottom: 30px;
 
-              .row-footer-link {
-                text-decoration: none;
+              .under-line {
+                width: 50px;
+                height: 1px;
+                background-color: #fff;
+              }
+            }
+
+            .row-footer {
+              .row-footer-title {
                 color: #fff;
-                margin-bottom: 7px;
+              }
+              .row-footer-description {
+                color: #fff;
+                white-space: wrap;
+                margin-bottom: 0;
+              }
 
-                span:hover {
-                  border-bottom: 1px solid #fff;
+              .row-footer-links {
+                display: flex;
+                flex-direction: column;
+
+                .row-footer-link {
+                  text-decoration: none;
+                  color: #fff;
+                  margin-bottom: 7px;
+
+                  span:hover {
+                    border-bottom: 1px solid #fff;
+                  }
                 }
               }
             }
           }
-        }
 
-        .footer-content-network {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          .footer-content-network {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-          .social-network-group {
-            img {
-              margin-left: 20px;
+            .clutch-logo {
+              width: 107px;
+              height: 54px;
+            }
+            .somnio-logo {
+              width: 187px;
+              height: 57px;
+            }
+
+            .social-network-group {
+              img {
+                margin-left: 20px;
+              }
+            }
+          }
+
+          .footer-certificatons-logos-mobile {
+            display: none;
+          }
+
+          .footer-certificatons-logos {
+            margin-top: 130px;
+            display: flex;
+            justify-content: space-evenly;
+
+            a img{
+              width: 150px;
+              height: 150px;
             }
           }
         }
 
-        .footer-certificatons-logos {
-          margin-top: 130px;
-          display: flex;
-          justify-content: space-evenly;
+        @media screen and (max-width: 428px) {
+          .Footer {
+            max-height: unset;
+
+            .footer-content {
+              flex-direction: column;
+              align-items: center;
+              margin-bottom: 0;
+
+              .row-footer-header {
+                align-items: center;
+              }
+
+              .row-footer {
+                margin-bottom: 50px;
+
+                .row-footer-description {
+                  text-align: center;
+                }
+
+                .row-footer-links {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                }
+              }
+            }
+
+            .footer-content-network {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-direction: column;
+
+              .clutch-logo {
+                width: 70px;
+                height: auto;
+                margin-bottom: 114px;
+              }
+
+              .somnio-logo {
+                width: 131px;
+                height: auto;
+                margin-bottom: 50px;
+              }
+
+              .social-network-group {
+                img {
+                  margin-left: 16px;
+                  margin-right: 16px;
+                }
+              }
+            }
+
+            .footer-certificatons-logos-mobile {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              .first-group{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 119px;
+                margin-bottom: 50px;
+              } 
+
+              .second-group{
+                display: flex;
+                justify-content: space-between;
+                max-width: 220px;
+                width: 220px;
+                margin-bottom: 50px;
+              }
+
+              a img{
+                width: 90px;
+                height: 90px;
+              }
+
+            }
+
+            .footer-certificatons-logos {
+              display: none;
+            }
+          }
         }
       `}</style>
     </div>

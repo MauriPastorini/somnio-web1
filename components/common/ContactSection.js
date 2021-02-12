@@ -6,15 +6,13 @@ import ContactForm from "./ContactForm";
 const ContactSection = ({ t }) => (
   <div className="ContactSection">
     <div className="line-bottom"></div>
-    <img src="/assets/images/common/contact-bg.svg" className="contact__bg" alt=""></img>
     <img src="/assets/images/common/contact-points-1.svg" className="contact__points-1" alt=""></img>
     <img src="/assets/images/common/contact-points-2.svg" className="contact__points-2" alt=""></img>
-    <div className="contact__content">
-      <div className="section-header-light mb-100 mt-100 pt-100" data-aos="fade-in">
+    <div className="custom-container">
+      <div className="section-header-light header-wrapper" data-aos="fade-in">
         <h2>Let’s create successful apps together!</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
-
       <ContactForm />
     </div>
     <style jsx>{`
@@ -22,6 +20,10 @@ const ContactSection = ({ t }) => (
         position: relative;
         width: 100%;
         overflow: hidden;
+        background-image: url(/assets/images/common/contact-bg.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-top: 174px;
 
         .line-bottom {
           width: 100%;
@@ -35,12 +37,6 @@ const ContactSection = ({ t }) => (
           max-width: 844px;
         }
 
-        .contact__bg {
-          width: 100%;
-          // border-bottom: 1px solid #001739;
-          // border-bottom: 5px solid red;
-        }
-
         .contact__points-1 {
           position: absolute;
           top: 100px;
@@ -49,26 +45,39 @@ const ContactSection = ({ t }) => (
         }
 
         .contact__points-2 {
-          z-index: 2;
           bottom: 100px;
+          position: absolute;
           right: 100px;
           z-index: 2;
-          position: absolute;
         }
+      }
 
-        .contact__content {
-          position: absolute;
-          z-index: 2;
-          top: 0;
-          font-size: 25px;
-          width: 100%;
-          color: white;
+      @media screen and (max-width: 1900px) {
+        .ContactSection {
+          background-size: auto 120%;
         }
+      }
 
-        @media screen and (max-width: 1800px) {
-          .contact__bg {
-            width: auto;
-            min-height: 800px;
+      @media screen and (max-width: 428px) {
+        .ContactSection {
+          background-image: url(/assets/images/common/mobile/contact-bg.svg);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          padding-top: 85px;
+
+          .header-wrapper {
+            margin-bottom: 78px;
+          }
+
+          .contact__points-1 {
+            display: none;
+          }
+
+          .contact__points-2 {
+            max-width: 60px;
+            height: auto;
+            bottom: 20px;
+            right: 20px;
           }
         }
       }

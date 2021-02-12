@@ -30,14 +30,16 @@ const HomePortfolioSection = ({ t }) => {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 5000,
-    pauseOnHover: true
+    pauseOnHover: true,
   };
 
   return (
     <div className="HomePortfolioSection">
       <img src={"/assets/images/home/home-dots-2.svg"} alt="" className="home-dots-2" />
       <img src={"/assets/images/home/home-porfolio-path.png"} alt="" className="home-porfolio-path" />
-      <div className="section-header-dark mb-0" data-aos="fade-in">
+      {/* <img src={"/assets/images/home/mobile/home-portfolio-path.svg"} alt="" className="home-porfolio-path-mobile" /> */}
+
+      <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("home.portfolio.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -48,26 +50,80 @@ const HomePortfolioSection = ({ t }) => {
         ))}
       </Slider>
 
-      <div className="d-flex justify-content-center mt-30">
-        <button className="btn custom-button-2">{t("common.button_2")}</button>
-      </div>
+      <button className="btn btn-custom-2 btn-position">{t("common.button_2")}</button>
       <style jsx>
         {`
           .HomePortfolioSection {
             position: relative;
             margin-bottom: 92px;
+            overflow-x: hidden;
+            
+            .header-wrapper {
+              margin-bottom: 0;
+            }
+
+            .home-dots-2 {
+              position: absolute;
+              top: 0;
+              left: 294px;
+            }
+
+            .home-porfolio-path {
+              position: absolute;
+              top: -850px;
+              left: -50px;
+            }
+
+            // .home-porfolio-path-mobile {
+            //   display:none;
+            // }
+
+            .btn-position {
+              display: flex;
+              justify-content: center;
+              margin-top: 30px;
+            }
           }
 
-          .home-dots-2 {
-            position: absolute;
-            top: 0;
-            left: 294px;
-          }
+          @media screen and (max-width: 1280px) {
+            .HomePortfolioSection {
+              position: relative;
+              margin-bottom: 72px;
 
-          .home-porfolio-path {
-            position: absolute;
-            top: -850px;
-            left: -50px;
+              .header-wrapper {
+                margin-bottom: 55px;
+              }
+
+              .home-dots-2 {
+                position: absolute;
+                top: 0;
+                left: 46px;
+                width: 55px;
+              }
+
+              .home-porfolio-path {
+                display: none;
+              }
+
+              // .home-porfolio-path-mobile {
+              //   display: block;
+              //   position: absolute;
+              //   top: -270px;
+              //   left: -100px;
+              // }
+
+              .btn-position {
+                display: flex;
+                justify-content: center;
+                margin-top: 100px !important;
+                width: 239px;
+                height: 44px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 11px 39px !important;
+                font-size: 16px !important;
+              }
+            }
           }
         `}
       </style>

@@ -17,7 +17,7 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
         <h2 className="custom-container">Pay my trades</h2>
       </div>
 
-      <button className="btn custom-button-2">{t("common.button_2")}</button>
+      <button className="btn btn-custom-2">{t("common.button_2")}</button>
 
       <div className="agency-say-content custom-container mt-100">
         <div

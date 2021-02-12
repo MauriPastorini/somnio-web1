@@ -29,7 +29,7 @@ const HomeWhatClientSaySection = ({ t }) => {
         "They succesfully help us to increase our monthly incomes. We are completely satisfied with their services and we’d like to continue working with them.",
     },
     {
-      img: "/assets/images/common/hassan.jpg",
+      img: "/assets/images/common/tony.jpg",
       name: "Tony Loving",
       position: "Co-Founder",
       project: "Group Home Biz",
@@ -39,7 +39,7 @@ const HomeWhatClientSaySection = ({ t }) => {
   ];
   return (
     <div className="HomeWhatClientSaySection">
-      <img src="/assets/images/home/home-say-client-bg.svg" className="home-clientsay__bg" alt=""></img>
+      {/* <img src="/assets/images/home/home-say-client-bg.svg" className="home-clientsay__bg" alt=""></img> */}
       <div className="home-clientsay__content">
         <div className="section-header-light header-wrapper" data-aos="fade-in">
           <h2>{t("home.what_our_clients_say.title")}</h2>
@@ -64,21 +64,19 @@ const HomeWhatClientSaySection = ({ t }) => {
           position: relative;
           width: 100%;
           overflow: hidden;
+          background-image: url(/assets/images/home/home-say-client-bg.svg);
+          background-size: 200% auto;
+          background-position: center;
+          background-repeat: no-repeat;
 
-          .home-clientsay__bg {
-            width: auto;
-            min-height: 1350px;
-          }
-
-          .header-wrapper{
+          .header-wrapper {
             margin-top: 170px;
             margin-bottom: 27px !important;
           }
+
           .home-clientsay__content {
-            position: absolute;
             z-index: 2;
             top: 0;
-            font-size: 25px;
             width: 100%;
             color: white;
 
@@ -86,7 +84,7 @@ const HomeWhatClientSaySection = ({ t }) => {
               display: flex;
               justify-content: space-between;
               max-width: 470px;
-              margin: 40px auto 0 auto;
+              margin: 40px auto 169px auto;
             }
           }
 
@@ -95,6 +93,43 @@ const HomeWhatClientSaySection = ({ t }) => {
             font-size: 39px;
             font-weight: 700;
             margin-top: 110px;
+          }
+        }
+
+        @media screen and (max-width: 1920px) {
+          .HomeWhatClientSaySection {
+            background-size: auto 100%;
+          }
+        }
+
+        @media screen and (max-width: 428px) {
+          .HomeWhatClientSaySection {
+            background-image: url(/assets/images/home/mobile/home-say-client-bg.svg);
+            background-size: 200% 100%;
+            background-position: center;
+
+            .header-wrapper {
+              margin-top: 78px;
+              margin-bottom: 10px !important;
+            }
+
+            .home-clientsay__content {
+              .home-clientsay__content-logos {
+                max-width: 265px;
+                margin: 40px auto 70px auto;
+
+                img {
+                  max-width: 96px;
+                  height: auto;
+                }
+              }
+            }
+
+            .see-us-on {
+              font-size: 18px;
+              line-height: 22px;
+              margin-top: 40px;
+            }
           }
         }
       `}</style>

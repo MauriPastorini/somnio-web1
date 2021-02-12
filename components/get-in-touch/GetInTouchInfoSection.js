@@ -5,7 +5,7 @@ const GetInTouchInfoSection = ({ t }) => {
   return (
     <div className="GetInTouchInfoSection custom-container">
       <h2 className="title-1">If you prefer you can</h2>
-      <button className="btn custom-button-1">schedule a meeting</button>
+      <button className="btn btn-custom-1">schedule a meeting</button>
       <h2 className="title-1">or send us an email</h2>
       <p className="email">info@somniosoftware.com</p>
       <p className="phone-title">Phone</p>
@@ -26,7 +26,7 @@ const GetInTouchInfoSection = ({ t }) => {
             letter-spacing: 4px;
           }
 
-          .custom-button-1{
+          .btn-custom-1{
             margin-bottom: 138px !important;
           }
 

@@ -26,6 +26,7 @@ const AgencySayCard = ({ comment }) => {
           padding: 62px 100px;
           margin-left: 80px;
           margin-right: 80px;
+          overflow: hidden;
           -webkit-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
           -moz-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
@@ -97,6 +98,93 @@ const AgencySayCard = ({ comment }) => {
             max-width: 646px;
             margin-top: 38px;
             line-height: 25px;
+          }
+        }
+
+
+        @media screen and (max-width: 1280px) {
+          .agency-card {
+            background: #fff;
+            // max-width: 965px;
+            height: 340px;
+            border-radius: 34px;
+            position: relative;
+            padding: 62px 32px 32px 32px;
+            margin-left: 16px;
+            margin-right: 16px;
+            -webkit-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 10px 55px -12px rgba(0, 0, 0, 0.75);
+  
+            .agency-corn__card {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 85px;
+              height: 76px;
+  
+              .agency-corn__content {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+  
+                .agency-corn__bg {
+                  position: absolute;
+                  top: -8px;
+                  right: -1px;
+                  width: 85px;
+                }
+                .agency-corn__text {
+                  font-size: 14px;
+                  font-weight: bold;
+                  z-index: 1;
+                  max-width: 151px;
+                  padding: 17px;
+                }
+              }
+            }
+  
+            .agency-card__header {
+              display: flex;
+  
+              .agency-card__header-img {
+                margin-right: 10px;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+              }
+  
+              .agency-card__header-info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                max-width: 143px;
+
+                h3 {
+                  color: #001739;
+                  font-size: 15px;
+                  font-weight: bold;
+                  margin-bottom: 0;
+                  cursor: initial;
+                }
+  
+                img {
+                  max-width: 65px;
+                }
+              }
+            }
+  
+            .agency-card__text {
+              color: #001739;
+              font-size: 15px;
+              max-width: 646px;
+              margin-top: 18px;
+              line-height: 19px;
+            }
           }
         }
       `}</style>

@@ -44,8 +44,10 @@ const ServiceHeaderSection = ({ t }) => {
         </div>
 
         <div className="services-header-how-we-work__content">
-          <ServicesHowWeWorkCard data={cardContent1} />
-          <span className="mt-200">
+          <span id="full-product-development">
+            <ServicesHowWeWorkCard data={cardContent1} />
+          </span>
+          <span className="mt-200" id="staff-augmentation">
             <ServicesHowWeWorkCard data={cardContent2} />
           </span>
         </div>

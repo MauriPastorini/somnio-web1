@@ -3,27 +3,25 @@ import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
 const ContactForm = ({ t }) => (
-  <div className="ContactForm">
-    <form>
-      <div className="contact-form-group mb-50">
-        <label className="contact-label">What is your name?</label>
-        <input className="contact-text-input" type="text" />
-      </div>
-      <div className="contact-form-group mb-50">
-        <label className="contact-label">How is your e-mail?</label>
-        <input className="contact-text-input" type="text" />
-      </div>
-      <div className="contact-form-group mb-50">
-        <label className="contact-label">Tell us about your proyect</label>
-        <textarea rows="4" className="contact-textarea"></textarea>
-      </div>
-      <div className="contact-button-wrapper">
-        <button className="btn custom-button-1">Let's talk</button>
-        <Link href="/">
-          <a className="link-meeting">Or schedule a meeting</a>
-        </Link>
-      </div>
-    </form>
+  <form className="ContactForm">
+    <div className="contact-form-group mb-50">
+      <label className="contact-label">What is your name?</label>
+      <input className="contact-text-input" type="text" />
+    </div>
+    <div className="contact-form-group mb-50">
+      <label className="contact-label">How is your e-mail?</label>
+      <input className="contact-text-input" type="text" />
+    </div>
+    <div className="contact-form-group mb-50">
+      <label className="contact-label">Tell us about your proyect</label>
+      <textarea rows="4" className="contact-textarea"></textarea>
+    </div>
+    <div className="contact-button-wrapper">
+      <button className="btn btn-custom-1">Let's talk</button>
+      <Link href="/">
+        <a className="link-meeting">Or schedule a meeting</a>
+      </Link>
+    </div>
 
     <style jsx>{`
       .ContactForm {
@@ -33,9 +31,11 @@ const ContactForm = ({ t }) => (
         color: white;
         max-width: 844px !important;
         margin: 0 auto;
+
         .contact-form-group {
           display: flex;
           flex-direction: column;
+          width: 100%;
         }
 
         .contact-label {
@@ -82,19 +82,55 @@ const ContactForm = ({ t }) => (
           align-items: flex-end;
           margin-bottom: 24px;
 
-          button{
+          button {
             margin-bottom: 23px;
           }
 
-          .link-meeting{
-            color: #3BCEE7;
+          .link-meeting {
+            color: #3bcee7;
             font-size: 20px;
           }
         }
+      }
 
+      @media screen and (max-width: 428px) {
+        .ContactForm {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .contact-form-group {
+          }
+
+          .contact-label {
+            font-size: 18px;
+          }
+
+          .contact-text-input {
+            font-size: 18px;
+          }
+
+          .contact-textarea {
+            font-size: 18px;
+          }
+
+          .contact-button-wrapper {
+            button {
+              margin-bottom: 23px;
+              width: 241px;
+              height: 49px;
+              font-size: 20px !important;
+            }
+
+            .link-meeting {
+              font-size: 20px;
+              margin-bottom: 50px;
+            }
+          }
+        }
       }
     `}</style>
-  </div>
+  </form>
 );
 
 ContactForm.getInitialProps = async () => ({
