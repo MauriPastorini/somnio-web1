@@ -34,6 +34,26 @@ const ServicesHowWeWorkCard = ({ data }) => (
           max-width: 600px;
         }
       }
+
+      @media screen and (max-width: 1280px) {
+        .ServicesHowWeWorkCard {
+          margin-bottom: 46px;
+  
+          .how-we-work-card__img {
+            margin-bottom: 33px;
+            width: 51px;
+            height: auto;
+          }
+  
+          .how-we-work-card__title {
+            font-size: 22px;
+            margin-bottom: 30px;
+          }
+          .how-we-work-card__text {
+            font-size: 14px;
+          }
+        }
+      }
     `}</style>
   </div>
 );

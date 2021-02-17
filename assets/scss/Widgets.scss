@@ -144,4 +144,49 @@ $primary-color: #001331;
       letter-spacing: 2.4px;
     }
   }
+
+  .agency-say-card {
+    max-width: 100%;
+    padding: 36px;
+    background-image: url(/assets/images/services/services-agency-say-bg.svg);
+
+    .agency-say-card__title {
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .agency-say-card__text {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .agency-say-card__footer {
+      align-items: flex-start;
+      flex-direction: column;
+
+      .card__footer-logo {
+        width: 67px;
+        height: auto;
+        margin-bottom: 35px;
+      }
+
+      .card__footer-person {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 49px;
+          height: 49px;
+        }
+
+        p {
+          margin-left: 14px;
+          margin-bottom: 0;
+          font-size: 14px;
+          color: #ffffff;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }

@@ -1,4 +1,3 @@
-// import Background from "./../../../../assets/img/about-us-how-we-work-bg.svg";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 import AboutUsHowWeWorkCard from "../../components/common/AboutUsHowWeWorkCard";
@@ -19,54 +18,51 @@ const AboutUsHowWeWorkSection = ({ t }) => {
 
   return (
     <div className="AboutUsHowWeWorkSection">
-      <img className="bg" src="/assets/images/about-us/about-us-how-we-work-bg.svg" />
-      <div className="how-we-work__content">
-        <div className="section-header-light" data-aos="fade-in">
-          <h2>{t("about_us.how_we_work.title")}</h2>
-          <img src={"/assets/images/home-services-line-light.svg"} alt="" />
-        </div>
-
-        <div className="how-we-work__card-list custom-container mb-150" data-aos="fade-up">
-          {data.map((d, i) => (
-            <AboutUsHowWeWorkCard key={i} title={d.title} text={d.text} img={d.img} />
-          ))}
-        </div>
+      <div className="section-header-light header-wrapper" data-aos="fade-in">
+        <h2>{t("about_us.how_we_work.title")}</h2>
+        <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
+
+      <div className="card-list custom-container" data-aos="fade-up">
+        {data.map((d, i) => (
+          <AboutUsHowWeWorkCard key={i} title={d.title} text={d.text} img={d.img} />
+        ))}
+      </div>
+
       <style jsx>{`
         .AboutUsHowWeWorkSection {
           position: relative;
-          width: 100%;
+          background-image: url(/assets/images/about-us/how-we-work-bg.svg);
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
-          overflow: hidden;
-          
-          .bg{
-            width: 100%;
-            min-height: auto;
-          }
+          padding: 122px 0 200px 0;
 
-          .how-we-work__content {
-            position: absolute;
-            top: 122px;
-            width: 100%;
+          .card-list {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            .how-we-work__card-list {
-              display: flex;
-              justify-content: space-between;
-              max-width: 1430px !important;
-            }
+            justify-content: space-between;
+            max-width: 1430px !important;
           }
+        }
 
+        @media screen and (max-width: 1280px) {
+          .AboutUsHowWeWorkSection {
+            position: relative;
+            background-image: url(/assets/images/about-us/mobile/how-we-work-bg.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 58px 0 66px 0;
 
-          @media screen and (max-width: 1600px) {
-            .bg{
-              width: auto;
-              min-height: 900px;
+            .header-wrapper{
+              margin-bottom: 48px !important;
+            }
+
+            .card-list {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              max-width: unset;
             }
           }
         }

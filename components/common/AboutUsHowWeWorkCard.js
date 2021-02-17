@@ -51,6 +51,47 @@ const AboutUsHowWeWorkCard = ({ title, text, img }) => (
           z-index: 1;
         }
       }
+
+      @media screen and (max-width: 1280px) {
+        .AboutUsHowWeWorkCard {
+          padding: 70px 36px 36px 36px;
+          margin-left: 0;
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 29px;
+
+          &:last-of-type {
+            .how-we-work-card-corn--img {
+              right: 19px !important;
+              width: 45px;
+            }
+          }
+
+          h2 {
+            font-size: 22px;
+            margin-left: 0;
+          }
+
+          p {
+            font-size: 14px;
+          }
+
+          .how-we-work-card-corn {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 102px;
+          }
+
+          .how-we-work-card-corn--img {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            z-index: 1;
+            width: 55px;
+          }
+        }
+      }
     `}</style>
   </div>
 );

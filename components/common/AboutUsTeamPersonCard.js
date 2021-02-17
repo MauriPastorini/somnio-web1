@@ -12,24 +12,48 @@ const AboutUsTeamPersonCard = ({ img, name, position }) => (
         flex-direction: column;
         align-items: center;
         margin-bottom: 103px;
+
+        .team-person__img {
+          margin-bottom: 49px;
+        }
+  
+        .team-person__name {
+          color: #001331;
+          font-size: 21px;
+          font-weight: bold;
+          text-align: center;
+        }
+  
+        .team-person__position {
+          color: #000000;
+          font-size: 21px;
+          text-align: center;
+        }
       }
 
-      .team-person__img {
-        margin-bottom: 49px;
+      @media screen and (max-width: 1280px) {
+        .AboutUsTeamPersonCard {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 40px;
+  
+          .team-person__img {
+            width: 111px;
+            height: auto;
+            margin-bottom: 6px;
+          }
+    
+          .team-person__name {
+            font-size: 14px;
+          }
+    
+          .team-person__position {
+            font-size: 12px;
+          }
+        }
       }
 
-      .team-person__name {
-        color: #001331;
-        font-size: 21px;
-        font-weight: bold;
-        text-align: center;
-      }
-
-      .team-person__position {
-        color: #000000;
-        font-size: 21px;
-        text-align: center;
-      }
     `}</style>
   </div>
 );

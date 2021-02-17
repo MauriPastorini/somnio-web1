@@ -73,53 +73,59 @@ const ServicesProcessSection = ({ t }) => {
             top: 378px;
             left: 90px;
           }
+
+          .header-wrapper {
+            margin-top: 213px;
+            margin-bottom: 140px !important;
+          }
+
+          .process-card-wrapper {
+            // Design Thinking
+            &:nth-child(1) {
+              margin-left: 0px;
+              margin-bottom: 80px;
+            }
+
+            // Requirements Survey
+            &:nth-child(2) {
+              margin-left: 670px;
+              margin-bottom: 180px;
+            }
+
+            // UI/UX
+            &:nth-child(3) {
+              margin-left: 20px;
+              margin-bottom: 150px;
+            }
+
+            // Software Architecture and Design
+            &:nth-child(4) {
+              margin-left: 450px;
+              margin-bottom: 230px;
+            }
+
+            // Development
+            &:nth-child(5) {
+              margin-left: 0px;
+              margin-bottom: 200px;
+            }
+
+            // QA testing
+            &:nth-child(6) {
+              margin-left: 450px;
+              margin-bottom: 170px;
+            }
+
+            // Launch and Maintenance
+            &:nth-child(7) {
+              margin-left: 0px;
+            }
+          }
         }
 
-        .header-wrapper {
-          margin-top: 213px;
-          margin-bottom: 140px !important;
-        }
-
-        .process-card-wrapper {
-          // Design Thinking
-          &:nth-child(1) {
-            margin-left: 0px;
-            margin-bottom: 80px;
-          }
-
-          // Requirements Survey
-          &:nth-child(2) {
-            margin-left: 670px;
-            margin-bottom: 180px;
-          }
-
-          // UI/UX
-          &:nth-child(3) {
-            margin-left: 20px;
-            margin-bottom: 150px;
-          }
-
-          // Software Architecture and Design
-          &:nth-child(4) {
-            margin-left: 450px;
-            margin-bottom: 230px;
-          }
-
-          // Development
-          &:nth-child(5) {
-            margin-left: 0px;
-            margin-bottom: 200px;
-          }
-
-          // QA testing
-          &:nth-child(6) {
-            margin-left: 450px;
-            margin-bottom: 170px;
-          }
-
-          // Launch and Maintenance
-          &:nth-child(7) {
-            margin-left: 0px;
+        @media screen and (max-width: 1280px) {
+          .ServicesProcessSection{
+            display: none;
           }
         }
       `}</style>

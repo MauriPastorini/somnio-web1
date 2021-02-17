@@ -90,10 +90,10 @@ const HomeAboutUsSection = ({ t }) => {
         @media screen and (max-width: 1280px) {
         }
 
-        @media screen and (max-width: 428px) {
+        @media screen and (max-width: 1280px) {
           .HomeAboutUsSection {
-            height: 100vh;
-            max-height: 734px;
+            height: auto;
+            max-height: unset;
             position: relative;
             padding-top: 81px;
 
@@ -105,7 +105,7 @@ const HomeAboutUsSection = ({ t }) => {
               display: flex;
               align-items: center;
               flex-direction: column;
-              height: 100vh;
+              height: auto;
 
               .home-aboutus-text-wrapper {
                 display: flex;
@@ -125,21 +125,26 @@ const HomeAboutUsSection = ({ t }) => {
               .home-aboutus-img-wrapper {
                 position: relative;
                 width: 100%;
-                height: auto;
+                height: 286px;
+                display: flex;
 
                 .path-img {
                   position: absolute;
                   top: -17px;
-                  right: 60px;
+                  right: 50px;
                   max-width: 300px;
                 }
 
                 .group-img {
-                  position: absolute;
-                  top: 50px;
-                  right: 10px;
-                  max-width: 316px;
+                  position: relative;
+                  top: auto;
+                  right: 0;
+                  max-width: unset;
                   height: auto;
+                  width: 90%;
+                  margin-left: 10%;
+                  margin-top: auto;
+                  margin-bottom: 0;
                 }
               }
             }

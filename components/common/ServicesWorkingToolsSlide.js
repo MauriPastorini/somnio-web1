@@ -20,23 +20,62 @@ const ServicesWorkingToolsSlide = ({ slide }) => {
           max-height: 100vh;
           position: relative;
           width: 100%;
+
+          .tool-slide-text__content {
+            max-width: 600px;
+
+            .tool-slide-text__type {
+              font-size: 33px;
+              font-weight: bold;
+            }
+
+            .tool-slide-text__tool {
+              font-size: 33px;
+            }
+
+            .tool-slide-text__text {
+              color: #707070;
+              font-size: 23px;
+            }
+          }
         }
 
-        .tool-slide-text__content {
-          max-width: 600px;
+        @media screen and (max-width: 1280px) {
+          .ServicesWorkingToolsSlide {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: auto;
+            max-height: 100vh;
+            position: relative;
+            width: 100%;
 
-          .tool-slide-text__type {
-            font-size: 33px;
-            font-weight: bold;
+            .tool-slide-text__content {
+              max-width: 600px;
+              margin-bottom: 40px;
+              
+              .tool-slide-text__type {
+                font-size: 22px;
+                font-weight: bold;
+                text-align: center;
+              }
+
+              .tool-slide-text__tool {
+                font-size: 22px;
+                text-align: center;
+              }
+
+              .tool-slide-text__text {
+                color: #707070;
+                font-size: 15px;
+                text-align: center;
+              }
+            }
           }
 
-          .tool-slide-text__tool {
-            font-size: 33px;
-          }
-
-          .tool-slide-text__text {
-            color: #707070;
-            font-size: 23px;
+          img {
+            max-width: 245px;
           }
         }
       `}</style>

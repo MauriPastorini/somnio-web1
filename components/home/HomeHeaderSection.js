@@ -23,8 +23,8 @@ const HomeHeaderSection = ({ t }) => {
           overflow: hidden;
           background-image: url(/assets/images/home/home-header-bg.svg);
           background-repeat: no-repeat;
-          background-position: center; 
-          background-size: 200%; 
+          background-position: center;
+          background-size: 200%;
 
           .btn-shadow {
             -webkit-box-shadow: 32px 32px 87px -20px rgba(0, 0, 0, 1);
@@ -84,23 +84,13 @@ const HomeHeaderSection = ({ t }) => {
         @media screen and (max-width: 1920px) {
           .HomeHeaderSection {
             background-repeat: no-repeat;
-            background-size: 200% 100%;
-            background-position: center;
+            background-size: auto 100%;
+            background-position: bottom;
           }
         }
 
         @media screen and (max-width: 1280px) {
           .HomeHeaderSection {
-            background-image: url(/assets/images/home/mobile/home-header-bg.svg);
-            background-repeat: no-repeat;
-            // background-size: auto 100%;
-            background-size: cover;
-
-            .home-header__bg {
-              width: 100%;
-              top: 0;
-              z-index: -2;
-            }
 
             .home-header__path {
               position: absolute;
@@ -162,6 +152,12 @@ const HomeHeaderSection = ({ t }) => {
                 font-size: 19px !important;
               }
             }
+          }
+        }
+
+        @media screen and (max-width: 428px) {
+          .HomeHeaderSection {
+            background-image: url(/assets/images/home/mobile/home-header-bg.svg);
           }
         }
       `}</style>

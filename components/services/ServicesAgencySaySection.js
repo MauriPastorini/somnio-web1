@@ -33,16 +33,25 @@ const ServicesAgencySaySection = ({ t }) => {
       </div>
       <style jsx>{`
         .ServicesAgencySaySection {
+          .header-wrapper {
+            margin-top: 106px;
+          }
+
+          .agency-say-content {
+            display: flex;
+            justify-content: center;
+          }
         }
 
-        .header-wrapper{
-          margin-top: 106px;
+        @media screen and (max-width: 1280px) {
+          .ServicesAgencySaySection {
+            .header-wrapper {
+              margin-top: 48px;
+              margin-bottom: 59px;
+            }
+          }
         }
-        
-        .agency-say-content {
-          display: flex;
-          justify-content: center;
-        }
+
       `}</style>
     </div>
   );

@@ -47,12 +47,12 @@ const AboutUsOurValuesSection = ({ t }) => {
         <h2>{t("about_us.our_values.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
-      <div className="values-list--first">
+      <div className="values-list--first custom-container">
         {firstRecord.map((r, i) => (
           <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} />
         ))}
       </div>
-      <div className="values-list--second">
+      <div className="values-list--second custom-container">
         {secondRecord.map((r, i) => (
           <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} />
         ))}
@@ -66,31 +66,71 @@ const AboutUsOurValuesSection = ({ t }) => {
           .values-list--first {
             display: flex;
             justify-content: space-between;
-            max-width: 1100px;
+            max-width: 1100px !important;
             margin: 0 auto 110px auto;
           }
 
           .values-list--second {
             display: flex;
             justify-content: space-between;
-            max-width: 800px;
+            max-width: 800px !important;
             margin: 0 auto 0 auto;
           }
 
-          .header-wrapper{
-
+          .header-wrapper {
             margin-bottom: 129px;
           }
-          
+
           .about-us-our-values-dots1 {
             position: absolute;
             left: 174px;
             bottom: 129px;
           }
+
           .about-us-our-values-dots2 {
             position: absolute;
             top: 102px;
             right: 108px;
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .AboutUsOurValuesSection {
+            position: relative;
+            padding-top: 58px;
+            padding-bottom: 66px;
+
+            .values-list--first {
+              display: flex;
+              justify-content: space-between;
+              max-width: 100%;
+              margin: 0 auto 0 auto;
+              flex-direction: column;
+            }
+
+            .values-list--second {
+              display: flex;
+              justify-content: space-between;
+              max-width: 100%;
+              margin: 0 auto 0 auto;
+              flex-direction: column;
+            }
+
+            .header-wrapper {
+              margin-bottom: 58px;
+            }
+
+            .about-us-our-values-dots1 {
+              position: absolute;
+              top: 43px;
+              left: 80%;
+              width: 77px;
+            }
+
+            .about-us-our-values-dots2 {
+              display: none;
+
+            }
           }
         }
       `}</style>

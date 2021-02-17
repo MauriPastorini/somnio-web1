@@ -43,7 +43,7 @@ const ServiceWorkingToolsSection = ({ t }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
   };
@@ -64,9 +64,21 @@ const ServiceWorkingToolsSection = ({ t }) => {
       <style jsx>{`
         .ServiceWorkingToolsSection {
           margin-bottom: 86px;
+
+          .header-wrapper {
+            margin-bottom: 70px !important;
+          }
         }
-        .header-wrapper {
-          margin-bottom: 70px !important;
+
+        @media screen and (max-width: 1280px) {
+          .ServiceWorkingToolsSection {
+            padding-top: 86px;
+            padding-bottom: 127px;
+  
+            .header-wrapper {
+              margin-bottom: 70px !important;
+            }
+          }
         }
       `}</style>
     </div>

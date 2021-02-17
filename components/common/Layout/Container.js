@@ -13,7 +13,7 @@ export const Container = ({ children }) => {
         <MobileNavbar />
       </span>
 
-      <div>{children}</div>
+      <div className="child" >{children}</div>
       <Footer />
 
       <style jsx>{`
@@ -23,6 +23,10 @@ export const Container = ({ children }) => {
 
         .isMobile {
           display: none;
+        }
+
+        .child{
+          overflow: hidden;
         }
 
         @media screen and (max-width: 1380px) {

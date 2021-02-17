@@ -79,7 +79,7 @@ const AboutUsTeamSection = ({ t }) => {
         </div>
         <div className="row team-card-list">
           {data.map((d, i) => (
-            <div key={i} className="col-sm-4 col-md-3">
+            <div key={i} className="col-lg-3 col-md-4 col-6">
               <AboutUsTeamPersonCard img={d.img} name={d.name} position={d.position} />
             </div>
           ))}
@@ -89,38 +89,66 @@ const AboutUsTeamSection = ({ t }) => {
         .AboutUsTeamSection {
           position: relative;
           padding-top: 125px;
-          padding-bottom: 50px
+          padding-bottom: 50px;
+          
+          .about-us-team-path1 {
+            position: absolute;
+            left: 0;
+          }
+
+          .about-us-team-path2 {
+            position: absolute;
+            right: 0;
+          }
+
+          .about-us-team-dots1 {
+            position: absolute;
+            top: 107px;
+            right: 156px;
+          }
+
+          .about-us-team-dots2 {
+            position: absolute;
+            bottom: 71px;
+            left: 55px;
+          }
+
+          .header-wrapper {
+            margin-bottom: 125px !important;
+          }
+
+          .team-card-list {
+            max-width: 1350px !important;
+            margin: 0 auto;
+          }
         }
 
-        .about-us-team-path1 {
-          position: absolute;
-          left: 0;
-        }
+        @media screen and (max-width: 1280px) {
+          .AboutUsTeamSection {
+            position: relative;
+            padding-top: 77px;
+            padding-bottom: 46px;
+            
+            .about-us-team-path1 {
+              display: none;
+            }
 
-        .about-us-team-path2 {
-          position: absolute;
-          right: 0;
-        }
+            .about-us-team-path2 {
+              display: none;
+            }
 
-        .about-us-team-dots1 {
-          position: absolute;
-          top: 107px;
-          right: 156px;
-        }
+            .about-us-team-dots1 {
+              display: none;
+            }
 
-        .about-us-team-dots2 {
-          position: absolute;
-          bottom: 71px;
-          left: 55px;
-        }
+            .about-us-team-dots2 {
+              display: none;
+            }
 
-        .header-wrapper {
-          margin-bottom: 125px !important;
-        }
-
-        .team-card-list {
-          max-width: 1350px !important;
-          margin: 0 auto;
+            .header-wrapper {
+              margin-bottom: 63px !important;
+            }
+          }
         }
       `}</style>
     </div>

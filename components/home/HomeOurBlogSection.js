@@ -3,7 +3,7 @@ import { withTranslation } from "../../i18n";
 
 const HomeOurBlogSection = ({ t }) => {
   return (
-    <div className="HomeOurBlogSection pt-100">
+    <div className="HomeOurBlogSection">
       <img src={`/assets/images/home-path-blog.svg`} alt="" className="path-blog-img-1" />
       <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("home.our_blog.title")}</h2>
@@ -15,6 +15,7 @@ const HomeOurBlogSection = ({ t }) => {
             height: 100vh;
             max-height: 900px;
             position: relative;
+            padding-top: 89px;
           }
 
           .path-blog-img-1 {

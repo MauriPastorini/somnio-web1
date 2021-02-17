@@ -339,7 +339,7 @@ const Footer = ({ t }) => {
           }
         }
 
-        @media screen and (max-width: 428px) {
+        @media screen and (max-width: 1280px) {
           .Footer {
             max-height: unset;
 
