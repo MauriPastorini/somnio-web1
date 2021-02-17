@@ -48,7 +48,7 @@ const ContactSection = ({ t }) => (
           bottom: 100px;
           position: absolute;
           right: 100px;
-          z-index: 2;
+          z-index: 0;
         }
       }
 

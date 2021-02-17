@@ -52,6 +52,54 @@ const ServicesMobileInfoSection = ({ t }) => {
             width: 40%;
           }
         }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesMobileInfoSection {
+            margin-top: 82px;
+            margin-bottom: 75px;
+          }
+
+          .mobile-text-and-img {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+            .mobile-img-wrapper {
+              position: relative;
+              width: 100%;
+              height: auto;
+              margin-right: 0;
+              max-width: 800px;
+              min-height: unset;
+              order: 1;
+
+              .path-img {
+                position: relative;
+                top: 0;
+                left: 0;
+              }
+              .group-img {
+                position: absolute;
+                top: 57px;
+                left: 21px;
+                max-width: 90%;
+                height: auto;
+              }
+            }
+
+            .mobile-text {
+              color: #001331;
+              font-size: 15px;
+              max-width: 600px;
+              width: 100%;
+              text-align: center;
+              margin-bottom: 50px;
+            }
+          }
+        }
+
+
       `}</style>
     </div>
   );

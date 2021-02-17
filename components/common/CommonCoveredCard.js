@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 
-
 const CommonCoveredCard = ({ title, description }) => (
   <div className="CommonCoveredCard">
     <h2>{title}</h2>
@@ -16,9 +15,9 @@ const CommonCoveredCard = ({ title, description }) => (
         width: 100%;
         padding: 54px;
 
-        -webkit-box-shadow: 0px 0px 62px -19px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 62px -19px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 62px -19px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 62px -19px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 62px -19px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 62px -19px rgba(0, 0, 0, 0.75);
 
         h2 {
           color: #fff;
@@ -32,6 +31,21 @@ const CommonCoveredCard = ({ title, description }) => (
           color: #fff;
           font-size: 23px;
           text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 1280px) {
+        .CommonCoveredCard {
+          padding: 48px;
+          margin-bottom: 30px;
+
+          h2 {
+            font-size: 22px;
+            margin-bottom: 30px;
+          }
+          p {
+            font-size: 14px;
+          }
         }
       }
     `}</style>

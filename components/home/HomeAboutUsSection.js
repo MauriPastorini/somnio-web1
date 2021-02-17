@@ -30,7 +30,7 @@ const HomeAboutUsSection = ({ t }) => {
           position: relative;
           padding-top: 71px;
           overflow: hidden;
-          
+
           .text-and-image {
             display: flex;
             align-items: center;
@@ -88,9 +88,6 @@ const HomeAboutUsSection = ({ t }) => {
         }
 
         @media screen and (max-width: 1280px) {
-        }
-
-        @media screen and (max-width: 1280px) {
           .HomeAboutUsSection {
             height: auto;
             max-height: unset;
@@ -106,14 +103,16 @@ const HomeAboutUsSection = ({ t }) => {
               align-items: center;
               flex-direction: column;
               height: auto;
+              max-height: unset;
 
               .home-aboutus-text-wrapper {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 width: 100%;
                 height: auto;
-                margin-bottom: 25px;
+                margin-bottom: 75px;
 
                 .home-aboutus-text {
                   font-size: 15px;
@@ -125,14 +124,15 @@ const HomeAboutUsSection = ({ t }) => {
               .home-aboutus-img-wrapper {
                 position: relative;
                 width: 100%;
-                height: 286px;
+                height: auto;
                 display: flex;
+                max-width: 600px;
 
                 .path-img {
                   position: absolute;
-                  top: -17px;
-                  right: 50px;
-                  max-width: 300px;
+                  top: -93px;
+                  left: 0;
+                  max-width: 90%;
                 }
 
                 .group-img {
@@ -144,7 +144,6 @@ const HomeAboutUsSection = ({ t }) => {
                   width: 90%;
                   margin-left: 10%;
                   margin-top: auto;
-                  margin-bottom: 0;
                 }
               }
             }
@@ -165,6 +164,19 @@ const HomeAboutUsSection = ({ t }) => {
               position: absolute;
               right: -180px;
               top: 300px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 428px) {
+          .HomeAboutUsSection {
+            .text-and-image {
+              .home-aboutus-img-wrapper {
+                .path-img {
+                  position: absolute;
+                  top: -70px;
+                }
+              }
             }
           }
         }

@@ -62,6 +62,7 @@ const AboutUsHowWeWorkSection = ({ t }) => {
               display: flex;
               flex-direction: column;
               justify-content: space-between;
+              align-items: center;
               max-width: unset;
             }
           }

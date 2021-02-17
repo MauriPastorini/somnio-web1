@@ -397,7 +397,8 @@ const Footer = ({ t }) => {
               display: flex;
               flex-direction: column;
               align-items: center;
-
+              max-width: 700px !important;
+              
               .first-group{
                 display: flex;
                 justify-content: space-between;
@@ -409,8 +410,8 @@ const Footer = ({ t }) => {
               .second-group{
                 display: flex;
                 justify-content: space-between;
-                max-width: 220px;
-                width: 220px;
+                max-width: 60%;
+                width: 100%;
                 margin-bottom: 50px;
               }
 

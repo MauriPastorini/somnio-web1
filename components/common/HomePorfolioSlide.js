@@ -3,7 +3,7 @@ import Link from "next/link";
 import IconChevronRight from "./IconChevronRight";
 
 const HomePorfolioSlide = ({ title, text, img }) => (
-  <div className="HomePorfolioSlide" style={{ width: `100vw` }}>
+  <div className="HomePorfolioSlide" style={{ width: `100vw`}}>
     <div className="slide-text-content custom-container">
       <h2 className="slide-text-title">{title}</h2>
       <p className="slide-text-paragraph">{text}</p>
@@ -19,7 +19,6 @@ const HomePorfolioSlide = ({ title, text, img }) => (
     <img className="slide-img" src={img} alt=""></img>
     <style jsx>{`
       .HomePorfolioSlide {
-        max-height: 100vh;
         height: 874px;
         position: relative;
         display: flex;
@@ -60,34 +59,20 @@ const HomePorfolioSlide = ({ title, text, img }) => (
         }
 
         .slide-img {
-          position: relative;
+          position: absolute;
           top: 0;
           right: 0;
         }
       }
 
       @media screen and (max-width: 1400px) {
-        .slide-text-content {
-          .slide-text-paragraph {
-          }
-        }
-
         .slide-img {
-          top: 0;
-          right: 0;
           width: 850px;
         }
       }
 
       @media screen and (max-width: 1280px) {
-        .slide-text-content {
-          .slide-text-paragraph {
-          }
-        }
-
         .slide-img {
-          top: 0;
-          right: 0;
           width: 600px;
         }
       }
@@ -119,8 +104,7 @@ const HomePorfolioSlide = ({ title, text, img }) => (
           }
           
           .slide-img {
-            top: 0;
-            right: 0;
+            position: relative;
             width: 100%;
             padding-left: 32px;
           }

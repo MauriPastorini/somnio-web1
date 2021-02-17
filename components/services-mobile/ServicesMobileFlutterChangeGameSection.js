@@ -9,7 +9,8 @@ const ServicesMobileFlutterChangeGameSection = ({ t }) => {
         <p>{t("services_mobile.flutter_change_game.text_1")}</p>
         <p>{t("services_mobile.flutter_change_game.text_2")}</p>
       </div>
-      <img src="/assets/images/services-mobile/change-game-img.svg" alt="" />
+      <img src="/assets/images/services-mobile/change-game-img.svg" className="img-desktop" alt="" />
+      <img src="/assets/images/services-mobile/mobile/change-game-img.svg" className="img-mobile" alt="" />
       <style jsx>{`
         .ServicesMobileFlutterChangeGameSection {
           display: flex;
@@ -32,7 +33,41 @@ const ServicesMobileFlutterChangeGameSection = ({ t }) => {
             }
           }
 
-          img {
+          .img-mobile {
+            display: none;
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesMobileFlutterChangeGameSection {
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+            flex-direction: column;
+
+            .text-wrapper {
+              h2 {
+                font-size: 24px;
+                margin-bottom: 35px;
+                text-align: center;
+                max-width: 500px;
+              }
+              p {
+                font-size: 14px;
+                margin-bottom: 20px;
+                text-align: center;
+                max-width: 500px;
+              }
+            }
+
+            .img-desktop {
+              display: none;
+            }
+
+            .img-mobile {
+              margin-top: 22px;
+              display: block;
+            }
           }
         }
       `}</style>

@@ -153,11 +153,14 @@ const MobileNavbar = ({ t }) => {
           background: transparent linear-gradient(119deg, #1e6ac5 0%, #29218c 100%) 0% 0% no-repeat padding-box;
           overflow-x: hidden;
           transition: 0.5s;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .overlay-content {
           position: relative;
-          top: 20%;
+          // top: 10%;
           width: 100%;
           text-align: center;
           margin-top: 30px;
@@ -170,7 +173,7 @@ const MobileNavbar = ({ t }) => {
         .overlay a {
           padding: 8px;
           text-decoration: none;
-          font-size: 30px;
+          font-size: 20px;
           color: #fff;
           display: block;
           transition: 0.3s;
@@ -184,7 +187,7 @@ const MobileNavbar = ({ t }) => {
         .overlay .closebtn {
           position: absolute;
           top: 20px;
-          right: 45px;
+          right: 35px;
           font-size: 60px;
         }
 
@@ -197,7 +200,6 @@ const MobileNavbar = ({ t }) => {
           padding: 15px 43px;
           font-weight: 500;
           margin-top: 10px;
-          margin-bottom: 20%;
           
           &:hover {
             background-color: #ffffff !important;

@@ -16,7 +16,8 @@ const AboutUsHowWeWorkCard = ({ title, text, img }) => (
         padding: 70px 40px;
         margin-left: 20px;
         margin-right: 20px;
-        width: 641px;
+        width: 100%;
+        max-width: 641px;
 
         &:last-of-type {
           .how-we-work-card-corn--img {
@@ -57,7 +58,6 @@ const AboutUsHowWeWorkCard = ({ title, text, img }) => (
           padding: 70px 36px 36px 36px;
           margin-left: 0;
           margin-right: 0;
-          width: 100%;
           margin-bottom: 29px;
 
           &:last-of-type {

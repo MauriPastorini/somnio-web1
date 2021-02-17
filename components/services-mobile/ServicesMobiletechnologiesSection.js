@@ -223,6 +223,12 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
             min-height: 1425px;
           }
         }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesMobiletechnologiesSection {
+            display: none;
+          }
+        }
       `}</style>
     </div>
   );

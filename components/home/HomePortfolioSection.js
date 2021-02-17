@@ -9,16 +9,19 @@ const HomePortfolioSection = ({ t }) => {
       title: t("home.portfolio.jaac.title"),
       text: t("home.portfolio.jaac.text"),
       img: "/assets/images/home/home-porfolio-jaac.png",
+      color: "red",
     },
     {
       title: t("home.portfolio.crimedoor.title"),
       text: t("home.portfolio.crimedoor.text"),
       img: "/assets/images/home/home-portfolio-crime.png",
+      color: "green",
     },
     {
       title: t("home.portfolio.pay_my_trades.title"),
       text: t("home.portfolio.pay_my_trades.text"),
       img: "/assets/images/home/home-portfolio-paymytrades.png",
+      color: "blue",
     },
   ];
 
@@ -28,7 +31,7 @@ const HomePortfolioSection = ({ t }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
   };
@@ -36,7 +39,7 @@ const HomePortfolioSection = ({ t }) => {
   return (
     <div className="HomePortfolioSection">
       <img src={"/assets/images/home/home-dots-2.svg"} alt="" className="home-dots-2" />
-      <img src={"/assets/images/home/home-porfolio-path.png"} alt="" className="home-porfolio-path" />
+      {/* <img src={"/assets/images/home/home-porfolio-path.png"} alt="" className="home-porfolio-path" /> */}
       {/* <img src={"/assets/images/home/mobile/home-portfolio-path.svg"} alt="" className="home-porfolio-path-mobile" /> */}
 
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
@@ -46,7 +49,7 @@ const HomePortfolioSection = ({ t }) => {
 
       <Slider {...settings}>
         {portfolio.map((_slide, index) => (
-          <HomePorfolioSlide key={index} title={_slide.title} text={_slide.text} img={_slide.img} />
+          <HomePorfolioSlide key={index} title={_slide.title} text={_slide.text} img={_slide.img} color={_slide.color}/>
         ))}
       </Slider>
 

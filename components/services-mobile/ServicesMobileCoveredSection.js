@@ -17,12 +17,12 @@ const ServicesMobileCoveredSection = ({ t }) => {
   return (
     <div className="ServicesMobileCoveredSection">
       <div className="custom-container">
-        <div className="section-header-light mb-100" data-aos="fade-in">
+        <div className="section-header-light header-wrapper" data-aos="fade-in">
           <h2>{t("services_mobile.covered.title")}</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
-        <div className="services-covered-card-list">
+        <div className="card-list">
           {cardInfo.map((info, index) => (
             <CommonCoveredCard key={index} title={info.title} description={info.description} />
           ))}
@@ -30,15 +30,36 @@ const ServicesMobileCoveredSection = ({ t }) => {
       </div>
       <style jsx>{`
         .ServicesMobileCoveredSection {
-          padding-top: 122px;
-          padding-bottom: 226px;
           background: transparent linear-gradient(119deg, #1783e3 0%, #003ba8 100%) 0% 0% no-repeat padding-box;
+          padding: 122px 0 226px 0;
 
-          .services-covered-card-list {
+          .header-wrapper {
+            margin-bottom: 100px !important;
+          }
+          .card-list {
             display: flex;
             justify-content: space-between;
             max-width: 1360px;
             margin: 0 auto;
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesMobileCoveredSection {
+            padding: 58px 0 81px 0;
+            background: transparent linear-gradient(119deg, #1783e3 0%, #003ba8 100%) 0% 0% no-repeat padding-box;
+
+            .header-wrapper {
+              margin-bottom: 48px !important;
+            }
+
+            .card-list {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              max-width: unset;
+            }
           }
         }
       `}</style>
