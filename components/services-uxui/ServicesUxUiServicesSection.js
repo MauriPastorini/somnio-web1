@@ -67,47 +67,50 @@ const ServicesUxUiServicesSection = ({ t }) => {
   };
 
   return (
-    <div className="ServicesUxUiServicesSection container custom-container">
-      <div className="service_item"></div>
-      <div className="service_item">
-        <ServiceCard img={card_1.img} title={card_1.title} text={card_1.text} />
+    <>
+      <div className="ServicesUxUiServicesSection custom-container">
+        <div className="service_item"></div>
+        <div className="service_item">
+          <ServiceCard img={card_1.img} title={card_1.title} text={card_1.text} />
+        </div>
+        <div className="service_item">
+          <img src="/assets/images/services-uxui/arrow_1.svg" alt="" />
+        </div>
+        <div className="service_item">
+          <ServiceCard img={card_6.img} title={card_6.title} text={card_6.text} />
+        </div>
+        <div className="service_item"></div>
+        <div className="service_item">
+          <ServiceCard img={card_2.img} title={card_2.title} text={card_2.text} />
+        </div>
+        <div className="service_item">
+          <img src="/assets/images/services-uxui/arrow_5.svg" alt="" />
+        </div>
+        <div className="service_item">
+          <h2>UX/UI</h2>
+          <p>{t("services_uxui.services.title")}</p>
+        </div>
+        <div className="service_item">
+          <img src="/assets/images/services-uxui/arrow_2.svg" alt="" />
+        </div>
+        <div className="service_item">
+          <ServiceCard img={card_5.img} title={card_5.title} text={card_5.text} />
+        </div>
+        <div className="service_item"></div>
+        <div className="service_item">
+          <ServiceCard img={card_3.img} title={card_3.title} text={card_3.text} />
+        </div>
+        <div className="service_item">
+          <img src="/assets/images/services-uxui/arrow_4.svg" alt="" />
+        </div>
+        <div className="service_item">
+          <ServiceCard img={card_4.img} title={card_4.title} text={card_4.text} />
+        </div>
+        <div className="service_item">
+          <img src="/assets/images/services-uxui/arrow_3.svg" alt="" />
+        </div>
       </div>
-      <div className="service_item">
-        <img src="/assets/images/services-uxui/arrow_1.svg" alt="" />
-      </div>
-      <div className="service_item">
-        <ServiceCard img={card_6.img} title={card_6.title} text={card_6.text} />
-      </div>
-      <div className="service_item"></div>
-      <div className="service_item">
-        <ServiceCard img={card_2.img} title={card_2.title} text={card_2.text} />
-      </div>
-      <div className="service_item">
-        <img src="/assets/images/services-uxui/arrow_5.svg" alt="" />
-      </div>
-      <div className="service_item">
-        <h2>UX/UI</h2>
-        <p>{t("services_uxui.services.title")}</p>
-      </div>
-      <div className="service_item">
-        <img src="/assets/images/services-uxui/arrow_2.svg" alt="" />
-      </div>
-      <div className="service_item">
-        <ServiceCard img={card_5.img} title={card_5.title} text={card_5.text} />
-      </div>
-      <div className="service_item"></div>
-      <div className="service_item">
-        <ServiceCard img={card_3.img} title={card_3.title} text={card_3.text} />
-      </div>
-      <div className="service_item">
-        <img src="/assets/images/services-uxui/arrow_4.svg" alt="" />
-      </div>
-      <div className="service_item">
-        <ServiceCard img={card_4.img} title={card_4.title} text={card_4.text} />
-      </div>
-      <div className="service_item">
-        <img src="/assets/images/services-uxui/arrow_3.svg" alt="" />
-      </div>
+      <div className="temp-block"></div>
       <style jsx>{`
         .ServicesUxUiServicesSection {
           padding-top: 200px;
@@ -185,8 +188,23 @@ const ServicesUxUiServicesSection = ({ t }) => {
             }
           }
         }
+
+        .temp-block {
+          display: none;
+        }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesUxUiServicesSection {
+            display: none;
+          }
+
+          .temp-block {
+            display: block;
+            height: 100vh;
+          }
+        }
       `}</style>
-    </div>
+    </>
   );
 };
 

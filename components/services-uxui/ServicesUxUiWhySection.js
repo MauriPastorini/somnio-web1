@@ -3,21 +3,11 @@ import { withTranslation } from "../../i18n";
 
 const ServicesUxUiWhySection = ({ t }) => {
   return (
-    <div
-      className="ServicesUxUiWhySection pt-150"
-      style={{ backgroundImage: `url(/assets/images/services-uxui/franja1.svg)` }}
-    >
-      <div className="uxui__content">
+    <div className="ServicesUxUiWhySection">
+      <div className="uxui__content custom-container">
         <h2>{t("services_uxui.important.title")}</h2>
-        <p className="uxui__text custom-container">{t("services_uxui.important.text_1")}</p>
-        <p className="uxui__text custom-container">{t("services_uxui.important.text_2")}</p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <p className="uxui__text">{t("services_uxui.important.text_1")}</p>
+        <p className="uxui__text">{t("services_uxui.important.text_2")}</p>
       </div>
       <style jsx>{`
         .ServicesUxUiWhySection {
@@ -26,10 +16,16 @@ const ServicesUxUiWhySection = ({ t }) => {
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
+          background-image: url(/assets/images/services-uxui/franja1.svg);
+          padding-top: 150px;
+          padding-bottom: 150px;
 
           .uxui__content {
             position: relative;
             width: 100%;
+            display:flex;
+            align-items: center;
+            flex-direction: column;
 
             h2 {
               color: #fff;
@@ -47,6 +43,34 @@ const ServicesUxUiWhySection = ({ t }) => {
               font-weight: 500;
               margin-bottom: 25px;
             }
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesUxUiWhySection {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            .uxui__content {
+              position: relative;
+              width: 100%;
+
+              h2 {
+                font-size: 28px;
+                margin-bottom: 62px;
+              }
+
+              .uxui__text {
+                font-size: 15px;
+                margin-bottom: 25px;
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width: 428px) {
+          .ServicesUxUiWhySection {
+            background-image: url(/assets/images/services-uxui/mobile/franja1.svg);
           }
         }
       `}</style>

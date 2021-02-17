@@ -4,13 +4,13 @@ import { withTranslation } from "../../i18n";
 const ServicesMobileHeaderSection = ({ t }) => {
   return (
     <div className="ServicesMobileHeaderSection">
-      <img src="/assets/images/services-mobile/header-path.svg" alt="" className="services-mobile-header__path" />
+      <img src="/assets/images/services-mobile/header-path.svg" alt="" className="header__path" />
       <div className="text-and-image custom-container">
-        <div className="services-mobile-header-text-wrapper" data-aos="fade-right">
-          <h1 className="services-mobile-header-title">{t("services_mobile.header.text_1")}</h1>
-          <p className="services-mobile-header-text">{t("services_mobile.header.text_2")}</p>
+        <div className="header-text-wrapper" data-aos="fade-right">
+          <h1 className="header-title">{t("services_mobile.header.text_1")}</h1>
+          <p className="header-text">{t("services_mobile.header.text_2")}</p>
         </div>
-        <div className="services-mobile-header-img-wrapper">
+        <div className="header-img-wrapper">
           <img src={`/assets/images/services-mobile/header-img.svg`} alt="" className="header-img img-fluid" />
         </div>
       </div>
@@ -25,7 +25,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
           padding: 178px 0 250px 0;
         }
 
-        .services-mobile-header__path {
+        .header__path {
           position: absolute;
           top: -461px;
           left: -743px;
@@ -34,32 +34,32 @@ const ServicesMobileHeaderSection = ({ t }) => {
         }
 
         .text-and-image {
-          position: relative;
-          display: flex;
           align-items: center;
+          display: flex;
+          position: relative;
 
-          .services-mobile-header-text-wrapper {
+          .header-text-wrapper {
             width: 45%;
 
-            .services-mobile-header-title {
+            .header-title {
               width: 580px;
               font-weight: bold;
               font-size: 80px;
               color: #ffffff;
               margin-bottom: 50px;
             }
-            .services-mobile-header-text {
+            .header-text {
               width: 550px;
               font-size: 30px;
               color: #ffffff;
             }
           }
 
-          .services-mobile-header-img-wrapper {
+          .header-img-wrapper {
             margin-top: 90px;
             width: 55%;
 
-            .services-mobile-header-img {
+            .header-img {
               width: 95%;
               margin-left: 5%;
             }
@@ -79,7 +79,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
             padding: 47px 0 202px 0;
           }
 
-          .services-mobile-header__path {
+          .header__path {
             position: absolute;
             top: -620px;
             left: -861px;
@@ -92,36 +92,36 @@ const ServicesMobileHeaderSection = ({ t }) => {
             flex-direction: column;
             margin-top: 120px;
 
-            .services-mobile-header-text-wrapper {
+            .header-text-wrapper {
               width: 100%;
               display: flex;
               flex-direction: column;
               align-items: center;
 
-              .services-mobile-header-title {
+              .header-title {
                 width: 100%;
                 text-align: center;
                 font-size: 35px;
                 margin-bottom: 28px;
               }
-              .services-mobile-header-text {
+              .header-text {
                 font-size: 18px;
                 text-align: center;
                 max-width: 300px;
               }
             }
 
-            .services-mobile-header-img-wrapper {
+            .header-img-wrapper {
               margin-top: 90px;
               width: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
 
-              .services-mobile-header-img {
+              .header-img {
                 width: 100%;
                 margin: 0;
-                max-width: 800px;
+                max-width: 500px;
               }
             }
           }
@@ -131,7 +131,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
           .ServicesMobileHeaderSection {
             background-image: url(/assets/images/services-mobile/mobile/header-bg.svg);
 
-            .services-mobile-header__path {
+            .header__path {
               position: absolute;
               top: -133px;
               left: -175px;

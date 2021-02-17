@@ -50,6 +50,26 @@ const ServicesUxUiVitalSection = ({ t }) => {
             margin-bottom: 131px !important;
           }
         }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesUxUiVitalSection {
+
+            .content {
+              margin-top: 95px;
+            }
+
+            h2 {
+              font-size: 28px;
+              margin-bottom: 68px;
+            }
+            p {
+              font-size: 15px;
+            }
+            .last-text {
+              margin-bottom: 100px !important;
+            }
+          }
+        }
       `}</style>
     </div>
   );

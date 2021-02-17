@@ -70,7 +70,7 @@ const ServicesMobileInfoSection = ({ t }) => {
               width: 100%;
               height: auto;
               margin-right: 0;
-              max-width: 700px;
+              max-width: 500px;
               min-height: unset;
               order: 1;
 
