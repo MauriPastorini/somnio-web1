@@ -4,7 +4,6 @@ import { withTranslation } from "../../i18n";
 const ServicesMobileHeaderSection = ({ t }) => {
   return (
     <div className="ServicesMobileHeaderSection">
-      {/* <img src="/assets/images/services-mobile/header-bg.svg" alt="" className="services-mobile-header__bg" /> */}
       <img src="/assets/images/services-mobile/header-path.svg" alt="" className="services-mobile-header__path" />
       <div className="text-and-image custom-container">
         <div className="services-mobile-header-text-wrapper" data-aos="fade-right">
@@ -90,11 +89,8 @@ const ServicesMobileHeaderSection = ({ t }) => {
 
           .text-and-image {
             align-items: center;
-            display: flex;
             flex-direction: column;
             margin-top: 120px;
-            position: relative;
-            justify-content: space-between;
 
             .services-mobile-header-text-wrapper {
               width: 100%;

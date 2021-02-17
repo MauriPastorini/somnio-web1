@@ -70,7 +70,7 @@ const ServicesMobileInfoSection = ({ t }) => {
               width: 100%;
               height: auto;
               margin-right: 0;
-              max-width: 800px;
+              max-width: 700px;
               min-height: unset;
               order: 1;
 
@@ -81,7 +81,7 @@ const ServicesMobileInfoSection = ({ t }) => {
               }
               .group-img {
                 position: absolute;
-                top: 57px;
+                top: 55px;
                 left: 21px;
                 max-width: 90%;
                 height: auto;

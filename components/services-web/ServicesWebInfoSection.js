@@ -52,6 +52,52 @@ const ServicesWebInfoSection = ({ t }) => {
             width: 40%;
           }
         }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesWebInfoSection {
+            margin-top: 82px;
+            margin-bottom: 75px;
+          }
+
+          .web-text-and-img {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+            .web-img-wrapper {
+              position: relative;
+              width: 100%;
+              height: auto;
+              margin-left: 0;
+              max-width: 500px;
+              min-height: unset;
+              order: 1;
+
+              .path-img {
+                position: relative;
+                top: 0;
+                left: 0;
+              }
+              .group-img {
+                position: absolute;
+                top: 57px;
+                left: 21px;
+                max-width: 90%;
+                height: auto;
+              }
+            }
+
+            .web-text {
+              color: #001331;
+              font-size: 15px;
+              max-width: 600px;
+              width: 100%;
+              text-align: center;
+              margin-bottom: 50px;
+            }
+          }
+        }
       `}</style>
     </div>
   );

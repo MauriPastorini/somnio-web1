@@ -6,7 +6,6 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
     <div className="ServicesMobileOurKnowledgeSection custom-container">
       <div className="text-wrapper" data-aos="fade-right">
         <h3> {t("services_mobile.our_knowledge.title")}</h3>
-
         <p>{t("services_mobile.our_knowledge.text_1")}</p>
         <p>{t("services_mobile.our_knowledge.text_2")}</p>
         <button className="btn btn-custom-1 btn-desktop"> {t("common.navbar.button")}</button>
@@ -78,12 +77,6 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServicesMobileOurKnowledgeSection {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 300px;
-            padding-bottom: 100px;
-
             flex-direction: column;
 
             .text-wrapper {
@@ -113,7 +106,7 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
               height: auto;
               margin-right: 0;
               min-height: unset;
-              max-width: 723px;
+              max-width: 500px;
 
               .path-img {
                 position: relative;

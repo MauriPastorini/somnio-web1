@@ -15,7 +15,7 @@ const ServicesWebCoveredSection = ({ t }) => {
   ];
 
   return (
-    <div className="ServicesWebCoveredSection pt-100 pb-200">
+    <div className="ServicesWebCoveredSection">
       <div className="sub__bg"></div>
       <div className="content custom-container">
         <div className="section-header-light" data-aos="fade-in">
@@ -32,11 +32,11 @@ const ServicesWebCoveredSection = ({ t }) => {
       <style jsx>{`
         .ServicesWebCoveredSection {
           position: relative;
+          padding: 122px 0 226px 0;
 
           .content {
             position: relative;
             z-index: 1;
-            margin-top: 123px;
 
             .services-covered-card-list {
               display: flex;
@@ -51,6 +51,32 @@ const ServicesWebCoveredSection = ({ t }) => {
             width: 100%;
             min-height: 1200px;
             background: transparent linear-gradient(119deg, #1783e3 0%, #003ba8 100%) 0% 0% no-repeat padding-box;
+            top: 0;
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesWebCoveredSection {
+            position: relative;
+            padding: 77px 0 81px 0;
+            background: transparent linear-gradient(119deg, #1783e3 0%, #003ba8 100%) 0% 0% no-repeat padding-box;
+
+            .content {
+              position: relative;
+              z-index: 1;
+
+              .services-covered-card-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                max-width: unset;
+              }
+            }
+
+            .sub__bg {
+              display: none;
+            }
           }
         }
       `}</style>

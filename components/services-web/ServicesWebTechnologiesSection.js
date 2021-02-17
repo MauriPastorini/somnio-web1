@@ -198,6 +198,12 @@ const ServicesWebTechnologiesSection = ({ t }) => {
             min-height: 1425px;
           }
         }
+
+        @media screen and (max-width: 1280px) {
+          .ServicesWebTechnologiesSection {
+            display: none;
+          }
+        }
       `}</style>
     </div>
   );
