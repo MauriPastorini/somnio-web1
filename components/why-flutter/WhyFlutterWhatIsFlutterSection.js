@@ -3,7 +3,7 @@ import { withTranslation } from "../../i18n";
 
 const WhyFlutterWhatIsFlutterSection = ({ t }) => {
   return (
-    <div className="WhyFlutterWhatIsFlutterSection mt-200">
+    <div className="WhyFlutterWhatIsFlutterSection custom-container">
       <div className="text-and-images">
         <div className="text-content">
           <h3>{t("why_flutter.what_is_flutter.title")}</h3>
@@ -109,7 +109,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
       <style jsx>{`
         .WhyFlutterWhatIsFlutterSection {
           max-width: 1220px;
-          margin: 0 auto;
+          margin: 200px auto 0 auto;
 
           .text-and-images {
             display: flex;
@@ -150,7 +150,6 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
           }
 
           .charasteristic-detail-list {
-
             margin-top: 235px;
 
             .charasteristic-detail-item {
@@ -180,9 +179,66 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
                 align-items: center;
               }
 
-              &:last-of-type{
-                margin-bottom:180px;
+              &:last-of-type {
+                margin-bottom: 180px;
               }
+            }
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .WhyFlutterWhatIsFlutterSection {
+            margin: 200px auto 100vh auto;
+
+            .text-and-images {
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 50px;
+              
+              .text-content {
+                max-width: 570px;
+                order: 1;
+                
+                h3 {
+                  font-size: 24px;
+                  text-align: center;
+                  margin-bottom: 20px;
+                }
+                p {
+                  font-size: 15px;
+                  text-align: center;
+                }
+              }
+
+              img {
+                width: 104px;
+                margin-bottom: 41px;
+              }
+            }
+
+            .charasteristic-row {
+              margin-bottom: 0;
+              .charasteristic-item {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 20px;
+
+                img {
+                  margin-right: 42px;
+                  width: 35px;
+                }
+
+                h4 {
+                  font-size: 16px;
+                  margin-bottom: 0;
+                }
+              }
+            }
+
+            .charasteristic-detail-list {
+              display: none;
             }
           }
         }
