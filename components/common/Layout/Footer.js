@@ -187,7 +187,7 @@ const Footer = ({ t }) => {
         </a>
         <a href="https://themanifest.com/app-development/companies/latin-america#somniosoftware" target="_blank">
           <img
-            src="/assets/images/common/App-Developers_Latin-America_2021.jpg"
+            src="/assets/images/common/App-Developers_Latin-America_2021.png"
             alt=""
             title=""
           />
@@ -227,7 +227,7 @@ const Footer = ({ t }) => {
           </a>
           <a href="https://themanifest.com/app-development/companies/latin-america#somniosoftware" target="_blank">
             <img
-              src="/assets/images/common/App-Developers_Latin-America_2021.jpg"
+              src="/assets/images/common/App-Developers_Latin-America_2021.png"
               alt=""
               title=""
             />
