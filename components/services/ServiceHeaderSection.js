@@ -72,7 +72,7 @@ const ServiceHeaderSection = ({ t }) => {
           .text-and-image {
             display: flex;
             align-items: center;
-            margin-top: 161px;
+            margin-top: 205px;
             position: relative;
             justify-content: space-between;
 
@@ -123,7 +123,7 @@ const ServiceHeaderSection = ({ t }) => {
             justify-content: space-between;
             width: 100%;
             max-width: 1280px;
-            margin: 0 auto 200px auto;
+            margin: 0 auto 240px auto;
 
             .card--second {
               margin-top: 200px;
@@ -184,7 +184,7 @@ const ServiceHeaderSection = ({ t }) => {
                 .services-header-img {
                   width: 100%;
                   margin: 0;
-                  max-width: 800px;
+                  max-width: 500px;
                 }
               }
             }

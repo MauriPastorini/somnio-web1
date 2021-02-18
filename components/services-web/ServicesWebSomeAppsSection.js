@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
@@ -9,16 +10,52 @@ const ServicesWebSomeAppsSection = ({ t }) => {
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
       <div className="app-wrapper app-wrapper-1">
-        <img src="/assets/images/services-web/formula.png" alt="" />
-        <h2 className="custom-container">Fórmula</h2>
+        <img className="app-photo" src="/assets/images/services-web/formula.png" alt="" />
+
+        <div className="text-container custom-container">
+          <div className="text-wrapper">
+            <h2>Fórmula</h2>
+            <p>
+              Fórmula is a platform for beauty, makeup, skincare, and haircare lovers and enthusiasts. It is the most
+              notable community of Beauty in Uruguay.
+            </p>
+            <Link href="javascript:void(0)">
+              <a className="success-case-link">
+                <p>
+                  View success case
+                  <img className="arrow-icon" src="/assets/images/common/arrow2.svg" alt="" />
+                </p>
+              </a>
+            </Link>
+          </div>
+        </div>
       </div>
       <div className="app-wrapper app-wrapper-2">
-        <img src="/assets/images/services-web/ICUC.png" alt="" />
-        <h2 className="custom-container">ICUC</h2>
+        <img className="app-photo" src="/assets/images/services-web/ICUC.png" alt="" />
+
+        <div className="text-container custom-container">
+          <div className="text-wrapper">
+            <h2>ICUC</h2>
+            <p>
+              ICUC is a learning platform that aims to help surgeons and future surgeons analyze, review and learn
+              treatments from the world’s leading surgeons.
+            </p>
+            <Link href="javascript:void(0)">
+              <a className="success-case-link">
+                <p>
+                  View success case
+                  <img className="arrow-icon" src="/assets/images/common/arrow2.svg" alt="" />
+                </p>
+              </a>
+            </Link>
+          </div>
+        </div>
       </div>
 
-      <button className="btn btn-custom-2 btn-mobile">{t("common.button_2")}</button>
-
+      <Link href="/our-work">
+        <a className="btn btn-custom-2 btn-mobile">{t("common.button_2")}</a>
+      </Link>
+      
       <div className="agency-say-content custom-container">
         <div className="agency-say-card">
           <p className="agency-say-card__text">{t("services_web.some_apps.agency_say.text_1")}</p>
@@ -47,6 +84,36 @@ const ServicesWebSomeAppsSection = ({ t }) => {
             display: flex;
             align-items: center;
             position: relative;
+
+            .text-wrapper {
+              max-width: 417px;
+
+              h2 {
+                color: #031533;
+                font-size: 54px;
+                font-weight: bold;
+                text-align: start;
+                margin-bottom: 45px;
+              }
+              p {
+                text-align: start;
+                margin-bottom: 36px;
+              }
+
+              .success-case-link {
+                color: #1681e3;
+                font-size: 18px;
+                margin-bottom: 40px;
+                text-decoration: none;
+                font-weight: 700;
+
+                .arrow-icon {
+                  width: 8px;
+                  height: 12px;
+                  margin-left: 16px;
+                }
+              }
+            }
           }
 
           .app-wrapper-1 {
@@ -54,13 +121,12 @@ const ServicesWebSomeAppsSection = ({ t }) => {
             min-height: 875px;
             width: 100%;
 
-            h2 {
-              color: #031533;
-              font-size: 54px;
-              font-weight: bold;
-              text-align: end;
+            .text-container {
+              display: flex;
+              justify-content: flex-end;
             }
-            img {
+
+            .app-photo {
               position: absolute;
               left: 0;
             }
@@ -71,14 +137,12 @@ const ServicesWebSomeAppsSection = ({ t }) => {
             min-height: 811px;
             width: 100%;
 
-            h2 {
-              color: #031533;
-              font-size: 54px;
-              font-weight: bold;
-              margin-bottom: 90px;
+            .text-container {
+              display: flex;
+              justify-content: flex-start;
             }
 
-            img {
+            .app-photo {
               position: absolute;
               right: 0;
               top: -186px;

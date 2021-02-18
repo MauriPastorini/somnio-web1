@@ -122,9 +122,18 @@ const Footer = ({ t }) => {
       </div>
 
       <div className="footer-content-network custom-container" data-aos="fade-up">
-        <a target="_blank" href="https://clutch.co/profile/somnio-software">
+        {/* <a target="_blank" href="https://clutch.co/profile/somnio-software">
           <img className="clutch-logo" src="/assets/images/common/clutch.png" alt="" />
-        </a>
+        </a> */}
+
+<div
+            class="clutch-widget"
+            data-url="https://widget.clutch.co"
+            data-widget-type="2"
+            data-height="50"
+            data-clutchcompany-id="1252668"
+          ></div>
+          
         <a href="/">
           <img className="somnio-logo" src="/assets/images/common/logo.png" alt="" />
         </a>

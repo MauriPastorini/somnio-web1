@@ -3,6 +3,7 @@
     "navbar": {
       "about_us": "About us",
       "services": "Services",
+      "working_modalities":"Working Modalities",
       "services_mobile": "Mobile App Development",
       "services_web": "Web Development",
       "services_uxui": "UX/UI",

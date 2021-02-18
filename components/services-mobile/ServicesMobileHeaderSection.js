@@ -22,7 +22,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
           background-repeat: no-repeat;
           background-position: center;
           background-size: 200%;
-          padding: 178px 0 250px 0;
+          padding: 190px 0 263px 0;
         }
 
         .header__path {

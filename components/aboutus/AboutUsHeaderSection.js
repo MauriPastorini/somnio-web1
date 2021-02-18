@@ -148,7 +148,7 @@ const AboutUsHeaderSection = ({ t }) => {
                 .header-img {
                   width: 100%;
                   margin: 0;
-                  max-width: 800px;
+                  max-width: 500px;
                 }
               }
             }

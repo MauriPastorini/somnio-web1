@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
@@ -8,16 +9,52 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
         <h2>{t("services_mobile.some_apps.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
+
       <div className="app-wrapper app-wrapper-1">
-        <img src="/assets/images/services-mobile/jacc.png" alt="" />
-        <h2 className="custom-container">Jaac</h2>
-      </div>
-      <div className="app-wrapper app-wrapper-2">
-        <img src="/assets/images/home/home-portfolio-paymytrades.png" alt="" />
-        <h2 className="custom-container">Pay my trades</h2>
+        <img className="app-photo" src="/assets/images/services-mobile/jacc.png" alt="" />
+        <div className="text-container custom-container">
+          <div className="text-wrapper">
+            <h2>Jaac</h2>
+            <p>
+              Jaac is a platform that improves customer service for restaurants and at the same time helps the
+              restaurant have better management and save revenue.
+            </p>
+            <Link href="javascript:void(0)">
+              <a className="success-case-link">
+                <p>
+                  View success case
+                  <img className="arrow-icon" src="/assets/images/common/arrow2.svg" alt="" />
+                </p>
+              </a>
+            </Link>
+          </div>
+        </div>
       </div>
 
-      <button className="btn btn-custom-2 btn-mobile">{t("common.button_2")}</button>
+      <div className="app-wrapper app-wrapper-2">
+        <img className="app-photo" src="/assets/images/home/home-portfolio-paymytrades.png" alt="" />
+        <div className="text-container custom-container">
+          <div className="text-wrapper">
+            <h2>Pro Wallet</h2>
+            <p>
+              Pro Wallet is an instant payment solution for the construction industry that digitalizes and facilitates
+              payment processes.
+            </p>
+            <Link href="javascript:void(0)">
+              <a className="success-case-link">
+                <p>
+                  View success case
+                  <img className="arrow-icon" src="/assets/images/common/arrow2.svg" alt="" />
+                </p>
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <Link href="/our-work">
+        <a className="btn btn-custom-2 btn-mobile">{t("common.button_2")}</a>
+      </Link>
 
       <div className="agency-say-content custom-container">
         <div
@@ -38,6 +75,7 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
           </div>
         </div>
       </div>
+
       <style jsx>{`
         .ServicesMobileSomeAppsSection {
           .header-wrapper {
@@ -48,6 +86,36 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
             display: flex;
             align-items: center;
             position: relative;
+
+            .text-wrapper {
+              max-width: 417px;
+
+              h2 {
+                color: #031533;
+                font-size: 54px;
+                font-weight: bold;
+                text-align: start;
+                margin-bottom: 45px;
+              }
+              p {
+                text-align: start;
+                margin-bottom: 36px;
+              }
+              
+              .success-case-link {
+                color: #1681e3;
+                font-size: 18px;
+                margin-bottom: 40px;
+                text-decoration: none;
+                font-weight: 700;
+                
+                .arrow-icon {
+                  width: 8px;
+                  height: 12px;
+                  margin-left: 16px;
+                }
+              }
+            }
           }
 
           .app-wrapper-1 {
@@ -55,30 +123,28 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
             min-height: 875px;
             width: 100%;
 
-            h2 {
-              color: #031533;
-              font-size: 54px;
-              font-weight: bold;
-              text-align: end;
+            .text-container {
+              display: flex;
+              justify-content: flex-end;
             }
-            img {
+
+            .app-photo {
               position: absolute;
               left: 0;
             }
           }
+
           .app-wrapper-2 {
             justify-content: flex-start;
             min-height: 811px;
             width: 100%;
 
-            h2 {
-              color: #031533;
-              font-size: 54px;
-              font-weight: bold;
-              margin-bottom: 90px;
+            .text-container {
+              display: flex;
+              justify-content: flex-start;
             }
 
-            img {
+            .app-photo {
               position: absolute;
               right: 0;
               top: -186px;

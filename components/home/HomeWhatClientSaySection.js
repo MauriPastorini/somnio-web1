@@ -39,7 +39,6 @@ const HomeWhatClientSaySection = ({ t }) => {
   ];
   return (
     <div className="HomeWhatClientSaySection">
-      {/* <img src="/assets/images/home/home-say-client-bg.svg" className="home-clientsay__bg" alt=""></img> */}
       <div className="home-clientsay__content">
         <div className="section-header-light header-wrapper" data-aos="fade-in">
           <h2>{t("home.what_our_clients_say.title")}</h2>
@@ -51,9 +50,17 @@ const HomeWhatClientSaySection = ({ t }) => {
         <h4 className="see-us-on">See us on</h4>
 
         <div className="home-clientsay__content-logos">
-          <a target="_blank" href="https://clutch.co/profile/somnio-software">
+          {/* <a target="_blank" href="https://clutch.co/profile/somnio-software">
             <img src="/assets/images/home/clutch_blanco.png" />
-          </a>
+          </a> */}
+
+          <div
+            class="clutch-widget"
+            data-url="https://widget.clutch.co"
+            data-widget-type="2"
+            data-height="50"
+            data-clutchcompany-id="1252668"
+          ></div>
           <a target="_blank" href="https://www.fiverr.com/mauriciopast?up_rollout=true">
             <img src="/assets/images/home/feverr_logo.png" />
           </a>

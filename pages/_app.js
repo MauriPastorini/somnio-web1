@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
+        <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> 
       </Head>
       <Component {...pageProps} />
     </>

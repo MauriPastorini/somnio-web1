@@ -45,7 +45,7 @@ const HomeHeaderSection = ({ t }) => {
             display: flex;
             align-items: center;
             margin-top: 220px;
-            margin-bottom: 340px;
+            margin-bottom: 344px;
             z-index: 1;
             position: relative;
 
@@ -136,7 +136,7 @@ const HomeHeaderSection = ({ t }) => {
                 .home-header-img {
                   width: 100%;
                   margin: 0;
-                  max-width: 800px;
+                  max-width: 500px;
                 }
               }
 
