@@ -381,6 +381,11 @@
       "text_1": "Let's work together!",
       "text_2": "Tell us your ideas and get started"
     }
+  },
+  "faq":{
+    "header":{
+      "text_1":"Frequently Asked Questions we have the answer to"
+    }
   }
 
 }
