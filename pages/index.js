@@ -24,12 +24,16 @@ export const Container = () => {
           <nav className="nav">
             <img className="logo" src="/assets/images/common/logo.png" />
           </nav>
+
           <img className="bg" src="/assets/images/common/building-bg.svg" />
+          <img className="bg--mobile" src="/assets/images/common/mobile/building-bg.svg" />
+
           <div className="text-and-img">
             <div className="text-wrapper">
               <h1 className="title">Coming soon</h1>
               <h2 className="subtitle">New Somnio Web under construction.</h2>
               <p className="text-1">Stay tuned!</p>
+
               <div className="social-network-group">
                 <a target="_blank" href=" https://www.facebook.com/Somnio-Software-101920285002535">
                   <img src="/assets/images/common/facebook.svg" alt="" />
@@ -47,6 +51,7 @@ export const Container = () => {
                   <img src="/assets/images/common/github.svg" alt="" />
                 </a>
               </div>
+
               <p className="text-2">See us on</p>
 
               <div className="logos-group">
@@ -58,6 +63,7 @@ export const Container = () => {
                 </a>
               </div>
             </div>
+
             <div className="img-wrapper">
               <img src="/assets/images/common/building-img.svg" />
             </div>
@@ -80,7 +86,7 @@ export const Container = () => {
           filter: blur(10px);
           height: 100vh;
 
-          img{
+          img {
             height: 100vh;
           }
         }
@@ -121,13 +127,17 @@ export const Container = () => {
               left: -660px;
             }
 
+            .bg--mobile {
+              display: none;
+            }
+
             .text-and-img {
               position: relative;
               display: flex;
               width: 100%;
               justify-content: space-between;
               max-width: 1500px;
-              
+
               .text-wrapper {
                 color: #fff;
 
@@ -181,7 +191,214 @@ export const Container = () => {
           }
         }
 
+        @media screen and (max-width: 1440px) {
+          .building-message {
+            .relative-content {
+              padding: 200px 80px;
+              .nav {
+                position: absolute;
+                padding: 90px 80px;
+              }
+
+              .text-and-img {
+                max-width: 1400px;
+
+                .text-wrapper {
+                  .title {
+                    font-size: 70px;
+                  }
+
+                  .subtitle {
+                    font-size: 25px;
+                  }
+
+                  .social-network-group {
+                    margin-bottom: 80px;
+                  }
+                }
+
+                .img-wrapper {
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+
         @media screen and (max-width: 1280px) {
+          .building-message {
+            .relative-content {
+              padding: 150px 50px;
+              .nav {
+                padding: 50px;
+
+                .logo {
+                  width: 180px;
+                }
+              }
+
+              .bg {
+                display: none;
+              }
+
+              .bg--mobile {
+                position: absolute;
+                top: -793px;
+                left: -443px;
+                display: block;
+              }
+
+              .text-and-img {
+                .text-wrapper {
+                  .title {
+                    font-size: 50px;
+                  }
+
+                  .subtitle {
+                    font-size: 21px;
+                  }
+
+                  .social-network-group {
+                    margin-bottom: 50px;
+
+                    img {
+                      margin-right: 20px;
+                    }
+                  }
+
+                  .logos-group {
+                    .clutch-logo {
+                      height: 54px;
+                      width: auto;
+                      margin-right: 50px;
+                    }
+                    .feverr-logo {
+                      height: 36px;
+                      width: auto;
+                    }
+                  }
+
+                  .text-1 {
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                  }
+
+                  .text-2 {
+                    font-size: 20px;
+                    margin-bottom: 40px;
+                  }
+                }
+
+                .img-wrapper {
+                  max-width: 600px;
+
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width: 1024px) {
+          .building-message {
+            .relative-content {
+              padding: 75px 25px;
+              .nav {
+                padding: 35px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .logo {
+                  width: 180px;
+                }
+              }
+
+              .bg {
+                display: none;
+              }
+
+              .bg--mobile {
+                position: absolute;
+                top: -793px;
+                left: -443px;
+                display: block;
+              }
+
+              .text-and-img {
+                flex-direction: column;
+                align-items: center;
+
+                .text-wrapper {
+                  max-width: 230px;
+
+                  .title {
+                    font-size: 50px;
+                    text-align: center;
+                    margin-bottom: 27px;
+                  }
+
+                  .subtitle {
+                    font-size: 21px;
+                    text-align: center;
+                  }
+
+                  .social-network-group {
+                    margin-bottom: 45px;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                      margin-right: 20px;
+                    }
+                    
+                    a:last-of-type img{
+                      margin-right: 0px;
+                    }
+                  }
+
+                  .logos-group {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 35px;
+
+                    .clutch-logo {
+                      height: 37px;
+                    }
+
+                    .feverr-logo {
+                      height: 25px;
+                    }
+                  }
+
+                  .text-1 {
+                    font-size: 20px;
+                    margin-bottom: 35px;
+                    text-align: center;
+                  }
+
+                  .text-2 {
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                    text-align: center;
+                  }
+                }
+
+                .img-wrapper {
+                  max-width: 600px;
+
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
         }
       `}</style>
     </div>
