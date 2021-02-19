@@ -78,14 +78,14 @@ export const Container = () => {
           position: relative;
           width: 100%;
           height: auto;
-          overflow: hidden;
+          overflow-x: hidden;
         }
 
         .blur-content {
           position: relative;
           filter: blur(10px);
           height: 100vh;
-
+          overflow: hidden;
           img {
             height: 100vh;
           }
@@ -98,7 +98,6 @@ export const Container = () => {
           z-index: 1;
           width: 100%;
           height: 100vh;
-          overflow: hidden;
 
           .relative-content {
             position: relative;
