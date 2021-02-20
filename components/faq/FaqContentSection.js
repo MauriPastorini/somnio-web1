@@ -1,26 +1,60 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
 const FaqContentSection = ({ t }) => {
+  const [navigationActive, setNavigationActive] = useState('aboutus')
+
+  const aboutRef = useRef();
+  const howWeWorkRef = useRef();
+  const flutterRef = useRef();
+  const timmingRef = useRef();
+
+  const listener = e => {
+    const navigationPosActive = window.scrollY + 200;
+    if(navigationPosActive > aboutRef.current.offsetTop){
+      setNavigationActive('aboutRef');
+    }
+    if(navigationPosActive > howWeWorkRef.current.offsetTop){
+      setNavigationActive('howWeWorkRef');
+    }
+    if(navigationPosActive > flutterRef.current.offsetTop){
+      setNavigationActive('flutterRef');
+    }
+    if(navigationPosActive > timmingRef.current.offsetTop){
+      setNavigationActive('timmingRef');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listener);
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
+  });
+
+  const scrollToRef = (ref) => {
+    window.scrollTo(0, ref.current.offsetTop - 150)
+  };
+
   return (
     <div className="FaqContentSection custom-container">
       <aside className="navigation-faq">
         <ul>
-          <li className="active">1. About us</li>
-          <li>2. How we work</li>
-          <li>3. Flutter</li>
-          <li>4. Timing & Budget</li>
+          <li onClick={()=>scrollToRef(aboutRef)} className={`${navigationActive == 'aboutRef' ? 'active':''}`}>1. About us</li>
+          <li onClick={()=>scrollToRef(howWeWorkRef)} className={`${navigationActive == 'howWeWorkRef' ? 'active':''}`}>2. How we work</li>
+          <li onClick={()=>scrollToRef(flutterRef)} className={`${navigationActive == 'flutterRef' ? 'active':''}`}>3. Flutter</li>
+          <li onClick={()=>scrollToRef(timmingRef)} className={`${navigationActive == 'timmingRef' ? 'active':''}`}>4. Timing & Budget</li>
         </ul>
       </aside>
 
       <div className="content-faq">
-        <div className="section-header-light" data-aos="fade-in">
+        <div className="section-header-light" data-aos="fade-in" ref={aboutRef}>
           <h2>1. About us</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
-        <div class="accordion accordion-flush" id="accordionFlush1">
+        <div className="accordion accordion-flush" id="accordionFlush1">
           <div className="accordion-item">
             <h2 className="accordion-header" id="flush-headingOne">
               <button
@@ -134,12 +168,12 @@ const FaqContentSection = ({ t }) => {
           </div>
         </div>
 
-        <div className="section-header-light" data-aos="fade-in">
+        <div className="section-header-light" data-aos="fade-in" ref={howWeWorkRef}>
           <h2>2. How we work</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
-        <div class="accordion accordion-flush" id="accordionFlush2">
+        <div className="accordion accordion-flush" id="accordionFlush2">
           <div className="accordion-item">
             <h2 className="accordion-header" id="flush-headingOne2">
               <button
@@ -232,12 +266,12 @@ const FaqContentSection = ({ t }) => {
           </div>
         </div>
 
-        <div className="section-header-light" data-aos="fade-in">
+        <div className="section-header-light" data-aos="fade-in" ref={flutterRef}>
           <h2>3. Flutter</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
-        <div class="accordion accordion-flush" id="accordionFlush3">
+        <div className="accordion accordion-flush" id="accordionFlush3">
           <div className="accordion-item">
             <h2 className="accordion-header" id="flush-headingOne3">
               <button
@@ -422,12 +456,12 @@ const FaqContentSection = ({ t }) => {
           </div>
         </div>
 
-        <div className="section-header-light" data-aos="fade-in">
+        <div className="section-header-light" data-aos="fade-in" ref={timmingRef}>
           <h2>4. Timing & Budget</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
-        <div class="accordion accordion-flush" id="accordionFlush4">
+        <div className="accordion accordion-flush" id="accordionFlush4">
           <div className="accordion-item">
             <h2 className="accordion-header" id="flush-headingOne4">
               <button
@@ -518,7 +552,6 @@ const FaqContentSection = ({ t }) => {
       <style jsx>{`
         .FaqContentSection {
           height: auto;
-          position: relative;
           display: flex;
           padding-bottom: 309px;
 
@@ -537,6 +570,7 @@ const FaqContentSection = ({ t }) => {
                 font-size: 23px;
                 color: #c1a9f4;
                 margin-bottom: 14px;
+                cursor: pointer;
               }
 
               .active {
@@ -582,28 +616,27 @@ const FaqContentSection = ({ t }) => {
             }
 
             .accordion-button:not(.collapsed)::after {
-              background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAO0lEQVQ4je3OoQEAIQzF0BTFNMjbfytQBMcArTjD880vPGWhDqAl73eoE+jJwMouX/8HQv0KoV194AEO4WcNXKiyPh0AAAAASUVORK5CYII=');
+              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAO0lEQVQ4je3OoQEAIQzF0BTFNMjbfytQBMcArTjD880vPGWhDqAl73eoE+jJwMouX/8HQv0KoV194AEO4WcNXKiyPh0AAAAASUVORK5CYII=");
               transform: rotate(180deg);
+            }
 
-          }
-          
-          .accordion-button::after {
+            .accordion-button::after {
               flex-shrink: 0;
               width: 1rem;
               height: 1rem;
               margin-left: auto;
               content: "";
-              background-image:   url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcElEQVQ4jcWSMQqAMBAEJ2LhW8Q6+CFf5bf8i1ZZG6vLBoQUWbhmWLYYDkwkZUl3uOy6s4PABCyG2WJXxg/Mn5w4tJruJimykiTd1ML+5hnvoHsgNSRuwBnYAVyBFbsqaVed3XXHO+j/xAYvwGNYlRcnj0JeICSreAAAAABJRU5ErkJggg==');
+              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcElEQVQ4jcWSMQqAMBAEJ2LhW8Q6+CFf5bf8i1ZZG6vLBoQUWbhmWLYYDkwkZUl3uOy6s4PABCyG2WJXxg/Mn5w4tJruJimykiTd1ML+5hnvoHsgNSRuwBnYAVyBFbsqaVed3XXHO+j/xAYvwGNYlRcnj0JeICSreAAAAABJRU5ErkJggg==");
               background-repeat: no-repeat;
               background-size: 1rem;
-              transition: transform .2s ease-in-out;
+              transition: transform 0.2s ease-in-out;
               fill: #fff;
-          }
+            }
 
-            .accordion-collapse{
+            .accordion-collapse {
               border: none;
 
-              .accordion-body{
+              .accordion-body {
                 padding-left: 40px;
               }
             }
