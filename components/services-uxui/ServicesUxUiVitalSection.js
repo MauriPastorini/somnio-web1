@@ -20,7 +20,7 @@ const ServicesUxUiVitalSection = ({ t }) => {
           .sub__bg {
             position: absolute;
             width: 100%;
-            min-height: 800px;
+            min-height: 1000px;
             background: transparent linear-gradient(119deg, #1e6ac5 0%, #29218c 100%) 0% 0% no-repeat padding-box;
           }
 

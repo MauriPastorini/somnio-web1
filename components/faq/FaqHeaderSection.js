@@ -11,7 +11,7 @@ const FaqHeaderSection = ({ t }) => {
 
       <style jsx>{`
         .FaqHeaderSection {
-          padding: 505px 0 505px 0;
+          padding: 505px 0 486px 0;
           overflow: hidden;
           position: relative;
 

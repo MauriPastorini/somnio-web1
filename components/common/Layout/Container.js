@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import MobileNavbar from "./MobileNavbar";
 import Navbar from "./Navbar";
 
-export const Container = ({ children }) => {
+export const Container = ({ children, withOverflowHide }) => {
   return (
     <>
       <span className="isDesktop">
@@ -14,7 +14,7 @@ export const Container = ({ children }) => {
         <MobileNavbar />
       </span>
 
-      <div className="child">{children}</div>
+      <div style={{overflow: withOverflowHide ? 'hidden': ''}}>{children}</div>
       <Footer />
 
       <style jsx>{`
@@ -24,10 +24,6 @@ export const Container = ({ children }) => {
 
         .isMobile {
           display: none;
-        }
-
-        .child {
-          overflow: hidden;
         }
 
         @media screen and (max-width: 1380px) {

@@ -126,14 +126,15 @@ const Footer = ({ t }) => {
           <img className="clutch-logo" src="/assets/images/common/clutch.png" alt="" />
         </a> */}
 
-<div
-            class="clutch-widget"
-            data-url="https://widget.clutch.co"
-            data-widget-type="2"
-            data-height="50"
-            data-clutchcompany-id="1252668"
-          ></div>
-          
+        <div
+          style={{width: '192px', marginBottom: 67}}
+          className="clutch-widget"
+          data-url="https://widget.clutch.co"
+          data-widget-type="2"
+          data-height="50"
+          data-clutchcompany-id="1252668"
+        ></div>
+
         <a href="/">
           <img className="somnio-logo" src="/assets/images/common/logo.png" alt="" />
         </a>
@@ -173,24 +174,13 @@ const Footer = ({ t }) => {
           />
         </a>
         <a href="https://topappdevelopmentcompanies.com/uy/directory/app-developers/uruguay" target="_blank">
-          <img
-            src="/assets/images/common/top-app-development-companies.png"
-            alt=""
-          />
+          <img src="/assets/images/common/top-app-development-companies.png" alt="" />
         </a>
         <a href="https://clutch.co/press-releases/awards-best-b2b-companies-latin-america-2020" target="_blank">
-          <img
-            src="/assets/images/common/B2B_Companies_Uruguay_2020.png"
-            alt=""
-            title=""
-          />
+          <img src="/assets/images/common/B2B_Companies_Uruguay_2020.png" alt="" title="" />
         </a>
         <a href="https://themanifest.com/app-development/companies/latin-america#somniosoftware" target="_blank">
-          <img
-            src="/assets/images/common/App-Developers_Latin-America_2021.png"
-            alt=""
-            title=""
-          />
+          <img src="/assets/images/common/App-Developers_Latin-America_2021.png" alt="" title="" />
         </a>
       </div>
       <div className="custom-container footer-certificatons-logos-mobile" data-aos="fade-up">
@@ -210,27 +200,16 @@ const Footer = ({ t }) => {
             />
           </a>
           <a href="https://topappdevelopmentcompanies.com/uy/directory/app-developers/uruguay" target="_blank">
-            <img
-              src="/assets/images/common/top-app-development-companies.png"
-              alt=""
-            />
+            <img src="/assets/images/common/top-app-development-companies.png" alt="" />
           </a>
         </span>
 
         <span className="second-group">
           <a href="https://clutch.co/press-releases/awards-best-b2b-companies-latin-america-2020" target="_blank">
-            <img
-              src="/assets/images/common/B2B_Companies_Uruguay_2020.png"
-              alt=""
-              title=""
-            />
+            <img src="/assets/images/common/B2B_Companies_Uruguay_2020.png" alt="" title="" />
           </a>
           <a href="https://themanifest.com/app-development/companies/latin-america#somniosoftware" target="_blank">
-            <img
-              src="/assets/images/common/App-Developers_Latin-America_2021.png"
-              alt=""
-              title=""
-            />
+            <img src="/assets/images/common/App-Developers_Latin-America_2021.png" alt="" title="" />
           </a>
         </span>
       </div>
@@ -341,7 +320,7 @@ const Footer = ({ t }) => {
             display: flex;
             justify-content: space-evenly;
 
-            a img{
+            a img {
               width: 150px;
               height: 150px;
             }
@@ -407,16 +386,16 @@ const Footer = ({ t }) => {
               flex-direction: column;
               align-items: center;
               max-width: 700px !important;
-              
-              .first-group{
+
+              .first-group {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
                 margin-top: 119px;
                 margin-bottom: 50px;
-              } 
+              }
 
-              .second-group{
+              .second-group {
                 display: flex;
                 justify-content: space-between;
                 max-width: 60%;
@@ -424,11 +403,10 @@ const Footer = ({ t }) => {
                 margin-bottom: 50px;
               }
 
-              a img{
+              a img {
                 width: 90px;
                 height: 90px;
               }
-
             }
 
             .footer-certificatons-logos {

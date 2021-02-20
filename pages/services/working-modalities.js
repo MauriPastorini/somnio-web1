@@ -8,7 +8,7 @@ import ServiceWorkingToolsSection from "../../components/services/ServiceWorking
 import ContactSection from "../../components/common/ContactSection";
 
 const AboutUs = () => (
-  <Container>
+  <Container withOverflowHide>
     <Head>
       <title>Working Modalities | This is how we achieve top results in Somnio Software</title>
       <meta

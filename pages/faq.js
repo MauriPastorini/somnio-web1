@@ -16,7 +16,6 @@ const AboutUs = () => (
       />
     </Head>
     <div className="FaqPage">
-
       <FaqHeaderSection />
       <FaqContentSection />
       <ContactSection />
@@ -24,9 +23,8 @@ const AboutUs = () => (
 
     <style jsx>{`
       .FaqPage {
-        background-image: url(/assets/images/faq/bg.svg);
-        background-repeat: no-repeat;
-        background-position: center;
+        background-color: #3D2EA2;
+        position: relative;
       }
     `}</style>
   </Container>
