@@ -530,6 +530,10 @@ const FaqContentSection = ({ t }) => {
               margin: 0;
             }
 
+            li{
+              margin-bottom: 14px;
+            }
+            
             li:before {
               content: "-";
               padding-right: 8px;
