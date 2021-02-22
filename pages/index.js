@@ -65,7 +65,7 @@ export const Container = () => {
             </div>
 
             <div className="img-wrapper">
-              <img src="/assets/images/common/building-img.svg" />
+              <img className="img-fluid" src="/assets/images/common/building-img.png" />
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export const Container = () => {
           position: relative;
           width: 100%;
           height: auto;
-          overflow-x: hidden;
+          overflow: hidden;
         }
 
         .blur-content {
@@ -103,7 +103,7 @@ export const Container = () => {
             position: relative;
             width: 100%;
             height: 100%;
-            padding: 300px 180px;
+            padding: 258px 135px;
 
             .nav {
               position: absolute;
@@ -112,7 +112,7 @@ export const Container = () => {
               left: 0;
               width: 100%;
               height: auto;
-              padding: 90px 180px;
+              padding: 94px 135px;
 
               .logo {
                 width: 217px;
@@ -123,7 +123,7 @@ export const Container = () => {
             .bg {
               position: absolute;
               top: -768px;
-              left: -660px;
+              left: -720px;
             }
 
             .bg--mobile {
@@ -135,7 +135,7 @@ export const Container = () => {
               display: flex;
               width: 100%;
               justify-content: space-between;
-              max-width: 1500px;
+              max-width: 1535px;
 
               .text-wrapper {
                 color: #fff;
@@ -143,13 +143,15 @@ export const Container = () => {
                 .title {
                   font-size: 80px;
                   font-weight: bold;
-                  margin-bottom: 40px;
+                  margin-bottom: 38px;
+                  margin-top: 96px;
                 }
 
                 .subtitle {
                   font-size: 28px;
                   font-weight: bold;
                   color: #3bcee7;
+                  margin-bottom: 6px;
                 }
 
                 .social-network-group {
@@ -163,6 +165,9 @@ export const Container = () => {
                 }
 
                 .logos-group {
+                  display: flex;
+                  align-items: center;
+
                   .clutch-logo {
                     height: 54px;
                     width: auto;
@@ -176,7 +181,8 @@ export const Container = () => {
 
                 .text-1 {
                   font-size: 28px;
-                  margin-bottom: 50px;
+                  margin-bottom: 54px;
+                  margin-top: 0px;
                 }
 
                 .text-2 {
@@ -186,11 +192,15 @@ export const Container = () => {
                   margin-bottom: 40px;
                 }
               }
+
+              .img-wrapper{
+   
+              }
             }
           }
         }
 
-        @media screen and (max-width: 1440px) {
+        @media screen and (max-width: 1750px) {
           .building-message {
             .relative-content {
               padding: 200px 80px;
@@ -205,6 +215,7 @@ export const Container = () => {
                 .text-wrapper {
                   .title {
                     font-size: 70px;
+                    margin-top: 60px;
                   }
 
                   .subtitle {
@@ -227,6 +238,11 @@ export const Container = () => {
         }
 
         @media screen and (max-width: 1280px) {
+          .main-content {
+            overflow: auto;
+            overflow-x: hidden;
+          }
+
           .building-message {
             .relative-content {
               padding: 150px 50px;
@@ -253,6 +269,7 @@ export const Container = () => {
                 .text-wrapper {
                   .title {
                     font-size: 50px;
+                    margin-top: 0px;
                   }
 
                   .subtitle {
@@ -339,6 +356,7 @@ export const Container = () => {
                     font-size: 50px;
                     text-align: center;
                     margin-bottom: 27px;
+                    margin-top: 36px;
                   }
 
                   .subtitle {
