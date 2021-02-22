@@ -103,7 +103,7 @@ export const Container = () => {
             position: relative;
             width: 100%;
             height: 100%;
-            padding: 258px 135px;
+            padding: 258px 100px 258px 207px;
 
             .nav {
               position: absolute;
@@ -112,7 +112,7 @@ export const Container = () => {
               left: 0;
               width: 100%;
               height: auto;
-              padding: 94px 135px;
+              padding: 94px 207px;
 
               .logo {
                 width: 217px;
@@ -123,7 +123,7 @@ export const Container = () => {
             .bg {
               position: absolute;
               top: -768px;
-              left: -720px;
+              left: -647px;
             }
 
             .bg--mobile {
@@ -330,7 +330,7 @@ export const Container = () => {
                 align-items: center;
 
                 .logo {
-                  width: 180px;
+                  width: 129px;
                 }
               }
 
@@ -356,7 +356,7 @@ export const Container = () => {
                     font-size: 50px;
                     text-align: center;
                     margin-bottom: 27px;
-                    margin-top: 36px;
+                    margin-top: 23px;
                   }
 
                   .subtitle {
@@ -370,7 +370,8 @@ export const Container = () => {
                     justify-content: center;
 
                     img {
-                      margin-right: 20px;
+                      margin-right: 30px;
+                      height: 31px;
                     }
                     
                     a:last-of-type img{
