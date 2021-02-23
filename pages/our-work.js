@@ -9,10 +9,10 @@ import { OurWorkContentSection } from "../components/our-work/OurWorkContentSect
 const OurWork = () => (
   <Container>
     <Head>
-      <title>About us | Somnio Software</title>
+      <title>Our work | Somnio Software</title>
       <meta
         name="description"
-        content="We are a team of passionate and creative engineers, developers, and designers that work hand in hand with our clients to build high-quality products."
+        content=""
       />
     </Head>
 
