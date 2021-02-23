@@ -503,5 +503,11 @@
         }
       }
     }
+  },
+  "our_work":{
+    "header": {
+      "text_1": "Stories we helped reach the sky",
+      "text_2": "You dream your Software ideas, we make them real"
+    }
   }
 }

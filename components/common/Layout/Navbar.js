@@ -53,7 +53,7 @@ const Navbar = ({ t }) => {
   const NavLinkDropDownStyle = `${scrolled ? "nav-link-scrolled" : "nav-link-unscrolled"} nav-link dropdown-toggle`;
   const SubMenuStyle = { backgroundColor: `${scrolled ? "#29218c" : "#fff"}` };
   const SubMenuItemStyle = { color: `${scrolled ? "#fff" : "#29218c"}` };
-  const ButtonStyle = `${scrolled ? "btn-outline-navbar-scrolled" : "btn-outline-navbar"} btn`;
+  const ButtonStyle = `${scrolled ? "btn-outline-navbar-scrolled" : "btn-custom-3"} btn`;
 
   return (
     <nav className={NavStyle}>
@@ -153,21 +153,6 @@ const Navbar = ({ t }) => {
           max-width: 217px;
           height: auto;
           cursor: pointer;
-        }
-
-        .btn-outline-navbar {
-          border: 2px solid #ffffff;
-          border-radius: 43px;
-          min-width: 200px;
-          font-size: 20px;
-          color: #ffffff;
-          padding: 15px 43px;
-          font-weight: 500;
-
-          &:hover {
-            background-color: #ffffff !important;
-            color: #003ba8;
-          }
         }
 
         .nav-item {
