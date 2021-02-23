@@ -7,6 +7,9 @@ import Navbar from "./Navbar";
 export const Container = ({ children, withOverflowHide }) => {
   return (
     <>
+      <Head>
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7545948.js"></script>
+      </Head>
       <span className="isDesktop">
         <Navbar />
       </span>
@@ -14,7 +17,7 @@ export const Container = ({ children, withOverflowHide }) => {
         <MobileNavbar />
       </span>
 
-      <div style={{overflow: withOverflowHide ? 'hidden': ''}}>{children}</div>
+      <div style={{ overflow: withOverflowHide ? "hidden" : "" }}>{children}</div>
       <Footer />
 
       <style jsx>{`
