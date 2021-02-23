@@ -127,7 +127,7 @@ const Footer = ({ t }) => {
         </a> */}
 
         <div
-          style={{width: '192px', marginBottom: 67}}
+          style={{width: '192px'}}
           className="clutch-widget"
           data-url="https://widget.clutch.co"
           data-widget-type="2"
