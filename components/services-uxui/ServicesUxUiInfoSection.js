@@ -5,22 +5,22 @@ const ServicesUxUiInfoSection = ({ t }) => {
   return (
     <div className="ServicesUxUiInfoSection custom-container">
       <div className="uxui-card">
-        <h2>UI</h2>
+        <h2>UX</h2>
         <div className="uxui-card-image-content_1">
           <img src="/assets/images/services-uxui/daniel-korpai.png" alt="" className="main-img" />
           <img src="/assets/images/services-uxui/path1.svg" alt="" className="path-img" />
         </div>
-        <h3>{t("services_uxui.info.text_1")}</h3>
-        <p>{t("services_uxui.info.text_2")}</p>
+        <h3>{t("services_uxui.info.text_3")}</h3>
+        <p>{t("services_uxui.info.text_4")}</p>
       </div>
       <div className="uxui-card">
-        <h2>UX</h2>
+        <h2>UI</h2>
         <div className="uxui-card-image-content_2">
           <img src="/assets/images/services-uxui/kelly-sikkema.png" alt="" className="main-img" />
           <img src="/assets/images/services-uxui/path2.svg" alt="" className="path-img" />
         </div>
-        <h3>{t("services_uxui.info.text_3")}</h3>
-        <p>{t("services_uxui.info.text_4")}</p>
+        <h3>{t("services_uxui.info.text_1")}</h3>
+        <p>{t("services_uxui.info.text_2")}</p>
       </div>
       <style jsx>{`
         .ServicesUxUiInfoSection {

@@ -48,7 +48,7 @@
         "text": "We build high-quality mobile applications with Flutter for both Android & iOS mobile devices in record time."
       },
       "web": {
-        "title": "Web development",
+        "title": "Web Development",
         "text": "​​We develop unique web apps with modern approaches and latest technologies to meet your business’s needs."
       },
       "ux_ui": {
@@ -82,8 +82,8 @@
         "text": "Crime database for the most notorious unsolved mysteries. You can be the detective and investigate the crime scenes with the use of augmented reality and other formats."
       },
       "pay_my_trades": {
-        "title": "Pay my trades",
-        "text": "Pay My Trades is an instant payment solution for the construction industry that digitalizes and facilitates payment processes."
+        "title": "Pro Wallet",
+        "text": "Pro Wallet is an instant payment solution for the construction industry that digitalizes and facilitates payment processes."
       }
     },
     "what_our_clients_say": {
@@ -148,7 +148,7 @@
   },
   "services": {
     "header": {
-      "text_1": "Working Modalities",
+      "text_1": "What we do",
       "text_2": "This is how we achieve outstanding results",
       "how_we_work": {
         "title": "How we work",
