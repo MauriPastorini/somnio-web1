@@ -58,7 +58,7 @@ export const Container = () => {
                 <a target="_blank" href="https://clutch.co/profile/somnio-software">
                   <img className="clutch-logo" src="/assets/images/common/clutch.png" alt="" />
                 </a>
-                <a href="/">
+                <a target="_blank" href="https://www.fiverr.com/mauriciopast?up_rollout=true">
                   <img className="feverr-logo" src="/assets/images/common/feverr_logo.png" alt="" />
                 </a>
               </div>
