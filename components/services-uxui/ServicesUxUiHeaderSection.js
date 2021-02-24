@@ -24,7 +24,7 @@ const ServicesUxUiHeaderSection = ({ t }) => {
           background-repeat: no-repeat;
           background-position: center;
           background-size: 200%;
-          padding: 260px 0 235px 0;
+          padding: 260px 0 287px 0;
 
           .header__path {
             position: absolute;
