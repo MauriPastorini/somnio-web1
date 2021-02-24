@@ -15,7 +15,6 @@ const GetInTouch = () => (
       />
     </Head>
     <GetInTouchHeaderSection/>
-    <GetInTouchInfoSection/>
   </Container>
 );
 

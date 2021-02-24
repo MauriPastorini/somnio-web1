@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
@@ -8,12 +9,17 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
         <h3>{t("services_mobile.our_knowledge.title")}</h3>
         <p>{t("services_mobile.our_knowledge.text_1")}</p>
         <p>{t("services_mobile.our_knowledge.text_2")}</p>
-        <button className="btn btn-custom-1 btn-desktop">{t("common.navbar.button")}</button>
+        <Link href="/get-in-touch">
+          <a className="btn btn-custom-1 btn-desktop">{t("common.navbar.button")}</a>
+        </Link>
       </div>
       <div className="img-wrapper">
         <img src="/assets/images/services-web/knowledge-img.png" className="group-img" alt="" />
         <img src="/assets/images/services-mobile/knowledge-img-bg.svg" className="path-img img-fluid" alt="" />
-        <button className="btn btn-custom-1 btn-mobile">{t("common.navbar.button")}</button>
+
+        <Link href="/get-in-touch">
+          <a className="btn btn-custom-1 btn-mobile">{t("common.navbar.button")}</a>
+        </Link>
       </div>
       <style jsx>{`
         .ServicesWebOurKnowledgeSection {
@@ -73,16 +79,15 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
             display: none;
           }
 
-          button{
-            -webkit-box-shadow: 0px 12px 59px -14px rgba(3,208,219,1);
-            -moz-box-shadow: 0px 12px 59px -14px rgba(3,208,219,1);
-            box-shadow: 0px 12px 59px -14px rgba(3,208,219,1);
+          button {
+            -webkit-box-shadow: 0px 12px 59px -14px rgba(3, 208, 219, 1);
+            -moz-box-shadow: 0px 12px 59px -14px rgba(3, 208, 219, 1);
+            box-shadow: 0px 12px 59px -14px rgba(3, 208, 219, 1);
           }
         }
 
         @media screen and (max-width: 1280px) {
           .ServicesWebOurKnowledgeSection {
-
             padding-top: 100px;
             padding-bottom: 100px;
 

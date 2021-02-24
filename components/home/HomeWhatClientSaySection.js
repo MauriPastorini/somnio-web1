@@ -91,7 +91,7 @@ const HomeWhatClientSaySection = ({ t }) => {
               display: flex;
               justify-content: space-between;
               max-width: 470px;
-              margin: 40px auto 169px auto;
+              margin: 40px auto 200px auto;
             }
           }
 

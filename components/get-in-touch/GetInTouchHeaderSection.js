@@ -1,100 +1,130 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
-import ContactForm from "../common/ContactForm";
+import GetInTouchContactForm from "../common/GetInTouchContactForm";
 
 const GetInTouchHeaderSection = ({ t }) => {
   return (
     <div className="GetInTouchHeaderSection">
-      <img src="/assets/images/get-in-touch/header-bg.svg" alt="" className="header__bg" />
-      <img src="/assets/images/common/contact-points-1.svg" alt="" className="dots1" />
-      <img src="/assets/images/common/contact-points-2.svg" alt="" className="dots2" />
-      <div className="wrapper-content">
-        <div className="text-and-image custom-container">
-          <div className="header-text-wrapper" data-aos="fade-right">
-            <h1 className="header-title">{t("get_in_touch.header.text_1")}</h1>
-            <p className="header-text">{t("get_in_touch.header.text_2")}</p>
-          </div>
-          <div className="header-img-wrapper">
-            <img src={`/assets/images/get-in-touch/header-img.svg`} alt="" className="header-img" />
+      <img src="/assets/images/get-in-touch/header-path.svg" alt="" className="header__path" />
+      <div className="text-and-image custom-container">
+        <div className="header-text-wrapper" data-aos="fade-right">
+          <h1 className="header-title">{t("get_in_touch.header.text_1")}</h1>
+          <p className="header-text">{t("get_in_touch.header.text_2")}</p>
+          <GetInTouchContactForm />
+        </div>
+        <div className="header-img-wrapper">
+          <img src={`/assets/images/get-in-touch/header-img.svg`} alt="" className="header-img" />
+
+          <div className="contact-info">
+            <h2>Contact us</h2>
+            <p>
+              <img src="/assets/images/get-in-touch/call.svg" />
+              Call directly at: (+598) 98 168 142
+            </p>
+            <p>
+              <img src="/assets/images/get-in-touch/mail.svg" />
+              Email: info@somniosoftware.com
+            </p>
+            <p>
+              <img src="/assets/images/get-in-touch/calendar.svg" />
+              Shedule a meeting{" "}
+              <Link href="#">
+                <a className="link">here</a>
+              </Link>
+            </p>
           </div>
         </div>
-
-        <span className="form-wrapper">
-          <ContactForm />
-        </span>
       </div>
 
       <style jsx>{`
         .GetInTouchHeaderSection {
           position: relative;
           overflow: hidden;
+          background-image: url(/assets/images/get-in-touch/header-bg.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 200%;
+          padding: 215px 0 350px 0;
 
-          .header__bg {
-            width: 100%;
-            top: 0;
-            z-index: -2;
+          .header__path {
+            position: absolute;
+            top: -537px;
+            left: -660px;
+            z-index: 0;
+            height: auto;
           }
 
-          .dots1 {
-            position: absolute;
-            top: 874px;
-            left: 176px;
-          }
-
-          .dots2 {
-            position: absolute;
-            bottom: 179px;
-            right: 59px;
+          .custom-container {
+            max-width: 1350px !important;
           }
 
           .text-and-image {
+            position: relative;
             display: flex;
-            align-items: center;
-            margin-top: 77px;
+            align-items: flex-start;
+            justify-content: space-between;
 
             .header-text-wrapper {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-              width: 67%;
-              margin-right: 2%;
-              margin-top: 92px;
+              width: 100%;
+              max-width: 633px;
+              margin-top: 22px;
 
               .header-title {
                 max-width: 858px;
-                font-size: 80px;
+                font-size: 60px;
                 font-weight: bold;
                 color: #ffffff;
+                margin-bottom: 15px;
               }
+
               .header-text {
-                font-size: 40px;
+                font-size: 25px;
                 font-weight: bold;
                 color: #ffffff;
+                margin-bottom: 75px;
               }
             }
 
             .header-img-wrapper {
-              margin-top: 80px;
-              width: 31%;
-
               .header-img {
-                width: 95%;
-                margin-right: 5%;
+                max-width: 365px;
+                margin-bottom: 70px;
+              }
+              .contact-info {
+                color: #fff;
+
+                h2 {
+                  font-size: 25px;
+                  font-weight: bold;
+                  margin-bottom: 32px;
+                }
+
+                p {
+                  font-size: 23px;
+                  margin-bottom: 1.1rem;
+
+                  img {
+                    margin-right: 25px;
+                  }
+
+                  .link {
+                    color: #00e6ca;
+                    font-weight: bold;
+                    text-decoration: none;
+                  }
+                }
               }
             }
           }
+        }
 
-          .form-wrapper {
-            margin-top: 395px;
-            max-width: 900px;
-            width: 100%;
-          }
-
-          @media screen and (max-width: 1700px) {
-            .header__bg {
-              width: auto;
-              min-height: 600px;
-            }
+        @media screen and (max-width: 1920px) {
+          .GetInTouchHeaderSection {
+            padding: 215px 0 120px 0;
           }
         }
       `}</style>

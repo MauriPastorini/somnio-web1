@@ -1,11 +1,12 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
 const WhyFlutterSomeOurProjectsSection = ({ t }) => {
   return (
-    <div className="WhyFlutterSomeOurProjectsSection">  
-      <img className="path" src="/assets/images/why-flutter/path.svg" alt=""/>
-      <img className="dots" src="/assets/images/why-flutter/dots.svg" alt=""/>
+    <div className="WhyFlutterSomeOurProjectsSection">
+      <img className="path" src="/assets/images/why-flutter/path.svg" alt="" />
+      <img className="dots" src="/assets/images/why-flutter/dots.svg" alt="" />
 
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("why_flutter.some_our_projects.title")}</h2>
@@ -31,7 +32,9 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
         </div>
       </div>
 
-      <button className="btn btn-custom-2"> {t("common.button_2")}</button>
+      <Link href="/our-work">
+        <a className="btn btn-custom-2"> {t("common.button_2")}</a>
+      </Link>
 
       <div className="agency-say-content">
         <div className="agency-say-card">
@@ -57,14 +60,14 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
           margin-bottom: 181px;
           position: relative;
 
-          .dots{
-            position:absolute;
+          .dots {
+            position: absolute;
             left: 113px;
             top: 0;
           }
 
-          .path{
-            position:absolute;
+          .path {
+            position: absolute;
             left: 0;
             top: -39px;
             z-index: -1;
@@ -137,10 +140,10 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
           .agency-say-content {
             margin-top: 266px !important;
 
-            .agency-say-card{
+            .agency-say-card {
               padding: 49px 125px 69px 125px;
 
-              .agency-say-card__title{
+              .agency-say-card__title {
                 max-width: 722px;
                 font-size: 35px;
                 font-weight: 700;
@@ -157,7 +160,7 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
               .burble {
                 border-radius: 50%;
                 background-color: #fff;
-                display:flex;
+                display: flex;
                 justify-content: center;
                 align-items: center;
               }

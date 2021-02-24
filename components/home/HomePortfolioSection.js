@@ -2,6 +2,7 @@ import { withTranslation } from "../../i18n";
 import PropTypes from "prop-types";
 import HomePorfolioSlide from "../../components/common/HomePorfolioSlide";
 import Slider from "react-slick";
+import Link from "next/link";
 
 const HomePortfolioSection = ({ t }) => {
   const portfolio = [
@@ -49,18 +50,25 @@ const HomePortfolioSection = ({ t }) => {
 
       <Slider {...settings}>
         {portfolio.map((_slide, index) => (
-          <HomePorfolioSlide key={index} title={_slide.title} text={_slide.text} img={_slide.img} color={_slide.color}/>
+          <HomePorfolioSlide
+            key={index}
+            title={_slide.title}
+            text={_slide.text}
+            img={_slide.img}
+            color={_slide.color}
+          />
         ))}
       </Slider>
 
-      <button className="btn btn-custom-2 btn-position">{t("common.button_2")}</button>
+      <Link href="/our-work">
+        <a className="btn btn-custom-2 btn-position">{t("common.button_2")}</a>
+      </Link>
       <style jsx>
         {`
           .HomePortfolioSection {
             position: relative;
-            margin-bottom: 92px;
             overflow-x: hidden;
-            
+
             .header-wrapper {
               margin-bottom: 0;
             }
@@ -85,13 +93,15 @@ const HomePortfolioSection = ({ t }) => {
               display: flex;
               justify-content: center;
               margin-top: 30px !important;
+              max-width: 274px;
+              margin-bottom: 92px !important;
             }
           }
 
           @media screen and (max-width: 1280px) {
             .HomePortfolioSection {
               position: relative;
-              margin-bottom: 72px;
+              
 
               .header-wrapper {
                 margin-bottom: 55px;
@@ -125,6 +135,7 @@ const HomePortfolioSection = ({ t }) => {
                 margin-right: auto;
                 padding: 11px 39px !important;
                 font-size: 16px !important;
+                margin-bottom: 72px !important;
               }
             }
           }
