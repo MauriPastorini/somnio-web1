@@ -7,20 +7,12 @@ export const PostHeaderSection = () => {
         .PostHeaderSection {
           position: relative;
           overflow: hidden;
-          background-image: url(/assets/images/blog/header-bg.svg);
+          background-image: url(/assets/images/post/header-bg.svg);
           background-repeat: no-repeat;
           background-size: 100% auto;
-          background-position: bottom;
+          background-position: top;
           height: 642px;
         }
-
-        // @media screen and (max-width: 1920px) {
-        //   .PostHeaderSection {
-        //     background-repeat: no-repeat;
-        //     background-size: auto 100%;
-        //     background-position: top;
-        //   }
-        // }
       `}</style>
     </section>
   );

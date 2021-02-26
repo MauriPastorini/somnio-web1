@@ -4,9 +4,10 @@ import { Container } from "../../components/common/Layout/Container";
 import ContactSection from "../../components/common/ContactSection";
 import PostHeaderSection from "../../components/post/PostHeaderSection";
 import PostContentSection from "../../components/post/PostContentSection";
+import PostMoreSection from "../../components/post/PostMoreSection";
 import { getPost, getPosts } from "../../services/blog";
 
-const Post = ({ post }) => {
+const Post = ({ post, posts }) => {
   return (
     <Container>
       <Head>
@@ -17,7 +18,8 @@ const Post = ({ post }) => {
         />
       </Head>
       <PostHeaderSection />
-      <PostContentSection post={post} />
+      <PostContentSection posts={posts.posts} post={post} />
+      <PostMoreSection posts={posts.posts} post={post}/>
       <ContactSection />
     </Container>
   );
@@ -25,8 +27,9 @@ const Post = ({ post }) => {
 
 export const getStaticProps = async ({ params }) => {
   const post = await getPost(params.slug);
+  const posts = await getPosts();
   return {
-    props: { post },
+    props: { post, posts },
     revalidate: 10,
   };
 };

@@ -5,9 +5,9 @@ import { Container } from "../components/common/Layout/Container";
 import ContactSection from "../components/common/ContactSection";
 import { BlogHeaderSection } from "../components/blog/BlogHeaderSection";
 import { BlogContentSection } from "../components/blog/BlogContentSection";
-import { getPosts } from "../services/blog";
+import { getPosts, getTags } from "../services/blog";
 
-const Blog = ({ posts }) => (
+const Blog = ({ posts, tags }) => (
   <Container>
     <Head>
       <title>Blog | Somnio Software</title>
@@ -17,7 +17,7 @@ const Blog = ({ posts }) => (
       />
     </Head>
     <BlogHeaderSection />
-    <BlogContentSection posts={posts} />
+    <BlogContentSection posts={posts} tags={tags} />
     <ContactSection />
   </Container>
 );
@@ -26,8 +26,10 @@ export const getInitialProps = async () => ({ namespacesRequired: ["common"] });
 
 export const getStaticProps = async () => {
   const posts = await getPosts();
+  const tags = await getTags();
+
   return {
-    props: { posts },
+    props: { posts, tags },
   };
 };
 

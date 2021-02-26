@@ -509,5 +509,15 @@
       "text_1": "Stories we helped reach the sky",
       "text_2": "You dream your Software ideas, we make them real"
     }
+  },
+  "blog":{},
+  "post":{
+    "text_1":"You might also like",
+    "text_2":"Stay updated",
+    "text_3":"Email",
+    "text_4":"Suscribe",
+    "text_5":"Tell us what you think",
+    "text_6":"Comment",
+    "text_7":"Name"
   }
 }

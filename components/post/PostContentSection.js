@@ -1,50 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
+import { Poster, Poster2 } from "./Poster";
+import Link from "next/link";
 
 export const PostContentSection = ({ t, post }) => {
-  console.log("post", post);
   return (
     <div className="PostContentSection custom-container">
-      <h2 className="type-title">DESIGN</h2>
+      <Link href="/blog">
+        <a className="back-link">
+          <img src="/assets/images/post/arrow.svg" alt="" />
+        </a>
+      </Link>
+      <h2 className="primary-tag">{post.primary_tag.name}</h2>
       <h1 className="title">{post.title}</h1>
-      <p className="excerpt">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id justo enim. Nam sodales sapien pretium metus
-        mattis, et commodo tortor rutrum. In vel orci in metus mattis interdum. Nunc dictum vitae sapien nec faucibus.
-      </p>
-      <img className="main-img" src="/assets/images/post/main-img.png" alt="" />
+      <p className="excerpt">{post.custom_excerpt}</p>
 
-      <div className="poster-wrapper">
-        <div className="poster">
-          <img className="poster-thumbnail" src="/assets/images/about-us/lu.png" alt="" />
-          <div className="text-wrapper">
-            <p className="poster-name">Lucía Sánchez de León</p>
-            <p className="publish-date">Feb 17 · 3 min read</p>
-          </div>
-        </div>
-        <div className="category-list">
-          <span className="category-item">App</span>
-          <span className="category-item">Mas categorias</span>
-        </div>
+      <div className="post-img-wrapper">
+        <img className="main-img" src={post.feature_image} alt="" />
       </div>
 
-      <div className="inner-html" dangerouslySetInnerHTML={{ __html: post.html }}></div>
+      <Poster
+        author={post.primary_author}
+        published_at={post.published_at}
+        tags={post.tags}
+        reading_time={post.reading_time}
+      />
 
-      <hr />
+      <html className="inner-html" dangerouslySetInnerHTML={{ __html: post.html }}></html>
 
-      <div className="poster-wrapper">
-        <div className="poster2">
-          <img className="poster-thumbnail" src="/assets/images/about-us/lu.png" alt="" />
-          <div className="text-wrapper">
-            <p className="poster-name">Lucía Sánchez de León</p>
-            <p className="publish-date">Feb 17 · 3 min read</p>
-          </div>
-        </div>
-        <p className="poster-info">
-          Lucía is the marketing equat id ligula sit amet dapibus. Suspendisse tincidunt placerat diam. Integer ultrices
-          vehicula urna.
-        </p>
-      </div>
+      <Poster2 author={post.primary_author} published_at={post.published_at} reading_time={post.reading_time} />
 
       <style jsx>{`
         .PostContentSection {
@@ -54,17 +39,18 @@ export const PostContentSection = ({ t, post }) => {
           border-radius: 36px;
           padding: 58px 159px !important;
 
-          hr{
-            height: 2px;
-            color: #707070;
-            margin-bottom: 42px;
+          .back-link{
+            position:absolute;
+            top: 66px;
+            left: 71px;
           }
 
-          .type-title {
+          .primary-tag {
             color: #09a7fe;
             font-weight: bold;
             font-size: 20px;
             margin-bottom: 23px;
+            text-transform: uppercase;
           }
 
           .title {
@@ -82,97 +68,35 @@ export const PostContentSection = ({ t, post }) => {
             color: #7c7c7c;
           }
 
-          .main-img {
+          .post-img-wrapper {
+            position: relative;
+            width: 100%;
+            min-height: 400px;
             margin-bottom: 47px;
-          }
 
-          .poster-wrapper {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 73px;
-          }
-
-          .poster {
-            display: flex;
-
-            .poster-thumbnail {
-              width: 53px;
-              height: 53px;
-              margin-right: 21px;
-            }
-            .text-wrapper {
-              color: #9d9d9d;
-
-              .poster-name {
-                font-size: 17px;
-                margin-bottom: 4px;
-              }
-              .publish-date {
-                font-size: 17px;
-              }
-            }
-          }
-
-          .poster2 {
-            display: flex;
-
-            .poster-thumbnail {
-              height: 74px;
-              margin-right: 29px;
-              width: 74px;
-            }
-
-            .text-wrapper {
-              .poster-name {
-                color: #001738;
-                font-size: 17px;
-                font-weight: 700;
-                margin-bottom: 4px;
-              }
-              
-              .publish-date {
-                font-size: 17px;
-                color: #9d9d9d;
-              }
-            }
-          }
-          
-          .category-list {
-            margin-bottom: 26px;
-            display: flex;
-            flex-wrap: wrap;
-            
-            .category-item {
-              font-size: 16px;
-              font-weight: bold;
-              background-color: #0999f0;
-              color: #fff;
-              padding: 8px 21px;
-              border-radius: 49px;
-              margin-right: 16px;
-            }
-          }
-          
-          .poster-info {
-            max-width: 389px;
-            font-style: italic;
-            font-size: 19px;
-            line-height: 26px;
-            color: #939393;
-          }
-          
-          .inner-html {
-            color: #001738;
-            margin-bottom: 74px;
-            
-            p {
-              font-size: 23px !important;
+            .main-img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
         }
 
         .custom-container {
           max-width: 1280px !important;
+        }
+
+        @media screen and (max-width: 1600px) {
+          .PostContentSection {
+            margin-top: -369px;
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .PostContentSection {
+            margin-top: -508px;
+          }
         }
       `}</style>
     </div>
