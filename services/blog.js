@@ -20,7 +20,7 @@ export const getPosts = async () => {
 export const getTags = async () => {
   const URL = `${BLOG_URL}/ghost/api/v3/content/tags/?key=${CONTENT_API_KEY}&fields=name`;
   const res = await fetch(URL);
-  const posts = await res.json();
+  const tags = await res.json();
 
-  return posts;
+  return tags;
 };

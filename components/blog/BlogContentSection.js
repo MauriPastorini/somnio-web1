@@ -96,7 +96,7 @@ export const BlogContentSection = ({ t, posts, tags }) => {
           position: relative;
 
           .row{
-            --bs-gutter-x: 4rem;
+            --bs-gutter-x: 8rem;
           }
 
           .card-wrapper {

@@ -29,7 +29,11 @@ export const PostContentSection = ({ t, post }) => {
 
       <html className="inner-html" dangerouslySetInnerHTML={{ __html: post.html }}></html>
 
-      <Poster2 author={post.primary_author} published_at={post.published_at} reading_time={post.reading_time} />
+      <Poster2 
+        author={post.primary_author} 
+        published_at={post.published_at} 
+        reading_time={post.reading_time} 
+      />
 
       <style jsx>{`
         .PostContentSection {

@@ -10,8 +10,9 @@ import HomeWhatClientSaySection from "../components/home/HomeWhatClientSaySectio
 import HomeOurBlogSection from "../components/home/HomeOurBlogSection";
 import HomeAboutUsSection from "../components/home/HomeAboutUsSection";
 import ContactSection from "../components/common/ContactSection";
+import { getPosts } from "../services/blog";
 
-const Home = () => (
+const Home = ({ posts }) => (
   <Container>
     <Head>
       <title>Somnio Software |​ UX/UI, Mobile & Web Development Company</title>
@@ -28,9 +29,19 @@ const Home = () => (
     <HomePortfolioSection />
     <HomeWhatClientSaySection />
     <HomeAboutUsSection />
-    <HomeOurBlogSection />
-    <ContactSection /> 
+    <HomeOurBlogSection posts={posts.posts}/>
+    <ContactSection />
   </Container>
 );
+
+export const getInitialProps = async () => ({ namespacesRequired: ["common"] });
+
+export const getStaticProps = async () => {
+  const posts = await getPosts();
+
+  return {
+    props: { posts },
+  };
+};
 
 export default Home;
