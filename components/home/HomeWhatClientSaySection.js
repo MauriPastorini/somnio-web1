@@ -51,7 +51,7 @@ const HomeWhatClientSaySection = ({ t }) => {
 
         <div className="home-clientsay__content-logos">
           <div
-            class="clutch-widget"
+            className="clutch-widget"
             data-url="https://widget.clutch.co"
             data-widget-type="2"
             data-height="50"

@@ -49,10 +49,10 @@ const AboutUsWhyUsSection = ({ t }) => {
             background-image: url(/assets/images/about-us/mobile/why-us-bg.svg);
             background-position: center;
             overflow: hidden;
-            padding: 100px 0 100px 0;
+            padding: 96px 0 80px 0;
   
             .header-wrapper {
-              margin-bottom: 62px !important;
+              margin-bottom: 53px !important;
   
               h2 {
                 font-size: 28px;
@@ -64,6 +64,7 @@ const AboutUsWhyUsSection = ({ t }) => {
               font-size: 15px;
               text-align: center;
               font-weight: 500;
+              line-height: 19px;
               max-width: 1150px !important;
               margin-bottom: 22px;
             }

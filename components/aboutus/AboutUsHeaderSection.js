@@ -115,7 +115,7 @@ const AboutUsHeaderSection = ({ t }) => {
               display: flex;
               flex-direction: column;
               margin-bottom: 182px;
-              margin-top: 160px;
+              margin-top: 179px;
 
               .header-text__wrapper {
                 width: 100%;
@@ -139,6 +139,7 @@ const AboutUsHeaderSection = ({ t }) => {
               }
 
               .header-img__wrapper {
+                margin-top: 81px;
                 width: 100%;
                 display: flex;
                 justify-content: center;

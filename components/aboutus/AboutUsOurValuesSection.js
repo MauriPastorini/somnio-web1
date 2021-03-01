@@ -98,7 +98,7 @@ const AboutUsOurValuesSection = ({ t }) => {
           .AboutUsOurValuesSection {
             position: relative;
             padding-top: 58px;
-            padding-bottom: 66px;
+            padding-bottom: 11px;
 
             .values-list--first {
               display: flex;

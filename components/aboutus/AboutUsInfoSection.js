@@ -44,7 +44,7 @@ const AboutUsInfoSection = ({ t }) => {
         @media screen and (max-width: 1280px) {
           .AboutUsInfoSection {
             position: relative;
-            padding: 77px 0;
+            padding: 77px 0 46px 0;
 
             .info-text-and-img {
               display: flex;
