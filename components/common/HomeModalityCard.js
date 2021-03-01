@@ -78,7 +78,7 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
       }
 
 
-      @media screen and (max-width: 428px) {
+      @media screen and (max-width: 1280px) {
         .HomeModalityCard {
           .modality-card-title {
             font-size: 22px;

@@ -88,8 +88,30 @@ const HomePorfolioSlide = ({ title, text, img }) => (
       }
 
       @media screen and (max-width: 1280px) {
-        .slide-img {
-          width: 600px !important;
+        .HomePorfolioSlide {
+          .text-bg-wrapper {
+
+            .slide-text-content {
+              
+              .slide-text-title {
+                font-size: 24px;
+                font-weight: 700;
+              }
+  
+              .slide-text-paragraph {
+                font-size: 15px;
+                line-height: 20px;
+              }
+  
+              .slide-text-link {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .slide-img {
+            width: 600px !important;
+          }
         }
       }
 

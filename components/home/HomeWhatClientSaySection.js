@@ -50,10 +50,6 @@ const HomeWhatClientSaySection = ({ t }) => {
         <h4 className="see-us-on">See us on</h4>
 
         <div className="home-clientsay__content-logos">
-          {/* <a target="_blank" href="https://clutch.co/profile/somnio-software">
-            <img src="/assets/images/home/clutch_blanco.png" />
-          </a> */}
-
           <div
             class="clutch-widget"
             data-url="https://widget.clutch.co"
@@ -61,6 +57,7 @@ const HomeWhatClientSaySection = ({ t }) => {
             data-height="50"
             data-clutchcompany-id="1252668"
           ></div>
+
           <a target="_blank" href="https://www.fiverr.com/mauriciopast?up_rollout=true">
             <img src="/assets/images/home/feverr_logo.png" />
           </a>
@@ -90,6 +87,7 @@ const HomeWhatClientSaySection = ({ t }) => {
             .home-clientsay__content-logos {
               display: flex;
               justify-content: space-between;
+              align-items: center;
               max-width: 470px;
               margin: 40px auto 200px auto;
             }
@@ -109,12 +107,8 @@ const HomeWhatClientSaySection = ({ t }) => {
           }
         }
 
-        @media screen and (max-width: 428px) {
+        @media screen and (max-width: 1280px) {
           .HomeWhatClientSaySection {
-            background-image: url(/assets/images/home/mobile/home-say-client-bg.svg);
-            background-size: 200% 100%;
-            background-position: center;
-
             .header-wrapper {
               margin-top: 78px;
               margin-bottom: 10px !important;
@@ -122,7 +116,7 @@ const HomeWhatClientSaySection = ({ t }) => {
 
             .home-clientsay__content {
               .home-clientsay__content-logos {
-                max-width: 265px;
+                max-width: 380px;
                 margin: 40px auto 70px auto;
 
                 img {
@@ -137,6 +131,14 @@ const HomeWhatClientSaySection = ({ t }) => {
               line-height: 22px;
               margin-top: 40px;
             }
+          }
+        }
+
+        @media screen and (max-width: 428px) {
+          .HomeWhatClientSaySection {
+            background-image: url(/assets/images/home/mobile/home-say-client-bg.svg);
+            background-size: 200% 100%;
+            background-position: center;
           }
         }
       `}</style>

@@ -94,6 +94,7 @@ export const BlogContentSection = ({ t, posts, tags }) => {
         .BlogContentSection {
           margin-top: -569px;
           position: relative;
+          overflow: hidden;
 
           .row{
             --bs-gutter-x: 8rem;

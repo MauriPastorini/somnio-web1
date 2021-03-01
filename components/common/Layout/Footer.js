@@ -4,7 +4,7 @@ import { withTranslation } from "../../../i18n";
 
 const Footer = ({ t }) => {
   const handleToUp = () => {
-    window.scroll({top: 0, left: 0, behavior: 'smooth' })
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
   };
 
   return (
@@ -20,22 +20,22 @@ const Footer = ({ t }) => {
             <div className="under-line"></div>
           </div>
           <div className="row-footer-links">
-            <Link href="/">
+            <Link href="/about-us#our-values">
               <a className="row-footer-link">
                 <span>{t("common.footer.our_values")}</span>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/about-us#how-we-work">
               <a className="row-footer-link">
                 <span>{t("common.footer.how_we_work")}</span>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/about-us#team">
               <a className="row-footer-link">
                 <span>{t("common.footer.team")}</span>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/faq">
               <a className="row-footer-link">
                 <span>FAQ</span>
               </a>
@@ -49,28 +49,28 @@ const Footer = ({ t }) => {
             <div className="under-line"></div>
           </div>
           <div className="row-footer-links">
-            <Link href="/">
+            <Link href="/services/working-modalities">
               <a className="row-footer-link">
                 <span>{t("common.footer.working_modalities")}</span>
               </a>
             </Link>
 
-            <Link href="/">
+            <Link href="/services/mobile-app-development">
               <a className="row-footer-link">
                 <span>{t("common.navbar.services_mobile")}</span>
               </a>
             </Link>
-            <Link href="/web-development">
+            <Link href="/services/web-development">
               <a className="row-footer-link">
                 <span>{t("common.navbar.services_web")}</span>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/services/ux-ui">
               <a className="row-footer-link">
                 <span>UX/UI</span>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/our-work">
               <a className="row-footer-link">
                 <span>{t("common.navbar.our_work")}</span>
               </a>
@@ -85,12 +85,12 @@ const Footer = ({ t }) => {
           </div>
 
           <div className="row-footer-links">
-            <Link href="/">
+            <Link href="/blog">
               <a className="row-footer-link">
                 <span>Blog</span>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/get-in-touch">
               <a className="row-footer-link">
                 <span>{t("common.footer.meetup")}</span>
               </a>
@@ -127,7 +127,7 @@ const Footer = ({ t }) => {
         </a> */}
 
         <div
-          style={{width: '192px'}}
+          style={{ width: "192px" }}
           className="clutch-widget"
           data-url="https://widget.clutch.co"
           data-widget-type="2"
@@ -135,9 +135,11 @@ const Footer = ({ t }) => {
           data-clutchcompany-id="1252668"
         ></div>
 
-        <a href="/">
-          <img className="somnio-logo" src="/assets/images/common/logo.png" alt="" />
-        </a>
+        <Link href="/">
+          <a>
+            <img className="somnio-logo" src="/assets/images/common/logo.png" alt="" />
+          </a>
+        </Link>
 
         <div className="social-network-group">
           <a target="_blank" href=" https://www.facebook.com/Somnio-Software-101920285002535">
@@ -266,11 +268,14 @@ const Footer = ({ t }) => {
             .row-footer {
               .row-footer-title {
                 color: #fff;
+                font-weight: 700;
+                font-size: 20px;
               }
               .row-footer-description {
                 color: #fff;
                 white-space: wrap;
                 margin-bottom: 0;
+                font-size: 20px;
               }
 
               .row-footer-links {
@@ -281,6 +286,7 @@ const Footer = ({ t }) => {
                   text-decoration: none;
                   color: #fff;
                   margin-bottom: 7px;
+                  font-size: 20px;
 
                   span:hover {
                     border-bottom: 1px solid #fff;
@@ -319,6 +325,7 @@ const Footer = ({ t }) => {
             margin-top: 130px;
             display: flex;
             justify-content: space-evenly;
+            max-width: 1040px !important;
 
             a img {
               width: 150px;
@@ -343,14 +350,23 @@ const Footer = ({ t }) => {
               .row-footer {
                 margin-bottom: 50px;
 
+                .row-footer-title {
+                  font-size: 18px;
+                }
+
                 .row-footer-description {
                   text-align: center;
+                  font-size: 18px;
                 }
 
                 .row-footer-links {
                   display: flex;
                   flex-direction: column;
                   align-items: center;
+
+                  .row-footer-link {
+                    font-size: 18px;
+                  }
                 }
               }
             }
@@ -370,7 +386,8 @@ const Footer = ({ t }) => {
               .somnio-logo {
                 width: 131px;
                 height: auto;
-                margin-bottom: 50px;
+                margin-top: 67px;
+                margin-bottom: 67px;
               }
 
               .social-network-group {

@@ -1,10 +1,6 @@
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
-import useWindowDimensions from "../hooks/useWindowDimensions";
 
-const small = 145;
-// const medium = 180;
-// const big = 240;
 
 const tech_list = [
   {

@@ -67,7 +67,7 @@ const data = [
 
 const AboutUsTeamSection = ({ t }) => {
   return (
-    <div className="AboutUsTeamSection">
+    <section className="AboutUsTeamSection" id="team">
       <img src="/assets/images/about-us/about-us-team-path1.svg" className="about-us-team-path1" alt="" />
       <img src="/assets/images/about-us/about-us-team-path2.png" className="about-us-team-path2" alt="" />
       <img src="/assets/images/about-us/about-us-team-dots1.svg" className="about-us-team-dots1" alt="" />
@@ -151,7 +151,7 @@ const AboutUsTeamSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

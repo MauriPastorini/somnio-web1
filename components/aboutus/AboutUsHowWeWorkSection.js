@@ -17,7 +17,7 @@ const AboutUsHowWeWorkSection = ({ t }) => {
   ];
 
   return (
-    <div className="AboutUsHowWeWorkSection">
+    <section className="AboutUsHowWeWorkSection" id="how-we-work">
       <div className="section-header-light header-wrapper" data-aos="fade-in">
         <h2>{t("about_us.how_we_work.title")}</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
@@ -68,7 +68,7 @@ const AboutUsHowWeWorkSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

@@ -85,10 +85,6 @@ const HomePortfolioSection = ({ t }) => {
               left: -50px;
             }
 
-            // .home-porfolio-path-mobile {
-            //   display:none;
-            // }
-
             .btn-position {
               display: flex;
               justify-content: center;
@@ -117,13 +113,6 @@ const HomePortfolioSection = ({ t }) => {
               .home-porfolio-path {
                 display: none;
               }
-
-              // .home-porfolio-path-mobile {
-              //   display: block;
-              //   position: absolute;
-              //   top: -270px;
-              //   left: -100px;
-              // }
 
               .btn-position {
                 display: flex;

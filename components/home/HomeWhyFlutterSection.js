@@ -83,24 +83,6 @@ const HomeWhyFlutterSection = ({ t }) => {
 
           @media screen and (max-width: 1280px) {
             .HomeWhyFlutterSection {
-              .content {
-              }
-
-              .whyflutter-title {
-              }
-
-              .whyflutter-text {
-              }
-
-              .whyflutter-link {
-                img {
-                }
-              }
-            }
-          }
-
-          @media screen and (max-width: 428px) {
-            .HomeWhyFlutterSection {
               min-height: 522px;
               background-image: url(/assets/images/home/mobile/home-bg-why-flutter.svg);
 

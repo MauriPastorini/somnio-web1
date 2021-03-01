@@ -84,7 +84,7 @@ const ServiceHeaderSection = ({ t }) => {
               margin-top: 85px;
 
               .services-header-text {
-                width: 450px;
+                width: 510px;
               }
 
               .title-1 {

@@ -3,41 +3,6 @@ import Link from "next/link";
 import React from "react";
 
 const BlogPostCard = ({ post, large }) => {
-  // {
-  //   "title": "Creating a custom theme",
-  //   "slug": "themes",
-  //   "custom_excerpt": "Ghost comes with a beautiful default theme designed for publishers which can easily be adapted for most purposes, or you can build a custom theme to suit your needs.",
-  //   "feature_image": "https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png",
-  //   "tags": [
-  //     {
-  //       "id": "6012d300aa4a5c001c109adb",
-  //       "name": "Getting Started",
-  //       "slug": "getting-started",
-  //       "description": null,
-  //       "feature_image": null,
-  //       "visibility": "public",
-  //       "meta_title": null,
-  //       "meta_description": null
-  //     }
-  //   ],
-  //   "authors": [
-  //     {
-  //       "id": "5951f5fca366002ebd5dbef7",
-  //       "name": "Ghost",
-  //       "slug": "ghost",
-  //       "profile_image": "https://static.ghost.org/v3.0.0/images/ghost.png",
-  //       "cover_image": null,
-  //       "bio": "You can delete this user to remove all the welcome posts",
-  //       "website": "https://ghost.org",
-  //       "location": "The Internet",
-  //       "facebook": "ghost",
-  //       "twitter": "ghost",
-  //       "meta_title": null,
-  //       "meta_description": null
-  //     }
-  //   ]
-  // }
-
   return (
     <article className={`${large ? "post-card-large" : "post-card-normal"}`}>
       <div className="post-card-img">
@@ -72,7 +37,7 @@ const BlogPostCard = ({ post, large }) => {
           <img className="post-card-thumbnail" src={post.authors[0].profile_image} alt="" />
           <div className="text-wrapper">
             <p className="post-card-name">{post.authors[0].name}</p>
-            <p className="post-card-publish-date">{`${format(new Date(post.published_at), "MMM dd")} · 3 min read`}</p>
+            <p className="post-card-publish-date">{`${format(new Date(post.published_at), "MMM dd")} · ${post.reading_time} min read`}</p>
           </div>
         </footer>
       </div>
@@ -137,7 +102,7 @@ const BlogPostCard = ({ post, large }) => {
           font-weight: bold;
           font-size: 20px;
           margin-bottom: 14px;
-          text-transform:uppercase;
+          text-transform: uppercase;
         }
 
         .post-card-title {
@@ -189,6 +154,48 @@ const BlogPostCard = ({ post, large }) => {
             .post-card-publish-date {
               font-size: 17px;
               color: #707070;
+            }
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .post-card-content-link {
+            color: #15171a;
+            position: relative;
+            text-decoration: none;
+          }
+
+          .post-card-primary-tag {
+            font-size: 16px;
+            margin-bottom: 7px;
+          }
+
+          .post-card-title {
+            font-size: 24px;
+            line-weight: 24px;
+            margin-bottom: 12px;
+          }
+
+          .post-card-excerpt {
+            font-size: 15px;
+            line-weight: 19px;
+            margin-bottom: 16px;
+          }
+
+          .post-card-category-list {
+            margin-bottom: 20px;
+
+            .post-card-category-item {
+              font-size: 14px;
+            }
+          }
+
+          .post-card-author {
+            display: flex;
+
+            .post-card-thumbnail {
+              width: 45px;
+              height: 45px;
             }
           }
         }

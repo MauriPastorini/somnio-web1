@@ -44,6 +44,7 @@ export const PostMoreSection = ({ t, posts, post }) => {
       <style jsx>{`
         .PostMoreSection {
           margin-bottom: 103px;
+          overflow: hidden;
 
           .row{
             --bs-gutter-x: 8rem;

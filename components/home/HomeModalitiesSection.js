@@ -33,7 +33,7 @@ const HomeModalitiesSection = ({ t }) => {
       <style jsx>
         {`
           .HomeModalitiesSection {
-            margin-bottom: 280px;
+            margin-bottom: 240px;
 
             .header-wrapper{
               margin-top: 134px !important;
@@ -50,7 +50,7 @@ const HomeModalitiesSection = ({ t }) => {
           }
           
 
-          @media screen and (max-width: 1280px) {
+          @media screen and (max-width: 767px) {
             .HomeModalitiesSection {
               margin-bottom: 100px;
   

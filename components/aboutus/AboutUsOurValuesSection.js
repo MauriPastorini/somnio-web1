@@ -40,7 +40,7 @@ const AboutUsOurValuesSection = ({ t }) => {
   ];
 
   return (
-    <div className="AboutUsOurValuesSection">
+    <section className="AboutUsOurValuesSection" id="our-values">
       <img src="/assets/images/about-us/about-us-our-values-dots1.svg" className="about-us-our-values-dots1" alt="" />
       <img src="/assets/images/about-us/about-us-our-values-dots2.svg" className="about-us-our-values-dots2" alt="" />
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
@@ -134,7 +134,7 @@ const AboutUsOurValuesSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 
