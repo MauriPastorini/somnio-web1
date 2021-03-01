@@ -16,39 +16,43 @@ const HomeOurBlogSection = ({ t, posts }) => {
   };
 
   return (
+
     <div className="HomeOurBlogSection custom-container">
-      <img src={`/assets/images/home-path-blog.svg`} alt="" className="path-blog-img-1" />
-      <div className="section-header-dark header-wrapper" data-aos="fade-in">
+      <img src={`/assets/images/home/home-path-blog.svg`} alt="" className="path-blog-img-1" />
+      <img src={`/assets/images/home/mobile/home-path-blog.svg`} alt="" className="path-blog-img-1--mobile" />
+
+      <div className="section-header-dark header-wrapper " data-aos="fade-in">
         <h2>{t("home.our_blog.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
-      <div className="post-list row">
-        <div className="card-wrapper col-md-6 col-xl-4">
-          <BlogPostCard post={posts[0]} />
-        </div>
-        <div className="card-wrapper col-md-6 col-xl-4">
-          <BlogPostCard post={posts[1]} />
-        </div>
-        <div className="card-wrapper col-md-6 col-xl-4">
-          <BlogPostCard post={posts[2]} />
-        </div>
-      </div>
 
-      <div className="post-list-mobile">
-        <Slider {...settings}>
-          <div className="card-wrapper">
+        <div className="post-list row">
+          <div className="card-wrapper col-md-6 col-xl-4">
             <BlogPostCard post={posts[0]} />
           </div>
-          <div className="card-wrapper">
+          <div className="card-wrapper col-md-6 col-xl-4">
             <BlogPostCard post={posts[1]} />
           </div>
-          <div className="card-wrapper">
+          <div className="card-wrapper col-md-6 col-xl-4">
             <BlogPostCard post={posts[2]} />
           </div>
-        </Slider>
-      </div>
+        </div>
 
+        <div className="post-list-mobile">
+          <Slider {...settings}>
+            <div className="card-wrapper">
+              <BlogPostCard post={posts[0]} />
+            </div>
+            <div className="card-wrapper">
+              <BlogPostCard post={posts[1]} />
+            </div>
+            <div className="card-wrapper">
+              <BlogPostCard post={posts[2]} />
+            </div>
+          </Slider>
+        </div>
+   
       <style jsx>
         {`
           .HomeOurBlogSection {
@@ -69,6 +73,10 @@ const HomeOurBlogSection = ({ t, posts }) => {
             position: absolute;
             left: 0px;
             top: 0px;
+          }
+
+          .path-blog-img-1--mobile {
+            display: none;
           }
 
           .header-wrapper {
@@ -95,6 +103,17 @@ const HomeOurBlogSection = ({ t, posts }) => {
             }
 
             .post-list-mobile {
+              display: block;
+            }
+
+            .path-blog-img-1 {
+              display: none;
+            }
+
+            .path-blog-img-1--mobile {
+              position: absolute;
+              left: 0px;
+              top: 136px;
               display: block;
             }
           }

@@ -6,6 +6,7 @@ const HomeHeaderSection = ({ t }) => {
   return (
     <div className="HomeHeaderSection">
       <img src="/assets/images/home/home-header-path.svg" alt="" className="home-header__path" />
+      <img src="/assets/images/home/mobile/home-header-path.svg" alt="" className="home-header__path--mobile" />
       <div className="text-and-image custom-container">
         <div className="home-header-text-wrapper" data-aos="fade-right">
           <h1 className="home-header-text">{t("home.header.text_1")}</h1>
@@ -37,8 +38,12 @@ const HomeHeaderSection = ({ t }) => {
             top: 0;
             left: 0;
             z-index: 0;
-            max-width: 42%;
+            // max-width: 42%;
             height: auto;
+          }
+
+          .home-header__path--mobile {
+            display: none;
           }
 
           .text-and-image {

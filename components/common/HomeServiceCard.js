@@ -73,7 +73,7 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
             .service-card-title {
               font-size: 18px;
               letter-spacing: 0.45px;
-              margin-bottom: 12px;
+              margin-bottom: 0;
             }
 
             .service-card-text {

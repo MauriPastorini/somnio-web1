@@ -20,6 +20,8 @@ const HomeModalitiesSection = ({ t }) => {
 
   return (
     <div className="HomeModalitiesSection">
+      <img src="/assets/images/home/mobile/path-modalities.svg" alt="" className="path" />
+      <img src="/assets/images/home/mobile/path-modalities2.svg" alt="" className="path2" />
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("home.modalities.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
@@ -33,32 +35,53 @@ const HomeModalitiesSection = ({ t }) => {
       <style jsx>
         {`
           .HomeModalitiesSection {
-            margin-bottom: 240px;
+            padding-bottom: 240px;
+            padding-top: 134px !important;
+            position: relative;
 
-            .header-wrapper{
-              margin-top: 134px !important;
+            .header-wrapper {
               margin-bottom: 120px !important;
             }
-  
+
+            .path {
+              display: none;
+            }
+
+            .path2 {
+              display: none;
+            }
+
             .modality-list {
               display: flex;
               justify-content: space-between;
-  
+
               margin: 20px auto 0 auto;
               max-width: 1129px;
             }
           }
-          
 
           @media screen and (max-width: 767px) {
             .HomeModalitiesSection {
-              margin-bottom: 100px;
-  
-              .header-wrapper{
-                margin-top: 62px !important;
+              padding-top: 62px !important;
+              padding-bottom: 60px;
+
+              .path {
+                position: absolute;
+                right: 0;
+                top: 125px;
+              }
+
+              .path2 {
+                display: block;
+                position: absolute;
+                left: -134px;
+                bottom: -90px;
+              }
+
+              .header-wrapper {
                 margin-bottom: 63px !important;
               }
-    
+
               .modality-list {
                 flex-direction: column;
               }

@@ -5,8 +5,6 @@ const HomeAboutUsSection = ({ t }) => {
   return (
     <div className="HomeAboutUsSection">
       <img src={`/assets/images/home/home-dots-3.svg`} className="path-img-1" alt="" />
-      <img src={`/assets/images/home/home-path-about-us.svg`} className="path-img-2" alt="" />
-      <img src={`/assets/images/home/mobile/home-path-about-us.svg`} className="path-img-2-mobile" alt="" />
 
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("home.about_us.title")}</h2>
@@ -75,16 +73,6 @@ const HomeAboutUsSection = ({ t }) => {
             left: 50px;
             top: 150px;
           }
-
-          .path-img-2 {
-            position: absolute;
-            right: -480px;
-            top: -100px;
-          }
-
-          .path-img-2-mobile {
-            display: none;
-          }
         }
 
         @media screen and (max-width: 1280px) {
@@ -117,7 +105,6 @@ const HomeAboutUsSection = ({ t }) => {
                 .home-aboutus-text {
                   font-size: 15px;
                   max-width: 480px;
-                  text-align: center;
                 }
               }
 

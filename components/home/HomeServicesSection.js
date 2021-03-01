@@ -34,7 +34,7 @@ const HomeServicesSection = ({ t }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
   };
@@ -112,7 +112,7 @@ const HomeServicesSection = ({ t }) => {
           @media screen and (max-width: 1280px) {
             .HomeServicesSection {
               .service-header {
-                margin-bottom: 75px !important;
+                margin-bottom: 48px !important;
               }
 
               .service-list {
@@ -130,8 +130,9 @@ const HomeServicesSection = ({ t }) => {
               .dots-mobile {
                 position: absolute;
                 display: block;
-                bottom: 32px;
-                right: 21px;
+                top: -13px;
+                left: 27px;
+                width: 98px;
               }
             }
           }
