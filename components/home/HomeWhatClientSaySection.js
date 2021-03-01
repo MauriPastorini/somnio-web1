@@ -116,7 +116,7 @@ const HomeWhatClientSaySection = ({ t }) => {
 
             .home-clientsay__content {
               .home-clientsay__content-logos {
-                max-width: 380px;
+                max-width: 330px;
                 margin: 40px auto 70px auto;
 
                 img {

@@ -28,8 +28,8 @@ const BlogPostCard = ({ post, large }) => {
         </Link>
 
         <div className="post-card-category-list">
-          {post.tags.map((tag) => (
-            <span className="post-card-category-item">{tag.name}</span>
+          {post.tags.map((tag, i) => (
+            <span key={i} className="post-card-category-item">{tag.name}</span>
           ))}
         </div>
 
