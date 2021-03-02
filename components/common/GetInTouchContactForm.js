@@ -12,9 +12,9 @@ const GetInTouchContactForm = ({ t }) => (
       <label className="contact-label">How is your e-mail?</label>
       <input className="contact-text-input" type="text" />
     </div>
-    <div className="contact-form-group mb-50">
+    <div className="contact-form-group mb-30">
       <label className="contact-label">Tell us about your proyect</label>
-      <textarea rows="4" className="contact-textarea"></textarea>
+      <textarea rows="8" className="contact-textarea"></textarea>
     </div>
     <div className="contact-button-wrapper">
       <button className="btn btn-custom-1">Let's talk</button>
@@ -86,7 +86,7 @@ const GetInTouchContactForm = ({ t }) => (
         }
       }
 
-      @media screen and (max-width: 428px) {
+      @media screen and (max-width: 1280px) {
         .GetInTouchContactForm {
           display: flex;
           flex-direction: column;

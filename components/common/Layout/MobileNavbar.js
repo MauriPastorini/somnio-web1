@@ -35,7 +35,7 @@ const MobileNavbar = ({ t }) => {
           <Link className="navbar-brand" href="/">
             <img className="somnio-logo" src="/assets/images/common/logo.png" alt="" />
           </Link>
-          <a className="btn-mobile" href="javacript:void(0)" onClick={handleOpen}>
+          <a className="btn-mobile" onClick={handleOpen}>
             <img src="/assets/images/common/bg_menu_mobile.svg" />
           </a>
         </div>
@@ -133,6 +133,7 @@ const MobileNavbar = ({ t }) => {
           background: rgba(73,58,175,0.5);
           font-size: 0;
           border-radius: 25px;
+          cursor: pointer;
         }
 
         .closed {
