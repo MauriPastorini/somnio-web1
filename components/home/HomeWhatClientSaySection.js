@@ -36,7 +36,16 @@ const HomeWhatClientSaySection = ({ t }) => {
       comment:
         "Their breadth of knowledge and professionalism impressed us. There's nothing that i could think of for them to do better. They knew what they were doing and they did a good job on that. They were excellent.",
     },
+    {
+      img: "/assets/images/common/tony.jpg",
+      name: "Trac Stephenson",
+      position: "Founder",
+      project: "Pro Wallet",
+      comment:
+        "Somnio is our technical team that guides us in all the steps of the process to build a mobile application, giving us a better understanding of what is the current state, helping us define what we need and suggesting next steps. They helped us to get to a high-quality app which allowed us to scale our idea and the service we intend to provide.",
+    },
   ];
+  
   return (
     <div className="HomeWhatClientSaySection">
       <div className="home-clientsay__content">

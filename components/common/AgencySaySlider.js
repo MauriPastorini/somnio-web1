@@ -8,12 +8,13 @@ const AgencySaySlider = ({ comments }) => {
   const size = useWindowSize();
 
   const getCustomCenterPadding = (width) => {
-    if (width > 1800) return "440px";
-    else if (width > 1500) return "340px";
-    else if (width > 1280) return "240px";
-    else if (width > 880) return "140px";
+    if (width > 1920) return "440px";
+    else if (width > 1800) return "300px";
+    else if (width > 1280) return "150px";
+    else if (width > 767) return "70px";
     else return "55px";
   };
+
   const centerPadding = getCustomCenterPadding(size.width);
 
   const settings = {
