@@ -1,7 +1,5 @@
 import AgencySayCard from "./AgencySayCard";
 import Slider from "react-slick";
-import { useEffect } from "react";
-import { useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 
 const AgencySaySlider = ({ comments }) => {
