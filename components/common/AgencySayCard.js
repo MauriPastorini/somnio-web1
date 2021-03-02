@@ -129,10 +129,11 @@ const AgencySayCard = ({ comment }) => {
             padding: 62px 32px 32px 32px;
             margin-left: 16px;
             margin-right: 16px;
+            height: auto;
 
             .agency-corn__card {
               width: 85px;
-              height: 76px;
+              height: 85px;
 
               .agency-corn__content {
 
@@ -147,7 +148,6 @@ const AgencySayCard = ({ comment }) => {
             }
 
             .agency-card__header {
-
               .agency-card__header-img {
                 margin-right: 10px;
                 width: 70px;

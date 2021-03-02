@@ -42,7 +42,7 @@ const MobileNavbar = ({ t }) => {
       </nav>
 
       <div ref={navRef} className="overlay">
-        <a href="javascript:void(0)" className="closebtn" onClick={handleClose}>
+        <a className="closebtn" onClick={handleClose}>
           &times;
         </a>
 
@@ -161,7 +161,6 @@ const MobileNavbar = ({ t }) => {
 
         .overlay-content {
           position: relative;
-          // top: 10%;
           width: 100%;
           text-align: center;
           margin-top: 30px;
@@ -190,6 +189,7 @@ const MobileNavbar = ({ t }) => {
           top: 20px;
           right: 35px;
           font-size: 60px;
+          cursor: pointer;
         }
 
         .overlay .btn-outline-navbar {

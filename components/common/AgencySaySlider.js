@@ -12,7 +12,7 @@ const AgencySaySlider = ({ comments }) => {
     else if (width > 1800) return "300px";
     else if (width > 1280) return "150px";
     else if (width > 767) return "70px";
-    else return "55px";
+    else return "30px";
   };
 
   const centerPadding = getCustomCenterPadding(size.width);
@@ -25,7 +25,7 @@ const AgencySaySlider = ({ comments }) => {
     centerPadding: centerPadding,
     slidesToShow: 1,
     speed: 500,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
   };
