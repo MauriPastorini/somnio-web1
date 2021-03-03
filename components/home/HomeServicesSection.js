@@ -142,10 +142,6 @@ const HomeServicesSection = ({ t }) => {
   );
 };
 
-HomeServicesSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 HomeServicesSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

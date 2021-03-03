@@ -138,10 +138,6 @@ const AboutUsOurValuesSection = ({ t }) => {
   );
 };
 
-AboutUsOurValuesSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 AboutUsOurValuesSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

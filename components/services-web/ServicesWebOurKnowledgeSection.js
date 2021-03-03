@@ -154,10 +154,6 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
   );
 };
 
-ServicesWebOurKnowledgeSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesWebOurKnowledgeSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

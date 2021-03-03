@@ -133,10 +133,6 @@ const ContactForm = ({ t }) => (
   </form>
 );
 
-ContactForm.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ContactForm.propTypes = {
   t: PropTypes.func.isRequired,
 };

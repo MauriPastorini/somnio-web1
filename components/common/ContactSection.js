@@ -85,10 +85,6 @@ const ContactSection = ({ t }) => (
   </div>
 );
 
-ContactSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ContactSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

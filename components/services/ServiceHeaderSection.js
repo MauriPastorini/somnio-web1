@@ -227,10 +227,6 @@ const ServiceHeaderSection = ({ t }) => {
   );
 };
 
-ServiceHeaderSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServiceHeaderSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

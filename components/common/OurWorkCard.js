@@ -13,13 +13,13 @@ export const OurWorkCard = ({ data }) => {
           <img src="/assets/images/our-work/button-google-play.png" />
         </div>
         <div className="category-group">
-          {data.categories.map((c) => (
-            <span>{c}</span>
+          {data.categories.map((c, i) => (
+            <span key={i}>{c}</span>
           ))}
         </div>
         <div className="tech-group">
-          {data.tech.map((t) => (
-            <span>{t}</span>
+          {data.tech.map((t, i) => (
+            <span key={i}>{t}</span>
           ))}
         </div>
         <button className="btn btn-custom-3">Learn more</button>

@@ -2,6 +2,39 @@ import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
 const WhyFlutterWhatIsFlutterSection = ({ t }) => {
+  const characteristic_data = [
+    {
+      img: "/assets/images/why-flutter/characteristic_1.svg",
+      title: t("why_flutter.what_is_flutter.characteristics.characteristic_1.title"),
+      text: t("why_flutter.what_is_flutter.characteristics.characteristic_1.text"),
+    },
+    {
+      img: "/assets/images/why-flutter/characteristic_2.svg",
+      title: t("why_flutter.what_is_flutter.characteristics.characteristic_2.title"),
+      text: t("why_flutter.what_is_flutter.characteristics.characteristic_2.text"),
+    },
+    {
+      img: "/assets/images/why-flutter/characteristic_3.svg",
+      title: t("why_flutter.what_is_flutter.characteristics.characteristic_3.title"),
+      text: t("why_flutter.what_is_flutter.characteristics.characteristic_3.text"),
+    },
+    {
+      img: "/assets/images/why-flutter/characteristic_4.svg",
+      title: t("why_flutter.what_is_flutter.characteristics.characteristic_4.title"),
+      text: t("why_flutter.what_is_flutter.characteristics.characteristic_4.text"),
+    },
+    {
+      img: "/assets/images/why-flutter/characteristic_5.svg",
+      title: t("why_flutter.what_is_flutter.characteristics.characteristic_5.title"),
+      text: t("why_flutter.what_is_flutter.characteristics.characteristic_5.text"),
+    },
+    {
+      img: "/assets/images/why-flutter/characteristic_6.svg",
+      title: t("why_flutter.what_is_flutter.characteristics.characteristic_6.title"),
+      text: t("why_flutter.what_is_flutter.characteristics.characteristic_6.text"),
+    },
+  ];
+
   return (
     <div className="WhyFlutterWhatIsFlutterSection custom-container">
       <div className="text-and-images">
@@ -46,65 +79,17 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
       </div>
 
       <div className="charasteristic-detail-list">
-        <div className="charasteristic-detail-item mb-100">
-          <div className="img-content">
-            <img src="/assets/images/why-flutter/characteristic_1.svg" alt="" />
+        {characteristic_data.map((item, i) => (
+          <div key={i} className="charasteristic-detail-item">
+            <div className="img-content">
+              <img src={item.img} alt="" />
+            </div>
+            <div className="text-content">
+              <h4>{item.title}</h4>
+              <p>{item.text}</p>
+            </div>
           </div>
-          <div className="text-content">
-            <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_1.title")}</h4>
-            <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_1.text")}</p>
-          </div>
-        </div>
-
-        <div className="charasteristic-detail-item mb-100">
-          <div className="text-content">
-            <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_2.title")}</h4>
-            <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_2.text")}</p>
-          </div>
-          <div className="img-content">
-            <img src="/assets/images/why-flutter/characteristic_2.svg" alt="" />
-          </div>
-        </div>
-
-        <div className="charasteristic-detail-item mb-100">
-          <div className="img-content">
-            <img src="/assets/images/why-flutter/characteristic_3.svg" alt="" />
-          </div>
-          <div className="text-content">
-            <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_3.title")}</h4>
-            <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_3.text")}</p>
-          </div>
-        </div>
-
-        <div className="charasteristic-detail-item mb-100">
-          <div className="text-content">
-            <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_4.title")}</h4>
-            <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_4.text")}</p>
-          </div>
-          <div className="img-content">
-            <img src="/assets/images/why-flutter/characteristic_4.svg" alt="" />
-          </div>
-        </div>
-
-        <div className="charasteristic-detail-item mb-100">
-          <div className="img-content">
-            <img src="/assets/images/why-flutter/characteristic_5.svg" alt="" />
-          </div>
-          <div className="text-content">
-            <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_5.title")}</h4>
-            <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_5.text")}</p>
-          </div>
-        </div>
-
-        <div className="charasteristic-detail-item">
-          <div className="text-content">
-            <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_6.title")}</h4>
-            <p>{t("why_flutter.what_is_flutter.characteristics.characteristic_6.text")}</p>
-          </div>
-          <div className="img-content">
-            <img src="/assets/images/why-flutter/characteristic_6.svg" alt="" />
-          </div>
-        </div>
+        ))}
       </div>
       <style jsx>{`
         .WhyFlutterWhatIsFlutterSection {
@@ -156,7 +141,10 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
               display: flex;
               justify-content: space-between;
               align-items: center;
+              margin-bottom: 100px;
+
               .text-content {
+                
                 width: 50%;
                 h4 {
                   color: #001331;
@@ -182,24 +170,30 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
               &:last-of-type {
                 margin-bottom: 180px;
               }
+
+              &:nth-child(even){
+                .img-content {
+                  order:1;
+                }
+              }
             }
           }
         }
 
-        @media screen and (max-width: 1280px) {
+        @media screen and (max-width: 991px) {
           .WhyFlutterWhatIsFlutterSection {
-            margin: 200px auto 100vh auto;
+            margin: 67px auto;
 
             .text-and-images {
               flex-direction: column;
               justify-content: space-between;
               align-items: center;
               margin-bottom: 50px;
-              
+
               .text-content {
                 max-width: 570px;
                 order: 1;
-                
+
                 h3 {
                   font-size: 24px;
                   text-align: center;
@@ -238,7 +232,48 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
             }
 
             .charasteristic-detail-list {
-              display: none;
+              .charasteristic-detail-item {
+                flex-direction: column;
+                margin-bottom: 61px;
+
+                .text-content {
+                  width: unset;
+                  
+                  h4 {
+                    font-size: 24px;
+                    max-width: 422px;
+                    margin-bottom: 25px;
+                    text-align: center;
+                    line-heigth: 28px;
+                    margin-left: auto;
+                    margin-right: auto;
+                  }
+
+                  p {
+                    font-size: 14px;
+                    line-heigth: 20px;
+                  }
+                }
+  
+                .img-content {
+                  width: unset;
+
+                  img{
+                    max-width: 114px;
+                    margin-bottom: 17px;
+                  }
+                }
+  
+                &:last-of-type {
+                  margin-bottom: 0;
+                }
+  
+                &:nth-child(even){
+                  .img-content {
+                    order: unset;
+                  }
+                }
+              }
             }
           }
         }
@@ -246,10 +281,6 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
     </div>
   );
 };
-
-WhyFlutterWhatIsFlutterSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
 
 WhyFlutterWhatIsFlutterSection.propTypes = {
   t: PropTypes.func.isRequired,

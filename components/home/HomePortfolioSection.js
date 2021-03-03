@@ -134,10 +134,6 @@ const HomePortfolioSection = ({ t }) => {
   );
 };
 
-HomePortfolioSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 HomePortfolioSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

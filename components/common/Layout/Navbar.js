@@ -44,7 +44,10 @@ const Navbar = ({ t }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const listener = window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
   });
 
   const logo = `/assets/images/common/${scrolled ? "logo-2" : "logo"}.png`;
@@ -303,10 +306,6 @@ const Navbar = ({ t }) => {
     </nav>
   );
 };
-
-Navbar.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
 
 Navbar.propTypes = {
   t: PropTypes.func.isRequired,

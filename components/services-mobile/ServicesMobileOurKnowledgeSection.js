@@ -145,10 +145,6 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
   );
 };
 
-ServicesMobileOurKnowledgeSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesMobileOurKnowledgeSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

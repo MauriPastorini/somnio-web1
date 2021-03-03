@@ -4,7 +4,8 @@ import { withTranslation } from "../../i18n";
 const WhyFlutterHeaderSection = ({ t }) => {
   return (
     <div className="WhyFlutterHeaderSection">
-      <img src="/assets/images/why-flutter/header-path.svg" alt="" className="header__path" />
+      <img src="/assets/images/why-flutter/header-path.svg" alt="" className="path" />
+      <img src="/assets/images/why-flutter/mobile/header-path.svg" alt="" className="path--mobile" />
 
       <h1 className="header-title custom-container">{t("why_flutter.header.text_1")}</h1>
       <style jsx>{`
@@ -17,12 +18,16 @@ const WhyFlutterHeaderSection = ({ t }) => {
           background-size: 200%;
           padding: 505px 0 505px 0;
 
-          .header__path {
+          .path {
             position: absolute;
             top: -653px;
             left: -659px;
             z-index: 0;
             height: auto;
+          }
+
+          .path--mobile {
+            display: none;
           }
 
           .header-title {
@@ -46,14 +51,18 @@ const WhyFlutterHeaderSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .WhyFlutterHeaderSection {
-            padding: 350px 0 350px 0;
+            padding: 385px 0 390px 0;
 
-            .header__path {
-              left: -259px;
+            .path {
+              display: none;
+            }
+
+            .path--mobile {
+              display: block;
+              left: -169px;
               height: auto;
               position: absolute;
-              top: -437px;
-              width: 784px;
+              top: -184px;
               z-index: 0;
             }
 
@@ -66,17 +75,13 @@ const WhyFlutterHeaderSection = ({ t }) => {
         @media screen and (max-width: 428px) {
           .WhyFlutterHeaderSection {
             background-image: url(/assets/images/why-flutter/mobile/header-bg.svg);
-            padding: 370px 0 370px 0;
+            // padding: 370px 0 370px 0;
           }
         }
       `}</style>
     </div>
   );
 };
-
-WhyFlutterHeaderSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
 
 WhyFlutterHeaderSection.propTypes = {
   t: PropTypes.func.isRequired,

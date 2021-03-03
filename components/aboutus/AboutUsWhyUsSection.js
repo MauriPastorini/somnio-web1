@@ -75,10 +75,6 @@ const AboutUsWhyUsSection = ({ t }) => {
   );
 };
 
-AboutUsWhyUsSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 AboutUsWhyUsSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

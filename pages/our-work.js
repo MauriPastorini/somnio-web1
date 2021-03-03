@@ -15,10 +15,9 @@ const OurWork = () => (
         content=""
       />
     </Head>
-
+    
     <OurWorkHeaderSection />
     <OurWorkContentSection />
-
     <ContactSection />
   </Container>
 );

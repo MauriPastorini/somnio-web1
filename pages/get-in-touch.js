@@ -13,6 +13,7 @@ const GetInTouch = () => (
         content=""
       />
     </Head>
+    
     <GetInTouchHeaderSection/>
   </Container>
 );

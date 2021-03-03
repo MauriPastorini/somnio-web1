@@ -156,10 +156,6 @@ const HomeWhatClientSaySection = ({ t }) => {
   );
 };
 
-HomeWhatClientSaySection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 HomeWhatClientSaySection.propTypes = {
   t: PropTypes.func.isRequired,
 };

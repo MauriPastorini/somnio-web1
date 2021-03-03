@@ -172,10 +172,6 @@ const HomeAboutUsSection = ({ t }) => {
   );
 };
 
-HomeAboutUsSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 HomeAboutUsSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

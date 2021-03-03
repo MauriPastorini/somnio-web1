@@ -103,10 +103,6 @@ const ServicesWebInfoSection = ({ t }) => {
   );
 };
 
-ServicesWebInfoSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesWebInfoSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

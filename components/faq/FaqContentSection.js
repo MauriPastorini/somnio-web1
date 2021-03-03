@@ -545,10 +545,6 @@ const FaqContentSection = ({ t }) => {
   );
 };
 
-FaqContentSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 FaqContentSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

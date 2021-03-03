@@ -67,10 +67,6 @@ const ServicesMobileCoveredSection = ({ t }) => {
   );
 };
 
-ServicesMobileCoveredSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesMobileCoveredSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

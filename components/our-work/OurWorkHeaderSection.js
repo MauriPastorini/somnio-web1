@@ -91,10 +91,6 @@ const OurWorkHeaderSection = ({ t }) => {
   );
 };
 
-OurWorkHeaderSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 OurWorkHeaderSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

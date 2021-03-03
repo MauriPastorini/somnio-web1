@@ -160,10 +160,6 @@ const AboutUsHeaderSection = ({ t }) => {
   );
 };
 
-AboutUsHeaderSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 AboutUsHeaderSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

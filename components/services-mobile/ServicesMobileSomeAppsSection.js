@@ -236,10 +236,6 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
   );
 };
 
-ServicesMobileSomeAppsSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesMobileSomeAppsSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

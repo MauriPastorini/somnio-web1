@@ -146,10 +146,6 @@ const ServicesMobileHeaderSection = ({ t }) => {
   );
 };
 
-ServicesMobileHeaderSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesMobileHeaderSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

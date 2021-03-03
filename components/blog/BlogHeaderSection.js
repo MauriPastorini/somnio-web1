@@ -42,12 +42,8 @@ export const BlogHeaderSection = ({ t }) => {
   );
 };
 
-BlogHeaderSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
-BlogHeaderSection.propTypes = {
-  t: PropTypes.func.isRequired,
-};
+// BlogHeaderSection.propTypes = {
+//   t: PropTypes.func.isRequired,
+// };
 
 export default withTranslation("common")(BlogHeaderSection);

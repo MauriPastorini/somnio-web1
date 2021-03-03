@@ -184,10 +184,6 @@ const ServicesUxUiInfoSection = ({ t }) => {
   );
 };
 
-ServicesUxUiInfoSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesUxUiInfoSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

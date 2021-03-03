@@ -5,8 +5,6 @@ import BlogPostCard from "./BlogPostCard";
 import useWindowSize from "../../hooks/useWindowSize";
 
 export const BlogContentSection = ({ t, posts, tags }) => {
-
-  console.log("posts", posts)
   const [filter, setfilter] = useState({ tag: "", category: "" });
   const size = useWindowSize();
   const isMobile = size.width < 1280;
@@ -29,8 +27,9 @@ export const BlogContentSection = ({ t, posts, tags }) => {
         >
           All
         </button>
-        {tags.tags.map((tag) => (
+        {tags.tags.map((tag, i) => (
           <button
+            key={i}
             onClick={() => setfilter({ ...filter, tag: tag.name })}
             className={`btn btn-custom-3 ${filter.tag == tag.name && "btn-custom-3-active"}`}
           >
@@ -104,20 +103,6 @@ export const BlogContentSection = ({ t, posts, tags }) => {
             margin-bottom: 50px;
           }
 
-          // .filter-category-group {
-          //   display: flex;
-          //   justify-content: center;
-          //   margin: 0 -15px 28px -15px;
-
-          //   button {
-          //     padding: 3px 0 !important;
-          //     margin: 3px 15px !important;
-          //     font-size: 20px !important;
-          //     width: 147px !important;
-          //     min-width: 147px !important;
-          //   }
-          // }
-
           .filter-tag-group {
             display: flex;
             justify-content: center;
@@ -136,10 +121,6 @@ export const BlogContentSection = ({ t, posts, tags }) => {
       `}</style>
     </div>
   );
-};
-
-BlogContentSection.propTypes = {
-  t: PropTypes.func.isRequired,
 };
 
 export default withTranslation("common")(BlogContentSection);

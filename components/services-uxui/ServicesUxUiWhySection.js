@@ -78,10 +78,6 @@ const ServicesUxUiWhySection = ({ t }) => {
   );
 };
 
-ServicesUxUiWhySection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesUxUiWhySection.propTypes = {
   t: PropTypes.func.isRequired,
 };

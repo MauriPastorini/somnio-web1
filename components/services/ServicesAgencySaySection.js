@@ -57,10 +57,6 @@ const ServicesAgencySaySection = ({ t }) => {
   );
 };
 
-ServicesAgencySaySection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesAgencySaySection.propTypes = {
   t: PropTypes.func.isRequired,
 };

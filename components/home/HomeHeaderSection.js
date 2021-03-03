@@ -170,10 +170,6 @@ const HomeHeaderSection = ({ t }) => {
   );
 };
 
-HomeHeaderSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 HomeHeaderSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

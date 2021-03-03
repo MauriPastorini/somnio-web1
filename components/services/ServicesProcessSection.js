@@ -133,10 +133,6 @@ const ServicesProcessSection = ({ t }) => {
   );
 };
 
-ServicesProcessSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesProcessSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

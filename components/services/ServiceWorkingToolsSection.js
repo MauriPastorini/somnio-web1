@@ -85,10 +85,6 @@ const ServiceWorkingToolsSection = ({ t }) => {
   );
 };
 
-ServiceWorkingToolsSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServiceWorkingToolsSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

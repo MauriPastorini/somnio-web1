@@ -155,10 +155,6 @@ const AboutUsTeamSection = ({ t }) => {
   );
 };
 
-AboutUsTeamSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 AboutUsTeamSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

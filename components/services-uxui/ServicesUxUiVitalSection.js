@@ -75,10 +75,6 @@ const ServicesUxUiVitalSection = ({ t }) => {
   );
 };
 
-ServicesUxUiVitalSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesUxUiVitalSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

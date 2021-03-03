@@ -93,10 +93,6 @@ const HomeModalitiesSection = ({ t }) => {
   );
 };
 
-HomeModalitiesSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 HomeModalitiesSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

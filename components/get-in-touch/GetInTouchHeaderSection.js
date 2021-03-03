@@ -231,10 +231,6 @@ const GetInTouchHeaderSection = ({ t }) => {
   );
 };
 
-GetInTouchHeaderSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 GetInTouchHeaderSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

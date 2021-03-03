@@ -84,10 +84,6 @@ const ServicesWebCoveredSection = ({ t }) => {
   );
 };
 
-ServicesWebCoveredSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesWebCoveredSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

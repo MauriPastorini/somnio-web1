@@ -1,0 +1,42 @@
+.inner-html {
+  color: #001738;
+  margin-bottom: 74px;
+
+  body {
+    h1 {
+      font-size: 45px !important;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 35px !important;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 23px !important;
+    }
+
+    li {
+      font-size: 23px !important;
+    }
+
+    span {
+      font-size: 23px !important;
+    }
+
+    blockquote {
+      font-style: italic;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 23px !important;
+    }
+
+    figure {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

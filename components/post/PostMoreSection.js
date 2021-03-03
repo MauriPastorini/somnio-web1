@@ -57,6 +57,8 @@ export const PostMoreSection = ({ t, posts, post }) => {
 
 PostMoreSection.propTypes = {
   t: PropTypes.func.isRequired,
+  post: PropTypes.any.isRequired,
+  posts: PropTypes.array.isRequired
 };
 
 export default withTranslation("common")(PostMoreSection);

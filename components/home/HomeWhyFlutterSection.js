@@ -115,10 +115,6 @@ const HomeWhyFlutterSection = ({ t }) => {
   );
 };
 
-HomeWhyFlutterSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 HomeWhyFlutterSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

@@ -433,10 +433,6 @@ const Footer = ({ t }) => {
   );
 };
 
-Footer.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 Footer.propTypes = {
   t: PropTypes.func.isRequired,
 };

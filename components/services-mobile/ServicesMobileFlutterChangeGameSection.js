@@ -75,10 +75,6 @@ const ServicesMobileFlutterChangeGameSection = ({ t }) => {
   );
 };
 
-ServicesMobileFlutterChangeGameSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 ServicesMobileFlutterChangeGameSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

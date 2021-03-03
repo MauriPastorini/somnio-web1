@@ -41,10 +41,6 @@ const FaqHeaderSection = ({ t }) => {
   );
 };
 
-FaqHeaderSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 FaqHeaderSection.propTypes = {
   t: PropTypes.func.isRequired,
 };

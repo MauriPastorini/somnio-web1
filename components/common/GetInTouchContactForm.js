@@ -126,10 +126,6 @@ const GetInTouchContactForm = ({ t }) => (
   </form>
 );
 
-GetInTouchContactForm.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 GetInTouchContactForm.propTypes = {
   t: PropTypes.func.isRequired,
 };

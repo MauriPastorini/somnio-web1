@@ -212,10 +212,6 @@ const MobileNavbar = ({ t }) => {
   );
 };
 
-MobileNavbar.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
-
 MobileNavbar.propTypes = {
   t: PropTypes.func.isRequired,
 };

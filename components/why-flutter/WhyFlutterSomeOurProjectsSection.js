@@ -2,10 +2,134 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
+const AngencySayCard = ({ t }) => {
+  return (
+    <div className="agency-say-content">
+      <div className="agency-say-card">
+        <div className="agency-say-logos">
+          <div className="burble meetup-wrapper">
+            <img src="/assets/images/why-flutter/meetup-logo.png" alt="" />
+          </div>
+          <div className="burble flutter-wrapper">
+            <img src="/assets/images/why-flutter/flutter-logo-min.svg" alt="" />
+          </div>
+        </div>
+        <h3 className="agency-say-card__title mb-2">{t("why_flutter.card.text_1")}</h3>
+        <div className="d-flex justify-content-center mt-50">
+          <button className="btn-outline-navbar btn">{t("why_flutter.card.button_1")}</button>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .agency-say-content {
+          margin-top: 266px !important;
+
+          .agency-say-card {
+            padding: 49px 125px 69px 125px;
+
+            .agency-say-card__title {
+              max-width: 722px;
+              font-size: 35px;
+              font-weight: 700;
+            }
+
+            .btn-outline-navbar {
+              border: 2px solid #ffffff;
+              border-radius: 43px;
+              min-width: 200px;
+              font-size: 25px;
+              color: #ffffff;
+              padding: 15px 54px !important;
+
+              &:hover {
+                background-color: #ffffff !important;
+                color: #001331;
+              }
+            }
+          }
+
+          .agency-say-logos {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            max-width: 300px;
+            margin: 0 auto 52px auto;
+
+            .burble {
+              border-radius: 50%;
+              background-color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .meetup-wrapper {
+              width: 152px;
+              height: 152px;
+            }
+
+            .flutter-wrapper {
+              width: 113px;
+              height: 113px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          .agency-say-content {
+            margin-top: 80px !important;
+            max-width: 100%;
+
+            .agency-say-card {
+              padding: 50px 29px;
+
+              .agency-say-card__title {
+                max-width: 722px;
+                font-size: 16px;
+              }
+
+              .btn-outline-navbar {
+                font-size: 16px;
+                padding: 8px 44px !important;
+              }
+            }
+
+            .agency-say-logos {
+              max-width: 204px;
+              margin: 0 auto 33px auto;
+
+              .meetup-wrapper {
+                width: 103px;
+                height: 103px;
+
+                img {
+                  width: 80px;
+                  height: 31px;
+                }
+              }
+
+              .flutter-wrapper {
+                width: 77px;
+                height: 77px;
+
+                img {
+                  width: 42px;
+                  height: 52px;
+                }
+              }
+            }
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
+
 const WhyFlutterSomeOurProjectsSection = ({ t }) => {
   return (
-    <div className="WhyFlutterSomeOurProjectsSection">
+    <div className="WhyFlutterSomeOurProjectsSection custom-container">
       <img className="path" src="/assets/images/why-flutter/path.svg" alt="" />
+      <img className="path-mobile" src="/assets/images/why-flutter/mobile/path.svg" alt="" />
       <img className="dots" src="/assets/images/why-flutter/dots.svg" alt="" />
 
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
@@ -33,25 +157,11 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
       </div>
 
       <Link href="/our-work">
-        <a className="btn btn-custom-2"> {t("common.button_2")}</a>
+        <a className="btn btn-custom-2 btn-position"> {t("common.button_2")}</a>
       </Link>
 
-      <div className="agency-say-content">
-        <div className="agency-say-card">
-          <div className="agency-say-logos">
-            <div className="burble meetup-wrapper">
-              <img src="/assets/images/why-flutter/meetup-logo.png" alt="" />
-            </div>
-            <div className="burble flutter-wrapper">
-              <img src="/assets/images/why-flutter/flutter-logo-min.svg" alt="" />
-            </div>
-          </div>
-          <h3 className="agency-say-card__title mb-2">{t("why_flutter.card.text_1")}</h3>
-          <div className="d-flex justify-content-center mt-50">
-            <button className="btn-outline-navbar btn">{t("why_flutter.card.button_1")}</button>
-          </div>
-        </div>
-      </div>
+      <AngencySayCard t={t} />
+
       <style jsx>{`
         .WhyFlutterSomeOurProjectsSection {
           display: flex;
@@ -71,6 +181,10 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
             left: 0;
             top: -39px;
             z-index: -1;
+          }
+
+          .path-mobile {
+            display: none;
           }
 
           .header-wrapper {
@@ -122,57 +236,138 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
               }
             }
           }
+        }
 
-          .btn-outline-navbar {
-            border: 2px solid #ffffff;
-            border-radius: 43px;
-            min-width: 200px;
-            font-size: 25px;
-            color: #ffffff;
-            padding: 15px 54px !important;
+        @media screen and (max-width: 1280px) {
+          .WhyFlutterSomeOurProjectsSection {
+            margin-bottom: 130px;
 
-            &:hover {
-              background-color: #ffffff !important;
-              color: #001331;
+            .flutter-projects-card {
+              max-width: 850px !important;
+              margin-bottom: 150px;
+
+              .project-card {
+                img {
+                  margin-bottom: 0;
+                  max-width: 280px;
+                }
+
+                h4 {
+                  font-size: 30px;
+                  margin-bottom: 29px;
+                }
+
+                .store-button-content {
+                  display: flex;
+                  flex-direction: column;
+
+                  max-width: unset;
+                  width: auto;
+
+                  img:nth-of-type(1) {
+                    position: relative;
+                    left: unset;
+                    width: 100%;
+                  }
+
+                  img:nth-of-type(2) {
+                    position: relative;
+                    right: unset;
+                    top: unset;
+                    width: 100%;
+                  }
+                }
+              }
             }
           }
+        }
 
-          .agency-say-content {
-            margin-top: 266px !important;
+        @media screen and (max-width: 767px) {
+          .WhyFlutterSomeOurProjectsSection {
+            margin-bottom: 50px;
 
-            .agency-say-card {
-              padding: 49px 125px 69px 125px;
+            .dots {
+              display: none;
+            }
 
-              .agency-say-card__title {
-                max-width: 722px;
-                font-size: 35px;
-                font-weight: 700;
+            .path {
+              display: none;
+            }
+
+            .path-mobile {
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+            }
+
+            .flutter-projects-card {
+              max-width: 650px !important;
+              width: 100%;
+              margin-bottom: 60px;
+
+              .project-card {
+                img {
+                  max-width: 200px;
+                }
+
+                h4 {
+                  font-size: 20px;
+                }
+
+                .store-button-content {
+                  display: flex;
+                  flex-direction: column;
+
+                  max-width: unset;
+                  width: auto;
+
+                  img:nth-of-type(1) {
+                    position: relative;
+                    left: unset;
+                    width: 100%;
+                  }
+
+                  img:nth-of-type(2) {
+                    position: relative;
+                    right: unset;
+                    top: unset;
+                    width: 100%;
+                  }
+                }
               }
             }
 
-            .agency-say-logos {
-              align-items: center;
+            .btn-position {
               display: flex;
-              justify-content: space-between;
-              max-width: 300px;
-              margin: 0 auto 52px auto;
+              justify-content: center;
+              width: 239px;
+              height: 44px;
+              margin-left: auto;
+              margin-right: auto;
+              padding: 11px 39px !important;
+              font-size: 16px !important;
+            }
+          }
+        }
 
-              .burble {
-                border-radius: 50%;
-                background-color: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
+        @media screen and (max-width: 600px) {
+          .WhyFlutterSomeOurProjectsSection {
+            .flutter-projects-card {
+              max-width: 500px !important;
 
-              .meetup-wrapper {
-                width: 152px;
-                height: 152px;
-              }
+              .project-card {
+                margin: 0 15px;
 
-              .flutter-wrapper {
-                width: 113px;
-                height: 113px;
+                h4 {
+                  font-size: 14px;
+                  line-height: 18px;
+                }
+
+                img {
+                  max-width: 134px;
+                }
               }
             }
           }
@@ -181,10 +376,6 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
     </div>
   );
 };
-
-WhyFlutterSomeOurProjectsSection.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
-});
 
 WhyFlutterSomeOurProjectsSection.propTypes = {
   t: PropTypes.func.isRequired,
