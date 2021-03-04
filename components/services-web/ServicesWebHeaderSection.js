@@ -4,16 +4,16 @@ import { withTranslation } from "../../i18n";
 const ServicesWebHeaderSection = ({ t }) => {
   return (
     <div className="ServicesWebHeaderSection">
-      <img src="/assets/images/services-web/header-path.svg" alt="" className="services-web-header__path" />
-      <img src="/assets/images/services-web/header-path.svg" alt="" className="services-web-header__path--mobile" />
+      <img src="/assets/images/services-web/header-path.svg" alt="" className="header__path" />
+      <img src="/assets/images/services-web/mobile/header-path.svg" alt="" className="header__path--mobile" />
 
       <div className="text-and-image custom-container">
-        <div className="services-web-header-img-wrapper">
+        <div className="header-img-wrapper">
           <img src={`/assets/images/services-web/header-img.svg`} alt="" className="header-img" />
         </div>
-        <div className="services-web-header-text-wrapper" data-aos="fade-right">
-          <h1 className="services-web-header-title">{t("services_web.header.text_1")}</h1>
-          <p className="services-web-header-text">{t("services_web.header.text_2")}</p>
+        <div className="header-text-wrapper" data-aos="fade-right">
+          <h1 className="header-title">{t("services_web.header.text_1")}</h1>
+          <p className="header-text">{t("services_web.header.text_2")}</p>
         </div>
       </div>
       <style jsx>{`
@@ -26,7 +26,7 @@ const ServicesWebHeaderSection = ({ t }) => {
           background-size: 200%;
           padding: 196px 0 274px 0;
 
-          .services-web-header__path {
+          .header__path {
             position: absolute;
             top: -461px;
             left: -743px;
@@ -34,7 +34,7 @@ const ServicesWebHeaderSection = ({ t }) => {
             height: auto;
           }
 
-          .services-web-header__path--mobile{
+          .header__path--mobile{
             display: none;
           }
 
@@ -43,14 +43,14 @@ const ServicesWebHeaderSection = ({ t }) => {
             display: flex;
             align-items: center;
 
-            .services-web-header-text-wrapper {
+            .header-text-wrapper {
               display: flex;
               flex-direction: column;
               align-items: flex-end;
               margin-top: 26px;
               width: 45%;
 
-              .services-web-header-title {
+              .header-title {
                 width: 580px;
                 font-weight: bold;
                 font-size: 80px;
@@ -58,7 +58,7 @@ const ServicesWebHeaderSection = ({ t }) => {
                 margin-bottom: 50px;
                 text-align: end;
               }
-              .services-web-header-text {
+              .header-text {
                 font-size: 30px;
                 color: #ffffff;
                 text-align: end;
@@ -66,7 +66,7 @@ const ServicesWebHeaderSection = ({ t }) => {
               }
             }
 
-            .services-web-header-img-wrapper {
+            .header-img-wrapper {
               margin-top: 80px;
               width: 55%;
 
@@ -87,9 +87,9 @@ const ServicesWebHeaderSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServicesWebHeaderSection {
-            padding: 47px 0 202px 0;
+            padding: 50px 0 257px 0;
   
-            .services-web-header__path {
+            .header__path {
               position: absolute;
               top: -620px;
               left: -861px;
@@ -101,32 +101,32 @@ const ServicesWebHeaderSection = ({ t }) => {
               align-items: center;
               display: flex;
               flex-direction: column;
-              margin-top: 97px;
+              margin-top: 103px;
               position: relative;
               justify-content: space-between;
   
-              .services-web-header-text-wrapper {
+              .header-text-wrapper {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 margin-top: 0;
 
-                .services-web-header-title {
+                .header-title {
                   width: 100%;
                   text-align: center;
                   font-size: 35px;
                   margin-bottom: 28px;
                   max-width: 340px;
                 }
-                .services-web-header-text {
+                .header-text {
                   font-size: 18px;
                   text-align: center;
                   max-width: 300px;
                 }
               }
   
-              .services-web-header-img-wrapper {
+              .header-img-wrapper {
                 margin-top: 110px;
                 width: 100%;
                 display: flex;
@@ -148,19 +148,31 @@ const ServicesWebHeaderSection = ({ t }) => {
           .ServicesWebHeaderSection {
             background-image: url(/assets/images/services-web/mobile/header-bg.svg);
 
-
-            .services-web-header__path {
+            .header__path {
               display: none;
             }
             
-            .services-web-header__path--mobile{
+            .header__path--mobile{
               display: block;
               position: absolute;
-              top: -176px;
-              left: -147px;
+              top: -197px;
+              left: -160px;
               z-index: 0;
-              max-width: 100%;
-              height: auto;
+            }
+
+            .text-and-image {
+              .header-text-wrapper {
+                .header-title {
+                }
+                .header-text {
+                }
+              }
+  
+              .header-img-wrapper {
+                .header-img {
+                  max-width: 294px;
+                }
+              }
             }
           }
         }

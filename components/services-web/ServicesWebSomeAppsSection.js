@@ -2,6 +2,63 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
+const AngencySayCard = ({ t }) => (
+  <div className="agency-say-content custom-container">
+    <div className="agency-say-card">
+      <p className="agency-say-card__text">{t("services_web.some_apps.agency_say.text_1")}</p>
+
+      <div className="agency-say-card__footer">
+        <img src="/assets/images/common/clutch.png" className="card__footer-logo" alt="" />
+        <div className="card__footer-person">
+          <img style={{ width: 110, height: 110 }} src="/assets/images/common/nicolesanz.png" alt="" />
+          <div className="card__footer-name">
+            <p>Nicole Sanz</p>
+            <p>Project Manager</p>
+            <p>Fórmula</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style jsx>{`
+      .agency-say-content {
+        margin-top: 100px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        .agency-say-content {
+          margin-top: 104px;
+          margin-bottom: 69px;
+
+          .agency-say-card {
+            .agency-say-card__footer {
+              flex-direction: row;
+              align-items: center;
+
+              .card__footer-person{
+                img{
+                  width: 56px !important;
+                  height: 56px !important;
+                }
+
+                .card__footer-name{
+                  p{
+                    font-weight: normal;
+                    margin-left: 9px;
+                  }
+                }
+              }
+
+              .card__footer-logo{
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    `}</style>
+  </div>
+);
+
 const ServicesWebSomeAppsSection = ({ t }) => {
   return (
     <div className="ServicesWebSomeAppsSection d-flex flex-column align-items-center">
@@ -55,24 +112,9 @@ const ServicesWebSomeAppsSection = ({ t }) => {
       <Link href="/our-work">
         <a className="btn btn-custom-2 btn-mobile">{t("common.button_2")}</a>
       </Link>
-      
-      <div className="agency-say-content custom-container">
-        <div className="agency-say-card">
-          <p className="agency-say-card__text">{t("services_web.some_apps.agency_say.text_1")}</p>
 
-          <div className="agency-say-card__footer">
-            <img src="/assets/images/common/clutch.png" className="card__footer-logo" alt="" />
-            <div className="card__footer-person">
-              <img style={{ width: 118, height: 118 }} src="/assets/images/common/nicolesanz.png" alt="" />
-              <div className="card__footer-name">
-                <p>Nicole Sanz</p>
-                <p>Project Manager</p>
-                <p>Fórmula</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <AngencySayCard t={t} />
+
       <style jsx>{`
         .ServicesWebSomeAppsSection {
           margin-bottom: 200px;
@@ -154,6 +196,22 @@ const ServicesWebSomeAppsSection = ({ t }) => {
           }
         }
 
+        @media screen and (max-width: 1440px) {
+          .app-wrapper {
+            .app-photo {
+              max-width: 700px;
+            }
+          }
+
+          .app-wrapper-2 {
+            min-height: unset !important;
+
+            .text-container {
+              margin-bottom: 255px;
+            }
+          }
+        }
+
         @media screen and (max-width: 1280px) {
           .ServicesWebSomeAppsSection {
             margin-bottom: 0;
@@ -174,28 +232,41 @@ const ServicesWebSomeAppsSection = ({ t }) => {
               align-items: center;
               position: relative;
               flex-direction: column;
+
+              .app-photo {
+                position: relative;
+              }
+
+              .text-wrapper {
+                h2 {
+                  color: #031533;
+                  margin-bottom: 0;
+                  font-size: 42px;
+                  font-weight: bold;
+                  margin-bottom: 0 !important;
+                }
+
+                p,
+                .success-case-link {
+                  display: none;
+                }
+              }
             }
 
             .app-wrapper-1 {
               display: flex;
-
               align-items: flex-start;
               min-height: unset;
               position: relative;
               width: 100%;
 
               h2 {
-                color: #031533;
-                font-size: 22px;
-                font-weight: bold;
                 text-align: end;
-                margin-bottom: 0;
               }
 
               img {
-                position: relative;
                 left: 0;
-                width: 90%;
+                width: 100%;
                 max-width: 970px;
                 order: 1;
                 margin-bottom: 50px;
@@ -209,20 +280,20 @@ const ServicesWebSomeAppsSection = ({ t }) => {
               position: relative;
               width: 100%;
 
-              h2 {
-                color: #031533;
-                font-size: 22px;
-                font-weight: bold;
-                margin-bottom: 10px;
-              }
-
               img {
-                position: relative;
                 right: 0;
                 top: 0px;
-                width: 90%;
+                width: 100%;
                 max-width: 970px;
                 order: 1;
+              }
+
+              .app-photo {
+                top: 0;
+              }
+
+              .text-container {
+                margin-bottom: 0;
               }
             }
 
@@ -231,10 +302,17 @@ const ServicesWebSomeAppsSection = ({ t }) => {
               font-size: 16px !important;
               margin-top: 77px !important;
             }
+          }
+        }
 
-            .agency-say-content {
-              margin-top: 69px;
-              margin-bottom: 69px;
+        @media screen and (max-width: 600px) {
+          .ServicesWebSomeAppsSection {
+            .app-wrapper {
+              .text-wrapper {
+                h2 {
+                  font-size: 22px;
+                }
+              }
             }
           }
         }

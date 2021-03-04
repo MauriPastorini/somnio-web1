@@ -58,12 +58,16 @@ const ServicesWebCoveredSection = ({ t }) => {
         @media screen and (max-width: 1280px) {
           .ServicesWebCoveredSection {
             position: relative;
-            padding: 77px 0 81px 0;
+            padding: 77px 0 10px 0;
             background: transparent linear-gradient(119deg, #1783e3 0%, #003ba8 100%) 0% 0% no-repeat padding-box;
 
             .content {
               position: relative;
               z-index: 1;
+
+              .section-header-light{
+                margin-bottom: 68px;
+              }
 
               .services-covered-card-list {
                 display: flex;
@@ -74,9 +78,9 @@ const ServicesWebCoveredSection = ({ t }) => {
               }
             }
 
-            .sub__bg {
-              display: none;
-            }
+            // .sub__bg {
+            //   display: none;
+            // }
           }
         }
       `}</style>

@@ -27,7 +27,6 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
           justify-content: space-between;
           align-items: center;
           padding-top: 300px;
-          padding-bottom: 100px;
 
           .text-wrapper {
             width: 50%;
@@ -38,6 +37,7 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
               font-weight: bold;
               max-width: 550px;
               margin-bottom: 50px;
+              letter-spacing: 2.4px;
             }
             p {
               font-size: 20px;
@@ -89,7 +89,6 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
         @media screen and (max-width: 1280px) {
           .ServicesWebOurKnowledgeSection {
             padding-top: 100px;
-            padding-bottom: 100px;
 
             flex-direction: column;
 

@@ -314,20 +314,12 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
           background-repeat: no-repeat;
           background-position: center;
           background-size: 200%;
-          padding: 221px 0 283px 0;
+          padding: 227px 0 288px 0;
         }
 
         .header-wrapper {
           width: 100%;
           z-index: 0;
-        }
-
-        .technologies__content {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          z-index: 2;
         }
 
         .tech-desktop-list {

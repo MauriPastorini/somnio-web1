@@ -15,8 +15,8 @@ const ServicesWebInfoSection = ({ t }) => {
       </div>
       <style jsx>{`
         .ServicesWebInfoSection {
-          margin-top: 132px !important;
-          margin-bottom: 66px !important;
+          margin-top: 132px;
+          margin-bottom: 164px;
         }
 
         .web-text-and-img {
@@ -55,8 +55,8 @@ const ServicesWebInfoSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServicesWebInfoSection {
-            margin-top: 82px;
-            margin-bottom: 75px;
+            margin-top: 68px;
+            margin-bottom: 77px;
           }
 
           .web-text-and-img {
