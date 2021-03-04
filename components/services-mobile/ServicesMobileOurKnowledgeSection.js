@@ -83,13 +83,15 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
         @media screen and (max-width: 1280px) {
           .ServicesMobileOurKnowledgeSection {
             flex-direction: column;
+            padding-top: 78px;
+            padding-bottom: 86px;
 
             .text-wrapper {
               width: 100%;
 
               h3 {
                 font-size: 24px;
-                max-width: 595px;
+                // max-width: 330px;
                 text-align: center;
                 margin: 0 auto 30px auto !important;
               }
@@ -133,10 +135,11 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
           .btn-desktop {
             display: none;
           }
+
           .btn-mobile {
             display: block !important;
             width: 241px;
-            font-size: 20px !important;
+            font-size: 16px !important;
             margin: 66px auto 0 auto;
           }
         }

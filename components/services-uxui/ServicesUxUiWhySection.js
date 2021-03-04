@@ -48,8 +48,8 @@ const ServicesUxUiWhySection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServicesUxUiWhySection {
-            padding-top: 100px;
-            padding-bottom: 100px;
+            padding-top: 59px;
+            padding-bottom: 68px;
 
             .uxui__content {
               position: relative;

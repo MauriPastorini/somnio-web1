@@ -2,9 +2,49 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
+const AngencySayCard = ({ t }) => (
+  <div className="agency-say-content custom-container">
+    <div
+      className="agency-say-card"
+      style={{ backgroundImage: `url(/assets/images/services/services-agency-say-bg.svg)` }}
+    >
+      <p className="agency-say-card__text">{t("services_mobile.some_apps.agency_say.text_1")}</p>
+      <div className="agency-say-card__footer">
+        <img src="/assets/images/common/clutch.png" className="card__footer-logo" alt="" />
+        <div className="card__footer-person">
+          <img src="/assets/images/services-mobile/tonyjaac.png" alt="" />
+          <div className="card__footer-name">
+            <p>Mark Smith</p>
+            <p>CEO</p>
+            <p>Jaac</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style jsx>{`
+      .agency-say-content {
+        margin-top: 100px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        .agency-say-content {
+          margin-top: 69px;
+          margin-bottom: 69px;
+
+          .agency-say-card {
+            .agency-say-card__footer {
+              flex-direction: row;
+            }
+          }
+        }
+      }
+    `}</style>
+  </div>
+);
+
 const ServicesMobileSomeAppsSection = ({ t }) => {
   return (
-    <div className="ServicesMobileSomeAppsSection d-flex flex-column align-items-center pb-100">
+    <div className="ServicesMobileSomeAppsSection d-flex flex-column align-items-center">
       <div className="section-header-dark header-wrapper" data-aos="fade-in">
         <h2>{t("services_mobile.some_apps.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
@@ -56,28 +96,12 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
         <a className="btn btn-custom-2 btn-mobile">{t("common.button_2")}</a>
       </Link>
 
-      <div className="agency-say-content custom-container">
-        <div
-          className="agency-say-card"
-          style={{ backgroundImage: `url(/assets/images/services/services-agency-say-bg.svg)` }}
-        >
-          <p className="agency-say-card__text">{t("services_mobile.some_apps.agency_say.text_1")}</p>
-          <div className="agency-say-card__footer">
-            <img src="/assets/images/common/clutch.png" className="card__footer-logo" alt="" />
-            <div className="card__footer-person">
-              <img src="/assets/images/services-mobile/tonyjaac.png" alt="" />
-              <div className="card__footer-name">
-                <p>Mark Smith</p>
-                <p>CEO</p>
-                <p>Jaac</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <AngencySayCard t={t} />
 
       <style jsx>{`
         .ServicesMobileSomeAppsSection {
+          padding-bottom: 100px;
+
           .header-wrapper {
             margin-bottom: 62px;
           }
@@ -101,14 +125,14 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
                 text-align: start;
                 margin-bottom: 36px;
               }
-              
+
               .success-case-link {
                 color: #1681e3;
                 font-size: 18px;
                 margin-bottom: 40px;
                 text-decoration: none;
                 font-weight: 700;
-                
+
                 .arrow-icon {
                   width: 8px;
                   height: 12px;
@@ -150,14 +174,28 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
               top: -186px;
             }
           }
+        }
 
-          .agency-say-content {
-            margin-top: 100px;
+        @media screen and (max-width: 1440px) {
+          .app-wrapper {
+            .app-photo {
+              max-width: 700px;
+            }
+          }
+
+          .app-wrapper-2 {
+            min-height: unset !important;
+
+            .text-container {
+              margin-bottom: 255px;
+            }
           }
         }
 
         @media screen and (max-width: 1280px) {
           .ServicesMobileSomeAppsSection {
+            padding-bottom: 0;
+
             .header-wrapper {
               margin-bottom: 100px;
             }
@@ -167,28 +205,41 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
               align-items: center;
               position: relative;
               flex-direction: column;
+
+              .app-photo {
+                position: relative;
+              }
+
+              .text-wrapper {
+                h2 {
+                  color: #031533;
+                  margin-bottom: 0;
+                  font-size: 42px;
+                  font-weight: bold;
+                  margin-bottom: 0 !important;
+                }
+
+                p,
+                .success-case-link {
+                  display: none;
+                }
+              }
             }
 
             .app-wrapper-1 {
               display: flex;
-
               align-items: flex-start;
               min-height: unset;
               position: relative;
               width: 100%;
 
               h2 {
-                color: #031533;
-                font-size: 22px;
-                font-weight: bold;
                 text-align: end;
-                margin-bottom: 0;
               }
 
               img {
-                position: relative;
                 left: 0;
-                width: 90%;
+                width: 100%;
                 max-width: 970px;
                 order: 1;
                 margin-bottom: 50px;
@@ -202,20 +253,20 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
               position: relative;
               width: 100%;
 
-              h2 {
-                color: #031533;
-                font-size: 22px;
-                font-weight: bold;
-                margin-bottom: 10px;
-              }
-
               img {
-                position: relative;
                 right: 0;
                 top: 0px;
-                width: 90%;
+                width: 100%;
                 max-width: 970px;
                 order: 1;
+              }
+
+              .app-photo {
+                top: 0;
+              }
+
+              .text-container {
+                margin-bottom: 0;
               }
             }
 
@@ -224,10 +275,17 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
               font-size: 16px !important;
               margin-top: 77px !important;
             }
+          }
+        }
 
-            .agency-say-content {
-              margin-top: 69px;
-              margin-bottom: 69px;
+        @media screen and (max-width: 600px) {
+          .ServicesMobileSomeAppsSection {
+            .app-wrapper {
+              .text-wrapper {
+                h2 {
+                  font-size: 22px;
+                }
+              }
             }
           }
         }

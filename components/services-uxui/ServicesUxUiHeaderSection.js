@@ -111,7 +111,7 @@ const ServicesUxUiHeaderSection = ({ t }) => {
             .text-and-image {
               align-items: center;
               flex-direction: column;
-              margin-top: 120px;
+              margin-top: 136px;
 
               .header-text-wrapper {
                 width: 100%;
@@ -123,7 +123,7 @@ const ServicesUxUiHeaderSection = ({ t }) => {
                   width: 100%;
                   text-align: center;
                   font-size: 35px;
-                  margin-bottom: 28px;
+                  margin-bottom: 45px;
                 }
                 .header-text {
                   font-size: 18px;
@@ -133,7 +133,7 @@ const ServicesUxUiHeaderSection = ({ t }) => {
               }
   
               .header-img-wrapper {
-                margin-top: 90px;
+                margin-top: 120px;
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -142,7 +142,7 @@ const ServicesUxUiHeaderSection = ({ t }) => {
                 .header-img {
                   width: 100%;
                   margin: 0;
-                  max-width: 500px;
+                  max-width: 310px;
                 }
               }
             }
@@ -169,8 +169,8 @@ const ServicesUxUiHeaderSection = ({ t }) => {
             .header__path2--mobile {
               display: block;
               position: absolute;
-              top: 62px;
-              right: -289px;
+              top: 137px;
+              right: -267px;
               z-index: 0;
               height: auto;
             }

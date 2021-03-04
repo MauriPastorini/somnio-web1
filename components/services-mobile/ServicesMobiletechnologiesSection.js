@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
-const tech_list = [
+const tech_desktop_list = [
   {
     img: "tech_firebase.png",
     size: 150,
@@ -124,46 +124,202 @@ const tech_list = [
   },
 ];
 
+const tech_mobile_list = [
+  {
+    img: "tech_firebase.png",
+    imgSize: 58,
+    size: 72,
+    top: 95,
+    left: 0,
+  },
+  {
+    img: "tech_fastlane.png",
+    imgSize: 54,
+    size: 72,
+    top: 144,
+    left: 78,
+  },
+  {
+    img: "tech_github.png",
+    imgSize: 37,
+    size: 71,
+    top: 153,
+    left: 247,
+  },
+  {
+    img: "tech_java.png",
+    imgSize: 56,
+    size: 75,
+    top: 50,
+    left: 280,
+  },
+  {
+    img: "tech_jenkins.png",
+    imgSize: 49,
+    size: 70,
+    top: 561,
+    left: 13,
+  },
+  {
+    img: "tech_android.png",
+    imgSize: 44,
+    size: 86,
+    top: 219,
+    left: 8,
+  },
+  {
+    img: "tech_serveless.png",
+    imgSize: 68,
+    size: 70,
+    top: 213,
+    left: 140,
+  },
+  {
+    img: "tech_ios.png",
+    imgSize: 77,
+    size: 100,
+    top: 237,
+    left: 259,
+  },
+  {
+    img: "tech_pwa.png",
+    imgSize: 47,
+    size: 75,
+    top: 36,
+    left: 75,
+  },
+  {
+    img: "tech_dart.png",
+    imgSize: 47,
+    size: 75,
+    top: 575,
+    left: 207,
+  },
+  {
+    img: "tech_adobexd.png",
+    imgSize: 28,
+    size: 78,
+    top: 93,
+    left: 165,
+  },
+  {
+    img: "tech_dev_ops.png",
+    imgSize: 65,
+    size: 100,
+    top: 325,
+    left: 23,
+  },
+  {
+    img: "tech_flutter.png",
+    imgSize: 79,
+    size: 100,
+    top: 306,
+    left: 151,
+  },
+  {
+    img: "tech_android_studio.png",
+    imgSize: 59,
+    size: 75,
+    top: 378,
+    left: 282,
+  },
+  {
+    img: "tech_swift.png",
+    imgSize: 58,
+    size: 76,
+    top: 629,
+    left: 107,
+  },
+  {
+    img: "tech_kotlin.png",
+    imgSize: 46,
+    size: 75,
+    top: 534,
+    left: 113,
+  },
+  {
+    img: "tech_xcode.png",
+    imgSize: 37,
+    size: 75,
+    top: 449,
+    left: 30,
+  },
+  {
+    img: "tech_code_magic.png",
+    imgSize: 81,
+    size: 100,
+    top: 425,
+    left: 154,
+  },
+  {
+    img: "tech_nodejs.png",
+    imgSize: 46,
+    size: 75,
+    top: 499,
+    left: 270,
+  },
+  {
+    img: "tech_algolia.png",
+    imgSize: 55,
+    size: 75,
+    top: 0,
+    left: 183,
+  },
+];
+
 const ServicesMobiletechnologiesSection = ({ t }) => {
   const leftCal = 249;
   const topCal = 427;
+
   return (
     <div className="ServicesMobiletechnologiesSection">
-      <img src="/assets/images/services-mobile/tecgnologies-bg.svg" alt="" className="technologies__bg" />
-
-      <div className="technologies__content">
-      <div className="section-header-light header-wrapper" data-aos="fade-in">
+      <div className="section-header-light header-wrapper custom-container" data-aos="fade-in">
         <h2 style={{ maxWidth: 800 }}>{t("services_mobile.tech_list.title")}</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
 
-      
-      <div className="tech-list">
-        {tech_list.map((tech, index) => (
+      <div className="tech-desktop-list">
+        {tech_desktop_list.map((tech, index) => (
           <div
             key={index}
             className="tech-item"
-            style={{ width: tech.size, height: tech.size, top: (tech.top - topCal), left: (tech.left - leftCal) }}
+            style={{ width: tech.size, height: tech.size, top: tech.top - topCal, left: tech.left - leftCal }}
           >
             <img src={`/assets/images/services-mobile/${tech.img}`} alt="" />
           </div>
         ))}
       </div>
+
+      <div className="tech-mobile-list">
+        {tech_mobile_list.map((tech, index) => (
+          <div
+            key={index}
+            className="tech-item"
+            style={{ width: tech.size, height: tech.size, top: tech.top, left: tech.left }}
+          >
+            <img
+              style={{ width: tech.imgSize, height: "auto" }}
+              src={`/assets/images/services-mobile/${tech.img}`}
+              alt=""
+            />
+          </div>
+        ))}
       </div>
+
       <style jsx>{`
         .ServicesMobiletechnologiesSection {
           position: relative;
           overflow: hidden;
+          background-image: url(/assets/images/services-mobile/tecgnologies-bg.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 200%;
+          padding: 221px 0 283px 0;
         }
 
         .header-wrapper {
           width: 100%;
           z-index: 0;
-          margin-top: 221px;
-        }
-
-        .technologies__bg {
-          width: 100%;
         }
 
         .technologies__content {
@@ -174,10 +330,9 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
           z-index: 2;
         }
 
-        .tech-list {
+        .tech-desktop-list {
           width: 1396px;
-          
-          background-color: red;
+          height: 720px;
           top: 0;
           position: relative;
           margin: 0 auto;
@@ -195,33 +350,79 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
             overflow: hidden;
 
             &:nth-child(2) {
-              img{
+              img {
                 width: 80%;
               }
             }
             &:nth-child(3) {
-              img{
+              img {
                 width: 70%;
               }
             }
             &:nth-child(4) {
-              img{
+              img {
                 width: 80%;
               }
             }
           }
         }
 
-        @media screen and (max-width: 1919px) {
-          .technologies__bg {
-            width: auto;
-            min-height: 1425px;
+        .tech-mobile-list {
+          display: none;
+        }
+
+        @media screen and (max-width: 1920px) {
+          .ServicesMobiletechnologiesSection {
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: top;
           }
         }
 
         @media screen and (max-width: 1280px) {
           .ServicesMobiletechnologiesSection {
-            display: none;
+            padding: 116px 0 105px 0;
+            
+            .tech-desktop-list {
+              display: none;
+            }
+            
+            .tech-mobile-list {
+              display: block;
+              width: 360px;
+              height: 702px;
+              top: 0;
+              position: relative;
+              margin: 0 auto;
+              padding-right: 31px !important;
+              padding-left: 31px !important;
+              margin-right: auto;
+              margin-left: auto;
+
+              .tech-item {
+                border-radius: 50%;
+                background-color: #fff;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                -webkit-box-shadow: 10px 10px 28px -13px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 10px 10px 28px -13px rgba(0, 0, 0, 0.75);
+                box-shadow: 10px 10px 28px -13px rgba(0, 0, 0, 0.75);
+                overflow: hidden;
+              }
+            }
+          }
+          
+          .header-wrapper {
+            margin-bottom: 48px;
+          }
+        }
+
+        @media screen and (max-width: 428px) {
+          .ServicesMobiletechnologiesSection {
+            padding: 116px 0 105px 0;
+            background-image: url(/assets/images/services-mobile/mobile/tecgnologies-bg.svg);
           }
         }
       `}</style>

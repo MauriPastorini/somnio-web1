@@ -30,6 +30,33 @@ const ServiceCard = ({ img, title, text }) => (
           }
         }
       }
+      
+      @media screen and (max-width: 1280px){
+        .uxui-service-card {
+          flex-direction: column;
+          min-height: 200px;
+          margin-bottom: 40px;
+
+          img {
+            margin: 0;
+            margin-bottom: 28px;
+          }
+          
+          .uxui-service-card__text {
+            h4 {
+              font-size: 24px;
+              margin-bottom: 20px;
+              text-align: center;
+            }
+
+            p {
+              font-size: 14px;
+              text-align: center;
+              max-width: 560px;
+            }
+          }
+        }
+      }
     `}</style>
   </div>
 );
@@ -110,7 +137,32 @@ const ServicesUxUiServicesSection = ({ t }) => {
           <img src="/assets/images/services-uxui/arrow_3.svg" alt="" />
         </div>
       </div>
-      <div className="temp-block"></div>
+      <div className="ServicesUxUiServicesSection--mobile custom-container">
+        <div className="section-header-dark header-wrapper" data-aos="fade-in">
+          <h2>UX/UI</h2>
+          <h3>{t("services_uxui.services.title")}</h3>
+          <img src={"/assets/images/home-services-line.svg"} alt="" />
+        </div>
+
+        <div className="service_item">
+          <ServiceCard img={card_1.img} title={card_1.title} text={card_1.text} />
+        </div>
+        <div className="service_item">
+          <ServiceCard img={card_2.img} title={card_2.title} text={card_2.text} />
+        </div>
+        <div className="service_item">
+          <ServiceCard img={card_3.img} title={card_3.title} text={card_3.text} />
+        </div>
+        <div className="service_item">
+          <ServiceCard img={card_4.img} title={card_4.title} text={card_4.text} />
+        </div>
+        <div className="service_item">
+          <ServiceCard img={card_5.img} title={card_5.title} text={card_5.text} />
+        </div>
+        <div className="service_item">
+          <ServiceCard img={card_6.img} title={card_6.title} text={card_6.text} />
+        </div>
+      </div>
       <style jsx>{`
         .ServicesUxUiServicesSection {
           padding-top: 200px;
@@ -189,7 +241,7 @@ const ServicesUxUiServicesSection = ({ t }) => {
           }
         }
 
-        .temp-block {
+        .ServicesUxUiServicesSection--mobile {
           display: none;
         }
 
@@ -198,9 +250,22 @@ const ServicesUxUiServicesSection = ({ t }) => {
             display: none;
           }
 
-          .temp-block {
+          .ServicesUxUiServicesSection--mobile {
             display: block;
-            height: 100vh;
+            padding: 44px 0;
+
+            .header-wrapper{
+              margin-bottom: 67px !important;
+
+              h2{
+                margin-bottom: 5px !important;
+              }
+
+              h3{
+                font-size: 22px;
+                font-weight: bold;
+              }
+            }
           }
         }
       `}</style>

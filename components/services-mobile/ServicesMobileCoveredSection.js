@@ -46,7 +46,7 @@ const ServicesMobileCoveredSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServicesMobileCoveredSection {
-            padding: 58px 0 81px 0;
+            padding: 58px 0 51px 0;
             background: transparent linear-gradient(119deg, #1783e3 0%, #003ba8 100%) 0% 0% no-repeat padding-box;
 
             .header-wrapper {

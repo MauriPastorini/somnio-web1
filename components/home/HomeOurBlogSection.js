@@ -90,8 +90,8 @@ const HomeOurBlogSection = ({ t, posts }) => {
           @media screen and (max-width: 767px) {
             .HomeOurBlogSection {
               position: relative;
-              padding-top: 163px;
-              padding-bottom: 147px;
+              padding-top: 91px;
+              padding-bottom: 93px;
             }
 
             .header-wrapper {

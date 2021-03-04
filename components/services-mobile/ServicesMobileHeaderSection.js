@@ -5,6 +5,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
   return (
     <div className="ServicesMobileHeaderSection">
       <img src="/assets/images/services-mobile/header-path.svg" alt="" className="header__path" />
+      <img src="/assets/images/services-mobile/mobile/header-path.svg" alt="" className="header__path--mobile" />
       <div className="text-and-image custom-container">
         <div className="header-text-wrapper" data-aos="fade-right">
           <h1 className="header-title">{t("services_mobile.header.text_1")}</h1>
@@ -31,6 +32,10 @@ const ServicesMobileHeaderSection = ({ t }) => {
           left: -743px;
           z-index: 0;
           height: auto;
+        }
+
+        .header__path--mobile{
+          display: none;
         }
 
         .text-and-image {
@@ -76,21 +81,24 @@ const ServicesMobileHeaderSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServicesMobileHeaderSection {
-            padding: 47px 0 202px 0;
+            padding: 144px 0 216px 0
           }
 
           .header__path {
+            display: none;
+          }
+          
+          .header__path--mobile{
+            display: block;
             position: absolute;
-            top: -620px;
-            left: -861px;
             z-index: 0;
-            height: auto;
+            top: -168px;
+            left: -156px;
           }
 
           .text-and-image {
             align-items: center;
             flex-direction: column;
-            margin-top: 120px;
 
             .header-text-wrapper {
               width: 100%;
@@ -102,12 +110,12 @@ const ServicesMobileHeaderSection = ({ t }) => {
                 width: 100%;
                 text-align: center;
                 font-size: 35px;
-                margin-bottom: 28px;
+                margin-bottom: 30px;
               }
               .header-text {
                 font-size: 18px;
                 text-align: center;
-                max-width: 300px;
+                max-width: 315px;
               }
             }
 
@@ -130,15 +138,6 @@ const ServicesMobileHeaderSection = ({ t }) => {
         @media screen and (max-width: 428px) {
           .ServicesMobileHeaderSection {
             background-image: url(/assets/images/services-mobile/mobile/header-bg.svg);
-
-            .header__path {
-              position: absolute;
-              top: -133px;
-              left: -175px;
-              z-index: 0;
-              max-width: 100%;
-              height: auto;
-            }
           }
         }
       `}</style>

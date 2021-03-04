@@ -66,6 +66,7 @@ const HomeModalitiesSection = ({ t }) => {
               padding-bottom: 60px;
 
               .path {
+                display: block;
                 position: absolute;
                 right: 0;
                 top: 125px;

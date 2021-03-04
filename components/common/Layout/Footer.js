@@ -198,14 +198,14 @@ const Footer = ({ t }) => {
               title="Web Developers Uruguay"
             />
           </a>
-          <a href="https://topappdevelopmentcompanies.com/uy/directory/app-developers/uruguay" target="_blank">
-            <img src="/assets/images/common/top-app-development-companies.png" alt="" />
+          <a href="https://clutch.co/press-releases/awards-best-b2b-companies-latin-america-2020" target="_blank">
+            <img src="/assets/images/common/B2B_Companies_Uruguay_2020.png" alt="" title="" />
           </a>
         </span>
 
         <span className="second-group">
-          <a href="https://clutch.co/press-releases/awards-best-b2b-companies-latin-america-2020" target="_blank">
-            <img src="/assets/images/common/B2B_Companies_Uruguay_2020.png" alt="" title="" />
+          <a href="https://topappdevelopmentcompanies.com/uy/directory/app-developers/uruguay" target="_blank">
+            <img src="/assets/images/common/top-app-development-companies.png" alt="" />
           </a>
           <a href="https://themanifest.com/app-development/companies/latin-america#somniosoftware" target="_blank">
             <img src="/assets/images/common/App-Developers_Latin-America_2021.png" alt="" title="" />
