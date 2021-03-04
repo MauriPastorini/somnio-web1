@@ -49,9 +49,31 @@ const ServicesAgencySaySection = ({ t }) => {
               margin-top: 48px;
               margin-bottom: 59px;
             }
+
+            .agency-say-content {
+              display: flex;
+              justify-content: center;
+
+              .agency-say-card__footer {
+                flex-direction: row;
+                align-items: center;
+
+                img {
+                  margin-bottom: 0;
+                }
+
+                .card__footer-person {
+                  .card__footer-name {
+                    p {
+                      font-weight: normal;
+                      margin-left: 9px;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
-
       `}</style>
     </div>
   );

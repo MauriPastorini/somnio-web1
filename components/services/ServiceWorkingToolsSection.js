@@ -66,14 +66,14 @@ const ServiceWorkingToolsSection = ({ t }) => {
           margin-bottom: 86px;
 
           .header-wrapper {
-            margin-bottom: 70px !important;
+            margin-bottom: 54px !important;
           }
         }
 
         @media screen and (max-width: 1280px) {
           .ServiceWorkingToolsSection {
             padding-top: 86px;
-            padding-bottom: 127px;
+            padding-bottom: 50px;
   
             .header-wrapper {
               margin-bottom: 70px !important;

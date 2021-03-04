@@ -76,7 +76,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                {t("faq.content.section_1.question_1.title")}
+                <span>{t("faq.content.section_1.question_1.title")}</span>
               </button>
             </h2>
             <div
@@ -110,7 +110,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                {t("faq.content.section_1.question_2.title")}
+                <span>{t("faq.content.section_1.question_2.title")}</span>
               </button>
             </h2>
             <div
@@ -137,7 +137,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                {t("faq.content.section_1.question_3.title")}
+                <span>{t("faq.content.section_1.question_3.title")}</span>
               </button>
             </h2>
             <div
@@ -171,7 +171,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne2"
               >
-                {t("faq.content.section_2.question_1.title")}
+                <span>{t("faq.content.section_2.question_1.title")}</span>
               </button>
             </h2>
             <div
@@ -200,7 +200,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo2"
               >
-                {t("faq.content.section_2.question_2.title")}
+                <span>{t("faq.content.section_2.question_2.title")}</span>
               </button>
             </h2>
             <div
@@ -234,7 +234,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne3"
               >
-                {t("faq.content.section_3.question_1.title")}
+                <span>{t("faq.content.section_3.question_1.title")}</span>
               </button>
             </h2>
             <div
@@ -258,7 +258,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo3"
               >
-                {t("faq.content.section_3.question_2.title")}
+                <span>{t("faq.content.section_3.question_2.title")}</span>
               </button>
             </h2>
             <div
@@ -282,7 +282,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseThree3"
               >
-                {t("faq.content.section_3.question_3.title")}
+                <span>{t("faq.content.section_3.question_3.title")}</span>
               </button>
             </h2>
             <div
@@ -307,7 +307,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseFour3"
               >
-                {t("faq.content.section_3.question_4.title")}
+                <span>{t("faq.content.section_3.question_4.title")}</span>
               </button>
             </h2>
             <div
@@ -331,7 +331,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseFive3"
               >
-                {t("faq.content.section_3.question_5.title")}
+                <span>{t("faq.content.section_3.question_5.title")}</span>
               </button>
             </h2>
             <div
@@ -355,7 +355,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseSix3"
               >
-                {t("faq.content.section_3.question_6.title")}
+                <span>{t("faq.content.section_3.question_6.title")}</span>
               </button>
             </h2>
             <div
@@ -387,7 +387,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne4"
               >
-                {t("faq.content.section_4.question_1.title")}
+                <span>{t("faq.content.section_4.question_1.title")}</span>
               </button>
             </h2>
             <div
@@ -412,7 +412,7 @@ const FaqContentSection = ({ t }) => {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo4"
               >
-                {t("faq.content.section_4.question_2.title")}
+                <span>{t("faq.content.section_4.question_2.title")}</span>
               </button>
             </h2>
             <div
@@ -484,6 +484,10 @@ const FaqContentSection = ({ t }) => {
               border: none;
               border-bottom: 1px solid #8e7cb2;
               border-radius: 0;
+
+              span {
+                margin-right: 20px;
+              }
             }
 
             .accordion-button:not(.collapsed) {
@@ -501,6 +505,7 @@ const FaqContentSection = ({ t }) => {
             .accordion-button:not(.collapsed)::after {
               background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAO0lEQVQ4je3OoQEAIQzF0BTFNMjbfytQBMcArTjD880vPGWhDqAl73eoE+jJwMouX/8HQv0KoV194AEO4WcNXKiyPh0AAAAASUVORK5CYII=");
               transform: rotate(180deg);
+              padding-left: 20px;
             }
 
             .accordion-button::after {
@@ -514,6 +519,7 @@ const FaqContentSection = ({ t }) => {
               background-size: 1rem;
               transition: transform 0.2s ease-in-out;
               fill: #fff;
+              padding-left: 20px;
             }
 
             .accordion-collapse {
@@ -530,13 +536,50 @@ const FaqContentSection = ({ t }) => {
               margin: 0;
             }
 
-            li{
+            li {
               margin-bottom: 14px;
             }
-            
+
             li:before {
               content: "-";
               padding-right: 8px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 1280px) {
+          .FaqContentSection {
+            flex-direction: column;
+            padding-bottom: 114px;
+            
+            .navigation-faq {
+              position: relative;
+              top: 0;
+              margin-bottom: 72px;
+
+              ul {
+                li {
+                  font-size: 18px;
+                  margin-bottom: 14px;
+                }
+              }
+            }
+
+            .content-faq {
+              .section-header-light {
+                margin-top: 91px;
+                margin-bottom: 56px;
+              }
+
+              .accordion-button {
+                font-size: 18px;
+              }
+
+              .accordion-collapse {
+                .accordion-body {
+                  padding-left: 17px;
+                }
+              }
             }
           }
         }

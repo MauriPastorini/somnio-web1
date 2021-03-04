@@ -56,7 +56,7 @@ const ServicesProcessSection = ({ t }) => {
       </div>
 
       <img className="process-line-bg" src="/assets/images/services/process-lines.svg" alt="" />
-      <div className="process-card-list mb-200">
+      <div className="process-card-list">
         {process.map((p, i) => (
           <div key={i} className="process-card-wrapper" data-aos="fade-up">
             <ServicesProcessCard data={p} />
@@ -67,16 +67,21 @@ const ServicesProcessSection = ({ t }) => {
       <style jsx>{`
         .ServicesProcessSection {
           position: relative;
+          padding-top: 213px;
+          padding-bottom: 193px;
 
           .process-line-bg {
             position: absolute;
-            top: 378px;
+            top: 593px;
             left: 90px;
           }
 
           .header-wrapper {
-            margin-top: 213px;
             margin-bottom: 140px !important;
+          }
+
+          .process-card-list {
+            margin-bottom: 100px;
           }
 
           .process-card-wrapper {
@@ -124,8 +129,30 @@ const ServicesProcessSection = ({ t }) => {
         }
 
         @media screen and (max-width: 1280px) {
-          .ServicesProcessSection{
-            display: none;
+          .ServicesProcessSection {
+            padding-top: 68px;
+            padding-bottom: 0;
+
+            .header-wrapper {
+              margin-bottom: 69px !important;
+            }
+
+            .process-line-bg {
+              display: none;
+            }
+
+            .process-card-list {
+              margin-bottom: 0;
+            }
+
+            .process-card-wrapper {
+              margin: 0 !important;
+              margin-bottom: 69px !important;
+
+              &:last-child {
+                margin-bottom: 0px !important;
+              }
+            }
           }
         }
       `}</style>

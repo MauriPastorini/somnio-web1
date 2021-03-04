@@ -19,11 +19,12 @@ const ServiceHeaderSection = ({ t }) => {
 
   return (
     <div className="ServiceHeaderSection">
-      {/* <img src={`/assets/images/services/services-header-bg.svg`} alt="" className="services-header__bg" /> */}
-      <img src={`/assets/images/services/services-header-path.svg`} alt="" className="services-header__path" />
+      <img src={`/assets/images/services/services-header-path.svg`} alt="" className="header__path" />
+      <img src={`/assets/images/services/mobile/services-header-path.svg`} alt="" className="header__path--mobile" />
+      <img src={`/assets/images/services/mobile/dots.svg`} alt="" className="header__dot" />
 
       <div className="text-and-image custom-container">
-        <div className="services-header-img__wrapper">
+        <div className="header-img__wrapper">
           <img
             src={`/assets/images/services/services-header-img.svg`}
             alt=""
@@ -31,9 +32,9 @@ const ServiceHeaderSection = ({ t }) => {
           />
         </div>
 
-        <div className="services-header-text__wrapper" data-aos="fade-left">
-          <h1 className="services-header-text title-1">{t("services.header.text_1")}</h1>
-          <p className="services-header-text paragraph-1">{t("services.header.text_2")}</p>
+        <div className="header-text__wrapper" data-aos="fade-left">
+          <h1 className="header-text title-1">{t("services.header.text_1")}</h1>
+          <p className="header-text paragraph-1">{t("services.header.text_2")}</p>
         </div>
       </div>
 
@@ -42,7 +43,7 @@ const ServiceHeaderSection = ({ t }) => {
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
 
-      <div className="services-header-how-we-work__content">
+      <div className="header-how-we-work__content">
         <span id="full-product-development">
           <ServicesHowWeWorkCard data={cardContent1} />
         </span>
@@ -60,13 +61,19 @@ const ServiceHeaderSection = ({ t }) => {
           background-position: center;
           background-size: 200%;
 
-          .services-header__path {
+          .header__path {
             position: absolute;
             top: -420px;
             left: -700px;
             z-index: 0;
-            max-width: 100%;
-            height: auto;
+          }
+
+          .header__path--mobile {
+            display: none;
+          }
+
+          .header__dot{
+            display: none;
           }
 
           .text-and-image {
@@ -76,14 +83,14 @@ const ServiceHeaderSection = ({ t }) => {
             position: relative;
             justify-content: space-between;
 
-            .services-header-text__wrapper {
+            .header-text__wrapper {
               width: 45%;
               display: flex;
               flex-direction: column;
               align-items: flex-end;
               margin-top: 85px;
 
-              .services-header-text {
+              .header-text {
                 width: 510px;
               }
 
@@ -103,7 +110,7 @@ const ServiceHeaderSection = ({ t }) => {
               }
             }
 
-            .services-header-img__wrapper {
+            .header-img__wrapper {
               margin-top: 50px;
               width: 55%;
 
@@ -118,7 +125,7 @@ const ServiceHeaderSection = ({ t }) => {
             margin-top: 250px;
           }
 
-          .services-header-how-we-work__content {
+          .header-how-we-work__content {
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -141,15 +148,35 @@ const ServiceHeaderSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServiceHeaderSection {
+
+            .header__dot{
+              display: block;
+              position: absolute;
+              top: 833px;
+              left: 26px;
+            }
+
+            .header__path {
+              display: none;
+            }
+
+            .header__path--mobile {
+              display: block;
+              position: absolute;
+              z-index: 0;
+              top: -256px;
+              left: -440px;
+            }
+
             .text-and-image {
               align-items: center;
               display: flex;
               flex-direction: column;
-              margin-top: 120px;
+              margin-top: 143px;
               position: relative;
               justify-content: space-between;
 
-              .services-header-text__wrapper {
+              .header-text__wrapper {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
@@ -157,7 +184,7 @@ const ServiceHeaderSection = ({ t }) => {
                 margin-top: 25px;
                 margin-bottom: 35px;
 
-                .services-header-text {
+                .header-text {
                   width: 100%;
                   text-align: center;
                   max-width: 300px;
@@ -173,7 +200,7 @@ const ServiceHeaderSection = ({ t }) => {
                 }
               }
 
-              .services-header-img__wrapper {
+              .header-img__wrapper {
                 margin-top: 50px;
                 width: 100%;
                 order: 1;
@@ -194,7 +221,7 @@ const ServiceHeaderSection = ({ t }) => {
               margin-bottom: 65px;
             }
 
-            .services-header-how-we-work__content {
+            .header-how-we-work__content {
               margin: 0 auto 40px auto;
               padding-left: 36px;
               padding-right: 36px;
@@ -211,15 +238,6 @@ const ServiceHeaderSection = ({ t }) => {
         @media screen and (max-width: 428px) {
           .ServiceHeaderSection {
             background-image: url(/assets/images/services/mobile/services-header-bg.svg);
-
-            .services-header__path {
-              position: absolute;
-              top: -133px;
-              left: -175px;
-              z-index: 0;
-              max-width: 100%;
-              height: auto;
-            }
           }
         }
       `}</style>
