@@ -132,7 +132,7 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
       <img className="path--mobile" src="/assets/images/why-flutter/mobile/path.svg" alt="" />
       <img className="dots" src="/assets/images/why-flutter/dots.svg" alt="" />
 
-      <div className="section-header-dark custom-container" data-aos="fade-in">
+      <div className="header--dark custom-container" data-aos="fade-in">
         <h2>{t("why_flutter.some_our_projects.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -187,7 +187,7 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
             display: none;
           }
 
-          .section-header-dark {
+          .header--dark {
             margin-bottom: 73px !important;
           }
 

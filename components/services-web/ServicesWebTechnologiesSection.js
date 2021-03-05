@@ -241,7 +241,7 @@ const ServicesWebTechnologiesSection = ({ t }) => {
   const topCal = 452;
   return (
     <section className="ServicesWebTechnologiesSection">
-      <div className="section-header-light custom-container" data-aos="fade-in">
+      <div className="header--light custom-container" data-aos="fade-in">
         <h2 style={{ maxWidth: 800 }}>{t("services_web.tech_list.title")}</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
@@ -285,7 +285,7 @@ const ServicesWebTechnologiesSection = ({ t }) => {
           padding: 226px 0 290px 0;
         }
 
-        .section-header-light {
+        .header--light {
           width: 100%;
           z-index: 0;
         }

@@ -9,7 +9,7 @@ const ContactSection = ({ t }) => (
     <img src="/assets/images/common/contact-points-1.svg" className="contact__points-1" alt=""></img>
     <img src="/assets/images/common/contact-points-2.svg" className="contact__points-2" alt=""></img>
     <div className="custom-container">
-      <div className="section-header-light header-wrapper" data-aos="fade-in">
+      <div className="header--light header-wrapper" data-aos="fade-in">
         <h2>Let’s create successful apps together!</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>

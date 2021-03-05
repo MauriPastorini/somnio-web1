@@ -4,7 +4,7 @@ import { withTranslation } from "../../i18n";
 const AboutUsWhyUsSection = ({ t }) => {
   return (
     <section className="AboutUsWhyUsSection">
-      <div className="section-header-light" data-aos="fade-in">
+      <div className="header--light" data-aos="fade-in">
         <h2>{t("about_us.why_us.title")}</h2>
       </div>
       <p className="about-us__text custom-container">{t("about_us.why_us.text_1")}</p>
@@ -22,7 +22,7 @@ const AboutUsWhyUsSection = ({ t }) => {
           overflow: hidden;
           padding: 125px 0 200px 0;
 
-          .section-header-light {
+          .header--light {
             margin-bottom: 62px !important;
 
             h2 {
@@ -51,7 +51,7 @@ const AboutUsWhyUsSection = ({ t }) => {
             overflow: hidden;
             padding: 96px 0 80px 0;
   
-            .section-header-light {
+            .header--light {
               margin-bottom: 53px !important;
   
               h2 {

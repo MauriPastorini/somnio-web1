@@ -44,7 +44,7 @@ const HomeServicesSection = ({ t }) => {
       <img src={`/assets/images/home/home-dots-1.svg`} className="dots" alt="" />
       <img src={`/assets/images/home/mobile/home-dots-1.svg`} className="dots--mobile" alt="" />
 
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="header--dark" data-aos="fade-in">
         <h2>{t("home.services.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -84,7 +84,7 @@ const HomeServicesSection = ({ t }) => {
             padding-top: 53px;
             padding-bottom: 191px;
 
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 138px !important;
             }
 
@@ -113,7 +113,7 @@ const HomeServicesSection = ({ t }) => {
 
           @media screen and (max-width: 1280px) {
             .HomeServicesSection {
-              .section-header-dark {
+              .header--dark {
                 margin-bottom: 48px !important;
               }
 

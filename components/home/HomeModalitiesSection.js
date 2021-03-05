@@ -22,7 +22,7 @@ const HomeModalitiesSection = ({ t }) => {
     <section className="HomeModalitiesSection">
       <img src="/assets/images/home/mobile/path-modalities.svg" alt="" className="path" />
       <img src="/assets/images/home/mobile/path-modalities2.svg" alt="" className="path2" />
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="header--dark" data-aos="fade-in">
         <h2>{t("home.modalities.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -47,7 +47,7 @@ const HomeModalitiesSection = ({ t }) => {
               display: none;
             }
             
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 120px !important;
             }
 
@@ -79,7 +79,7 @@ const HomeModalitiesSection = ({ t }) => {
                 bottom: -90px;
               }
 
-              .section-header-dark {
+              .header--dark {
                 margin-bottom: 63px !important;
               }
 

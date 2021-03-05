@@ -4,7 +4,7 @@ import { withTranslation } from "../../i18n";
 const WhyFlutterBrandsTrutsFlutterSection = ({ t }) => {
   return (
     <section className="WhyFlutterBrandsTrutsFlutterSection">
-      <div className="section-header-dark custom-container" data-aos="fade-in">
+      <div className="header--dark custom-container" data-aos="fade-in">
         <h2>{t("why_flutter.trust_flutter.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -33,7 +33,7 @@ const WhyFlutterBrandsTrutsFlutterSection = ({ t }) => {
 
       <style jsx>{`
         .WhyFlutterBrandsTrutsFlutterSection {
-          .section-header-dark {
+          .header--dark {
             margin-top: 129px;
             margin-bottom: 89px;
           }
@@ -52,7 +52,7 @@ const WhyFlutterBrandsTrutsFlutterSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .WhyFlutterBrandsTrutsFlutterSection {
-            .section-header-dark {
+            .header--dark {
               margin-top: 48px;
               margin-bottom: 38px !important;
             }

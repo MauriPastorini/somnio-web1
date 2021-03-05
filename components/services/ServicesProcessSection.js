@@ -50,7 +50,7 @@ const ServicesProcessSection = ({ t }) => {
 
   return (
     <section className="ServicesProcessSection custom-container">
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="header--dark" data-aos="fade-in">
         <h2>{t("services.process.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -76,7 +76,7 @@ const ServicesProcessSection = ({ t }) => {
             left: 90px;
           }
 
-          .section-header-dark {
+          .header--dark {
             margin-bottom: 140px !important;
           }
 
@@ -133,7 +133,7 @@ const ServicesProcessSection = ({ t }) => {
             padding-top: 68px;
             padding-bottom: 0;
 
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 69px !important;
             }
 

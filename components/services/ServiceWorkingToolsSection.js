@@ -50,7 +50,7 @@ const ServiceWorkingToolsSection = ({ t }) => {
 
   return (
     <div className="ServiceWorkingToolsSection">
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="header--dark" data-aos="fade-in">
         <h2>{t("services.tools.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -65,7 +65,7 @@ const ServiceWorkingToolsSection = ({ t }) => {
         .ServiceWorkingToolsSection {
           margin-bottom: 86px;
 
-          .section-header-dark {
+          .header--dark {
             margin-bottom: 54px !important;
           }
         }
@@ -75,7 +75,7 @@ const ServiceWorkingToolsSection = ({ t }) => {
             padding-top: 86px;
             padding-bottom: 50px;
   
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 70px !important;
             }
           }

@@ -17,7 +17,7 @@ const ServicesMobileCoveredSection = ({ t }) => {
   return (
     <section className="ServicesMobileCoveredSection">
       <div className="custom-container">
-        <div className="section-header-light" data-aos="fade-in">
+        <div className="header--light" data-aos="fade-in">
           <h2>{t("services_mobile.covered.title")}</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -33,7 +33,7 @@ const ServicesMobileCoveredSection = ({ t }) => {
           background: transparent linear-gradient(119deg, #1783e3 0%, #003ba8 100%) 0% 0% no-repeat padding-box;
           padding: 122px 0 226px 0;
 
-          .section-header-light {
+          .header--light {
             margin-bottom: 100px !important;
           }
           .card-list {
@@ -49,7 +49,7 @@ const ServicesMobileCoveredSection = ({ t }) => {
             padding: 58px 0 51px 0;
             background: transparent linear-gradient(119deg, #1783e3 0%, #003ba8 100%) 0% 0% no-repeat padding-box;
 
-            .section-header-light {
+            .header--light {
               margin-bottom: 48px !important;
             }
 

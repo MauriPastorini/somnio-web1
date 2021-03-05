@@ -44,7 +44,7 @@ const AboutUsOurValuesSection = ({ t }) => {
       <img src="/assets/images/about-us/about-us-our-values-dots1.svg" className="about-us-our-values-dots1" alt="" />
       <img src="/assets/images/about-us/about-us-our-values-dots2.svg" className="about-us-our-values-dots2" alt="" />
       
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="header--dark" data-aos="fade-in">
         <h2>{t("about_us.our_values.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -81,7 +81,7 @@ const AboutUsOurValuesSection = ({ t }) => {
             margin: 0 auto 0 auto;
           }
 
-          .section-header-dark {
+          .header--dark {
             margin-bottom: 129px;
           }
 
@@ -120,7 +120,7 @@ const AboutUsOurValuesSection = ({ t }) => {
               flex-direction: column;
             }
 
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 58px;
             }
 

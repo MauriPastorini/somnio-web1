@@ -138,7 +138,7 @@ const ServicesUxUiServicesSection = ({ t }) => {
         </div>
       </section>
       <section className="ServicesUxUiServicesSection--mobile custom-container">
-        <div className="section-header-dark header-wrapper" data-aos="fade-in">
+        <div className="header--dark header-wrapper" data-aos="fade-in">
           <h2>UX/UI</h2>
           <h3>{t("services_uxui.services.title")}</h3>
           <img src={"/assets/images/home-services-line.svg"} alt="" />

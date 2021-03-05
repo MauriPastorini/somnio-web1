@@ -6,7 +6,7 @@ import { withTranslation } from "../../i18n";
 const ServicesAgencySaySection = ({ t }) => {
   return (
     <section className="ServicesAgencySaySection">
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="header--dark" data-aos="fade-in">
         <h2>{t("services.what_agency_say.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -33,7 +33,7 @@ const ServicesAgencySaySection = ({ t }) => {
       </div>
       <style jsx>{`
         .ServicesAgencySaySection {
-          .section-header-dark {
+          .header--dark {
             margin-top: 106px;
           }
 
@@ -45,7 +45,7 @@ const ServicesAgencySaySection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServicesAgencySaySection {
-            .section-header-dark {
+            .header--dark {
               margin-top: 48px;
               margin-bottom: 59px;
             }

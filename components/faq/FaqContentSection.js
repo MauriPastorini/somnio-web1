@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
@@ -26,7 +26,7 @@ const FaqContentSection = ({ t }) => {
     }
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.addEventListener("scroll", listener);
     return () => {
       window.removeEventListener("scroll", listener);
@@ -60,7 +60,7 @@ const FaqContentSection = ({ t }) => {
       </aside>
 
       <div className="content-faq">
-        <div className="section-header-light" data-aos="fade-in" ref={aboutRef}>
+        <div className="header--light" data-aos="fade-in" ref={aboutRef}>
           <h2>{t("faq.content.section_1.title")}</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -155,7 +155,7 @@ const FaqContentSection = ({ t }) => {
           </div>
         </div>
 
-        <div className="section-header-light" data-aos="fade-in" ref={howWeWorkRef}>
+        <div className="header--light" data-aos="fade-in" ref={howWeWorkRef}>
           <h2>{t("faq.content.section_2.title")}</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -218,7 +218,7 @@ const FaqContentSection = ({ t }) => {
           </div>
         </div>
 
-        <div className="section-header-light" data-aos="fade-in" ref={flutterRef}>
+        <div className="header--light" data-aos="fade-in" ref={flutterRef}>
           <h2>{t("faq.content.section_3.title")}</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -371,7 +371,7 @@ const FaqContentSection = ({ t }) => {
           </div>
         </div>
 
-        <div className="section-header-light" data-aos="fade-in" ref={timmingRef}>
+        <div className="header--light" data-aos="fade-in" ref={timmingRef}>
           <h2>{t("faq.content.section_4.title")}</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -468,7 +468,7 @@ const FaqContentSection = ({ t }) => {
             width: 100%;
             color: #fff;
 
-            .section-header-light {
+            .header--light {
               margin-top: 113px;
               margin-bottom: 113px;
 
@@ -551,7 +551,7 @@ const FaqContentSection = ({ t }) => {
           .FaqContentSection {
             flex-direction: column;
             padding-bottom: 114px;
-            
+
             .navigation-faq {
               position: relative;
               top: 0;
@@ -566,7 +566,7 @@ const FaqContentSection = ({ t }) => {
             }
 
             .content-faq {
-              .section-header-light {
+              .header--light {
                 margin-top: 91px;
                 margin-bottom: 56px;
               }

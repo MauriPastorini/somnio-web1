@@ -34,7 +34,7 @@ const ServiceHeaderSection = ({ t }) => {
         </div>
       </div>
 
-      <div className="section-header-light header-wrapper" data-aos="fade-in">
+      <div className="header--light header-wrapper" data-aos="fade-in">
         <h2>{t("services.header.how_we_work.title")}</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>

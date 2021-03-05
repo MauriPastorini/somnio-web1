@@ -273,7 +273,7 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
 
   return (
     <section className="ServicesMobiletechnologiesSection">
-      <div className="section-header-light custom-container" data-aos="fade-in">
+      <div className="header--light custom-container" data-aos="fade-in">
         <h2 style={{ maxWidth: 800 }}>{t("services_mobile.tech_list.title")}</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
@@ -317,7 +317,7 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
           padding: 227px 0 288px 0;
         }
 
-        .section-header-light {
+        .header--light {
           width: 100%;
           z-index: 0;
         }
@@ -352,7 +352,7 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
                 width: 70%;
               }
             }
-            
+
             &:nth-child(4) {
               img {
                 width: 80%;
@@ -408,7 +408,7 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
             }
           }
           
-          .section-header-light {
+          .header--light {
             margin-bottom: 48px;
           }
         }

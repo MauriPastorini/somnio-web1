@@ -20,7 +20,7 @@ const HomeOurBlogSection = ({ t, posts }) => {
       <img src={`/assets/images/home/home-path-blog.svg`} alt="" className="path" />
       <img src={`/assets/images/home/mobile/home-path-blog.svg`} alt="" className="path--mobile" />
 
-      <div className="section-header-dark " data-aos="fade-in">
+      <div className="header--dark " data-aos="fade-in">
         <h2>{t("home.our_blog.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -77,7 +77,7 @@ const HomeOurBlogSection = ({ t, posts }) => {
             display: none;
           }
 
-          .section-header-dark {
+          .header--dark {
             margin-bottom: 105px !important;
           }
 
@@ -92,7 +92,7 @@ const HomeOurBlogSection = ({ t, posts }) => {
               padding-bottom: 93px;
             }
 
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 52px !important;
             }
 

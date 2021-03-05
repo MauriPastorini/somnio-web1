@@ -6,7 +6,7 @@ const HomeAboutUsSection = ({ t }) => {
     <section className="HomeAboutUsSection">
       <img src={`/assets/images/home/home-dots-3.svg`} className="path-img-1" alt="" />
 
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="header--dark" data-aos="fade-in">
         <h2>{t("home.about_us.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -83,7 +83,7 @@ const HomeAboutUsSection = ({ t }) => {
             position: relative;
             padding-top: 81px;
 
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 63px !important;
             }
 

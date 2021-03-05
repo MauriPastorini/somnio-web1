@@ -45,7 +45,7 @@ const AngencySayCard = ({ t }) => (
 const ServicesMobileSomeAppsSection = ({ t }) => {
   return (
     <section className="ServicesMobileSomeAppsSection d-flex flex-column align-items-center">
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="header--dark" data-aos="fade-in">
         <h2>{t("services_mobile.some_apps.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -102,7 +102,7 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
         .ServicesMobileSomeAppsSection {
           padding-bottom: 100px;
 
-          .section-header-dark {
+          .header--dark {
             margin-bottom: 62px;
           }
 
@@ -196,7 +196,7 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
           .ServicesMobileSomeAppsSection {
             padding-bottom: 0;
 
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 100px;
             }
 

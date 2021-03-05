@@ -41,7 +41,7 @@ const HomePortfolioSection = ({ t }) => {
     <section className="HomePortfolioSection">
       <img src={"/assets/images/home/home-dots-2.svg"} alt="" className="dots" />
 
-      <div className="section-header-dark" data-aos="fade-in">
+      <div className="header--dark" data-aos="fade-in">
         <h2>{t("home.portfolio.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -68,7 +68,7 @@ const HomePortfolioSection = ({ t }) => {
             position: relative;
             overflow-x: hidden;
 
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 0 !important;
             }
 
@@ -98,7 +98,7 @@ const HomePortfolioSection = ({ t }) => {
               position: relative;
               
 
-              .section-header-dark {
+              .header--dark {
                 margin-bottom: 55px !important;
               }
 

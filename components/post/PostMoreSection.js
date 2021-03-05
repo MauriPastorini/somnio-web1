@@ -27,7 +27,7 @@ export const PostMoreSection = ({ t, posts, post }) => {
 
   return (
     <div className="PostMoreSection custom-container">
-      <div className="section-header-dark header-wrapper" data-aos="fade-in">
+      <div className="header--dark header-wrapper" data-aos="fade-in">
         <h2>{t("post.text_1")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>

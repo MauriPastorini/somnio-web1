@@ -18,7 +18,7 @@ const ServicesWebCoveredSection = ({ t }) => {
     <section className="ServicesWebCoveredSection">
       <div className="sub-bg"></div>
       <div className="content custom-container">
-        <div className="section-header-light" data-aos="fade-in">
+        <div className="header--light" data-aos="fade-in">
           <h2>We’ve got you covered</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -65,7 +65,7 @@ const ServicesWebCoveredSection = ({ t }) => {
               position: relative;
               z-index: 1;
 
-              .section-header-light{
+              .header--light{
                 margin-bottom: 68px;
               }
 

@@ -18,7 +18,7 @@ $primary-color: #001331;
   font-weight: 500;
 }
 
-.section-header-dark {
+.header--dark {
   align-items: center;
   color: $primary-color;
   display: flex;
@@ -34,7 +34,7 @@ $primary-color: #001331;
   }
 }
 
-.section-header-light {
+.header--light {
   align-items: center;
   color: #fff;
   display: flex;
@@ -104,14 +104,14 @@ $primary-color: #001331;
 }
 
 @media screen and (max-width: 1280px) {
-  .section-header-dark {
+  .header--dark {
     h2 {
       font-size: 24px;
       letter-spacing: 2.4px;
     }
   }
 
-  .section-header-light {
+  .header--light {
     h2 {
       font-size: 24px;
       letter-spacing: 2.4px;

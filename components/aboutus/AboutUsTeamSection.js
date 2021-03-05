@@ -74,7 +74,7 @@ const AboutUsTeamSection = ({ t }) => {
       <img src="/assets/images/about-us/about-us-team-dots2.svg" className="dots2" alt="" />
 
       <div className="custom-container">
-        <div className="section-header-dark" data-aos="fade-in">
+        <div className="header--dark" data-aos="fade-in">
           <h2>{t("about_us.our_team.title")}</h2>
           <img src={"/assets/images/home-services-line.svg"} alt="" />
         </div>
@@ -114,7 +114,7 @@ const AboutUsTeamSection = ({ t }) => {
             left: 55px;
           }
 
-          .section-header-dark {
+          .header--dark {
             margin-bottom: 125px !important;
           }
 
@@ -146,7 +146,7 @@ const AboutUsTeamSection = ({ t }) => {
               display: none;
             }
 
-            .section-header-dark {
+            .header--dark {
               margin-bottom: 63px !important;
             }
           }

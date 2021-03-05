@@ -49,7 +49,7 @@ const HomeWhatClientSaySection = ({ t }) => {
   return (
     <section className="HomeWhatClientSaySection">
       <div className="clientsay-content">
-        <div className="section-header-light" data-aos="fade-in">
+        <div className="header--light" data-aos="fade-in">
           <h2>{t("home.what_our_clients_say.title")}</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -83,7 +83,7 @@ const HomeWhatClientSaySection = ({ t }) => {
           background-position: center;
           background-repeat: no-repeat;
 
-          .section-header-light {
+          .header--light {
             margin-top: 170px;
             margin-bottom: 27px !important;
           }
@@ -119,7 +119,7 @@ const HomeWhatClientSaySection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .HomeWhatClientSaySection {
-            .section-header-light {
+            .header--light {
               margin-top: 78px;
               margin-bottom: 10px !important;
             }
