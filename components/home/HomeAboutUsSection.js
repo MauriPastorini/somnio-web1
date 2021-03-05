@@ -3,10 +3,10 @@ import { withTranslation } from "../../i18n";
 
 const HomeAboutUsSection = ({ t }) => {
   return (
-    <div className="HomeAboutUsSection">
+    <section className="HomeAboutUsSection">
       <img src={`/assets/images/home/home-dots-3.svg`} className="path-img-1" alt="" />
 
-      <div className="section-header-dark header-wrapper" data-aos="fade-in">
+      <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("home.about_us.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -58,6 +58,7 @@ const HomeAboutUsSection = ({ t }) => {
                 top: -90px;
                 right: 150px;
               }
+
               .group-img {
                 position: absolute;
                 top: 50px;
@@ -82,7 +83,7 @@ const HomeAboutUsSection = ({ t }) => {
             position: relative;
             padding-top: 81px;
 
-            .header-wrapper {
+            .section-header-dark {
               margin-bottom: 63px !important;
             }
 
@@ -168,7 +169,7 @@ const HomeAboutUsSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

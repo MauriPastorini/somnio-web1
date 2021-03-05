@@ -38,7 +38,7 @@ const FaqContentSection = ({ t }) => {
   };
 
   return (
-    <div className="FaqContentSection custom-container">
+    <section className="FaqContentSection custom-container">
       <aside className="navigation-faq">
         <ul>
           <li onClick={() => scrollToRef(aboutRef)} className={`${navigationActive == "aboutRef" ? "active" : ""}`}>
@@ -584,7 +584,7 @@ const FaqContentSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

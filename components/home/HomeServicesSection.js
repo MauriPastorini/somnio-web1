@@ -34,19 +34,21 @@ const HomeServicesSection = ({ t }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
   };
 
   return (
-    <div className="HomeServicesSection custom-container">
+    <section className="HomeServicesSection custom-container">
       <img src={`/assets/images/home/home-dots-1.svg`} className="dots" alt="" />
-      <img src={`/assets/images/home/mobile/home-dots-1.svg`} className="dots-mobile" alt="" />
-      <div className="section-header-dark service-header" data-aos="fade-in">
+      <img src={`/assets/images/home/mobile/home-dots-1.svg`} className="dots--mobile" alt="" />
+
+      <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("home.services.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
+
       <div className="service-list" data-aos="slide-up">
         {data.map((d, i) => (
           <HomeServiceCard
@@ -60,7 +62,7 @@ const HomeServicesSection = ({ t }) => {
         ))}
       </div>
 
-      <div className="service-list-mobile">
+      <div className="service-list--mobile">
         <Slider {...settings}>
           {data.map((d, i) => (
             <HomeServiceCard
@@ -82,7 +84,7 @@ const HomeServicesSection = ({ t }) => {
             padding-top: 53px;
             padding-bottom: 191px;
 
-            .service-header {
+            .section-header-dark {
               margin-bottom: 138px !important;
             }
 
@@ -94,7 +96,7 @@ const HomeServicesSection = ({ t }) => {
               width: 100% !important;
             }
 
-            .service-list-mobile {
+            .service-list--mobile {
               display: none;
             }
 
@@ -104,14 +106,14 @@ const HomeServicesSection = ({ t }) => {
               left: -50px;
             }
 
-            .dots-mobile {
+            .dots--mobile {
               display: none;
             }
           }
 
           @media screen and (max-width: 1280px) {
             .HomeServicesSection {
-              .service-header {
+              .section-header-dark {
                 margin-bottom: 48px !important;
               }
 
@@ -119,7 +121,7 @@ const HomeServicesSection = ({ t }) => {
                 display: none;
               }
 
-              .service-list-mobile {
+              .service-list--mobile {
                 display: block;
               }
 
@@ -127,7 +129,7 @@ const HomeServicesSection = ({ t }) => {
                 display: none;
               }
 
-              .dots-mobile {
+              .dots--mobile {
                 position: absolute;
                 display: block;
                 top: -13px;
@@ -138,7 +140,7 @@ const HomeServicesSection = ({ t }) => {
           }
         `}
       </style>
-    </div>
+    </section>
   );
 };
 

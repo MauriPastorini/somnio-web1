@@ -3,17 +3,17 @@ import { withTranslation } from "../../i18n";
 
 const ServicesWebHeaderSection = ({ t }) => {
   return (
-    <div className="ServicesWebHeaderSection">
+    <section className="ServicesWebHeaderSection">
       <img src="/assets/images/services-web/header-path.svg" alt="" className="header__path" />
       <img src="/assets/images/services-web/mobile/header-path.svg" alt="" className="header__path--mobile" />
 
       <div className="text-and-image custom-container">
-        <div className="header-img-wrapper">
-          <img src={`/assets/images/services-web/header-img.svg`} alt="" className="header-img" />
+        <div className="header__img-wrapper">
+          <img src={`/assets/images/services-web/header-img.svg`} alt="" className="header__img" />
         </div>
-        <div className="header-text-wrapper" data-aos="fade-right">
-          <h1 className="header-title">{t("services_web.header.text_1")}</h1>
-          <p className="header-text">{t("services_web.header.text_2")}</p>
+        <div className="header__text-wrapper" data-aos="fade-right">
+          <h1 className="header__title">{t("services_web.header.text_1")}</h1>
+          <p className="header__text">{t("services_web.header.text_2")}</p>
         </div>
       </div>
       <style jsx>{`
@@ -29,7 +29,7 @@ const ServicesWebHeaderSection = ({ t }) => {
           .header__path {
             position: absolute;
             top: -461px;
-            left: -743px;
+            left: -689px;
             z-index: 0;
             height: auto;
           }
@@ -43,14 +43,14 @@ const ServicesWebHeaderSection = ({ t }) => {
             display: flex;
             align-items: center;
 
-            .header-text-wrapper {
+            .header__text-wrapper {
               display: flex;
               flex-direction: column;
               align-items: flex-end;
               margin-top: 26px;
               width: 45%;
 
-              .header-title {
+              .header__title {
                 width: 580px;
                 font-weight: bold;
                 font-size: 80px;
@@ -58,7 +58,7 @@ const ServicesWebHeaderSection = ({ t }) => {
                 margin-bottom: 50px;
                 text-align: end;
               }
-              .header-text {
+              .header__text {
                 font-size: 30px;
                 color: #ffffff;
                 text-align: end;
@@ -66,11 +66,11 @@ const ServicesWebHeaderSection = ({ t }) => {
               }
             }
 
-            .header-img-wrapper {
+            .header__img-wrapper {
               margin-top: 80px;
               width: 55%;
 
-              .header-img {
+              .header__img {
                 width: 100%;
               }
             }
@@ -105,28 +105,28 @@ const ServicesWebHeaderSection = ({ t }) => {
               position: relative;
               justify-content: space-between;
   
-              .header-text-wrapper {
+              .header__text-wrapper {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 margin-top: 0;
 
-                .header-title {
+                .header__title {
                   width: 100%;
                   text-align: center;
                   font-size: 35px;
                   margin-bottom: 28px;
                   max-width: 340px;
                 }
-                .header-text {
+                .header__text {
                   font-size: 18px;
                   text-align: center;
                   max-width: 300px;
                 }
               }
   
-              .header-img-wrapper {
+              .header__img-wrapper {
                 margin-top: 110px;
                 width: 100%;
                 display: flex;
@@ -134,7 +134,7 @@ const ServicesWebHeaderSection = ({ t }) => {
                 align-items: center;
                 order:1;
 
-                .header-img {
+                .header__img {
                   width: 100%;
                   margin: 0;
                   max-width: 500px;
@@ -161,15 +161,15 @@ const ServicesWebHeaderSection = ({ t }) => {
             }
 
             .text-and-image {
-              .header-text-wrapper {
-                .header-title {
+              .header__text-wrapper {
+                .header__title {
                 }
-                .header-text {
+                .header__text {
                 }
               }
   
-              .header-img-wrapper {
-                .header-img {
+              .header__img-wrapper {
+                .header__img {
                   max-width: 294px;
                 }
               }
@@ -177,7 +177,7 @@ const ServicesWebHeaderSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

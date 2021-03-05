@@ -4,16 +4,16 @@ import { withTranslation } from "../../i18n";
 
 const HomeHeaderSection = ({ t }) => {
   return (
-    <div className="HomeHeaderSection">
-      <img src="/assets/images/home/home-header-path.svg" alt="" className="home-header__path" />
-      <img src="/assets/images/home/mobile/home-header-path.svg" alt="" className="home-header__path--mobile" />
+    <section className="HomeHeaderSection">
+      <img src="/assets/images/home/home-header-path.svg" alt="" className="header__path" />
+      <img src="/assets/images/home/mobile/home-header-path.svg" alt="" className="header__path--mobile" />
       <div className="text-and-image custom-container">
-        <div className="home-header-text-wrapper" data-aos="fade-right">
-          <h1 className="home-header-text">{t("home.header.text_1")}</h1>
+        <div className="header-text-wrapper" data-aos="fade-right">
+          <h1 className="header__text">{t("home.header.text_1")}</h1>
           <button className="btn btn-custom-1 btn-shadow btn-desktop">{t("common.button_1")}</button>
         </div>
-        <div className="home-header-img-wrapper">
-          <img src={`/assets/images/home/home-header-img.svg`} alt="" className="home-header-img img-fluid" />
+        <div className="header-img-wrapper">
+          <img src={`/assets/images/home/home-header-img.svg`} alt="" className="header__img img-fluid" />
           <button className="btn btn-custom-1 btn-shadow btn-mobile">{t("common.button_1")}</button>
         </div>
       </div>
@@ -33,16 +33,15 @@ const HomeHeaderSection = ({ t }) => {
             box-shadow: 32px 32px 87px -20px rgba(0, 0, 0, 1);
           }
 
-          .home-header__path {
+          .header__path {
             position: absolute;
             top: 0;
             left: 0;
             z-index: 0;
-            // max-width: 42%;
             height: auto;
           }
 
-          .home-header__path--mobile {
+          .header__path--mobile {
             display: none;
           }
 
@@ -54,11 +53,11 @@ const HomeHeaderSection = ({ t }) => {
             z-index: 1;
             position: relative;
 
-            .home-header-text-wrapper {
+            .header-text-wrapper {
               width: 45%;
               margin-top: 55px;
 
-              .home-header-text {
+              .header__text {
                 width: 584px;
                 font-weight: bold;
                 font-size: 60px;
@@ -67,10 +66,10 @@ const HomeHeaderSection = ({ t }) => {
               }
             }
 
-            .home-header-img-wrapper {
+            .header-img-wrapper {
               width: 55%;
 
-              .home-header-img {
+              .header__img {
                 width: 97%;
                 margin-left: 3%;
               }
@@ -97,7 +96,7 @@ const HomeHeaderSection = ({ t }) => {
         @media screen and (max-width: 1280px) {
           .HomeHeaderSection {
 
-            .home-header__path {
+            .header__path {
               position: absolute;
               top: 0;
               left: 0;
@@ -113,14 +112,14 @@ const HomeHeaderSection = ({ t }) => {
               margin-top: 160px;
               margin-bottom: 182px;
 
-              .home-header-text-wrapper {
+              .header-text-wrapper {
                 width: 100%;
                 margin: 0;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                .home-header-text {
+                .header__text {
                   width: 100%;
                   font-weight: bold;
                   font-size: 36px;
@@ -131,14 +130,14 @@ const HomeHeaderSection = ({ t }) => {
                 }
               }
 
-              .home-header-img-wrapper {
+              .header-img-wrapper {
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
 
-                .home-header-img {
+                .header__img {
                   width: 100%;
                   margin: 0;
                   max-width: 500px;
@@ -166,7 +165,7 @@ const HomeHeaderSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

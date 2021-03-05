@@ -3,13 +3,13 @@ import { withTranslation } from "../../i18n";
 
 const ServicesMobileInfoSection = ({ t }) => {
   return (
-    <div className="ServicesMobileInfoSection">
-      <div className="mobile-text-and-img custom-container">
-        <div className="mobile-img-wrapper">
+    <section className="ServicesMobileInfoSection">
+      <div className="text-and-img custom-container">
+        <div className="mobile__images">
           <img src={`/assets/images/services-mobile/info-img-bg.svg`} className="path-img img-fluid" alt="" />
           <img src={`/assets/images/services-mobile/info-img.png`} className="group-img" alt="" />
         </div>
-        <p className="mobile-text" data-aos="fade-left">
+        <p className="mobile__text" data-aos="fade-left">
           {t("services_mobile.info.text_1")}
         </p>
       </div>
@@ -19,12 +19,12 @@ const ServicesMobileInfoSection = ({ t }) => {
           margin-bottom: 180px;
         }
 
-        .mobile-text-and-img {
+        .text-and-img {
           display: flex;
           justify-content: space-between;
           align-items: center;
 
-          .mobile-img-wrapper {
+          .mobile__images {
             position: relative;
             width: 60%;
             height: 100%;
@@ -45,7 +45,7 @@ const ServicesMobileInfoSection = ({ t }) => {
             }
           }
 
-          .mobile-text {
+          .mobile__text {
             color: #001331;
             font-size: 23px;
             max-width: 600px;
@@ -59,13 +59,13 @@ const ServicesMobileInfoSection = ({ t }) => {
             margin-bottom: 75px;
           }
 
-          .mobile-text-and-img {
+          .text-and-img {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-direction: column;
 
-            .mobile-img-wrapper {
+            .mobile__images {
               position: relative;
               width: 100%;
               height: auto;
@@ -88,7 +88,7 @@ const ServicesMobileInfoSection = ({ t }) => {
               }
             }
 
-            .mobile-text {
+            .mobile__text {
               color: #001331;
               font-size: 15px;
               max-width: 600px;
@@ -101,7 +101,7 @@ const ServicesMobileInfoSection = ({ t }) => {
 
 
       `}</style>
-    </div>
+    </section>
   );
 };
 

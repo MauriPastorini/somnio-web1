@@ -4,7 +4,7 @@ import { withTranslation } from "../../i18n";
 
 const ServicesMobileOurKnowledgeSection = ({ t }) => {
   return (
-    <div className="ServicesMobileOurKnowledgeSection custom-container">
+    <section className="ServicesMobileOurKnowledgeSection custom-container">
       <div className="text-wrapper" data-aos="fade-right">
         <h3> {t("services_mobile.our_knowledge.title")}</h3>
         <p>{t("services_mobile.our_knowledge.text_1")}</p>
@@ -73,8 +73,6 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
             }
           }
 
-          .btn-desktop {
-          }
           .btn-mobile {
             display: none;
           }
@@ -91,10 +89,10 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
 
               h3 {
                 font-size: 24px;
-                // max-width: 330px;
                 text-align: center;
                 margin: 0 auto 30px auto !important;
               }
+              
               p {
                 font-size: 14px;
                 max-width: 550px;
@@ -144,7 +142,7 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

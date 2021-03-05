@@ -3,7 +3,7 @@ import { withTranslation } from "../../i18n";
 
 const ServicesMobileFlutterChangeGameSection = ({ t }) => {
   return (
-    <div className="ServicesMobileFlutterChangeGameSection custom-container">
+    <section className="ServicesMobileFlutterChangeGameSection custom-container">
       <div className="text-wrapper">
         <h2>{t("services_mobile.flutter_change_game.title")}</h2>
         <p>{t("services_mobile.flutter_change_game.text_1")}</p>
@@ -71,7 +71,7 @@ const ServicesMobileFlutterChangeGameSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

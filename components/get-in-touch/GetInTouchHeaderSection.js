@@ -103,35 +103,35 @@ const HeaderTitle = ({ t }) => (
 
 const GetInTouchHeaderSection = ({ t }) => {
   return (
-    <div className="GetInTouchHeaderSection">
+    <section className="GetInTouchHeaderSection">
       <img src="/assets/images/get-in-touch/header-path.svg" alt="" className="header__path" />
       <div className="text-and-image custom-container">
-        <div className="form-mobile">
+        <div className="form--mobile">
           <HeaderTitle t={t} />
         </div>
 
-        <div className="header-text-wrapper" data-aos="fade-right">
-          <div className="form-desktop">
+        <div className="header__text-wrapper" data-aos="fade-right">
+          <div className="form--desktop">
             <HeaderTitle t={t} />
           </div>
 
           <GetInTouchContactForm />
 
-          <div className="form-mobile">
+          <div className="form--mobile">
             <ContactInfo />
           </div>
         </div>
-        <div className="header-img-wrapper">
-          <img src={`/assets/images/get-in-touch/header-img.svg`} alt="" className="header-img" />
+        <div className="header__img-wrapper">
+          <img src={`/assets/images/get-in-touch/header-img.svg`} alt="" className="header__img" />
 
-          <div className="form-desktop">
+          <div className="form--desktop">
             <ContactInfo />
           </div>
         </div>
       </div>
 
       <style jsx>{`
-        .form-mobile {
+        .form--mobile {
           display: none;
         }
 
@@ -162,7 +162,7 @@ const GetInTouchHeaderSection = ({ t }) => {
             align-items: flex-start;
             justify-content: space-between;
 
-            .header-text-wrapper {
+            .header__text-wrapper {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
@@ -171,8 +171,8 @@ const GetInTouchHeaderSection = ({ t }) => {
               margin-top: 22px;
             }
 
-            .header-img-wrapper {
-              .header-img {
+            .header__img-wrapper {
+              .header__img {
                 max-width: 365px;
                 margin-bottom: 70px;
               }
@@ -187,11 +187,11 @@ const GetInTouchHeaderSection = ({ t }) => {
         }
 
         @media screen and (max-width: 1280px) {
-          .form-mobile {
+          .form--mobile {
             display: block;
             margin: 0 auto;
           }
-          .form-desktop {
+          .form--desktop {
             display: none;
           }
 
@@ -213,12 +213,12 @@ const GetInTouchHeaderSection = ({ t }) => {
               flex-direction: column;
               align-items: center;
 
-              .header-text-wrapper {
+              .header__text-wrapper {
                 order: 1;
               }
 
-              .header-img-wrapper {
-                .header-img {
+              .header__img-wrapper {
+                .header__img {
                   max-width: 245px;
                   margin-bottom: 204px;
                 }
@@ -227,7 +227,7 @@ const GetInTouchHeaderSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

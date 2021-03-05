@@ -3,16 +3,16 @@ import { withTranslation } from "../../i18n";
 
 const AboutUsHeaderSection = ({ t }) => {
   return (
-    <div className="AboutUsHeaderSection">
+    <section className="AboutUsHeaderSection">
       <img src={`/assets/images/about-us/header-path-1.svg`} alt="" className="header__path" />
-      <img src={`/assets/images/about-us/mobile/header-path-1.svg`} alt="" className="header__path-mobile" />
+      <img src={`/assets/images/about-us/mobile/header-path-1.svg`} alt="" className="header__path--mobile" />
 
       <div className="text-and-image custom-container">
-        <div className="header-img__wrapper">
-          <img src={`/assets/images/about-us/header-img.svg`} alt="" className="header-img img-fluid" />
+        <div className="header-img-wrapper">
+          <img src={`/assets/images/about-us/header-img.svg`} alt="" className="header__img img-fluid" />
         </div>
 
-        <div className="header-text__wrapper" data-aos="fade-left">
+        <div className="header-text-wrapper" data-aos="fade-left">
           <h1 className="title-1">{t("about_us.header.text_1")}</h1>
           <p className="paragraph-1">{t("about_us.header.text_2")}</p>
         </div>
@@ -28,14 +28,12 @@ const AboutUsHeaderSection = ({ t }) => {
 
           .header__path {
             position: absolute;
-            top: -420px;
-            left: -700px;
+            top: -453px;
+            left: -729px;
             z-index: 0;
-            max-width: 80%;
-            height: auto;
           }
 
-          .header__path-mobile {
+          .header__path--mobile {
             display: none;
           }
 
@@ -48,7 +46,7 @@ const AboutUsHeaderSection = ({ t }) => {
             position: relative;
             z-index: 1;
 
-            .header-text__wrapper {
+            .header-text-wrapper {
               width: 45%;
               display: flex;
               flex-direction: column;
@@ -70,11 +68,11 @@ const AboutUsHeaderSection = ({ t }) => {
               }
             }
 
-            .header-img__wrapper {
+            .header-img-wrapper {
               margin-top: 50px;
               width: 55%;
 
-              .header-img {
+              .header__img {
                 width: 95%;
                 margin-right: 5%;
               }
@@ -100,7 +98,7 @@ const AboutUsHeaderSection = ({ t }) => {
               display: none;
             }
 
-            .header__path-mobile {
+            .header__path--mobile {
               display: block;
               position: absolute;
               top: -200px;
@@ -117,7 +115,7 @@ const AboutUsHeaderSection = ({ t }) => {
               margin-bottom: 182px;
               margin-top: 179px;
 
-              .header-text__wrapper {
+              .header-text-wrapper {
                 width: 100%;
                 margin: 0;
                 display: flex;
@@ -138,7 +136,7 @@ const AboutUsHeaderSection = ({ t }) => {
                 }
               }
 
-              .header-img__wrapper {
+              .header-img-wrapper {
                 margin-top: 81px;
                 width: 100%;
                 display: flex;
@@ -146,7 +144,7 @@ const AboutUsHeaderSection = ({ t }) => {
                 align-items: center;
                 order: 1;
 
-                .header-img {
+                .header__img {
                   width: 100%;
                   margin: 0;
                   max-width: 500px;
@@ -156,7 +154,7 @@ const AboutUsHeaderSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

@@ -30,8 +30,8 @@ const ServiceCard = ({ img, title, text }) => (
           }
         }
       }
-      
-      @media screen and (max-width: 1280px){
+
+      @media screen and (max-width: 1280px) {
         .uxui-service-card {
           flex-direction: column;
           min-height: 200px;
@@ -41,7 +41,7 @@ const ServiceCard = ({ img, title, text }) => (
             margin: 0;
             margin-bottom: 28px;
           }
-          
+
           .uxui-service-card__text {
             h4 {
               font-size: 24px;
@@ -95,74 +95,74 @@ const ServicesUxUiServicesSection = ({ t }) => {
 
   return (
     <>
-      <div className="ServicesUxUiServicesSection custom-container">
-        <div className="service_item"></div>
-        <div className="service_item">
+      <section className="ServicesUxUiServicesSection custom-container">
+        <div className="service__item"></div>
+        <div className="service__item">
           <ServiceCard img={card_1.img} title={card_1.title} text={card_1.text} />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <img src="/assets/images/services-uxui/arrow_1.svg" alt="" />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <ServiceCard img={card_6.img} title={card_6.title} text={card_6.text} />
         </div>
-        <div className="service_item"></div>
-        <div className="service_item">
+        <div className="service__item"></div>
+        <div className="service__item">
           <ServiceCard img={card_2.img} title={card_2.title} text={card_2.text} />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <img src="/assets/images/services-uxui/arrow_5.svg" alt="" />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <h2>UX/UI</h2>
           <p>{t("services_uxui.services.title")}</p>
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <img src="/assets/images/services-uxui/arrow_2.svg" alt="" />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <ServiceCard img={card_5.img} title={card_5.title} text={card_5.text} />
         </div>
-        <div className="service_item"></div>
-        <div className="service_item">
+        <div className="service__item"></div>
+        <div className="service__item">
           <ServiceCard img={card_3.img} title={card_3.title} text={card_3.text} />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <img src="/assets/images/services-uxui/arrow_4.svg" alt="" />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <ServiceCard img={card_4.img} title={card_4.title} text={card_4.text} />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <img src="/assets/images/services-uxui/arrow_3.svg" alt="" />
         </div>
-      </div>
-      <div className="ServicesUxUiServicesSection--mobile custom-container">
+      </section>
+      <section className="ServicesUxUiServicesSection--mobile custom-container">
         <div className="section-header-dark header-wrapper" data-aos="fade-in">
           <h2>UX/UI</h2>
           <h3>{t("services_uxui.services.title")}</h3>
           <img src={"/assets/images/home-services-line.svg"} alt="" />
         </div>
 
-        <div className="service_item">
+        <div className="service__item">
           <ServiceCard img={card_1.img} title={card_1.title} text={card_1.text} />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <ServiceCard img={card_2.img} title={card_2.title} text={card_2.text} />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <ServiceCard img={card_3.img} title={card_3.title} text={card_3.text} />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <ServiceCard img={card_4.img} title={card_4.title} text={card_4.text} />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <ServiceCard img={card_5.img} title={card_5.title} text={card_5.text} />
         </div>
-        <div className="service_item">
+        <div className="service__item">
           <ServiceCard img={card_6.img} title={card_6.title} text={card_6.text} />
         </div>
-      </div>
+      </section>
       <style jsx>{`
         .ServicesUxUiServicesSection {
           padding-top: 200px;
@@ -172,17 +172,17 @@ const ServicesUxUiServicesSection = ({ t }) => {
           grid-template-columns: auto auto auto;
           grid-template-rows: auto auto auto auto auto;
 
-          .service_item {
+          .service__item {
             display: flex;
             justify-content: center;
             align-items: center;
           }
 
-          .service_item:nth-of-type(2) {
+          .service__item:nth-of-type(2) {
             margin-bottom: 25px;
           }
 
-          .service_item:nth-of-type(3) {
+          .service__item:nth-of-type(3) {
             position: relative;
             img {
               position: absolute;
@@ -190,19 +190,19 @@ const ServicesUxUiServicesSection = ({ t }) => {
               left: 50px;
             }
           }
-          .service_item:nth-of-type(9) {
+          .service__item:nth-of-type(9) {
             position: relative;
             img {
               margin-left: 50px;
             }
           }
-          .service_item:nth-of-type(10) {
+          .service__item:nth-of-type(10) {
             position: relative;
             img {
               margin-right: 25px;
             }
           }
-          .service_item:nth-of-type(8) {
+          .service__item:nth-of-type(8) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -217,7 +217,7 @@ const ServicesUxUiServicesSection = ({ t }) => {
               font-weight: bold;
             }
           }
-          .service_item:nth-of-type(13) {
+          .service__item:nth-of-type(13) {
             position: relative;
             img {
               position: absolute;
@@ -225,13 +225,13 @@ const ServicesUxUiServicesSection = ({ t }) => {
               right: 90px;
             }
           }
-          .service_item:nth-of-type(14) {
+          .service__item:nth-of-type(14) {
             padding-top: 90px;
             .uxui-service-card {
               align-items: flex-end;
             }
           }
-          .service_item:nth-of-type(15) {
+          .service__item:nth-of-type(15) {
             position: relative;
             img {
               position: absolute;
@@ -254,14 +254,14 @@ const ServicesUxUiServicesSection = ({ t }) => {
             display: block;
             padding: 44px 0;
 
-            .header-wrapper{
+            .header-wrapper {
               margin-bottom: 67px !important;
 
-              h2{
+              h2 {
                 margin-bottom: 5px !important;
               }
 
-              h3{
+              h3 {
                 font-size: 22px;
                 font-weight: bold;
               }

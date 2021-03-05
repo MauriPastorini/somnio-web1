@@ -44,15 +44,15 @@ const AngencySayCard = ({ t }) => (
 
 const ServicesMobileSomeAppsSection = ({ t }) => {
   return (
-    <div className="ServicesMobileSomeAppsSection d-flex flex-column align-items-center">
-      <div className="section-header-dark header-wrapper" data-aos="fade-in">
+    <section className="ServicesMobileSomeAppsSection d-flex flex-column align-items-center">
+      <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("services_mobile.some_apps.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
-      <div className="app-wrapper app-wrapper-1">
-        <img className="app-photo" src="/assets/images/services-mobile/jacc.png" alt="" />
-        <div className="text-container custom-container">
+      <div className="app app--1">
+        <img className="app__photo" src="/assets/images/services-mobile/jacc.png" alt="" />
+        <div className="app__text custom-container">
           <div className="text-wrapper">
             <h2>Jaac</h2>
             <p>
@@ -71,9 +71,9 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
         </div>
       </div>
 
-      <div className="app-wrapper app-wrapper-2">
-        <img className="app-photo" src="/assets/images/home/home-portfolio-paymytrades.png" alt="" />
-        <div className="text-container custom-container">
+      <div className="app app--2">
+        <img className="app__photo" src="/assets/images/home/home-portfolio-paymytrades.png" alt="" />
+        <div className="app__text custom-container">
           <div className="text-wrapper">
             <h2>Pro Wallet</h2>
             <p>
@@ -102,11 +102,11 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
         .ServicesMobileSomeAppsSection {
           padding-bottom: 100px;
 
-          .header-wrapper {
+          .section-header-dark {
             margin-bottom: 62px;
           }
 
-          .app-wrapper {
+          .app {
             display: flex;
             align-items: center;
             position: relative;
@@ -142,33 +142,33 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
             }
           }
 
-          .app-wrapper-1 {
+          .app--1 {
             justify-content: flex-end;
             min-height: 875px;
             width: 100%;
 
-            .text-container {
+            .app__text {
               display: flex;
               justify-content: flex-end;
             }
 
-            .app-photo {
+            .app__photo {
               position: absolute;
               left: 0;
             }
           }
 
-          .app-wrapper-2 {
+          .app--2 {
             justify-content: flex-start;
             min-height: 811px;
             width: 100%;
 
-            .text-container {
+            .app__text {
               display: flex;
               justify-content: flex-start;
             }
 
-            .app-photo {
+            .app__photo {
               position: absolute;
               right: 0;
               top: -186px;
@@ -177,16 +177,16 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
         }
 
         @media screen and (max-width: 1440px) {
-          .app-wrapper {
-            .app-photo {
+          .app {
+            .app__photo {
               max-width: 700px;
             }
           }
 
-          .app-wrapper-2 {
+          .app--2 {
             min-height: unset !important;
 
-            .text-container {
+            .app__text {
               margin-bottom: 255px;
             }
           }
@@ -196,17 +196,17 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
           .ServicesMobileSomeAppsSection {
             padding-bottom: 0;
 
-            .header-wrapper {
+            .section-header-dark {
               margin-bottom: 100px;
             }
 
-            .app-wrapper {
+            .app {
               display: flex;
               align-items: center;
               position: relative;
               flex-direction: column;
 
-              .app-photo {
+              .app__photo {
                 position: relative;
               }
 
@@ -226,7 +226,7 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
               }
             }
 
-            .app-wrapper-1 {
+            .app--1 {
               display: flex;
               align-items: flex-start;
               min-height: unset;
@@ -246,7 +246,7 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
               }
             }
 
-            .app-wrapper-2 {
+            .app--2 {
               display: flex;
               align-items: flex-end;
               min-height: unset;
@@ -261,11 +261,11 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
                 order: 1;
               }
 
-              .app-photo {
+              .app__photo {
                 top: 0;
               }
 
-              .text-container {
+              .app__text {
                 margin-bottom: 0;
               }
             }
@@ -280,7 +280,7 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
 
         @media screen and (max-width: 600px) {
           .ServicesMobileSomeAppsSection {
-            .app-wrapper {
+            .app {
               .text-wrapper {
                 h2 {
                   font-size: 22px;
@@ -290,7 +290,7 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

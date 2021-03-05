@@ -4,7 +4,7 @@ import { withTranslation } from "../../i18n";
 
 const ServicesWebOurKnowledgeSection = ({ t }) => {
   return (
-    <div className="ServicesWebOurKnowledgeSection container custom-container">
+    <section className="ServicesWebOurKnowledgeSection container custom-container">
       <div className="text-wrapper" data-aos="fade-right">
         <h3>{t("services_mobile.our_knowledge.title")}</h3>
         <p>{t("services_mobile.our_knowledge.text_1")}</p>
@@ -149,7 +149,7 @@ const ServicesWebOurKnowledgeSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

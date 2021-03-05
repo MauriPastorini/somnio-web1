@@ -43,41 +43,45 @@ const AboutUsOurValuesSection = ({ t }) => {
     <section className="AboutUsOurValuesSection" id="our-values">
       <img src="/assets/images/about-us/about-us-our-values-dots1.svg" className="about-us-our-values-dots1" alt="" />
       <img src="/assets/images/about-us/about-us-our-values-dots2.svg" className="about-us-our-values-dots2" alt="" />
-      <div className="section-header-dark header-wrapper" data-aos="fade-in">
+      
+      <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("about_us.our_values.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
-      <div className="values-list--first custom-container">
+      
+      <div className="values-list-first custom-container">
         {firstRecord.map((r, i) => (
           <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} />
         ))}
       </div>
-      <div className="values-list--second custom-container">
+      
+      <div className="values-list-second custom-container">
         {secondRecord.map((r, i) => (
           <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} />
         ))}
       </div>
+      
       <style jsx>{`
         .AboutUsOurValuesSection {
           position: relative;
           padding-top: 122px;
           padding-bottom: 160px;
 
-          .values-list--first {
+          .values-list-first {
             display: flex;
             justify-content: space-between;
             max-width: 1100px !important;
             margin: 0 auto 110px auto;
           }
 
-          .values-list--second {
+          .values-list-second {
             display: flex;
             justify-content: space-between;
             max-width: 800px !important;
             margin: 0 auto 0 auto;
           }
 
-          .header-wrapper {
+          .section-header-dark {
             margin-bottom: 129px;
           }
 
@@ -100,7 +104,7 @@ const AboutUsOurValuesSection = ({ t }) => {
             padding-top: 58px;
             padding-bottom: 11px;
 
-            .values-list--first {
+            .values-list-first {
               display: flex;
               justify-content: space-between;
               max-width: 100%;
@@ -108,7 +112,7 @@ const AboutUsOurValuesSection = ({ t }) => {
               flex-direction: column;
             }
 
-            .values-list--second {
+            .values-list-second {
               display: flex;
               justify-content: space-between;
               max-width: 100%;
@@ -116,7 +120,7 @@ const AboutUsOurValuesSection = ({ t }) => {
               flex-direction: column;
             }
 
-            .header-wrapper {
+            .section-header-dark {
               margin-bottom: 58px;
             }
 

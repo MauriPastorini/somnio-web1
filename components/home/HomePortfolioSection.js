@@ -32,18 +32,16 @@ const HomePortfolioSection = ({ t }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
   };
 
   return (
-    <div className="HomePortfolioSection">
-      <img src={"/assets/images/home/home-dots-2.svg"} alt="" className="home-dots-2" />
-      {/* <img src={"/assets/images/home/home-porfolio-path.png"} alt="" className="home-porfolio-path" /> */}
-      {/* <img src={"/assets/images/home/mobile/home-portfolio-path.svg"} alt="" className="home-porfolio-path-mobile" /> */}
+    <section className="HomePortfolioSection">
+      <img src={"/assets/images/home/home-dots-2.svg"} alt="" className="dots" />
 
-      <div className="section-header-dark header-wrapper" data-aos="fade-in">
+      <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("home.portfolio.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -63,17 +61,18 @@ const HomePortfolioSection = ({ t }) => {
       <Link href="/our-work">
         <a className="btn btn-custom-2 btn-position">{t("common.button_2")}</a>
       </Link>
+
       <style jsx>
         {`
           .HomePortfolioSection {
             position: relative;
             overflow-x: hidden;
 
-            .header-wrapper {
-              margin-bottom: 0;
+            .section-header-dark {
+              margin-bottom: 0 !important;
             }
 
-            .home-dots-2 {
+            .dots {
               position: absolute;
               top: 0;
               left: 294px;
@@ -99,11 +98,11 @@ const HomePortfolioSection = ({ t }) => {
               position: relative;
               
 
-              .header-wrapper {
-                margin-bottom: 55px;
+              .section-header-dark {
+                margin-bottom: 55px !important;
               }
 
-              .home-dots-2 {
+              .dots {
                 position: absolute;
                 top: 0;
                 left: 46px;
@@ -130,7 +129,7 @@ const HomePortfolioSection = ({ t }) => {
           }
         `}
       </style>
-    </div>
+    </section>
   );
 };
 

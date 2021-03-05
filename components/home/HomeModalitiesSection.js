@@ -19,10 +19,10 @@ const HomeModalitiesSection = ({ t }) => {
   ];
 
   return (
-    <div className="HomeModalitiesSection">
+    <section className="HomeModalitiesSection">
       <img src="/assets/images/home/mobile/path-modalities.svg" alt="" className="path" />
       <img src="/assets/images/home/mobile/path-modalities2.svg" alt="" className="path2" />
-      <div className="section-header-dark header-wrapper" data-aos="fade-in">
+      <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("home.modalities.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
@@ -39,16 +39,16 @@ const HomeModalitiesSection = ({ t }) => {
             padding-top: 134px !important;
             position: relative;
 
-            .header-wrapper {
-              margin-bottom: 120px !important;
-            }
-
             .path {
               display: none;
             }
 
             .path2 {
               display: none;
+            }
+            
+            .section-header-dark {
+              margin-bottom: 120px !important;
             }
 
             .modality-list {
@@ -60,7 +60,7 @@ const HomeModalitiesSection = ({ t }) => {
             }
           }
 
-          @media screen and (max-width: 767px) {
+          @media screen and (max-width: 1280px) {
             .HomeModalitiesSection {
               padding-top: 62px !important;
               padding-bottom: 60px;
@@ -79,7 +79,7 @@ const HomeModalitiesSection = ({ t }) => {
                 bottom: -90px;
               }
 
-              .header-wrapper {
+              .section-header-dark {
                 margin-bottom: 63px !important;
               }
 
@@ -90,7 +90,7 @@ const HomeModalitiesSection = ({ t }) => {
           }
         `}
       </style>
-    </div>
+    </section>
   );
 };
 

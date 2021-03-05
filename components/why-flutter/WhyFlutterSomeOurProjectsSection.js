@@ -4,7 +4,7 @@ import { withTranslation } from "../../i18n";
 
 const AngencySayCard = ({ t }) => {
   return (
-    <div className="agency-say-content">
+    <div className="agency-say-content custom-container">
       <div className="agency-say-card">
         <div className="agency-say-logos">
           <div className="burble meetup-wrapper">
@@ -127,18 +127,18 @@ const AngencySayCard = ({ t }) => {
 
 const WhyFlutterSomeOurProjectsSection = ({ t }) => {
   return (
-    <div className="WhyFlutterSomeOurProjectsSection custom-container">
+    <section className="WhyFlutterSomeOurProjectsSection">
       <img className="path" src="/assets/images/why-flutter/path.svg" alt="" />
-      <img className="path-mobile" src="/assets/images/why-flutter/mobile/path.svg" alt="" />
+      <img className="path--mobile" src="/assets/images/why-flutter/mobile/path.svg" alt="" />
       <img className="dots" src="/assets/images/why-flutter/dots.svg" alt="" />
 
-      <div className="section-header-dark header-wrapper" data-aos="fade-in">
+      <div className="section-header-dark custom-container" data-aos="fade-in">
         <h2>{t("why_flutter.some_our_projects.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
-      <div className="flutter-projects-card">
-        <div className="project-card">
+      <div className="projects custom-container">
+        <div className="project__card">
           <img src="/assets/images/why-flutter/phone-jaac.png" alt="" />
           <h4>Jaac</h4>
           <div className="store-button-content">
@@ -146,7 +146,7 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
             <img src="/assets/images/why-flutter/googleplay.png" alt="" />
           </div>
         </div>
-        <div className="project-card">
+        <div className="project__card">
           <img src="/assets/images/why-flutter/phone-crime.png" alt="" />
           <h4>CrimeDoor</h4>
           <div className="store-button-content">
@@ -183,15 +183,15 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
             z-index: -1;
           }
 
-          .path-mobile {
+          .path--mobile {
             display: none;
           }
 
-          .header-wrapper {
+          .section-header-dark {
             margin-bottom: 73px !important;
           }
 
-          .flutter-projects-card {
+          .projects {
             display: flex;
             justify-content: space-between;
             margin-bottom: 231px;
@@ -200,7 +200,7 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
             margin-left: auto;
             margin-right: auto;
 
-            .project-card {
+            .project__card {
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -242,11 +242,11 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
           .WhyFlutterSomeOurProjectsSection {
             margin-bottom: 130px;
 
-            .flutter-projects-card {
+            .projects {
               max-width: 850px !important;
               margin-bottom: 150px;
 
-              .project-card {
+              .project__card {
                 img {
                   margin-bottom: 0;
                   max-width: 280px;
@@ -294,7 +294,7 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
               display: none;
             }
 
-            .path-mobile {
+            .path--mobile {
               display: block;
               position: absolute;
               top: 0;
@@ -302,12 +302,12 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
               z-index: -1;
             }
 
-            .flutter-projects-card {
+            .projects {
               max-width: 650px !important;
               width: 100%;
               margin-bottom: 60px;
 
-              .project-card {
+              .project__card {
                 img {
                   max-width: 200px;
                 }
@@ -354,10 +354,10 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
 
         @media screen and (max-width: 600px) {
           .WhyFlutterSomeOurProjectsSection {
-            .flutter-projects-card {
+            .projects {
               max-width: 500px !important;
 
-              .project-card {
+              .project__card {
                 margin: 0 15px;
 
                 h4 {
@@ -373,7 +373,7 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

@@ -18,7 +18,7 @@ const AboutUsHowWeWorkSection = ({ t }) => {
 
   return (
     <section className="AboutUsHowWeWorkSection" id="how-we-work">
-      <div className="section-header-light header-wrapper" data-aos="fade-in">
+      <div className="section-header-light" data-aos="fade-in">
         <h2>{t("about_us.how_we_work.title")}</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
@@ -54,7 +54,7 @@ const AboutUsHowWeWorkSection = ({ t }) => {
             background-position: center;
             padding: 58px 0 66px 0;
 
-            .header-wrapper{
+            .section-header-light{
               margin-bottom: 48px !important;
             }
 

@@ -3,11 +3,11 @@ import { withTranslation } from "../../i18n";
 
 const WhyFlutterHeaderSection = ({ t }) => {
   return (
-    <div className="WhyFlutterHeaderSection">
+    <section className="WhyFlutterHeaderSection">
       <img src="/assets/images/why-flutter/header-path.svg" alt="" className="path" />
       <img src="/assets/images/why-flutter/mobile/header-path.svg" alt="" className="path--mobile" />
 
-      <h1 className="header-title custom-container">{t("why_flutter.header.text_1")}</h1>
+      <h1 className="header__title custom-container">{t("why_flutter.header.text_1")}</h1>
       <style jsx>{`
         .WhyFlutterHeaderSection {
           position: relative;
@@ -30,7 +30,7 @@ const WhyFlutterHeaderSection = ({ t }) => {
             display: none;
           }
 
-          .header-title {
+          .header__title {
             position: relative;
             font-weight: bold;
             font-size: 70px;
@@ -66,7 +66,7 @@ const WhyFlutterHeaderSection = ({ t }) => {
               z-index: 0;
             }
 
-            .header-title {
+            .header__title {
               font-size: 36px;
             }
           }
@@ -79,7 +79,7 @@ const WhyFlutterHeaderSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

@@ -3,11 +3,11 @@ import { withTranslation } from "../../i18n";
 
 const AboutUsInfoSection = ({ t }) => {
   return (
-    <div className="AboutUsInfoSection">
-      <img src="/assets/images/about-us/about-us-info-dots1.svg" className="about-us-info-dots1" alt="" />
-      <div className="info-text-and-img custom-container">
-        <img src="/assets/images/common/logo-2.png" className="info-img" alt="" />
-        <p className="info-text" data-aos="fade-left">
+    <section className="AboutUsInfoSection">
+      <img src="/assets/images/about-us/about-us-info-dots1.svg" className="dots" alt="" />
+      <div className="text-and-img custom-container">
+        <img src="/assets/images/common/logo-2.png" className="info__img" alt="" />
+        <p className="info__text" data-aos="fade-left">
           {t("about_us.info.text")}
         </p>
       </div>
@@ -16,17 +16,17 @@ const AboutUsInfoSection = ({ t }) => {
           position: relative;
           padding: 200px 0;
 
-          .info-text-and-img {
+          .text-and-img {
             display: flex;
             justify-content: space-between;
             align-items: center;
   
-            .info-img {
+            .info__img {
               max-width: 95%;
               margin-right: 5%;
             }
   
-            .info-text {
+            .info__text {
               color: #001331;
               font-size: 23px;
               font-weight: 500;
@@ -34,7 +34,7 @@ const AboutUsInfoSection = ({ t }) => {
             }
           }
   
-          .about-us-info-dots1 {
+          .dots {
             position: absolute;
             top: -85px;
             right: 150px;
@@ -46,20 +46,20 @@ const AboutUsInfoSection = ({ t }) => {
             position: relative;
             padding: 77px 0 46px 0;
 
-            .info-text-and-img {
+            .text-and-img {
               display: flex;
               flex-direction: column;
               justify-content: space-between;
               align-items: center;
     
-              .info-img {
+              .info__img {
                 width: 100%;
                 max-width: 231px;
                 margin-right: 0;
                 margin-bottom: 53px;
               }
     
-              .info-text {
+              .info__text {
                 color: #001331;
                 font-size: 15px;
                 font-weight: 500;
@@ -69,7 +69,7 @@ const AboutUsInfoSection = ({ t }) => {
               }
             }
     
-            .about-us-info-dots1 {
+            .dots {
               position: absolute;
               top: 0px;
               right: 23px;
@@ -79,7 +79,7 @@ const AboutUsInfoSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

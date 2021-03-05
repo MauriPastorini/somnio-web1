@@ -4,7 +4,7 @@ import { withTranslation } from "../../i18n";
 
 const FaqHeaderSection = ({ t }) => {
   return (
-    <div className="FaqHeaderSection">
+    <section className="FaqHeaderSection">
       <img className="path-1" src="/assets/images/faq/path-1.svg" alt="" />
       <img className="path-2" src="/assets/images/faq/path-2.svg" alt="" />
       <img className="dots" src="/assets/images/faq/mobile/dots.svg" alt="" />
@@ -77,7 +77,7 @@ const FaqHeaderSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

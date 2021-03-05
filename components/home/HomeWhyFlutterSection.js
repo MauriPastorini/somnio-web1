@@ -2,22 +2,19 @@ import React from "react";
 import Link from "next/link";
 import { withTranslation } from "../../i18n";
 import PropTypes from "prop-types";
-import IconChevronRight from "../../components/common/IconChevronRight";
 
 const HomeWhyFlutterSection = ({ t }) => {
   return (
-    <div className="HomeWhyFlutterSection">
-      {/* <img className="bg" src="/assets/images/home/home-bg-why-flutter.svg" /> */}
-
-      <div className="content custom-container">
-        <h1 className="whyflutter-title" data-aos="fade-in">
+    <section className="HomeWhyFlutterSection">
+      <div className="whyfluter-content custom-container">
+        <h1 className="whyflutter__title" data-aos="fade-in">
           {t("home.why_flutter.title")}
         </h1>
-        <p className="whyflutter-text" data-aos="fade-in">
+        <p className="whyflutter__text" data-aos="fade-in">
           {t("home.why_flutter.text")}
         </p>
         <Link href="/why-flutter" data-aos="fade-in">
-          <a className="whyflutter-link">
+          <a className="whyflutter__link">
             {t("common.text_1")}
             <img src="/assets/images/common/arrow1.svg" alt="" />
           </a>
@@ -38,7 +35,7 @@ const HomeWhyFlutterSection = ({ t }) => {
             position: relative;
             overflow: hidden;
 
-            .content {
+            .whyfluter-content {
               position: absolute;
               width: 100%;
               top: 0;
@@ -50,7 +47,7 @@ const HomeWhyFlutterSection = ({ t }) => {
               align-items: center;
             }
 
-            .whyflutter-title {
+            .whyflutter__title {
               font-size: 54px;
               font-weight: 700;
               color: #ffffff;
@@ -59,7 +56,7 @@ const HomeWhyFlutterSection = ({ t }) => {
               letter-spacing: 0px;
             }
 
-            .whyflutter-text {
+            .whyflutter__text {
               font-size: 25px;
               color: #efefef;
               text-align: center;
@@ -68,7 +65,7 @@ const HomeWhyFlutterSection = ({ t }) => {
               letter-spacing: 0px;
             }
 
-            .whyflutter-link {
+            .whyflutter__link {
               font-size: 27px;
               font-weight: 700;
               color: #ffffff;
@@ -86,21 +83,19 @@ const HomeWhyFlutterSection = ({ t }) => {
               min-height: 522px;
               background-image: url(/assets/images/home/mobile/home-bg-why-flutter.svg);
 
-              .content {}
-
-              .whyflutter-title {
+              .whyflutter__title {
                 font-size: 28px;
                 line-height: 34px;
                 margin-bottom: 45px;
               }
 
-              .whyflutter-text {
+              .whyflutter__text {
                 font-size: 15px;
                 line-height: 22px;
                 margin-bottom: 45px;
               }
 
-              .whyflutter-link {
+              .whyflutter__link {
                 font-size: 16px;
 
                 img {
@@ -111,7 +106,7 @@ const HomeWhyFlutterSection = ({ t }) => {
           }
         `}
       </style>
-    </div>
+    </section>
   );
 };
 

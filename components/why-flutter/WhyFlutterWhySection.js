@@ -3,7 +3,7 @@ import { withTranslation } from "../../i18n";
 
 const WhyFlutterWhySection = ({ t }) => {
   return (
-    <div
+    <section
       className="WhyFlutterWhySection">
       <h1 className="whyflutter-title custom-container" data-aos="fade-in">
         {t("why_flutter.change_how_we_work.title")}
@@ -72,7 +72,7 @@ const WhyFlutterWhySection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

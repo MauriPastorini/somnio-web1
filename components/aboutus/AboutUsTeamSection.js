@@ -68,12 +68,13 @@ const data = [
 const AboutUsTeamSection = ({ t }) => {
   return (
     <section className="AboutUsTeamSection" id="team">
-      <img src="/assets/images/about-us/about-us-team-path1.svg" className="about-us-team-path1" alt="" />
-      <img src="/assets/images/about-us/about-us-team-path2.png" className="about-us-team-path2" alt="" />
-      <img src="/assets/images/about-us/about-us-team-dots1.svg" className="about-us-team-dots1" alt="" />
-      <img src="/assets/images/about-us/about-us-team-dots2.svg" className="about-us-team-dots2" alt="" />
+      <img src="/assets/images/about-us/about-us-team-path1.svg" className="path1" alt="" />
+      <img src="/assets/images/about-us/about-us-team-path2.png" className="path2" alt="" />
+      <img src="/assets/images/about-us/about-us-team-dots1.svg" className="dots1" alt="" />
+      <img src="/assets/images/about-us/about-us-team-dots2.svg" className="dots2" alt="" />
+
       <div className="custom-container">
-        <div className="section-header-dark header-wrapper" data-aos="fade-in">
+        <div className="section-header-dark" data-aos="fade-in">
           <h2>{t("about_us.our_team.title")}</h2>
           <img src={"/assets/images/home-services-line.svg"} alt="" />
         </div>
@@ -91,29 +92,29 @@ const AboutUsTeamSection = ({ t }) => {
           padding-top: 125px;
           padding-bottom: 50px;
           
-          .about-us-team-path1 {
+          .path1 {
             position: absolute;
             left: 0;
           }
 
-          .about-us-team-path2 {
+          .path2 {
             position: absolute;
             right: 0;
           }
 
-          .about-us-team-dots1 {
+          .dots1 {
             position: absolute;
             top: 107px;
             right: 156px;
           }
 
-          .about-us-team-dots2 {
+          .dots2 {
             position: absolute;
             bottom: 71px;
             left: 55px;
           }
 
-          .header-wrapper {
+          .section-header-dark {
             margin-bottom: 125px !important;
           }
 
@@ -129,23 +130,23 @@ const AboutUsTeamSection = ({ t }) => {
             padding-top: 77px;
             padding-bottom: 46px;
             
-            .about-us-team-path1 {
+            .path1 {
               display: none;
             }
 
-            .about-us-team-path2 {
+            .path2 {
               display: none;
             }
 
-            .about-us-team-dots1 {
+            .dots1 {
               display: none;
             }
 
-            .about-us-team-dots2 {
+            .dots2 {
               display: none;
             }
 
-            .header-wrapper {
+            .section-header-dark {
               margin-bottom: 63px !important;
             }
           }

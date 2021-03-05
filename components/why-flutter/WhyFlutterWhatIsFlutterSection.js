@@ -36,7 +36,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
   ];
 
   return (
-    <div className="WhyFlutterWhatIsFlutterSection custom-container">
+    <section className="WhyFlutterWhatIsFlutterSection custom-container">
       <div className="text-and-images">
         <div className="text-content">
           <h3>{t("why_flutter.what_is_flutter.title")}</h3>
@@ -45,34 +45,34 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
         <img src="/assets/images/why-flutter/flutter-logo.svg" alt="" />
       </div>
 
-      <div className="row charasteristic-row">
-        <div className="charasteristic-item col-lg-8">
+      <div className="row charasteristic">
+        <div className="charasteristic__item col-lg-8">
           <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_1.title")}</h4>
         </div>
-        <div className="charasteristic-item col-lg-4">
+        <div className="charasteristic__item col-lg-4">
           <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_4.title")}</h4>
         </div>
       </div>
 
-      <div className="row charasteristic-row">
-        <div className="charasteristic-item col-lg-8">
+      <div className="row charasteristic">
+        <div className="charasteristic__item col-lg-8">
           <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_2.title")}</h4>
         </div>
-        <div className="charasteristic-item col-lg-4">
+        <div className="charasteristic__item col-lg-4">
           <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_5.title")}</h4>
         </div>
       </div>
 
-      <div className="row charasteristic-row">
-        <div className="charasteristic-item col-lg-8">
+      <div className="row charasteristic">
+        <div className="charasteristic__item col-lg-8">
           <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_3.title")}</h4>
         </div>
-        <div className="charasteristic-item col-lg-4">
+        <div className="charasteristic__item col-lg-4">
           <img src="/assets/images/why-flutter/check.svg" alt="" />
           <h4>{t("why_flutter.what_is_flutter.characteristics.characteristic_6.title")}</h4>
         </div>
@@ -80,7 +80,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
 
       <div className="charasteristic-detail-list">
         {characteristic_data.map((item, i) => (
-          <div key={i} className="charasteristic-detail-item">
+          <div key={i} className="charasteristic-detail__item">
             <div className="img-content">
               <img src={item.img} alt="" />
             </div>
@@ -115,9 +115,9 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
             }
           }
 
-          .charasteristic-row {
+          .charasteristic {
             margin-bottom: 40px;
-            .charasteristic-item {
+            .charasteristic__item {
               display: flex;
               justify-content: flex-start;
               align-items: center;
@@ -137,7 +137,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
           .charasteristic-detail-list {
             margin-top: 235px;
 
-            .charasteristic-detail-item {
+            .charasteristic-detail__item {
               display: flex;
               justify-content: space-between;
               align-items: center;
@@ -211,9 +211,9 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
               }
             }
 
-            .charasteristic-row {
+            .charasteristic {
               margin-bottom: 0;
-              .charasteristic-item {
+              .charasteristic__item {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -232,7 +232,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
             }
 
             .charasteristic-detail-list {
-              .charasteristic-detail-item {
+              .charasteristic-detail__item {
                 flex-direction: column;
                 margin-bottom: 61px;
 
@@ -278,7 +278,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

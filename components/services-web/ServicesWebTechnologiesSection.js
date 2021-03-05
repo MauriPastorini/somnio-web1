@@ -240,17 +240,17 @@ const ServicesWebTechnologiesSection = ({ t }) => {
   const leftCal = 266;
   const topCal = 452;
   return (
-    <div className="ServicesWebTechnologiesSection">
-      <div className="section-header-light header-wrapper custom-container" data-aos="fade-in">
+    <section className="ServicesWebTechnologiesSection">
+      <div className="section-header-light custom-container" data-aos="fade-in">
         <h2 style={{ maxWidth: 800 }}>{t("services_web.tech_list.title")}</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
 
-      <div className="tech-desktop-list">
+      <div className="tech-list--destop">
         {tech_desktop_list.map((tech, index) => (
           <div
             key={index}
-            className="tech-item"
+            className="tech__item"
             style={{ width: tech.size, height: tech.size, top: tech.top - topCal, left: tech.left - leftCal }}
           >
             <img src={`/assets/images/services-web/${tech.img}`} alt="" />
@@ -258,11 +258,11 @@ const ServicesWebTechnologiesSection = ({ t }) => {
         ))}
       </div>
 
-      <div className="tech-mobile-list">
+      <div className="tech-list--mobile">
         {tech_mobile_list.map((tech, index) => (
           <div
             key={index}
-            className="tech-item"
+            className="tech__item"
             style={{ width: tech.size, height: tech.size, top: tech.top, left: tech.left }}
           >
             <img
@@ -285,7 +285,7 @@ const ServicesWebTechnologiesSection = ({ t }) => {
           padding: 226px 0 290px 0;
         }
 
-        .header-wrapper {
+        .section-header-light {
           width: 100%;
           z-index: 0;
         }
@@ -298,14 +298,14 @@ const ServicesWebTechnologiesSection = ({ t }) => {
           z-index: 2;
         }
 
-        .tech-desktop-list {
+        .tech-list--destop {
           width: 1343px;
           height: 720px;
           top: 0;
           position: relative;
           margin: 0 auto;
 
-          .tech-item {
+          .tech__item {
             border-radius: 50%;
             background-color: #fff;
             position: absolute;
@@ -325,7 +325,7 @@ const ServicesWebTechnologiesSection = ({ t }) => {
           }
         }
 
-        .tech-mobile-list {
+        .tech-list--mobile {
           display: none;
         }
 
@@ -341,10 +341,10 @@ const ServicesWebTechnologiesSection = ({ t }) => {
           .ServicesWebTechnologiesSection {
             padding: 116px 0 105px 0;
           }
-          .tech-desktop-list {
+          .tech-list--destop {
             display: none;
           }
-          .tech-mobile-list {
+          .tech-list--mobile {
             display: block;
             width: 360px;
             height: 608px;
@@ -356,7 +356,7 @@ const ServicesWebTechnologiesSection = ({ t }) => {
             margin-right: auto;
             margin-left: auto;
 
-            .tech-item {
+            .tech__item {
               border-radius: 50%;
               background-color: #fff;
               position: absolute;
@@ -378,7 +378,7 @@ const ServicesWebTechnologiesSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

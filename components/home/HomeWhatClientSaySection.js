@@ -47,9 +47,9 @@ const HomeWhatClientSaySection = ({ t }) => {
   ];
 
   return (
-    <div className="HomeWhatClientSaySection">
-      <div className="home-clientsay__content">
-        <div className="section-header-light header-wrapper" data-aos="fade-in">
+    <section className="HomeWhatClientSaySection">
+      <div className="clientsay-content">
+        <div className="section-header-light" data-aos="fade-in">
           <h2>{t("home.what_our_clients_say.title")}</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
@@ -58,7 +58,7 @@ const HomeWhatClientSaySection = ({ t }) => {
 
         <h4 className="see-us-on">See us on</h4>
 
-        <div className="home-clientsay__content-logos">
+        <div className="clientsay-content__logos">
           <div
             className="clutch-widget"
             data-url="https://widget.clutch.co"
@@ -83,18 +83,18 @@ const HomeWhatClientSaySection = ({ t }) => {
           background-position: center;
           background-repeat: no-repeat;
 
-          .header-wrapper {
+          .section-header-light {
             margin-top: 170px;
             margin-bottom: 27px !important;
           }
 
-          .home-clientsay__content {
+          .clientsay-content {
             z-index: 2;
             top: 0;
             width: 100%;
             color: white;
 
-            .home-clientsay__content-logos {
+            .clientsay-content__logos {
               display: flex;
               justify-content: space-between;
               align-items: center;
@@ -119,13 +119,13 @@ const HomeWhatClientSaySection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .HomeWhatClientSaySection {
-            .header-wrapper {
+            .section-header-light {
               margin-top: 78px;
               margin-bottom: 10px !important;
             }
 
-            .home-clientsay__content {
-              .home-clientsay__content-logos {
+            .clientsay-content {
+              .clientsay-content__logos {
                 max-width: 330px;
                 margin: 40px auto 70px auto;
 
@@ -152,7 +152,7 @@ const HomeWhatClientSaySection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

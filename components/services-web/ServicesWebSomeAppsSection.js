@@ -61,16 +61,16 @@ const AngencySayCard = ({ t }) => (
 
 const ServicesWebSomeAppsSection = ({ t }) => {
   return (
-    <div className="ServicesWebSomeAppsSection d-flex flex-column align-items-center">
-      <div className="section-header-dark mt-100 header-wrapper" data-aos="fade-in">
+    <section className="ServicesWebSomeAppsSection d-flex flex-column align-items-center">
+      <div className="section-header-dark" data-aos="fade-in">
         <h2>{t("services_web.some_apps.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
-      <div className="app-wrapper app-wrapper-1">
-        <img className="app-photo" src="/assets/images/services-web/formula.png" alt="" />
+      <div className="app app--1">
+        <img className="app__photo" src="/assets/images/services-web/formula.png" alt="" />
 
-        <div className="text-container custom-container">
-          <div className="text-wrapper">
+        <div className="app__text-container custom-container">
+          <div className="app__text-wrapper">
             <h2>Fórmula</h2>
             <p>
               Fórmula is a platform for beauty, makeup, skincare, and haircare lovers and enthusiasts. It is the most
@@ -87,11 +87,11 @@ const ServicesWebSomeAppsSection = ({ t }) => {
           </div>
         </div>
       </div>
-      <div className="app-wrapper app-wrapper-2">
-        <img className="app-photo" src="/assets/images/services-web/ICUC.png" alt="" />
+      <div className="app app--2">
+        <img className="app__photo" src="/assets/images/services-web/ICUC.png" alt="" />
 
-        <div className="text-container custom-container">
-          <div className="text-wrapper">
+        <div className="app__text-container custom-container">
+          <div className="app__text-wrapper">
             <h2>ICUC</h2>
             <p>
               ICUC is a learning platform that aims to help surgeons and future surgeons analyze, review and learn
@@ -118,16 +118,18 @@ const ServicesWebSomeAppsSection = ({ t }) => {
       <style jsx>{`
         .ServicesWebSomeAppsSection {
           margin-bottom: 200px;
-          .header-wrapper {
+
+          .section-header-dark {
+            margin-top: 100px !important;
             margin-bottom: 62px !important;
           }
 
-          .app-wrapper {
+          .app {
             display: flex;
             align-items: center;
             position: relative;
 
-            .text-wrapper {
+            .app__text-wrapper {
               max-width: 417px;
 
               h2 {
@@ -158,33 +160,33 @@ const ServicesWebSomeAppsSection = ({ t }) => {
             }
           }
 
-          .app-wrapper-1 {
+          .app--1 {
             justify-content: flex-end;
             min-height: 875px;
             width: 100%;
 
-            .text-container {
+            .app__text-container {
               display: flex;
               justify-content: flex-end;
             }
 
-            .app-photo {
+            .app__photo {
               position: absolute;
               left: 0;
             }
           }
 
-          .app-wrapper-2 {
+          .app--2 {
             justify-content: flex-start;
             min-height: 811px;
             width: 100%;
 
-            .text-container {
+            .app__text-container {
               display: flex;
               justify-content: flex-start;
             }
 
-            .app-photo {
+            .app__photo {
               position: absolute;
               right: 0;
               top: -186px;
@@ -197,16 +199,16 @@ const ServicesWebSomeAppsSection = ({ t }) => {
         }
 
         @media screen and (max-width: 1440px) {
-          .app-wrapper {
-            .app-photo {
+          .app {
+            .app__photo {
               max-width: 700px;
             }
           }
 
-          .app-wrapper-2 {
+          .app--2 {
             min-height: unset !important;
 
-            .text-container {
+            .app__text-container {
               margin-bottom: 255px;
             }
           }
@@ -216,28 +218,28 @@ const ServicesWebSomeAppsSection = ({ t }) => {
           .ServicesWebSomeAppsSection {
             margin-bottom: 0;
 
-            .header-wrapper {
+            .section-header-dark {
               margin-bottom: 100px;
             }
 
-            .app-wrapper {
+            .app {
               display: flex;
               align-items: center;
               position: relative;
               flex-direction: column;
             }
 
-            .app-wrapper {
+            .app {
               display: flex;
               align-items: center;
               position: relative;
               flex-direction: column;
 
-              .app-photo {
+              .app__photo {
                 position: relative;
               }
 
-              .text-wrapper {
+              .app__text-wrapper {
                 h2 {
                   color: #031533;
                   margin-bottom: 0;
@@ -253,7 +255,7 @@ const ServicesWebSomeAppsSection = ({ t }) => {
               }
             }
 
-            .app-wrapper-1 {
+            .app--1 {
               display: flex;
               align-items: flex-start;
               min-height: unset;
@@ -273,7 +275,7 @@ const ServicesWebSomeAppsSection = ({ t }) => {
               }
             }
 
-            .app-wrapper-2 {
+            .app--2 {
               display: flex;
               align-items: flex-end;
               min-height: unset;
@@ -288,11 +290,11 @@ const ServicesWebSomeAppsSection = ({ t }) => {
                 order: 1;
               }
 
-              .app-photo {
+              .app__photo {
                 top: 0;
               }
 
-              .text-container {
+              .app__text-container {
                 margin-bottom: 0;
               }
             }
@@ -307,8 +309,8 @@ const ServicesWebSomeAppsSection = ({ t }) => {
 
         @media screen and (max-width: 600px) {
           .ServicesWebSomeAppsSection {
-            .app-wrapper {
-              .text-wrapper {
+            .app {
+              .app__text-wrapper {
                 h2 {
                   font-size: 22px;
                 }
@@ -317,7 +319,7 @@ const ServicesWebSomeAppsSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

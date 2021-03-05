@@ -3,7 +3,7 @@ import { withTranslation } from "../../i18n";
 
 const ServicesUxUiInfoSection = ({ t }) => {
   return (
-    <div className="ServicesUxUiInfoSection custom-container">
+    <section className="ServicesUxUiInfoSection custom-container">
       <div className="uxui-card">
         <h2>UX</h2>
         <div className="uxui-card-image-content_1">
@@ -180,7 +180,7 @@ const ServicesUxUiInfoSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

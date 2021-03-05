@@ -19,7 +19,7 @@ export const BlogContentSection = ({ t, posts, tags }) => {
   };
 
   return (
-    <div className="BlogContentSection custom-container">
+    <section className="BlogContentSection custom-container">
       <div className="filter-tag-group">
         <button
           onClick={() => setfilter({ ...filter, tag: "" })}
@@ -119,7 +119,7 @@ export const BlogContentSection = ({ t, posts, tags }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

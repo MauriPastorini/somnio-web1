@@ -3,8 +3,8 @@ import { withTranslation } from "../../i18n";
 
 const ServicesUxUiVitalSection = ({ t }) => {
   return (
-    <div className="ServicesUxUiVitalSection">
-      <div className="sub__bg"></div>
+    <section className="ServicesUxUiVitalSection">
+      <div className="sub-bg"></div>
       <div className="content custom-container">
         <h2>{t("services_uxui.vital.title")}</h2>
         <p>{t("services_uxui.vital.text_1")}</p>
@@ -17,7 +17,7 @@ const ServicesUxUiVitalSection = ({ t }) => {
           flex-direction: column;
           align-items: center;
 
-          .sub__bg {
+          .sub-bg {
             position: absolute;
             width: 100%;
             min-height: 1000px;
@@ -71,7 +71,7 @@ const ServicesUxUiVitalSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

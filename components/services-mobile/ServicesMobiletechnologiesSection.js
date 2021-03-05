@@ -272,17 +272,17 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
   const topCal = 427;
 
   return (
-    <div className="ServicesMobiletechnologiesSection">
-      <div className="section-header-light header-wrapper custom-container" data-aos="fade-in">
+    <section className="ServicesMobiletechnologiesSection">
+      <div className="section-header-light custom-container" data-aos="fade-in">
         <h2 style={{ maxWidth: 800 }}>{t("services_mobile.tech_list.title")}</h2>
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
 
-      <div className="tech-desktop-list">
+      <div className="tech-list--desktop">
         {tech_desktop_list.map((tech, index) => (
           <div
             key={index}
-            className="tech-item"
+            className="tech__item"
             style={{ width: tech.size, height: tech.size, top: tech.top - topCal, left: tech.left - leftCal }}
           >
             <img src={`/assets/images/services-mobile/${tech.img}`} alt="" />
@@ -290,11 +290,11 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
         ))}
       </div>
 
-      <div className="tech-mobile-list">
+      <div className="tech-list--mobile">
         {tech_mobile_list.map((tech, index) => (
           <div
             key={index}
-            className="tech-item"
+            className="tech__item"
             style={{ width: tech.size, height: tech.size, top: tech.top, left: tech.left }}
           >
             <img
@@ -317,19 +317,19 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
           padding: 227px 0 288px 0;
         }
 
-        .header-wrapper {
+        .section-header-light {
           width: 100%;
           z-index: 0;
         }
 
-        .tech-desktop-list {
+        .tech-list--desktop {
           width: 1396px;
           height: 720px;
           top: 0;
           position: relative;
           margin: 0 auto;
 
-          .tech-item {
+          .tech__item {
             border-radius: 50%;
             background-color: #fff;
             position: absolute;
@@ -346,11 +346,13 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
                 width: 80%;
               }
             }
+
             &:nth-child(3) {
               img {
                 width: 70%;
               }
             }
+            
             &:nth-child(4) {
               img {
                 width: 80%;
@@ -359,7 +361,7 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
           }
         }
 
-        .tech-mobile-list {
+        .tech-list--mobile {
           display: none;
         }
 
@@ -375,11 +377,11 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
           .ServicesMobiletechnologiesSection {
             padding: 116px 0 105px 0;
             
-            .tech-desktop-list {
+            .tech-list--desktop {
               display: none;
             }
             
-            .tech-mobile-list {
+            .tech-list--mobile {
               display: block;
               width: 360px;
               height: 702px;
@@ -391,7 +393,7 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
               margin-right: auto;
               margin-left: auto;
 
-              .tech-item {
+              .tech__item {
                 border-radius: 50%;
                 background-color: #fff;
                 position: absolute;
@@ -406,7 +408,7 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
             }
           }
           
-          .header-wrapper {
+          .section-header-light {
             margin-bottom: 48px;
           }
         }
@@ -418,7 +420,7 @@ const ServicesMobiletechnologiesSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

@@ -16,18 +16,16 @@ const HomeOurBlogSection = ({ t, posts }) => {
   };
 
   return (
+    <section className="HomeOurBlogSection">
+      <img src={`/assets/images/home/home-path-blog.svg`} alt="" className="path" />
+      <img src={`/assets/images/home/mobile/home-path-blog.svg`} alt="" className="path--mobile" />
 
-    <div className="HomeOurBlogSection custom-container">
-      <img src={`/assets/images/home/home-path-blog.svg`} alt="" className="path-blog-img-1" />
-      <img src={`/assets/images/home/mobile/home-path-blog.svg`} alt="" className="path-blog-img-1--mobile" />
-
-      <div className="section-header-dark header-wrapper " data-aos="fade-in">
+      <div className="section-header-dark " data-aos="fade-in">
         <h2>{t("home.our_blog.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
-
-        <div className="post-list row">
+        <div className="post-list row custom-container">
           <div className="card-wrapper col-md-6 col-xl-4">
             <BlogPostCard post={posts[0]} />
           </div>
@@ -39,7 +37,7 @@ const HomeOurBlogSection = ({ t, posts }) => {
           </div>
         </div>
 
-        <div className="post-list-mobile">
+        <div className="post-list--mobile custom-container">
           <Slider {...settings}>
             <div className="card-wrapper">
               <BlogPostCard post={posts[0]} />
@@ -65,21 +63,21 @@ const HomeOurBlogSection = ({ t, posts }) => {
           .post-list {
           }
 
-          .post-list-mobile {
+          .post-list--mobile {
             display: none;
           }
 
-          .path-blog-img-1 {
+          .path {
             position: absolute;
             left: 0px;
             top: 0px;
           }
 
-          .path-blog-img-1--mobile {
+          .path--mobile {
             display: none;
           }
 
-          .header-wrapper {
+          .section-header-dark {
             margin-bottom: 105px !important;
           }
 
@@ -94,7 +92,7 @@ const HomeOurBlogSection = ({ t, posts }) => {
               padding-bottom: 93px;
             }
 
-            .header-wrapper {
+            .section-header-dark {
               margin-bottom: 52px !important;
             }
 
@@ -102,15 +100,15 @@ const HomeOurBlogSection = ({ t, posts }) => {
               display: none;
             }
 
-            .post-list-mobile {
+            .post-list--mobile {
               display: block;
             }
 
-            .path-blog-img-1 {
+            .path {
               display: none;
             }
 
-            .path-blog-img-1--mobile {
+            .path--mobile {
               position: absolute;
               left: 0px;
               top: 136px;
@@ -119,7 +117,7 @@ const HomeOurBlogSection = ({ t, posts }) => {
           }
         `}
       </style>
-    </div>
+    </section>
   );
 };
 

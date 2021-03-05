@@ -12,8 +12,8 @@ export const Poster = ({ author, published_at, reading_time, tags }) => {
       </div>
 
       <div className="category-list">
-        {tags.map((tag) => (
-          <span className="category-item">{tag.name}</span>
+        {tags.map((tag, i) => (
+          <span key={i} className="category-item">{tag.name}</span>
         ))}
       </div>
 

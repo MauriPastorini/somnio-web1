@@ -119,6 +119,12 @@ export const OurWorkContentSection = () => {
             margin-top: -700px;
           }
         }
+
+        @media screen and (max-width: 1280px) {
+          .OurWorkContentSection {
+            display: none;
+          }
+        }
       `}</style>
     </div>
   );

@@ -24,17 +24,13 @@ const ServiceHeaderSection = ({ t }) => {
       <img src={`/assets/images/services/mobile/dots.svg`} alt="" className="header__dot" />
 
       <div className="text-and-image custom-container">
-        <div className="header-img__wrapper">
-          <img
-            src={`/assets/images/services/services-header-img.svg`}
-            alt=""
-            className="services-header-img img-fluid"
-          />
+        <div className="header__img-wrapper">
+          <img src={`/assets/images/services/services-header-img.svg`} alt="" className="header__img img-fluid" />
         </div>
 
-        <div className="header-text__wrapper" data-aos="fade-left">
-          <h1 className="header-text title-1">{t("services.header.text_1")}</h1>
-          <p className="header-text paragraph-1">{t("services.header.text_2")}</p>
+        <div className="header__text-wrapper" data-aos="fade-left">
+          <h1 className="header__text title-1">{t("services.header.text_1")}</h1>
+          <p className="header__text paragraph-1">{t("services.header.text_2")}</p>
         </div>
       </div>
 
@@ -43,11 +39,11 @@ const ServiceHeaderSection = ({ t }) => {
         <img src={"/assets/images/home-services-line-light.svg"} alt="" />
       </div>
 
-      <div className="header-how-we-work__content">
+      <div className="header__how-we-work-content">
         <span id="full-product-development">
           <ServicesHowWeWorkCard data={cardContent1} />
         </span>
-        <span className="card--second" id="staff-augmentation">
+        <span className="second-card" id="staff-augmentation">
           <ServicesHowWeWorkCard data={cardContent2} />
         </span>
       </div>
@@ -72,7 +68,7 @@ const ServiceHeaderSection = ({ t }) => {
             display: none;
           }
 
-          .header__dot{
+          .header__dot {
             display: none;
           }
 
@@ -83,14 +79,14 @@ const ServiceHeaderSection = ({ t }) => {
             position: relative;
             justify-content: space-between;
 
-            .header-text__wrapper {
+            .header__text-wrapper {
               width: 45%;
               display: flex;
               flex-direction: column;
               align-items: flex-end;
               margin-top: 85px;
 
-              .header-text {
+              .header__text {
                 width: 510px;
               }
 
@@ -110,14 +106,9 @@ const ServiceHeaderSection = ({ t }) => {
               }
             }
 
-            .header-img__wrapper {
+            .header__img-wrapper {
               margin-top: 50px;
               width: 55%;
-
-              .services-header-img {
-                // width: 95%;
-                // margin-right: 5%;
-              }
             }
           }
 
@@ -125,14 +116,14 @@ const ServiceHeaderSection = ({ t }) => {
             margin-top: 250px;
           }
 
-          .header-how-we-work__content {
+          .header__how-we-work-content {
             display: flex;
             justify-content: space-between;
             width: 100%;
             max-width: 1280px;
             margin: 0 auto 240px auto;
 
-            .card--second {
+            .second-card {
               margin-top: 200px;
             }
           }
@@ -148,8 +139,7 @@ const ServiceHeaderSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServiceHeaderSection {
-
-            .header__dot{
+            .header__dot {
               display: block;
               position: absolute;
               top: 833px;
@@ -176,7 +166,7 @@ const ServiceHeaderSection = ({ t }) => {
               position: relative;
               justify-content: space-between;
 
-              .header-text__wrapper {
+              .header__text-wrapper {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
@@ -184,7 +174,7 @@ const ServiceHeaderSection = ({ t }) => {
                 margin-top: 25px;
                 margin-bottom: 35px;
 
-                .header-text {
+                .header__text {
                   width: 100%;
                   text-align: center;
                   max-width: 300px;
@@ -200,7 +190,7 @@ const ServiceHeaderSection = ({ t }) => {
                 }
               }
 
-              .header-img__wrapper {
+              .header__img-wrapper {
                 margin-top: 50px;
                 width: 100%;
                 order: 1;
@@ -208,7 +198,7 @@ const ServiceHeaderSection = ({ t }) => {
                 justify-content: center;
                 align-items: center;
 
-                .services-header-img {
+                .header__img {
                   width: 100%;
                   margin: 0;
                   max-width: 500px;
@@ -221,14 +211,14 @@ const ServiceHeaderSection = ({ t }) => {
               margin-bottom: 65px;
             }
 
-            .header-how-we-work__content {
+            .header__how-we-work-content {
               margin: 0 auto 40px auto;
               padding-left: 36px;
               padding-right: 36px;
               flex-direction: column;
               align-items: center;
 
-              .card--second {
+              .second-card {
                 margin-top: 0;
               }
             }

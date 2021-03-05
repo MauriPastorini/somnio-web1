@@ -3,17 +3,17 @@ import { withTranslation } from "../../i18n";
 
 const ServicesUxUiHeaderSection = ({ t }) => {
   return (
-    <div className="ServicesUxUiHeaderSection">
+    <section className="ServicesUxUiHeaderSection">
       <img src="/assets/images/services-uxui/header-path.svg" alt="" className="header__path" />
       <img src="/assets/images/services-uxui/header-path2.svg" alt="" className="header__path2" />
       <img src="/assets/images/services-uxui/mobile/header-path2.svg" alt="" className="header__path2--mobile" />
       <div className="text-and-image custom-container">
-        <div className="header-text-wrapper" data-aos="fade-right">
-          <h1 className="header-title">{t("services_uxui.header.text_1")}</h1>
-          <p className="header-text">{t("services_uxui.header.text_2")}</p>
+        <div className="header__text-wrapper" data-aos="fade-right">
+          <h1 className="header__title">{t("services_uxui.header.text_1")}</h1>
+          <p className="header__text">{t("services_uxui.header.text_2")}</p>
         </div>
-        <div className="header-img-wrapper">
-          <img src={`/assets/images/services-uxui/header-img.svg`} alt="" className="header-img img-fluid" />
+        <div className="header__img-wrapper">
+          <img src={`/assets/images/services-uxui/header-img.svg`} alt="" className="header__img img-fluid" />
         </div>
       </div>
       <style jsx>{`
@@ -52,27 +52,27 @@ const ServicesUxUiHeaderSection = ({ t }) => {
             display: flex;
             position: relative;
 
-            .header-text-wrapper {
+            .header__text-wrapper {
               width: 45%;
 
-              .header-title {
+              .header__title {
                 width: 580px;
                 font-weight: bold;
                 font-size: 80px;
                 color: #ffffff;
                 margin-bottom: 50px;
               }
-              .header-text {
+              .header__text {
                 width: 550px;
                 font-size: 30px;
                 color: #ffffff;
               }
             }
 
-            .header-img-wrapper {
+            .header__img-wrapper {
               width: 55%;
 
-              .header-img {
+              .header__img {
                 max-width: 656px;
               }
             }
@@ -113,33 +113,33 @@ const ServicesUxUiHeaderSection = ({ t }) => {
               flex-direction: column;
               margin-top: 136px;
 
-              .header-text-wrapper {
+              .header__text-wrapper {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                .header-title {
+                .header__title {
                   width: 100%;
                   text-align: center;
                   font-size: 35px;
                   margin-bottom: 45px;
                 }
-                .header-text {
+                .header__text {
                   font-size: 18px;
                   text-align: center;
                   max-width: 300px;
                 }
               }
   
-              .header-img-wrapper {
+              .header__img-wrapper {
                 margin-top: 120px;
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
   
-                .header-img {
+                .header__img {
                   width: 100%;
                   margin: 0;
                   max-width: 310px;
@@ -177,7 +177,7 @@ const ServicesUxUiHeaderSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

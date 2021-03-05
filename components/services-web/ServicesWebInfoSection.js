@@ -3,12 +3,12 @@ import { withTranslation } from "../../i18n";
 
 const ServicesWebInfoSection = ({ t }) => {
   return (
-    <div className="ServicesWebInfoSection">
-      <div className="web-text-and-img custom-container">
-        <p className="web-text" data-aos="fade-left">
+    <section className="ServicesWebInfoSection">
+      <div className="text-and-img custom-container">
+        <p className="web__text" data-aos="fade-left">
           {t("services_web.info")}
         </p>
-        <div className="web-img-wrapper">
+        <div className="web__images">
           <img src={`/assets/images/services-web/info-path.svg`} className="path-img img-fluid" alt="" />
           <img src={`/assets/images/services-web/info-img.png`} className="group-img" alt="" />
         </div>
@@ -19,12 +19,12 @@ const ServicesWebInfoSection = ({ t }) => {
           margin-bottom: 164px;
         }
 
-        .web-text-and-img {
+        .text-and-img {
           display: flex;
           justify-content: space-between;
           align-items: center;
 
-          .web-img-wrapper {
+          .web__images {
             position: relative;
             width: 60%;
             height: 100%;
@@ -36,6 +36,7 @@ const ServicesWebInfoSection = ({ t }) => {
               top: -90px;
               right: 0;
             }
+
             .group-img {
               position: absolute;
               top: 20px;
@@ -45,7 +46,7 @@ const ServicesWebInfoSection = ({ t }) => {
             }
           }
 
-          .web-text {
+          .web__text {
             color: #001331;
             font-size: 23px;
             max-width: 600px;
@@ -59,13 +60,13 @@ const ServicesWebInfoSection = ({ t }) => {
             margin-bottom: 77px;
           }
 
-          .web-text-and-img {
+          .text-and-img {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-direction: column;
 
-            .web-img-wrapper {
+            .web__images {
               position: relative;
               width: 100%;
               height: auto;
@@ -88,7 +89,7 @@ const ServicesWebInfoSection = ({ t }) => {
               }
             }
 
-            .web-text {
+            .web__text {
               color: #001331;
               font-size: 15px;
               max-width: 600px;
@@ -99,7 +100,7 @@ const ServicesWebInfoSection = ({ t }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

@@ -15,15 +15,15 @@ const ServicesWebCoveredSection = ({ t }) => {
   ];
 
   return (
-    <div className="ServicesWebCoveredSection">
-      <div className="sub__bg"></div>
+    <section className="ServicesWebCoveredSection">
+      <div className="sub-bg"></div>
       <div className="content custom-container">
         <div className="section-header-light" data-aos="fade-in">
           <h2>We’ve got you covered</h2>
           <img src={"/assets/images/home-services-line-light.svg"} alt="" />
         </div>
 
-        <div className="services-covered-card-list">
+        <div className="card-list">
           {cardInfo.map((info, index) => (
             <CommonCoveredCard key={index} title={info.title} description={info.description} />
           ))}
@@ -38,7 +38,7 @@ const ServicesWebCoveredSection = ({ t }) => {
             position: relative;
             z-index: 1;
 
-            .services-covered-card-list {
+            .card-list {
               display: flex;
               justify-content: space-between;
               max-width: 1360px;
@@ -46,7 +46,7 @@ const ServicesWebCoveredSection = ({ t }) => {
             }
           }
 
-          .sub__bg {
+          .sub-bg {
             position: absolute;
             width: 100%;
             min-height: 1200px;
@@ -69,7 +69,7 @@ const ServicesWebCoveredSection = ({ t }) => {
                 margin-bottom: 68px;
               }
 
-              .services-covered-card-list {
+              .card-list {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -78,13 +78,13 @@ const ServicesWebCoveredSection = ({ t }) => {
               }
             }
 
-            // .sub__bg {
+            // .sub-bg {
             //   display: none;
             // }
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 
