@@ -109,7 +109,7 @@
     "how_we_work": {
       "title": "How we work",
       "text_1": "Agile Engineering",
-      "text_2": "We focus on an agile approach which helps organize and create a better product. It’s based on adaptive planning, evolutionary development, early delivery, and continual improvement. Teams can quickly iterate, test and gather feedback. This helps not only to identify and solve problems more quickly and effectively but also encourages flexible responses to changes.",
+      "text_2": "We base our work on an agile approach that involves adaptive planning, evolutionary development, early delivery, and continual improvement. Our team focuses their work on the Scrum methodology which helps us achieve higher productivity with flexible responses to changes. It helps us identify and solve problems more quickly and effectively.",
       "text_3": "Design Thinking",
       "text_4": "It’s a human-centered way of thinking and working as well as a collection of methods. It promotes a deep interest in anticipating and better understanding the needs of the people you’re creating for. It involves a process of brainstorming and adopting a hands-on approach in prototyping and testing. This helps us observe and develop empathy with the target user in order to define it’s needs and challenges to ideate innovative solutions."
     },
@@ -132,8 +132,12 @@
         "text": "We strongly believe that good and transparent communication can achieve a better understanding. That’s why we always maintain a fluent and careful dialogue."
       },
       "value_5": {
-        "title": "Team",
+        "title": "Team Synergy",
         "text": "We trust that with a collaborative team we can achieve better results through the combination of knowledge, experiences, ideas and complementary talents."
+      },
+      "value_6": {
+        "title": "Trust",
+        "text": "Trust is the foundation of everything we do. We believe it’s the formula for strong and long-term relationships as well as successful and scalable projects."
       }
     },
     "why_us": {
@@ -153,10 +157,10 @@
       "how_we_work": {
         "title": "What we do",
         "text_1": "Full Product Development",
-        "text_2": "Increase your productivity with engineers prepared to successfully integrate with your team, process and workflow. We make outsourcing software development to Uruguay your best solution: talented professionals, reasonable time zone, cost-effective, high-quality work, similar work cultures with great English communication skills.",
-        "text_3": "We focus on maintaining real-time communication to feel near and present at all times. It will feel as if we were working sitting side by side.",
+        "text_2": "We provide end-to-end development service to build your product from scratch. We have experience helping businesses grow with our products, from startups to big market players and for several industries such as education, healthcare, finance, entertainment, among others.",
+        "text_3": "If you are looking for a trusted partner to help you turn your ideas into successful products, we are ready to get started!.",
         "text_4": "Staff Augmentation",
-        "text_5": "Increase your productivity with engineers prepared to successfully integrate with your your team, process and workflow. We make outsourcing software development to Uruguay your best solution: talented professionals, reasonable time zone, cost-effective, high-quality work, similar work cultures with great English communication skills.",
+        "text_5": "Increase your productivity with engineers prepared to successfully integrate with your team, process and workflow. We make outsourcing software development to Uruguay your best solution: talented professionals, reasonable time zone, cost-effective, high-quality work, similar work cultures with great English communication skills.",
         "text_6": "We focus on maintaining real-time communication to feel near and present at all times. It will feel as if we were working sitting side by side."
       }
     },
@@ -187,7 +191,7 @@
       },
       "process_5": {
         "title": "Development",
-        "text": "We began to develop the functionalities considering all the previous steps. We start to develop based on what we decided in the previous steps. In this way the developers can effectively create the product and arrive at the planned outcome."
+        "text": "We begin developing the functionalities considering all the previous steps. In this way, the developers can effectively create the product and arrive at the planned outcome."
       },
       "process_6": {
         "title": "QA Testing",
@@ -213,7 +217,7 @@
       "tool_3": {
         "type": "Management",
         "tool": "Clockify",
-        "text": "Clockify is a time tracking app that helps us follow our work and our time on projects. It helps keep and eye on the our working progress and what the team is working on specifically."
+        "text": "Clockify is a time tracking app that helps us follow our work and time on projects. It helps keep an eye on our working progress and what the team is working on specifically."
       },
       "tool_4": {
         "type": "Collaboration and documentation",

@@ -24,7 +24,7 @@ const ServicesHowWeWorkCard = ({ data }) => (
         }
         .how-we-work-card__text {
           font-size: 20px;
-          text-align: center;
+          // text-align: center;
           color: #ffffff;
         }
       }

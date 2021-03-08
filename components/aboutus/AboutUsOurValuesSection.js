@@ -3,7 +3,7 @@ import AboutUsOurValueCard from "../../components/common/AboutUsOurValueCard";
 import { withTranslation } from "../../i18n";
 
 const AboutUsOurValuesSection = ({ t }) => {
-  const firstRecord = [
+  const value = [
     {
       img: "value-passion.svg",
       classImgName: "passion_shadow",
@@ -19,17 +19,14 @@ const AboutUsOurValuesSection = ({ t }) => {
     {
       img: "value-empathy.svg",
       classImgName: "empathy_shadow",
+      title: t("about_us.our_values.value_6.title"),
+      text: t("about_us.our_values.value_6.text"),
+    },
+    {
+      img: "value-empathy.svg",
+      classImgName: "empathy_shadow",
       title: t("about_us.our_values.value_3.title"),
       text: t("about_us.our_values.value_3.text"),
-    },
-  ];
-
-  const secondRecord = [
-    {
-      img: "value-communication.svg",
-      classImgName: "communication_shadow",
-      title: t("about_us.our_values.value_4.title"),
-      text: t("about_us.our_values.value_4.text"),
     },
     {
       img: "value-team.svg",
@@ -37,48 +34,43 @@ const AboutUsOurValuesSection = ({ t }) => {
       title: t("about_us.our_values.value_5.title"),
       text: t("about_us.our_values.value_5.text"),
     },
+    {
+      img: "value-communication.svg",
+      classImgName: "communication_shadow",
+      title: t("about_us.our_values.value_4.title"),
+      text: t("about_us.our_values.value_4.text"),
+    },
   ];
+
 
   return (
     <section className="AboutUsOurValuesSection" id="our-values">
       <img src="/assets/images/about-us/about-us-our-values-dots1.svg" className="about-us-our-values-dots1" alt="" />
       <img src="/assets/images/about-us/about-us-our-values-dots2.svg" className="about-us-our-values-dots2" alt="" />
-      
+
       <div className="header--dark" data-aos="fade-in">
         <h2>{t("about_us.our_values.title")}</h2>
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
-      
-      <div className="values-list-first custom-container">
-        {firstRecord.map((r, i) => (
+
+      <div className="grid-content custom-container">
+        {value.map((r, i) => (
           <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} />
         ))}
       </div>
-      
-      <div className="values-list-second custom-container">
-        {secondRecord.map((r, i) => (
-          <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} />
-        ))}
-      </div>
-      
+
       <style jsx>{`
         .AboutUsOurValuesSection {
           position: relative;
           padding-top: 122px;
           padding-bottom: 160px;
 
-          .values-list-first {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1100px !important;
-            margin: 0 auto 110px auto;
-          }
-
-          .values-list-second {
-            display: flex;
-            justify-content: space-between;
-            max-width: 800px !important;
-            margin: 0 auto 0 auto;
+          .grid-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+            row-gap: 110px;
+            max-width: 1170px !important;
           }
 
           .header--dark {
@@ -104,20 +96,10 @@ const AboutUsOurValuesSection = ({ t }) => {
             padding-top: 58px;
             padding-bottom: 11px;
 
-            .values-list-first {
-              display: flex;
-              justify-content: space-between;
-              max-width: 100%;
-              margin: 0 auto 0 auto;
-              flex-direction: column;
-            }
-
-            .values-list-second {
-              display: flex;
-              justify-content: space-between;
-              max-width: 100%;
-              margin: 0 auto 0 auto;
-              flex-direction: column;
+            .grid-content {
+              grid-template-columns: 1fr;
+              grid-template-rows: repeat(6, 1fr);
+              row-gap: 0;
             }
 
             .header--dark {
@@ -133,7 +115,6 @@ const AboutUsOurValuesSection = ({ t }) => {
 
             .about-us-our-values-dots2 {
               display: none;
-
             }
           }
         }

@@ -50,21 +50,19 @@ const AboutUsHeaderSection = ({ t }) => {
               width: 45%;
               display: flex;
               flex-direction: column;
-              align-items: flex-end;
+              align-items: flex-start;
               max-width: 450px;
 
               .title-1 {
                 font-weight: bold;
                 font-size: 80px;
                 color: #ffffff;
-                text-align: end;
               }
 
               .paragraph-1 {
                 font-size: 30px;
                 color: #ffffff;
                 font-weight: 500;
-                text-align: end;
               }
             }
 
