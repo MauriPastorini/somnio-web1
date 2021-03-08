@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AgencySayCard = ({ comment }) => {
   return (
     <div className="agency-card">
@@ -8,7 +10,10 @@ const AgencySayCard = ({ comment }) => {
         </div>
       </div>
       <div className="agency-card__header">
-        <img className="agency-card__header-img" src={comment.img} alt="" />
+        <div className="agency-card__header-img">
+          <Image src={comment.img} alt="" layout="fill" />
+        </div>
+
         <div className="agency-card__header-info">
           <h3>{comment.name}</h3>
           <h3>{`${comment.position}, ${comment.project}`}</h3>
@@ -70,6 +75,8 @@ const AgencySayCard = ({ comment }) => {
               width: 118px;
               height: 118px;
               border-radius: 50%;
+              position: relative;
+              overflow: hidden;
             }
 
             .agency-card__header-info {
@@ -111,7 +118,7 @@ const AgencySayCard = ({ comment }) => {
             }
           }
         }
-        
+
         @media screen and (max-width: 1280px) {
           .agency-card {
             margin-left: 30px;
@@ -136,7 +143,6 @@ const AgencySayCard = ({ comment }) => {
               height: 85px;
 
               .agency-corn__content {
-
                 .agency-corn__bg {
                   width: 85px;
                 }

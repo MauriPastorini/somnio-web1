@@ -3,30 +3,46 @@
   margin-bottom: 74px;
 
   body {
+    // text and titles
     h1 {
       font-size: 45px !important;
       font-weight: bold;
     }
 
     h2 {
-      font-size: 35px !important;
       font-weight: bold;
+      margin-bottom: 0.3em;
+      font-size: 35px !important;
+      margin: 0.5em 0 0.4em;
+    }
+
+    h3 {
+      font-size: 30px !important;
+      margin-bottom: 0.3em;
     }
 
     p {
       font-size: 23px !important;
+      line-height: 32px;
+      margin: 0 0 1.5em;
+      min-width: 100%;
     }
 
-    li {
-      font-size: 23px !important;
+    // Citas, Quotes
+    p + blockquote {
+      margin: 3.2rem 0;
+    }
+
+    blockquote {
+      margin: 3.2rem 0 0;
+      border-left: 0.25rem solid #3eb0ef;
+      padding-left: 2rem;
+      font-style: italic;
+      font-size: 23px;
     }
 
     span {
       font-size: 23px !important;
-    }
-
-    blockquote {
-      font-style: italic;
     }
 
     a {
@@ -34,9 +50,180 @@
       font-size: 23px !important;
     }
 
+    // Images
     figure {
+      margin: 0.2em 0 1.3em;
+    }
+
+    .kg-image {
+      max-width: 100%;
+    }
+
+    figure img {
+      margin: 0;
+    }
+
+    img,
+    video {
+      width: 100%;
+    }
+
+    img,
+    video {
+      display: block;
+      margin: 1.5em auto;
+      max-width: 1040px;
+      height: auto;
+    }
+
+    // embed
+    .kg-embed-card {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      min-height: 480px;
+    }
+
+    .fluid-width-video-container {
+      flex-grow: 1;
+      width: 100%;
+    }
+
+    .fluid-width-video-wrapper {
+      margin: 0;
+      width: 100%;
+      position: relative;
+      padding-top: 56.5%;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto !important;
+    }
+
+    // ul list
+    ul {
+      margin: 0 0 1.5em;
+      min-width: 100%;
+    }
+
+    li {
+      font-size: 23px !important;
+      word-break: break-word;
+      margin: 0.5em 0;
+      margin-top: 0.5em;
+      padding-left: 0.3em;
+      line-height: 1.6em;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    // Galleries
+    .kg-gallery-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 1040px;
+      width: 100vw;
+    }
+
+    .kg-gallery-row {
+      display: flex;
+      flex-direction: row;
       justify-content: center;
+    }
+
+    .kg-gallery-image {
+      flex: 1.5 1 0%;
+    }
+
+    .kg-gallery-image img {
+      display: block;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    // Section pre code
+    pre {
+      overflow-x: auto;
+      margin: 1.5em 0 3em;
+      padding: 20px;
+      max-width: 100%;
+      border: 1px solid #000;
+      color: #e5eff5;
+      font-size: 1.4rem;
+      line-height: 1.5em;
+      background: #0e0f11;
+      border-radius: 5px;
+
+      code {
+        padding: 0;
+        font-size: inherit;
+        line-height: inherit;
+        background: transparent;
+        border-radius: 3px;
+      }
+    }
+
+    // Bookmark Card
+    .kg-bookmark-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+      color: #15171a;
+      min-height: 148px;
+      border-radius: 3px;
+
+      &:hover {
+        color: #15171a;
+        text-decoration: none;
+        box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.09);
+      }
+      .kg-bookmark-title {
+        color: #313b3f;
+        font-size: 1.6rem;
+        line-height: 1.5em;
+        font-weight: 600;
+        transition: color 0.2s ease-in-out;
+      }
+
+      .kg-bookmark-description {
+        display: -webkit-box;
+        overflow-y: hidden;
+        margin-top: 12px;
+        max-height: 48px;
+        color: #5d7179;
+        font-size: 1.5rem;
+        line-height: 1.5em;
+        font-weight: 400;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      .kg-bookmark-metadata {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 14px;
+        color: #5d7179;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+
+      .kg-bookmark-thumbnail {
+        position: relative;
+        min-width: 33%;
+        max-height: 100%;
+      }
     }
   }
 }

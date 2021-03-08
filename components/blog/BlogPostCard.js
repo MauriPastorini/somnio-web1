@@ -106,7 +106,7 @@ const BlogPostCard = ({ post, large }) => {
         }
 
         .post-card-title {
-          font-size: 38px;
+          font-size: 30px;
           line-weight: 40px;
           font-weight: bold;
           color: #001739;

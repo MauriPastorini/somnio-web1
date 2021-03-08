@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { Container } from "../components/common/Layout/Container";
-
+import NProgress from "nprogress";
 import ContactSection from "../components/common/ContactSection";
 import { BlogHeaderSection } from "../components/blog/BlogHeaderSection";
 import { BlogContentSection } from "../components/blog/BlogContentSection";
@@ -11,9 +11,14 @@ const Blog = () => {
   const [tags, setTags] = useState(null);
   const [posts, setPosts] = useState(null);
 
-  useEffect(() => {
-    getTags().then((tags) => setTags(tags));
-    getPosts().then((posts) => setPosts(posts));
+
+  useEffect(async() => {
+    NProgress.start()
+    const tags = await getTags()
+    const posts = await getPosts()
+    setTags(tags)
+    setPosts(posts)
+    NProgress.done()
   }, []);
 
   return (

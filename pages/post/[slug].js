@@ -7,6 +7,7 @@ import PostContentSection from "../../components/post/PostContentSection";
 import PostMoreSection from "../../components/post/PostMoreSection";
 import { getPost, getPosts } from "../../services/blog";
 import { useRouter } from "next/router";
+import NProgress from "nprogress";
 
 const Post = () => {
   const [post, setPost] = useState(null);
@@ -14,10 +15,14 @@ const Post = () => {
 
   const router = useRouter();
 
-  useEffect(() => {
-    getPost(router.query.slug).then((post) => setPost(post));
-    getPosts().then((posts) => setPosts(posts));
-  }, []);
+   useEffect(async() => {
+    NProgress.start()
+    const post = await getPost(router.query.slug)
+    const posts = await getPosts()
+    setPost(post)
+    setPosts(posts)
+    NProgress.done()
+  }, [router.query.slug]);
 
   return (
     <Container>
