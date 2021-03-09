@@ -6,7 +6,7 @@ import ContactSection from "../components/common/ContactSection";
 import FaqHeaderSection from "../components/faq/FaqHeaderSection";
 import FaqContentSection from "../components/faq/FaqContentSection";
 
-const AboutUs = () => (
+const Faq = () => (
   <Container>
     <Head>
       <title>About us | Somnio Software</title>
@@ -30,4 +30,6 @@ const AboutUs = () => (
   </Container>
 );
 
-export default AboutUs;
+Faq.getInitialProps = () => ({ namespacesRequired: ["common"] });
+
+export default Faq;

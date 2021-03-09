@@ -26,4 +26,6 @@ const WebDevelopment = () => (
   </Container>
 );
 
+WebDevelopment.getInitialProps = () => ({ namespacesRequired: ["common"] });
+
 export default WebDevelopment;

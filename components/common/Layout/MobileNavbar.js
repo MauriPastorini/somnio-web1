@@ -4,15 +4,9 @@ import PropTypes from "prop-types";
 import { withTranslation } from "../../../i18n";
 import { useRouter } from "next/router";
 
-const CustomLink = ({ href, children, scrolled }) => {
+const isActive = (href, className) => {
   const router = useRouter();
-
-  let className = children.props.className || "";
-  if (router.pathname === href) {
-    className = `${className} nav-link-active`;
-  }
-
-  return <Link href={href}>{React.cloneElement(children, { className })}</Link>;
+  return router.pathname === href ? `${className} nav-link-active` : className;
 };
 
 const MobileNavbar = ({ t }) => {
@@ -47,51 +41,39 @@ const MobileNavbar = ({ t }) => {
         </a>
 
         <div className="overlay-content">
-          <CustomLink href="/">
-            <a>Home</a>
-          </CustomLink>
-
-          <CustomLink href="/about-us">
-            <a>{t("common.navbar.about_us")}</a>
-          </CustomLink>
-
-          <CustomLink href="/services/working-modalities">
-            <a>Working Modalities</a>
-          </CustomLink>
-
-          <CustomLink href="/services/mobile-app-development">
-            <a>{t("common.navbar.services_mobile")}</a>
-          </CustomLink>
-
-          <CustomLink href="/services/web-development">
-            <a>{t("common.navbar.services_web")}</a>
-          </CustomLink>
-
-          <CustomLink href="/services/ux-ui">
-            <a>{t("common.navbar.services_uxui")}</a>
-          </CustomLink>
-
-          <CustomLink href="/why-flutter">
-            <a>{t("common.navbar.why_flutter")}</a>
-          </CustomLink>
-
-          <CustomLink href="/our-work">
-            <a>{t("common.navbar.our_work")}</a>
-          </CustomLink>
-
-          <CustomLink href="/faq">
-            <a>{t("common.navbar.faq")}</a>
-          </CustomLink>
-
-          <CustomLink href="/blog">
-            <a>{t("common.navbar.blog")}</a>
-          </CustomLink>
-
-          <CustomLink href="/get-in-touch">
-            <a type="button" className="btn btn-outline-navbar">
-              {t("common.navbar.button")}
-            </a>
-          </CustomLink>
+          <a className={isActive("/", "")} href="/">
+            Home
+          </a>
+          <a className={isActive("/about-us", "")} href="/about-us">
+            {t("common.navbar.about_us")}
+          </a>
+          <a className={isActive("/services/working-modalities", "")} href="/services/working-modalities">
+            Working Modalities
+          </a>
+          <a className={isActive("/services/mobile-app-development", "")} href="/services/mobile-app-development">
+            {t("common.navbar.services_mobile")}
+          </a>
+          <a className={isActive("/services/web-development", "")} href="/services/web-development">
+            {t("common.navbar.services_web")}
+          </a>
+          <a className={isActive("/services/ux-ui", "")} href="/services/ux-ui">
+            {t("common.navbar.services_uxui")}
+          </a>
+          <a className={isActive("/why-flutter", "")} href="/why-flutter">
+            {t("common.navbar.why_flutter")}
+          </a>
+          <a className={isActive("/our-work", "")} href="/our-work">
+            {t("common.navbar.our_work")}
+          </a>
+          <a className={isActive("/faq", "")} href="/faq">
+            {t("common.navbar.faq")}
+          </a>
+          <a className={isActive("/blog", "")} href="/blog">
+            {t("common.navbar.blog")}
+          </a>
+          <a className={isActive("/get-in-touch", "")} href="/get-in-touch">
+            {t("common.navbar.button")}
+          </a>
         </div>
       </div>
 
@@ -130,7 +112,7 @@ const MobileNavbar = ({ t }) => {
           height: 50px;
           position: absolute;
           right: 0;
-          background: rgba(73,58,175,0.5);
+          background: rgba(73, 58, 175, 0.5);
           font-size: 0;
           border-radius: 25px;
           cursor: pointer;
@@ -201,7 +183,7 @@ const MobileNavbar = ({ t }) => {
           padding: 15px 43px;
           font-weight: 500;
           margin-top: 10px;
-          
+
           &:hover {
             background-color: #ffffff !important;
             color: #003ba8;

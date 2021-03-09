@@ -76,7 +76,7 @@ export const OurWorkContentSection = () => {
 
       <div className="our-work-list">
         {data.map((d, i) => (
-          <OurWorkCard data={d} />
+          <OurWorkCard key={i} data={d} />
         ))}
       </div>
 

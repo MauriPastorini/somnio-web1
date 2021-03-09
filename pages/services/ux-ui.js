@@ -27,4 +27,6 @@ const UxUi = () => (
   </Container>
 );
 
+UxUi.getInitialProps = () => ({ namespacesRequired: ["common"] });
+
 export default UxUi;

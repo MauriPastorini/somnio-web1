@@ -27,4 +27,6 @@ const WhyFlutter = () => (
   </Container>
 );
 
+WhyFlutter.getInitialProps = () => ({ namespacesRequired: ["common"] });
+
 export default WhyFlutter;

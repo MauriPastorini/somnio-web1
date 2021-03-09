@@ -1,4 +1,3 @@
-import Head from "next/head";
 import React from "react";
 import Footer from "./Footer";
 import MobileNavbar from "./MobileNavbar";
@@ -7,10 +6,6 @@ import Navbar from "./Navbar";
 export const Container = ({ children, withOverflowHide }) => {
   return (
     <>
-      <Head>
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7545948.js"></script>
-        <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> 
-      </Head>
       <span className="isDesktop">
         <Navbar />
       </span>

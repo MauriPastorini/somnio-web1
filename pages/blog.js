@@ -37,6 +37,6 @@ const Blog = () => {
   );
 };
 
-export const getInitialProps = async () => ({ namespacesRequired: ["common"] });
+Blog.getInitialProps = () => ({ namespacesRequired: ["common"] });
 
 export default Blog;

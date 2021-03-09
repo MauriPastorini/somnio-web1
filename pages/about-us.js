@@ -29,4 +29,6 @@ const AboutUs = () => (
   </Container>
 );
 
+AboutUs.getInitialProps = () => ({ namespacesRequired: ["common"] });
+
 export default AboutUs;

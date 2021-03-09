@@ -10,16 +10,15 @@ const OurWork = () => (
   <Container>
     <Head>
       <title>Our work | Somnio Software</title>
-      <meta
-        name="description"
-        content=""
-      />
+      <meta name="description" content="" />
     </Head>
-    
+
     <OurWorkHeaderSection />
     <OurWorkContentSection />
     <ContactSection />
   </Container>
 );
+
+OurWork.getInitialProps = () => ({ namespacesRequired: ["common"] });
 
 export default OurWork;

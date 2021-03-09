@@ -7,7 +7,7 @@ import ServicesProcessSection from "../../components/services/ServicesProcessSec
 import ServiceWorkingToolsSection from "../../components/services/ServiceWorkingToolsSection";
 import ContactSection from "../../components/common/ContactSection";
 
-const AboutUs = () => (
+const WorkingModalities = () => (
   <Container withOverflowHide>
     <Head>
       <title>Working Modalities | This is how we achieve top results in Somnio Software</title>
@@ -25,4 +25,6 @@ const AboutUs = () => (
   </Container>
 );
 
-export default AboutUs;
+WorkingModalities.getInitialProps = () => ({ namespacesRequired: ["common"] });
+
+export default WorkingModalities;

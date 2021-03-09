@@ -18,4 +18,6 @@ const GetInTouch = () => (
   </Container>
 );
 
+GetInTouch.getInitialProps = () => ({ namespacesRequired: ["common"] });
+
 export default GetInTouch;

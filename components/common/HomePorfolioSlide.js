@@ -18,7 +18,9 @@ const HomePorfolioSlide = ({ title, text, img }) => (
         </Link>
       </div>
     </div>
-    <img className="slide-img" src={img} alt=""></img>
+    <div className="slide-img-wrapper">
+      <img className="slide-img" src={img} alt=""></img>
+    </div>
     <style jsx>{`
       .HomePorfolioSlide {
         position: relative;
@@ -32,7 +34,7 @@ const HomePorfolioSlide = ({ title, text, img }) => (
           width: 100%;
           height: 100%;
           background: #fff;
-          
+
           .slide-text-content {
             width: 100%;
             margin-top: 220px;
@@ -72,45 +74,51 @@ const HomePorfolioSlide = ({ title, text, img }) => (
           }
         }
 
-        .slide-img {
+        .slide-img-wrapper {
           position: relative;
-          top: 0;
-          right: 0;
-          width: 965px;
-          height: auto;
+          width: 972px;
+          height: 872px;
+        }
+
+        .slide-img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
 
       @media screen and (max-width: 1400px) {
-        .slide-img {
-          width: 850px !important;
+        .slide-img-wrapper {
+          position: relative;
+          width: 850px;
+          height: 767px;
         }
       }
 
       @media screen and (max-width: 1280px) {
         .HomePorfolioSlide {
           .text-bg-wrapper {
-
             .slide-text-content {
-              
               .slide-text-title {
                 font-size: 24px;
                 font-weight: 700;
               }
-  
+
               .slide-text-paragraph {
                 font-size: 15px;
                 line-height: 20px;
               }
-  
+
               .slide-text-link {
                 font-size: 16px;
               }
             }
           }
-
-          .slide-img {
-            width: 600px !important;
+          .slide-img-wrapper {
+            position: relative;
+            width: 600px;
+            height: 541px;
           }
         }
       }
@@ -126,16 +134,16 @@ const HomePorfolioSlide = ({ title, text, img }) => (
             width: 100%;
             height: 100%;
             background: #fff;
-          
+
             .slide-text-content {
               margin-top: 0px;
-              
+
               .slide-text-title {
                 font-size: 24px;
                 font-weight: 700;
                 margin-bottom: 20px;
               }
-  
+
               .slide-text-paragraph {
                 color: #001739;
                 font-size: 15px;
@@ -143,11 +151,18 @@ const HomePorfolioSlide = ({ title, text, img }) => (
                 margin-bottom: 30px;
                 line-height: 20px;
               }
-  
+
               .slide-text-link {
                 font-size: 16px;
               }
             }
+          }
+
+          .slide-img-wrapper {
+            position: relative;
+            width: 100%;
+            height: auto;
+            background: #fff;
           }
 
           .slide-img {

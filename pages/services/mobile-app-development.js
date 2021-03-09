@@ -32,4 +32,6 @@ const MobileDevelopment = () => (
   </Container>
 );
 
+MobileDevelopment.getInitialProps = () => ({ namespacesRequired: ["common"] });
+
 export default MobileDevelopment;
