@@ -7,8 +7,7 @@ import "jquery/dist/jquery.min.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "nprogress/nprogress.css";
-import "../assets/scss/Global.scss";
-import { useEffect } from "react";
+import "../styles/Global.scss";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());

@@ -103,15 +103,6 @@ body {
   padding-bottom: 200px !important;
 }
 
-.custom-container {
-  max-width: 1500px !important;
-  width: 100%;
-  padding-right: 15px !important;
-  padding-left: 15px !important;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .wrapper-content {
   position: absolute;
   top: 100px;
@@ -119,6 +110,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.custom-container {
+  max-width: 1500px !important;
+  width: 100%;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 1400px) {
