@@ -4,6 +4,11 @@ import PropTypes from "prop-types";
 import { withTranslation } from "../../../i18n";
 import { useRouter } from "next/router";
 
+const isActive = (href, className) => {
+  const router = useRouter();
+  return router.pathname === href ? `${className} nav-link-active` : className;
+};
+
 const CustomLink = ({ href, children, scrolled }) => {
   const router = useRouter();
 
@@ -70,9 +75,9 @@ const Navbar = ({ t }) => {
         <div className="justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <CustomLink scrolled={scrolled} href="/about-us">
-                <a className={NavLinkStyle}>{t("common.navbar.about_us")}</a>
-              </CustomLink>
+              <a className={isActive("/about-us", NavLinkStyle)} href="/about-us">
+                {t("common.navbar.about_us")}
+              </a>
             </li>
             <li className="nav-item nav-item-dropable">
               <CustomDropdownLink scrolled={scrolled} href="javascrip:void(0)">
@@ -103,24 +108,24 @@ const Navbar = ({ t }) => {
             </li>
 
             <li className="nav-item">
-              <CustomLink scrolled={scrolled} href="/why-flutter">
-                <a className={NavLinkStyle}>{t("common.navbar.why_flutter")}</a>
-              </CustomLink>
+              <a className={isActive("/why-flutter", NavLinkStyle)} href="/why-flutter">
+                {t("common.navbar.why_flutter")}
+              </a>
             </li>
             <li className="nav-item">
-              <CustomLink scrolled={scrolled} href="/our-work">
-                <a className={NavLinkStyle}>{t("common.navbar.our_work")}</a>
-              </CustomLink>
+              <a className={isActive("/our-work", NavLinkStyle)} href="/our-work">
+                {t("common.navbar.our_work")}
+              </a>
             </li>
             <li className="nav-item">
-              <CustomLink scrolled={scrolled} href="/faq">
-                <a className={NavLinkStyle}>{t("common.navbar.faq")}</a>
-              </CustomLink>
+              <a className={isActive("/faq", NavLinkStyle)} href="/faq">
+                {t("common.navbar.faq")}
+              </a>
             </li>
             <li className="nav-item">
-              <CustomLink scrolled={scrolled} href="/blog">
-                <a className={NavLinkStyle}>{t("common.navbar.blog")}</a>
-              </CustomLink>
+              <a className={isActive("/blog", NavLinkStyle)} href="/blog">
+                {t("common.navbar.blog")}
+              </a>
             </li>
           </ul>
         </div>
