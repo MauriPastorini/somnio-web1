@@ -11,6 +11,7 @@ const HomeServicesSection = ({ t }) => {
       text: t("home.services.mobile.text"),
       footerImg: "assets/images/home/home-services-img4.png",
       link: "/services/mobile-app-development",
+      footerImgWidth: 283
     },
     {
       headerImg: "assets/images/home/home-services-img3.svg",
@@ -18,6 +19,7 @@ const HomeServicesSection = ({ t }) => {
       text: t("home.services.web.text"),
       footerImg: "assets/images/home/home-services-img5.png",
       link: "/services/web-development",
+      footerImgWidth: 176
     },
     {
       headerImg: "assets/images/home/home-services-img1.svg",
@@ -25,6 +27,7 @@ const HomeServicesSection = ({ t }) => {
       text: t("home.services.ux_ui.text"),
       footerImg: "assets/images/home/home-services-img-6.png",
       link: "/services/ux-ui",
+      footerImgWidth: 216
     },
   ];
 
@@ -58,6 +61,7 @@ const HomeServicesSection = ({ t }) => {
             title={d.title}
             footerImg={d.footerImg}
             link={d.link}
+            footerImgWidth={d.footerImgWidth}
           />
         ))}
       </div>
@@ -72,6 +76,7 @@ const HomeServicesSection = ({ t }) => {
               title={d.title}
               footerImg={d.footerImg}
               link={d.link}
+              footerImgWidth={d.footerImgWidth}
             />
           ))}
         </Slider>

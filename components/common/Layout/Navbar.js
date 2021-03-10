@@ -80,32 +80,24 @@ const Navbar = ({ t }) => {
               </CustomDropdownLink>
               <ul className="nav__submenu" style={SubMenuStyle}>
                 <li className={`nav__submenu-item triangle ${scrolled ? "triangle-scrolled" : ""}`}>
-                  <Link href="/services/working-modalities">
-                    <a className="nav__submenu-link" style={SubMenuItemStyle}>
-                      {t("common.navbar.working_modalities")}
-                    </a>
-                  </Link>
+                  <a href="/services/working-modalities" className="nav__submenu-link" style={SubMenuItemStyle}>
+                    {t("common.navbar.working_modalities")}
+                  </a>
                 </li>
                 <li className={"nav__submenu-item"}>
-                  <Link href="/services/mobile-app-development">
-                    <a className="nav__submenu-link" style={SubMenuItemStyle}>
-                      {t("common.navbar.services_mobile")}
-                    </a>
-                  </Link>
+                  <a href="/services/mobile-app-development" className="nav__submenu-link" style={SubMenuItemStyle}>
+                    {t("common.navbar.services_mobile")}
+                  </a>
                 </li>
                 <li className="nav__submenu-item">
-                  <Link href="/services/web-development">
-                    <a className="nav__submenu-link" style={SubMenuItemStyle}>
-                      {t("common.navbar.services_web")}
-                    </a>
-                  </Link>
+                  <a href="/services/web-development" className="nav__submenu-link" style={SubMenuItemStyle}>
+                    {t("common.navbar.services_web")}
+                  </a>
                 </li>
                 <li className="nav__submenu-item">
-                  <Link href="/services/ux-ui">
-                    <a className="nav__submenu-link" style={SubMenuItemStyle}>
-                      {t("common.navbar.services_uxui")}
-                    </a>
-                  </Link>
+                  <a href="/services/ux-ui" className="nav__submenu-link" style={SubMenuItemStyle}>
+                    {t("common.navbar.services_uxui")}
+                  </a>
                 </li>
               </ul>
             </li>
@@ -132,12 +124,9 @@ const Navbar = ({ t }) => {
             </li>
           </ul>
         </div>
-        <Link href="/get-in-touch">
-          <a type="button" className={ButtonStyle}>
-            {t("common.navbar.button")}
-          </a>
-          {/* <button className={ButtonStyle}>{t("common.navbar.button")}</button> */}
-        </Link>
+        <a href="/get-in-touch" type="button" className={ButtonStyle}>
+          {t("common.navbar.button")}
+        </a>
       </div>
       <style jsx>{`
         .navbar {

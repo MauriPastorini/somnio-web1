@@ -2,16 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 import { Poster, Poster2 } from "./Poster";
-import Link from "next/link";
 
 export const PostContentSection = ({ t, post }) => {
   return (
     <div className="PostContentSection custom-container">
-      <Link href="/blog">
-        <a className="back-link">
-          <img src="/assets/images/post/arrow.svg" alt="" />
-        </a>
-      </Link>
+      <a href="/blog" className="back-link">
+        <img src="/assets/images/post/arrow.svg" alt="" />
+      </a>
       <h2 className="primary-tag">{post.primary_tag.name}</h2>
       <h1 className="title">{post.title}</h1>
       <p className="excerpt">{post.custom_excerpt}</p>
@@ -29,11 +26,7 @@ export const PostContentSection = ({ t, post }) => {
 
       <html className="inner-html" dangerouslySetInnerHTML={{ __html: post.html }}></html>
 
-      <Poster2 
-        author={post.primary_author} 
-        published_at={post.published_at} 
-        reading_time={post.reading_time} 
-      />
+      <Poster2 author={post.primary_author} published_at={post.published_at} reading_time={post.reading_time} />
 
       <style jsx>{`
         .PostContentSection {
@@ -43,8 +36,8 @@ export const PostContentSection = ({ t, post }) => {
           border-radius: 36px;
           padding: 58px 159px !important;
 
-          .back-link{
-            position:absolute;
+          .back-link {
+            position: absolute;
             top: 66px;
             left: 71px;
           }
@@ -109,7 +102,7 @@ export const PostContentSection = ({ t, post }) => {
 
 PostContentSection.propTypes = {
   t: PropTypes.func.isRequired,
-  post: PropTypes.any.isRequired
+  post: PropTypes.any.isRequired,
 };
 
 export default withTranslation("common")(PostContentSection);

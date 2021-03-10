@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../../i18n";

@@ -83,8 +83,8 @@ const OurWorkHeaderSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .OurWorkHeaderSection {
-            padding-top: 197px;
-            padding-bottom: 171px;
+            padding-top: 202px;
+            padding-bottom: 175px;
 
             .header__path {
               display: none;
@@ -93,8 +93,8 @@ const OurWorkHeaderSection = ({ t }) => {
             .header__path--mobile {
               display: block;
               position: absolute;
-              top: -203px;
-              left: -244px;
+              top: -260px;
+              left: -304px;
               z-index: 0;
               height: auto;
             }
@@ -132,6 +132,9 @@ const OurWorkHeaderSection = ({ t }) => {
 
         @media screen and (max-width: 428px) {
           .OurWorkHeaderSection {
+            padding-top: 202px;
+            padding-bottom: 557px;
+
             background-image: url(/assets/images/our-work/mobile/header-bg.svg);
           }
         }

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 import ContactForm from "./ContactForm";
@@ -61,7 +60,7 @@ const ContactSection = ({ t }) => (
       @media screen and (max-width: 428px) {
         .ContactSection {
           background-image: url(/assets/images/common/mobile/contact-bg.svg);
-          background-size: 100%;
+          background-size: cover;
           background-repeat: no-repeat;
           padding-top: 85px;
 

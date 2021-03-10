@@ -8,12 +8,26 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "nprogress/nprogress.css";
 import "../styles/Global.scss";
-
-Router.events.on("routeChangeStart", () => NProgress.start());
-Router.events.on("routeChangeComplete", () => NProgress.done());
-Router.events.on("routeChangeError", () => NProgress.done());
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    Router.events.on("routeChangeStart", () => NProgress.start());
+    Router.events.on("routeChangeComplete", () => {
+      window.scroll(0, 0);
+      NProgress.done();
+    });
+    Router.events.on("routeChangeError", () => NProgress.done());
+    return () => {
+      Router.events.off("routeChangeStart", () => NProgress.start());
+      Router.events.off("routeChangeComplete", () => {
+        window.scroll(0, 0);
+        NProgress.done();
+      });
+      Router.events.off("routeChangeError", () => NProgress.done());
+    };
+  });
+  
   return (
     <>
       <Head>

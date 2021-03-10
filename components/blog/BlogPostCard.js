@@ -1,35 +1,32 @@
 import { format } from "date-fns";
-import Link from "next/link";
 import React from "react";
 
 const BlogPostCard = ({ post, large }) => {
   return (
     <article className={`${large ? "post-card-large" : "post-card-normal"}`}>
       <div className="post-card-img">
-        <Link href={`/post/${post.slug}`}>
-          <a className="post-card-image-link">
-            <img
-              className="post-card-image img-fluid"
-              src={post.feature_image || "/assets/images/common/image-placeholder.png"}
-              alt=""
-            />
-          </a>
-        </Link>
+        <a href={`/post/${post.slug}`} className="post-card-image-link">
+          <img
+            className="post-card-image img-fluid"
+            src={post.feature_image || "/assets/images/common/image-placeholder.png"}
+            alt=""
+          />
+        </a>
       </div>
 
       <div className="post-card-content">
         <h2 className="post-card-primary-tag">{post.primary_tag.name}</h2>
 
-        <Link href={`/post/${post.slug}`}>
-          <a className="post-card-content-link">
-            <h2 className="post-card-title">{post.title}</h2>
-            <p className="post-card-excerpt">{post.custom_excerpt}</p>
-          </a>
-        </Link>
+        <a href={`/post/${post.slug}`} className="post-card-content-link">
+          <h2 className="post-card-title">{post.title}</h2>
+          <p className="post-card-excerpt">{post.custom_excerpt}</p>
+        </a>
 
         <div className="post-card-category-list">
           {post.tags.map((tag, i) => (
-            <span key={i} className="post-card-category-item">{tag.name}</span>
+            <span key={i} className="post-card-category-item">
+              {tag.name}
+            </span>
           ))}
         </div>
 
@@ -37,7 +34,9 @@ const BlogPostCard = ({ post, large }) => {
           <img className="post-card-thumbnail" src={post.authors[0].profile_image} alt="" />
           <div className="text-wrapper">
             <p className="post-card-name">{post.authors[0].name}</p>
-            <p className="post-card-publish-date">{`${format(new Date(post.published_at), "MMM dd")} · ${post.reading_time} min read`}</p>
+            <p className="post-card-publish-date">{`${format(new Date(post.published_at), "MMM dd")} · ${
+              post.reading_time
+            } min read`}</p>
           </div>
         </footer>
       </div>

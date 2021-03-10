@@ -1,37 +1,32 @@
 import React from "react";
 import Head from "next/head";
 import { Container } from "../../components/common/Layout/Container";
+import ServicesUxUiHeaderSection from "../../components/services-uxui/ServicesUxUiHeaderSection";
+import ServicesUxUiInfoSection from "../../components/services-uxui/ServicesUxUiInfoSection";
+import ServicesUxUiWhySection from "../../components/services-uxui/ServicesUxUiWhySection";
+import ServicesUxUiServicesSection from "../../components/services-uxui/ServicesUxUiServicesSection";
+import ServicesUxUiVitalSection from "../../components/services-uxui/ServicesUxUiVitalSection";
 import ContactSection from "../../components/common/ContactSection";
-import ServicesMobileHeaderSection from "../../components/services-mobile/ServicesMobileHeaderSection";
-import ServicesMobileInfoSection from "../../components/services-mobile/ServicesMobileInfoSection";
-import ServicesMobileCoveredSection from "../../components/services-mobile/ServicesMobileCoveredSection";
-import ServicesMobileFlutterChangeGameSection from "../../components/services-mobile/ServicesMobileFlutterChangeGameSection";
-import ServicesMobiletechnologiesSection from "../../components/services-mobile/ServicesMobiletechnologiesSection";
-import ServicesMobileOurKnowledgeSection from "../../components/services-mobile/ServicesMobileOurKnowledgeSection";
-import ServicesMobileSomeAppsSection from "../../components/services-mobile/ServicesMobileSomeAppsSection";
 
-const MobileDevelopment = () => (
+const UxUi = () => (
   <Container>
     <Head>
-      <title>Mobile App Development Services | Somnio Software</title>
+      <title>UX/UI Design Services | Somnio Software</title>
       <meta
         name="description"
-        content="We build innovative mobile applications with Flutter for both Android & iOS devices. We
-        focus on creating high-quality, engaging, and user-friendly apps."
+        content="We create human-centered designs for mobile and web apps that users love to use."
       />
     </Head>
 
-    <ServicesMobileHeaderSection />
-    <ServicesMobileInfoSection />
-    <ServicesMobileCoveredSection />
-    <ServicesMobileFlutterChangeGameSection />
-    <ServicesMobiletechnologiesSection />
-    <ServicesMobileOurKnowledgeSection />
-    <ServicesMobileSomeAppsSection />
+    <ServicesUxUiHeaderSection />
+    <ServicesUxUiInfoSection />
+    <ServicesUxUiWhySection />
+    <ServicesUxUiServicesSection />
+    <ServicesUxUiVitalSection />
     <ContactSection />
   </Container>
 );
 
-MobileDevelopment.getInitialProps = () => ({ namespacesRequired: ["common"] });
+UxUi.getInitialProps = () => ({ namespacesRequired: ["common"] });
 
-export default MobileDevelopment;
+export default UxUi;

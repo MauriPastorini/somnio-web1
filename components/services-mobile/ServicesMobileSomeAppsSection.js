@@ -92,9 +92,9 @@ const ServicesMobileSomeAppsSection = ({ t }) => {
         </div>
       </div>
 
-      <Link href="/our-work">
-        <a className="btn btn-custom-2 btn-mobile">{t("common.button_2")}</a>
-      </Link>
+      <a href="/our-work" className="btn btn-custom-2 btn-mobile">
+        {t("common.button_2")}
+      </a>
 
       <AngencySayCard t={t} />
 

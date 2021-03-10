@@ -1,21 +1,15 @@
-import PropTypes from "prop-types";
-import Link from "next/link";
-import IconChevronRight from "./IconChevronRight";
-
 const HomePorfolioSlide = ({ title, text, img }) => (
   <div className="HomePorfolioSlide" style={{ width: `100vw` }}>
     <div className="text-bg-wrapper">
       <div className="slide-text-content custom-container">
         <h2 className="slide-text-title">{title}</h2>
         <p className="slide-text-paragraph">{text}</p>
-        <Link href="/">
-          <a className="slide-text-link">
-            <p>
-              Read more
-              <img src="/assets/images/common/arrow2.svg" alt="" />
-            </p>
-          </a>
-        </Link>
+        <a href="/" className="slide-text-link">
+          <p>
+            Read more
+            <img src="/assets/images/common/arrow2.svg" alt="" />
+          </p>
+        </a>
       </div>
     </div>
     <div className="slide-img-wrapper">

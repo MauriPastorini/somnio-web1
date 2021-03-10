@@ -3,21 +3,28 @@ import React from "react";
 export const OurWorkCard = ({ data }) => {
   return (
     <figure className="OurWorkCard">
-      <img className="bg" src={data.bg} />
+      <img className="bg" src={`/assets/images/our-work/${data.bg}`} />
+      <img className="bg--mobile" src={`/assets/images/our-work/mobile/${data.bg}`} />
+
       <figcaption>
         <h1>{data.title}</h1>
         <p>{data.description}</p>
 
-        <div className="download-button-group">
-          <img src="/assets/images/our-work/button-app-store.png" />
-          <img src="/assets/images/our-work/button-google-play.png" />
-        </div>
-        <div className="category-group">
+        {data.tech.find((t) => t == "Web App") ? (
+          ""
+        ) : (
+          <div className="download-button-group">
+            <img src="/assets/images/our-work/button-app-store.png" />
+            <img src="/assets/images/our-work/button-google-play.png" />
+          </div>
+        )}
+
+        <div style={{color: `${data.fontColor}`}} className="category-group">
           {data.categories.map((c, i) => (
             <span key={i}>{c}</span>
           ))}
         </div>
-        <div className="tech-group">
+        <div style={{color: `${data.fontColor}`}} className="tech-group">
           {data.tech.map((t, i) => (
             <span key={i}>{t}</span>
           ))}
@@ -27,13 +34,27 @@ export const OurWorkCard = ({ data }) => {
       <style jsx>{`
         .OurWorkCard {
           position: relative;
-          -webkit-box-shadow: 0px 36px 66px -33px rgba(0,0,0,0.75);
-          -moz-box-shadow: 0px 36px 66px -33px rgba(0,0,0,0.75);
-          box-shadow: 0px 36px 66px -33px rgba(0,0,0,0.75);
-          
+          -webkit-box-shadow: 0px 36px 66px -33px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 0px 36px 66px -33px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 36px 66px -33px rgba(0, 0, 0, 0.75);
+
           margin-bottom: 70px;
+          max-height: 427px;
+          height: 100vh;
+          width: 100%;
+          max-width: 1252px;
+          border-radius: 14px;
+
           .bg {
+            position: absolute;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 14px;
+          }
+
+          .bg--mobile {
+            display: none;
           }
 
           figcaption {
@@ -86,6 +107,69 @@ export const OurWorkCard = ({ data }) => {
               padding: 5px 29px;
               font-weight: 500;
               font-size: 15px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 428px) {
+          .OurWorkCard {
+            position: relative;
+            max-height: 680px;
+            border-radius: 30px;
+            margin-bottom: 37px;
+            
+            .bg {
+              display: none;
+            }
+
+            .bg--mobile {
+              display: block;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 30px;
+            }
+
+            figcaption {
+              max-width: unset;
+              margin: 28px 25px;
+
+              h1 {
+                font-size: 28px;
+                margin-bottom: 10px;
+              }
+
+              p {
+                font-size: 14px;
+                line-height: 20px;
+              }
+
+              .download-button-group {
+                display: flex;
+                img {
+                  width: 130px;
+                }
+              }
+
+              .category-group {
+                span {
+                  font-size: 13px;
+                  margin-right: 15px;
+                }
+              }
+
+              .tech-group {
+                margin-bottom: 37px;
+                span {
+                  font-size: 13px;
+                  margin-right: 15px;
+                }
+              }
+
+              .btn-custom-3 {
+                display: none !important;
+              }
             }
           }
         }

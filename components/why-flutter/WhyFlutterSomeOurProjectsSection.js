@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
@@ -156,9 +155,10 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
         </div>
       </div>
 
-      <Link href="/our-work">
-        <a className="btn btn-custom-2 btn-position"> {t("common.button_2")}</a>
-      </Link>
+      <a href="/our-work" className="btn btn-custom-2 btn-position">
+        {" "}
+        {t("common.button_2")}
+      </a>
 
       <AngencySayCard t={t} />
 

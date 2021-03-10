@@ -1,21 +1,17 @@
 import PropTypes from "prop-types";
-import Link from "next/link";
-import IconChevronRight from "./IconChevronRight";
 
-const HomeServiceCard = ({ headerImg, text, title, footerImg, link }) => (
+const HomeServiceCard = ({ headerImg, text, title, footerImg, link, footerImgWidth }) => (
   <div className="HomeServiceCard">
     <img className="service-card-header" src={headerImg} alt="" />
     <h2 className="service-card-title">{title}</h2>
     <p className="service-card-text">{text}</p>
-    <Link href={link}>
-      <a className="service-card-link">
-        <p>
-          Read more
-          <img src="/assets/images/common/arrow2.svg" alt="" />
-        </p>
-      </a>
-    </Link>
-    <img className="service-card-footer" src={footerImg} alt="" />
+    <a href={link} className="service-card-link">
+      <p>
+        Read more
+        <img src="/assets/images/common/arrow2.svg" alt="" />
+      </p>
+    </a>
+    <img style={{ width: footerImgWidth }} className="service-card-footer" src={footerImg} alt="" />
 
     <style jsx>
       {`

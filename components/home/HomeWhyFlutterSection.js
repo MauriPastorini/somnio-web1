@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { withTranslation } from "../../i18n";
 import PropTypes from "prop-types";
 
@@ -13,12 +12,10 @@ const HomeWhyFlutterSection = ({ t }) => {
         <p className="whyflutter__text" data-aos="fade-in">
           {t("home.why_flutter.text")}
         </p>
-        <Link href="/why-flutter" data-aos="fade-in">
-          <a className="whyflutter__link">
-            {t("common.text_1")}
-            <img src="/assets/images/common/arrow1.svg" alt="" />
-          </a>
-        </Link>
+        <a href="/why-flutter" className="whyflutter__link" data-aos="fade-in">
+          {t("common.text_1")}
+          <img src="/assets/images/common/arrow1.svg" alt="" />
+        </a>
       </div>
       <style jsx>
         {`

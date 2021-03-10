@@ -34,21 +34,21 @@ const AngencySayCard = ({ t }) => (
               flex-direction: row;
               align-items: center;
 
-              .card__footer-person{
-                img{
+              .card__footer-person {
+                img {
                   width: 56px !important;
                   height: 56px !important;
                 }
 
-                .card__footer-name{
-                  p{
+                .card__footer-name {
+                  p {
                     font-weight: normal;
                     margin-left: 9px;
                   }
                 }
               }
 
-              .card__footer-logo{
+              .card__footer-logo {
                 margin-bottom: 0;
               }
             }
@@ -109,9 +109,9 @@ const ServicesWebSomeAppsSection = ({ t }) => {
         </div>
       </div>
 
-      <Link href="/our-work">
-        <a className="btn btn-custom-2 btn-mobile">{t("common.button_2")}</a>
-      </Link>
+      <a href="/our-work" className="btn btn-custom-2 btn-mobile">
+        {t("common.button_2")}
+      </a>
 
       <AngencySayCard t={t} />
 

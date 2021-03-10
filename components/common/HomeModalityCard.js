@@ -1,6 +1,4 @@
 import PropTypes from "prop-types";
-import Link from "next/link";
-import IconChevronRight from "./IconChevronRight";
 
 const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
   <div className="HomeModalityCard custom-container">
@@ -13,14 +11,12 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
     />
     <h4 className="modality-card-title">{title}</h4>
     <p className="modality-card-text">{text}</p>
-    <Link href={link}>
-      <a className="modality-card-link">
-        <p>
-          Read more
-          <img src="/assets/images/common/arrow2.svg" alt="" />
-        </p>
-      </a>
-    </Link>
+    <a href={link} className="modality-card-link">
+      <p>
+        Read more
+        <img src="/assets/images/common/arrow2.svg" alt="" />
+      </p>
+    </a>
     <style jsx>{`
       .HomeModalityCard {
         display: flex;
@@ -35,7 +31,7 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
           margin-bottom: 30px;
           max-width: 317px;
         }
-  
+
         .modality-card-text {
           color: #707070;
           font-size: 18px;
@@ -43,32 +39,32 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
           max-width: 487px;
           text-align: center;
         }
-  
+
         .modality-card-header {
           margin-bottom: 69px;
           max-width: 165px;
           border-radius: 50%;
         }
-  
+
         .modality-card-header--violet {
           -webkit-box-shadow: 29px 26px 70px -34px rgba(80, 46, 213, 1);
           -moz-box-shadow: 29px 26px 70px -34px rgba(80, 46, 213, 1);
           box-shadow: 29px 26px 70px -34px rgba(80, 46, 213, 1);
         }
-  
+
         .modality-card-header--lightblue {
           -webkit-box-shadow: 29px 26px 70px -34px rgba(9, 167, 254, 1);
           -moz-box-shadow: 29px 26px 70px -34px rgba(9, 167, 254, 1);
           box-shadow: 29px 26px 70px -34px rgba(9, 167, 254, 1);
         }
-  
+
         .modality-card-link {
           color: #1681e3;
           font-size: 20px;
           font-weight: 700;
           margin-bottom: 40px;
           text-decoration: none;
-  
+
           img {
             width: 9px;
             height: 15px;
@@ -77,7 +73,6 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
         }
       }
 
-
       @media screen and (max-width: 1280px) {
         .HomeModalityCard {
           .modality-card-title {
@@ -85,21 +80,21 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
             margin-bottom: 36px;
             max-width: 170px;
           }
-    
+
           .modality-card-text {
             font-size: 14px;
             margin-bottom: 20px;
           }
-    
+
           .modality-card-header {
             margin-bottom: 36px;
             max-width: 92px;
           }
-    
+
           .modality-card-link {
             font-size: 16px;
             margin-bottom: 40px;
-    
+
             img {
               width: 9px;
               height: 15px;
