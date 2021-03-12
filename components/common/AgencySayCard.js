@@ -15,8 +15,8 @@ const AgencySayCard = ({ comment }) => {
         </div>
 
         <div className="agency-card__header-info">
-          <h3>{comment.name}</h3>
-          <h3>{`${comment.position}, ${comment.project}`}</h3>
+          <h2>{comment.name}</h2>
+          <h2>{`${comment.position}, ${comment.project}`}</h2>
           <img className="mt-10" src="/assets/images/common/stars.svg" />
         </div>
       </div>
@@ -84,7 +84,7 @@ const AgencySayCard = ({ comment }) => {
               flex-direction: column;
               justify-content: flex-start;
 
-              h3 {
+              h2 {
                 color: #001739;
                 font-size: 27px;
                 font-weight: bold;
@@ -163,7 +163,7 @@ const AgencySayCard = ({ comment }) => {
               .agency-card__header-info {
                 max-width: 143px;
 
-                h3 {
+                h2 {
                   font-size: 15px;
                 }
 

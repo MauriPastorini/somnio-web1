@@ -11,7 +11,9 @@ const HomeServicesSection = ({ t }) => {
       text: t("home.services.mobile.text"),
       footerImg: "assets/images/home/home-services-img4.png",
       link: "/services/mobile-app-development",
-      footerImgWidth: 283
+      footerImgWidth: 283,
+      imgAlt: "Mobile App Development services | Somnio Software",
+      logosAlt: "Technologies we use for Mobile App Development | Flutter, Android, iOS, Serverless, Firebase, PWA, Code Magic"
     },
     {
       headerImg: "assets/images/home/home-services-img3.svg",
@@ -19,7 +21,9 @@ const HomeServicesSection = ({ t }) => {
       text: t("home.services.web.text"),
       footerImg: "assets/images/home/home-services-img5.png",
       link: "/services/web-development",
-      footerImgWidth: 176
+      footerImgWidth: 176,
+      imgAlt: "Web Development services | Somnio Software",
+      logosAlt: "Technologies we use for Web Development | React, Vue.js, Node.js, Amazon Web Services, HTML, Java Script, CSS"
     },
     {
       headerImg: "assets/images/home/home-services-img1.svg",
@@ -27,7 +31,9 @@ const HomeServicesSection = ({ t }) => {
       text: t("home.services.ux_ui.text"),
       footerImg: "assets/images/home/home-services-img-6.png",
       link: "/services/ux-ui",
-      footerImgWidth: 216
+      footerImgWidth: 216,
+      imgAlt: "UX/UI Design services | Somnio Software",
+      logosAlt: "Technologies we use for UX/UI Design | Figma, Zeplin, Adobe Illustrator, Adobe XD, Adobe Photoshop"
     },
   ];
 
@@ -62,6 +68,8 @@ const HomeServicesSection = ({ t }) => {
             footerImg={d.footerImg}
             link={d.link}
             footerImgWidth={d.footerImgWidth}
+            imgAlt={d.imgAlt}
+            logosAlt={d.logosAlt}
           />
         ))}
       </div>
@@ -77,6 +85,8 @@ const HomeServicesSection = ({ t }) => {
               footerImg={d.footerImg}
               link={d.link}
               footerImgWidth={d.footerImgWidth}
+              imgAlt={d.imgAlt}
+              logosAlt={d.logosAlt}
             />
           ))}
         </Slider>

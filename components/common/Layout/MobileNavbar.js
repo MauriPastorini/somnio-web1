@@ -33,7 +33,7 @@ const MobileNavbar = ({ t }) => {
       <nav className="navbar">
         <div className="center-content">
           <Link className="navbar-brand" href="/">
-            <img className="somnio-logo" src="/assets/images/common/logo.png" alt="" />
+            <img className="somnio-logo" src="/assets/images/common/logo.png" alt="Somnio Software Logo" />
           </Link>
           <a className="btn-mobile" onClick={handleOpen}>
             <img src="/assets/images/common/bg_menu_mobile.svg" />

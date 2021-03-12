@@ -9,11 +9,11 @@ const HomeHeaderSection = ({ t }) => {
       <img src="/assets/images/home/mobile/home-header-path.svg" alt="" className="header__path--mobile" />
       <div className="text-and-image custom-container">
         <div className="header-text-wrapper" data-aos="fade-right">
-          <h1 className="header__text">{t("home.header.text_1")}</h1>
+          <h2 className="header__text">{t("home.header.text_1")}</h2>
           <button className="btn btn-custom-1 btn-shadow btn-desktop">{t("common.button_1")}</button>
         </div>
         <div className="header-img-wrapper">
-          <img src={`/assets/images/home/home-header-img.svg`} alt="" className="header__img img-fluid" />
+          <img src={`/assets/images/home/home-header-img.svg`} alt="We sky-rocket your ideas | Somnio Software" className="header__img img-fluid" />
           <button className="btn btn-custom-1 btn-shadow btn-mobile">{t("common.button_1")}</button>
         </div>
       </div>

@@ -25,5 +25,6 @@ module.exports = withCSS(withImages(withSass({
   env: {
     CONTENT_API_KEY: "7cc515127033c288e2ffae8157",
     BLOG_URL: "https://somnio-web.herokuapp.com",
+    NEXT_PUBLIC_GA_ID: "UA-176979650-1"
   },
 })));

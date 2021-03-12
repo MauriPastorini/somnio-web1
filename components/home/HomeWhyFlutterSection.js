@@ -7,9 +7,9 @@ const HomeWhyFlutterSection = ({ t }) => {
   return (
     <section className="HomeWhyFlutterSection">
       <div className="whyfluter-content custom-container">
-        <h1 className="whyflutter__title" data-aos="fade-in">
+        <h2 className="whyflutter__title" data-aos="fade-in">
           {t("home.why_flutter.title")}
-        </h1>
+        </h2>
         <p className="whyflutter__text" data-aos="fade-in">
           {t("home.why_flutter.text")}
         </p>

@@ -10,7 +10,7 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
       src={headerImg}
       alt=""
     />
-    <h4 className="modality-card-title">{title}</h4>
+    <h3 className="modality-card-title">{title}</h3>
     <p className="modality-card-text">{text}</p>
     <Link href={link}>
       <a className="modality-card-link">

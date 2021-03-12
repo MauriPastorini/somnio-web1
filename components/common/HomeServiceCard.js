@@ -1,9 +1,9 @@
 import Link from "next/link";
 import PropTypes from "prop-types";
 
-const HomeServiceCard = ({ headerImg, text, title, footerImg, link, footerImgWidth }) => (
+const HomeServiceCard = ({ headerImg, text, title, footerImg, link, footerImgWidth, imgAlt, logosAlt  }) => (
   <div className="HomeServiceCard">
-    <img className="service-card-header" src={headerImg} alt="" />
+    <img className="service-card-header" src={headerImg} alt={imgAlt} />
     <h2 className="service-card-title">{title}</h2>
     <p className="service-card-text">{text}</p>
     <Link href={link}>
@@ -14,7 +14,7 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link, footerImgWid
         </p>
       </a>
     </Link>
-    <img style={{ width: footerImgWidth }} className="service-card-footer" src={footerImg} alt="" />
+    <img style={{ width: footerImgWidth }} className="service-card-footer" src={footerImg} alt={logosAlt} />
 
     <style jsx>
       {`

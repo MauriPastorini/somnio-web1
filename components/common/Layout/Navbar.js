@@ -62,7 +62,7 @@ const Navbar = ({ t }) => {
     <nav className={NavStyle}>
       <div className="container custom-container">
         <Link className="navbar-brand" href="/">
-          <img className="somnio-logo" src={logo} alt="" />
+          <img className="somnio-logo" src={logo} alt="Somnio Software Logo" />
         </Link>
         <a className="collapse" href="javacript:void(0)">
           <img src="/assets/images/common/bg_menu_mobile.svg" />

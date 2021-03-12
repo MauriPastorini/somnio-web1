@@ -11,18 +11,21 @@ const HomePortfolioSection = ({ t }) => {
       text: t("home.portfolio.jaac.text"),
       img: "/assets/images/home/home-porfolio-jaac.png",
       color: "red",
+      imgAlt:"Jaac | An app for restaurants built by Somnio Software"
     },
     {
       title: t("home.portfolio.crimedoor.title"),
       text: t("home.portfolio.crimedoor.text"),
       img: "/assets/images/home/home-portfolio-crime.png",
       color: "green",
+      imgAlt:"CrimeDoor | Crime database built by Somnio Software"
     },
     {
       title: t("home.portfolio.pay_my_trades.title"),
       text: t("home.portfolio.pay_my_trades.text"),
       img: "/assets/images/home/home-portfolio-paymytrades.png",
       color: "blue",
+      imgAlt:"ProWallet | Instant payment solution app built by Somnio Software"
     },
   ];
 
@@ -54,6 +57,7 @@ const HomePortfolioSection = ({ t }) => {
             text={_slide.text}
             img={_slide.img}
             color={_slide.color}
+            imgAlt={_slide.imgAlt}
           />
         ))}
       </Slider>
