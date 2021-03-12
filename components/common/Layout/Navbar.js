@@ -44,7 +44,10 @@ const Navbar = ({ t }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const listener = window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
   });
 
   const logo = `/assets/images/common/${scrolled ? "logo-2" : "logo"}.png`;
@@ -292,6 +295,10 @@ const Navbar = ({ t }) => {
           }
 
           &:nth-child(2) {
+            border-bottom: 1px solid #d8d8d877;
+          }
+          
+          &:nth-child(3) {
             border-bottom: 1px solid #d8d8d877;
           }
         }

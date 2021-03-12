@@ -55,6 +55,7 @@ const WhyFlutterBrandsTrutsFlutterSection = ({ t }) => {
             .header--dark {
               margin-top: 48px;
               margin-bottom: 38px !important;
+              max-width: 278px;
             }
             
             .brand-list {

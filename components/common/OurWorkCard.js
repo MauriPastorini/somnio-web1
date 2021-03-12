@@ -10,21 +10,19 @@ export const OurWorkCard = ({ data }) => {
         <h1>{data.title}</h1>
         <p>{data.description}</p>
 
-        {data.tech.find((t) => t == "Web App") ? (
-          ""
-        ) : (
+        {(data.url_google_play || data.url_app_store) && (
           <div className="download-button-group">
             <img src="/assets/images/our-work/button-app-store.png" />
             <img src="/assets/images/our-work/button-google-play.png" />
           </div>
         )}
 
-        <div style={{color: `${data.fontColor}`}} className="category-group">
+        <div style={{ color: `${data.fontColor}` }} className="category-group">
           {data.categories.map((c, i) => (
             <span key={i}>{c}</span>
           ))}
         </div>
-        <div style={{color: `${data.fontColor}`}} className="tech-group">
+        <div style={{ color: `${data.fontColor}` }} className="tech-group">
           {data.tech.map((t, i) => (
             <span key={i}>{t}</span>
           ))}
@@ -117,7 +115,7 @@ export const OurWorkCard = ({ data }) => {
             max-height: 680px;
             border-radius: 30px;
             margin-bottom: 37px;
-            
+
             .bg {
               display: none;
             }

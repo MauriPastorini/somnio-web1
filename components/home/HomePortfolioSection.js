@@ -2,6 +2,7 @@ import { withTranslation } from "../../i18n";
 import PropTypes from "prop-types";
 import HomePorfolioSlide from "../../components/common/HomePorfolioSlide";
 import Slider from "react-slick";
+import Link from "next/link";
 
 const HomePortfolioSection = ({ t }) => {
   const portfolio = [
@@ -57,9 +58,9 @@ const HomePortfolioSection = ({ t }) => {
         ))}
       </Slider>
 
-      <a href="/our-work" className="btn btn-custom-2 btn-position">
-        {t("common.button_2")}
-      </a>
+      <Link href="/our-work">
+        <a className="btn btn-custom-2 btn-position">{t("common.button_2")}</a>
+      </Link>
 
       <style jsx>
         {`

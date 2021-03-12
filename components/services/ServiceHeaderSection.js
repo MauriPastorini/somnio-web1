@@ -187,6 +187,7 @@ const ServiceHeaderSection = ({ t }) => {
 
                 .paragraph-1 {
                   font-size: 18px;
+                  line-height: 22px;
                 }
               }
 
@@ -207,7 +208,7 @@ const ServiceHeaderSection = ({ t }) => {
             }
 
             .header-wrapper {
-              margin-top: 300px;
+              margin-top: 266px;
               margin-bottom: 65px;
             }
 

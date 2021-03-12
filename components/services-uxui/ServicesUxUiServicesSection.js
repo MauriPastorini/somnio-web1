@@ -35,7 +35,7 @@ const ServiceCard = ({ img, title, text }) => (
         .uxui-service-card {
           flex-direction: column;
           min-height: 200px;
-          margin-bottom: 40px;
+          margin-bottom: 15px;
 
           img {
             margin: 0;

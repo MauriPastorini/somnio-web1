@@ -17,14 +17,14 @@ const AboutUsOurValuesSection = ({ t }) => {
       text: t("about_us.our_values.value_2.text"),
     },
     {
-      img: "value-empathy.svg",
-      classImgName: "empathy_shadow",
+      img: "value-truts.svg",
+      classImgName: "trust_shadow",
       title: t("about_us.our_values.value_6.title"),
       text: t("about_us.our_values.value_6.text"),
     },
     {
       img: "value-empathy.svg",
-      classImgName: "empathy_shadow",
+      classImgName: "communication_shadow",
       title: t("about_us.our_values.value_3.title"),
       text: t("about_us.our_values.value_3.text"),
     },

@@ -57,7 +57,7 @@ const ServicesUxUiWhySection = ({ t }) => {
 
               h2 {
                 font-size: 28px;
-                margin-bottom: 62px;
+                margin-bottom: 49px;
               }
 
               .uxui__text {

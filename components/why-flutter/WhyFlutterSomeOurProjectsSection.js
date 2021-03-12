@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
@@ -155,10 +156,9 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
         </div>
       </div>
 
-      <a href="/our-work" className="btn btn-custom-2 btn-position">
-        {" "}
-        {t("common.button_2")}
-      </a>
+      <Link href="/our-work">
+        <a className="btn btn-custom-2 btn-position"> {t("common.button_2")}</a>
+      </Link>
 
       <AngencySayCard t={t} />
 
@@ -241,6 +241,10 @@ const WhyFlutterSomeOurProjectsSection = ({ t }) => {
         @media screen and (max-width: 1280px) {
           .WhyFlutterSomeOurProjectsSection {
             margin-bottom: 130px;
+
+            .header--dark {
+              max-width: 278px;
+            }
 
             .projects {
               max-width: 850px !important;

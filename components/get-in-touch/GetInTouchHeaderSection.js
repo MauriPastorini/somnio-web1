@@ -53,6 +53,7 @@ const ContactInfo = () => {
 
             p {
               text-align: center;
+              margin-bottom: 2rem;
             }
           }
         }

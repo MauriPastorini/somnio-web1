@@ -30,6 +30,8 @@ const AngencySayCard = ({ t }) => (
           margin-bottom: 69px;
 
           .agency-say-card {
+            padding: 59px 36px;
+            
             .agency-say-card__footer {
               flex-direction: row;
               align-items: center;
@@ -109,9 +111,9 @@ const ServicesWebSomeAppsSection = ({ t }) => {
         </div>
       </div>
 
-      <a href="/our-work" className="btn btn-custom-2 btn-mobile">
-        {t("common.button_2")}
-      </a>
+      <Link href="/our-work">
+        <a className="btn btn-custom-2 btn-mobile">{t("common.button_2")}</a>
+      </Link>
 
       <AngencySayCard t={t} />
 
@@ -244,7 +246,7 @@ const ServicesWebSomeAppsSection = ({ t }) => {
                   color: #031533;
                   margin-bottom: 0;
                   font-size: 42px;
-                  font-weight: bold;
+                  font-weight: 700;
                   margin-bottom: 0 !important;
                 }
 

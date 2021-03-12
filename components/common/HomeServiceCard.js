@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 
 const HomeServiceCard = ({ headerImg, text, title, footerImg, link, footerImgWidth }) => (
@@ -5,12 +6,14 @@ const HomeServiceCard = ({ headerImg, text, title, footerImg, link, footerImgWid
     <img className="service-card-header" src={headerImg} alt="" />
     <h2 className="service-card-title">{title}</h2>
     <p className="service-card-text">{text}</p>
-    <a href={link} className="service-card-link">
-      <p>
-        Read more
-        <img src="/assets/images/common/arrow2.svg" alt="" />
-      </p>
-    </a>
+    <Link href={link}>
+      <a className="service-card-link">
+        <p>
+          Read more
+          <img src="/assets/images/common/arrow2.svg" alt="" />
+        </p>
+      </a>
+    </Link>
     <img style={{ width: footerImgWidth }} className="service-card-footer" src={footerImg} alt="" />
 
     <style jsx>
@@ -95,7 +98,5 @@ HomeServiceCard.propTypes = {
   footerImg: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
 };
-
-HomeServiceCard.defaultProps = {};
 
 export default HomeServiceCard;

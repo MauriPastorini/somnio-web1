@@ -201,7 +201,7 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
                 }
                 p {
                   font-size: 15px;
-                  text-align: center;
+                  // text-align: center;
                 }
               }
 
@@ -232,6 +232,8 @@ const WhyFlutterWhatIsFlutterSection = ({ t }) => {
             }
 
             .charasteristic-detail-list {
+              margin-top: 70px;
+              
               .charasteristic-detail__item {
                 flex-direction: column;
                 margin-bottom: 61px;

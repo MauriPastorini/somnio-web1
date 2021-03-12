@@ -44,7 +44,7 @@ const data = [
     position: "Digital Marketing Analyst",
   },
   {
-    img: "lu.png",
+    img: "camila.png",
     name: "Camila Balian",
     position: "UX/UI Designer",
   },
@@ -59,7 +59,7 @@ const data = [
     position: "Developer Intern",
   },
   {
-    img: "lu.png",
+    img: "marco.png",
     name: "Marcos Tort",
     position: "QA & Testing",
   },

@@ -1,15 +1,19 @@
+import Link from "next/link";
+
 const HomePorfolioSlide = ({ title, text, img }) => (
   <div className="HomePorfolioSlide" style={{ width: `100vw` }}>
     <div className="text-bg-wrapper">
       <div className="slide-text-content custom-container">
         <h2 className="slide-text-title">{title}</h2>
         <p className="slide-text-paragraph">{text}</p>
-        <a href="/" className="slide-text-link">
-          <p>
-            Read more
-            <img src="/assets/images/common/arrow2.svg" alt="" />
-          </p>
-        </a>
+        <Link href="/">
+          <a className="slide-text-link">
+            <p>
+              Read more
+              <img src="/assets/images/common/arrow2.svg" alt="" />
+            </p>
+          </a>
+        </Link>
       </div>
     </div>
     <div className="slide-img-wrapper">

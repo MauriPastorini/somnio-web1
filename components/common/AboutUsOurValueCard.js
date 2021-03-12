@@ -62,6 +62,11 @@ const AboutUsOurValueCard = ({ img, title, text, classImgName }) => (
           -moz-box-shadow: 24px 29px 69px -21px rgba(0, 59, 154, 1);
           box-shadow: 24px 29px 69px -21px rgba(0, 59, 154, 1);
         }
+        .trust_shadow {
+          -webkit-box-shadow: 24px 29px 69px -21px rgba(16,148,240,1);
+          -moz-box-shadow: 24px 29px 69px -21px rgba(16,148,240,1);
+          box-shadow: 24px 29px 69px -21px rgba(16,148,240,1);
+        }
       }
 
 

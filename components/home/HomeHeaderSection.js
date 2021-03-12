@@ -95,14 +95,16 @@ const HomeHeaderSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .HomeHeaderSection {
-
             .header__path {
+              display: none;
+            }
+
+            .header__path--mobile {
+              display: block;
               position: absolute;
               top: 0;
               left: 0;
               z-index: 0;
-              max-width: 42%;
-              height: auto;
             }
 
             .text-and-image {
@@ -110,7 +112,7 @@ const HomeHeaderSection = ({ t }) => {
               flex-direction: column;
               align-items: center;
               margin-top: 160px;
-              margin-bottom: 182px;
+              margin-bottom: 160px;
 
               .header-text-wrapper {
                 width: 100%;

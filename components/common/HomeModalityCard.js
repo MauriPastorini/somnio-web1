@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 
 const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
@@ -11,12 +12,14 @@ const HomeModalityCard = ({ headerImg, text, title, footerImg, link }) => (
     />
     <h4 className="modality-card-title">{title}</h4>
     <p className="modality-card-text">{text}</p>
-    <a href={link} className="modality-card-link">
-      <p>
-        Read more
-        <img src="/assets/images/common/arrow2.svg" alt="" />
-      </p>
-    </a>
+    <Link href={link}>
+      <a className="modality-card-link">
+        <p>
+          Read more
+          <img src="/assets/images/common/arrow2.svg" alt="" />
+        </p>
+      </a>
+    </Link>
     <style jsx>{`
       .HomeModalityCard {
         display: flex;
@@ -113,7 +116,5 @@ HomeModalityCard.propTypes = {
   title: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
 };
-
-HomeModalityCard.defaultProps = {};
 
 export default HomeModalityCard;

@@ -55,6 +55,7 @@ const ServicesProcessSection = ({ t }) => {
         <img src={"/assets/images/home-services-line.svg"} alt="" />
       </div>
 
+      <img className="dots" src="/assets/images/about-us/about-us-our-values-dots1.svg" alt="" />
       <img className="process-line-bg" src="/assets/images/services/process-lines.svg" alt="" />
       <div className="process-card-list">
         {process.map((p, i) => (
@@ -74,6 +75,10 @@ const ServicesProcessSection = ({ t }) => {
             position: absolute;
             top: 593px;
             left: 90px;
+          }
+
+          .dots{
+            display: none;
           }
 
           .header--dark {
@@ -139,6 +144,15 @@ const ServicesProcessSection = ({ t }) => {
 
             .process-line-bg {
               display: none;
+            }
+
+            .dots{
+              display: block;
+              position: absolute;
+              top: 128px;
+              left: 34px;
+              width: 70px;
+              height: auto;
             }
 
             .process-card-list {

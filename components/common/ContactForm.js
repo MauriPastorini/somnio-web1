@@ -18,9 +18,9 @@ const ContactForm = ({ t }) => {
         <label className="contact-label">How is your e-mail?</label>
         <input name="email" className="contact-text-input" type="text" ref={register}/>
       </div>
-      <div className="contact-form-group mb-50">
+      <div className="contact-form-group mb-30">
         <label className="contact-label">Tell us about your proyect</label>
-        <textarea name="description" rows="4" className="contact-textarea" ref={register}></textarea>
+        <textarea name="description" rows="8" className="contact-textarea" ref={register}></textarea>
       </div>
       <div className="contact-button-wrapper">
         <button className="btn btn-custom-1" type="submit" >Let's talk</button>

@@ -81,7 +81,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
 
         @media screen and (max-width: 1280px) {
           .ServicesMobileHeaderSection {
-            padding: 144px 0 216px 0
+            padding: 158px 0 216px 0
           }
 
           .header__path {
@@ -116,6 +116,7 @@ const ServicesMobileHeaderSection = ({ t }) => {
                 font-size: 18px;
                 text-align: center;
                 max-width: 315px;
+                line-height: 22px;
               }
             }
 

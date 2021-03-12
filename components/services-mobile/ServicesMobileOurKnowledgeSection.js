@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 
@@ -8,18 +9,16 @@ const ServicesMobileOurKnowledgeSection = ({ t }) => {
         <h3> {t("services_mobile.our_knowledge.title")}</h3>
         <p>{t("services_mobile.our_knowledge.text_1")}</p>
         <p>{t("services_mobile.our_knowledge.text_2")}</p>
-        <a href="/get-in-touch" className="btn btn-custom-1 btn-desktop">
-          {" "}
-          {t("common.navbar.button")}
-        </a>
+        <Link href="/get-in-touch">
+          <a className="btn btn-custom-1 btn-desktop"> {t("common.navbar.button")}</a>
+        </Link>
       </div>
       <div className="img-wrapper">
         <img src="/assets/images/services-mobile/knowledge-img.png" className="group-img" alt="" />
         <img src="/assets/images/services-mobile/knowledge-img-bg.svg" className="path-img img-fluid" alt="" />
-        <a href="/get-in-touch" className="btn btn-custom-1 btn-mobile">
-          {" "}
-          {t("common.navbar.button")}
-        </a>
+        <Link href="/get-in-touch">
+          <a className="btn btn-custom-1 btn-mobile"> {t("common.navbar.button")}</a>
+        </Link>
       </div>
       <style jsx>{`
         .ServicesMobileOurKnowledgeSection {

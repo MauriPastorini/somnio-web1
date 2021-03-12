@@ -51,6 +51,7 @@ const ServicesHowWeWorkCard = ({ data }) => (
           }
           .how-we-work-card__text {
             font-size: 14px;
+            text-align: center;
           }
         }
       }

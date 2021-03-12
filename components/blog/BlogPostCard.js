@@ -1,27 +1,30 @@
 import { format } from "date-fns";
+import Link from "next/link";
 import React from "react";
 
 const BlogPostCard = ({ post, large }) => {
   return (
     <article className={`${large ? "post-card-large" : "post-card-normal"}`}>
       <div className="post-card-img">
-        <a href={`/post/${post.slug}`} className="post-card-image-link">
-          <img
-            className="post-card-image img-fluid"
-            src={post.feature_image || "/assets/images/common/image-placeholder.png"}
-            alt=""
-          />
-        </a>
+        <Link href={`/post/${post.slug}`}>
+          <a className="post-card-image-link">
+            <img
+              className="post-card-image img-fluid"
+              src={post.feature_image || "/assets/images/common/image-placeholder.png"}
+              alt=""
+            />
+          </a>
+        </Link>
       </div>
 
       <div className="post-card-content">
         <h2 className="post-card-primary-tag">{post.primary_tag.name}</h2>
-
-        <a href={`/post/${post.slug}`} className="post-card-content-link">
-          <h2 className="post-card-title">{post.title}</h2>
-          <p className="post-card-excerpt">{post.custom_excerpt}</p>
-        </a>
-
+        <Link href={`/post/${post.slug}`}>
+          <a className="post-card-content-link">
+            <h2 className="post-card-title">{post.title}</h2>
+            <p className="post-card-excerpt">{post.custom_excerpt}</p>
+          </a>
+        </Link>
         <div className="post-card-category-list">
           {post.tags.map((tag, i) => (
             <span key={i} className="post-card-category-item">

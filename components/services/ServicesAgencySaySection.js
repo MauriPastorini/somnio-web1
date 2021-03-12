@@ -65,7 +65,7 @@ const ServicesAgencySaySection = ({ t }) => {
                 .card__footer-person {
                   .card__footer-name {
                     p {
-                      font-weight: normal;
+                      font-weight: 500;
                       margin-left: 9px;
                     }
                   }

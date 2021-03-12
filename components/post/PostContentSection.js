@@ -2,13 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../i18n";
 import { Poster, Poster2 } from "./Poster";
+import Link from "next/link";
 
 export const PostContentSection = ({ t, post }) => {
   return (
     <div className="PostContentSection custom-container">
-      <a href="/blog" className="back-link">
-        <img src="/assets/images/post/arrow.svg" alt="" />
-      </a>
+      <Link href="/blog">
+        <a className="back-link">
+          <img src="/assets/images/post/arrow.svg" alt="" />
+        </a>
+      </Link>
       <h2 className="primary-tag">{post.primary_tag.name}</h2>
       <h1 className="title">{post.title}</h1>
       <p className="excerpt">{post.custom_excerpt}</p>
