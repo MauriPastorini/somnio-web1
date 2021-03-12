@@ -487,7 +487,7 @@ const FaqContentSection = ({ t }) => {
               background: transparent;
               width: 100%;
               text-align: start;
-              padding-bottom: 10px;
+              padding: 1rem 1.25rem;
               display: flex;
               justify-content: space-between;
               align-items: center;
@@ -533,7 +533,7 @@ const FaqContentSection = ({ t }) => {
               border: none;
 
               .accordion-body {
-                padding-left: 25px;
+                padding-left: 40px;
               }
             }
 
