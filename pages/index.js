@@ -34,8 +34,6 @@ const Home = ({ posts }) => (
   </Container>
 );
 
-export const getInitialProps = async () => ({ namespacesRequired: ["common"] });
-
 export const getStaticProps = async () => {
   const posts = await getPosts();
 

@@ -4,11 +4,6 @@ import PropTypes from "prop-types";
 import { withTranslation } from "../../../i18n";
 import { useRouter } from "next/router";
 
-const isActive = (href, className) => {
-  const router = useRouter();
-  return router.pathname === href ? `${className} nav-link-active` : className;
-};
-
 const CustomLink = ({ href, children, scrolled }) => {
   const router = useRouter();
 
@@ -49,10 +44,7 @@ const Navbar = ({ t }) => {
   };
 
   useEffect(() => {
-    const listener = window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", listener);
-    };
+    window.addEventListener("scroll", handleScroll);
   });
 
   const logo = `/assets/images/common/${scrolled ? "logo-2" : "logo"}.png`;
@@ -75,9 +67,9 @@ const Navbar = ({ t }) => {
         <div className="justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className={isActive("/about-us", NavLinkStyle)} href="/about-us">
-                {t("common.navbar.about_us")}
-              </a>
+              <CustomLink scrolled={scrolled} href="/about-us">
+                <a className={NavLinkStyle}>{t("common.navbar.about_us")}</a>
+              </CustomLink>
             </li>
             <li className="nav-item nav-item-dropable">
               <CustomDropdownLink scrolled={scrolled} href="javascrip:void(0)">
@@ -85,53 +77,64 @@ const Navbar = ({ t }) => {
               </CustomDropdownLink>
               <ul className="nav__submenu" style={SubMenuStyle}>
                 <li className={`nav__submenu-item triangle ${scrolled ? "triangle-scrolled" : ""}`}>
-                  <a href="/services/working-modalities" className="nav__submenu-link" style={SubMenuItemStyle}>
-                    {t("common.navbar.working_modalities")}
-                  </a>
+                  <Link href="/services/working-modalities">
+                    <a className="nav__submenu-link" style={SubMenuItemStyle}>
+                      {t("common.navbar.working_modalities")}
+                    </a>
+                  </Link>
                 </li>
                 <li className={"nav__submenu-item"}>
-                  <a href="/services/mobile-app-development" className="nav__submenu-link" style={SubMenuItemStyle}>
-                    {t("common.navbar.services_mobile")}
-                  </a>
+                  <Link href="/services/mobile-app-development">
+                    <a className="nav__submenu-link" style={SubMenuItemStyle}>
+                      {t("common.navbar.services_mobile")}
+                    </a>
+                  </Link>
                 </li>
                 <li className="nav__submenu-item">
-                  <a href="/services/web-development" className="nav__submenu-link" style={SubMenuItemStyle}>
-                    {t("common.navbar.services_web")}
-                  </a>
+                  <Link href="/services/web-development">
+                    <a className="nav__submenu-link" style={SubMenuItemStyle}>
+                      {t("common.navbar.services_web")}
+                    </a>
+                  </Link>
                 </li>
                 <li className="nav__submenu-item">
-                  <a href="/services/ux-ui" className="nav__submenu-link" style={SubMenuItemStyle}>
-                    {t("common.navbar.services_uxui")}
-                  </a>
+                  <Link href="/services/ux-ui">
+                    <a className="nav__submenu-link" style={SubMenuItemStyle}>
+                      {t("common.navbar.services_uxui")}
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </li>
 
             <li className="nav-item">
-              <a className={isActive("/why-flutter", NavLinkStyle)} href="/why-flutter">
-                {t("common.navbar.why_flutter")}
-              </a>
+              <CustomLink scrolled={scrolled} href="/why-flutter">
+                <a className={NavLinkStyle}>{t("common.navbar.why_flutter")}</a>
+              </CustomLink>
             </li>
             <li className="nav-item">
-              <a className={isActive("/our-work", NavLinkStyle)} href="/our-work">
-                {t("common.navbar.our_work")}
-              </a>
+              <CustomLink scrolled={scrolled} href="/our-work">
+                <a className={NavLinkStyle}>{t("common.navbar.our_work")}</a>
+              </CustomLink>
             </li>
             <li className="nav-item">
-              <a className={isActive("/faq", NavLinkStyle)} href="/faq">
-                {t("common.navbar.faq")}
-              </a>
+              <CustomLink scrolled={scrolled} href="/faq">
+                <a className={NavLinkStyle}>{t("common.navbar.faq")}</a>
+              </CustomLink>
             </li>
             <li className="nav-item">
-              <a className={isActive("/blog", NavLinkStyle)} href="/blog">
-                {t("common.navbar.blog")}
-              </a>
+              <CustomLink scrolled={scrolled} href="/blog">
+                <a className={NavLinkStyle}>{t("common.navbar.blog")}</a>
+              </CustomLink>
             </li>
           </ul>
         </div>
-        <a href="/get-in-touch" type="button" className={ButtonStyle}>
-          {t("common.navbar.button")}
-        </a>
+        <Link href="/get-in-touch">
+          <a type="button" className={ButtonStyle}>
+            {t("common.navbar.button")}
+          </a>
+          {/* <button className={ButtonStyle}>{t("common.navbar.button")}</button> */}
+        </Link>
       </div>
       <style jsx>{`
         .navbar {
@@ -300,6 +303,10 @@ const Navbar = ({ t }) => {
     </nav>
   );
 };
+
+Navbar.getInitialProps = async () => ({
+  namespacesRequired: ["common"],
+});
 
 Navbar.propTypes = {
   t: PropTypes.func.isRequired,

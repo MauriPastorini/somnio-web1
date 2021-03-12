@@ -1,9 +1,11 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { withTranslation } from "../../../i18n";
 
 const Footer = ({ t }) => {
   const handleToUp = () => {
     window.scroll({ top: 0, left: 0, behavior: "smooth" });
+    // window.scroll({ top: 0, left: 0 });
   };
 
   return (
@@ -19,18 +21,26 @@ const Footer = ({ t }) => {
             <div className="under-line"></div>
           </div>
           <div className="row-footer-links">
-            <a href="/about-us#our-values" className="row-footer-link">
-              <span>{t("common.footer.our_values")}</span>
-            </a>
-            <a href="/about-us#how-we-work" className="row-footer-link">
-              <span>{t("common.footer.how_we_work")}</span>
-            </a>
-            <a href="/about-us#team" className="row-footer-link">
-              <span>{t("common.footer.team")}</span>
-            </a>
-            <a href="/faq" className="row-footer-link">
-              <span>FAQ</span>
-            </a>
+            <Link href="/about-us#our-values">
+              <a className="row-footer-link">
+                <span>{t("common.footer.our_values")}</span>
+              </a>
+            </Link>
+            <Link href="/about-us#how-we-work">
+              <a className="row-footer-link">
+                <span>{t("common.footer.how_we_work")}</span>
+              </a>
+            </Link>
+            <Link href="/about-us#team">
+              <a className="row-footer-link">
+                <span>{t("common.footer.team")}</span>
+              </a>
+            </Link>
+            <Link href="/faq">
+              <a className="row-footer-link">
+                <span>FAQ</span>
+              </a>
+            </Link>
           </div>
         </div>
 
@@ -40,21 +50,32 @@ const Footer = ({ t }) => {
             <div className="under-line"></div>
           </div>
           <div className="row-footer-links">
-            <a href="/services/working-modalities" className="row-footer-link">
-              <span>{t("common.footer.working_modalities")}</span>
-            </a>
-            <a href="/services/mobile-app-development" className="row-footer-link">
-              <span>{t("common.navbar.services_mobile")}</span>
-            </a>
-            <a href="/services/web-development" className="row-footer-link">
-              <span>{t("common.navbar.services_web")}</span>
-            </a>
-            <a href="/services/ux-ui" className="row-footer-link">
-              <span>UX/UI</span>
-            </a>
-            <a href="/our-work" className="row-footer-link">
-              <span>{t("common.navbar.our_work")}</span>
-            </a>
+            <Link href="/services/working-modalities">
+              <a className="row-footer-link">
+                <span>{t("common.footer.working_modalities")}</span>
+              </a>
+            </Link>
+
+            <Link href="/services/mobile-app-development">
+              <a className="row-footer-link">
+                <span>{t("common.navbar.services_mobile")}</span>
+              </a>
+            </Link>
+            <Link href="/services/web-development">
+              <a className="row-footer-link">
+                <span>{t("common.navbar.services_web")}</span>
+              </a>
+            </Link>
+            <Link href="/services/ux-ui">
+              <a className="row-footer-link">
+                <span>UX/UI</span>
+              </a>
+            </Link>
+            <Link href="/our-work">
+              <a className="row-footer-link">
+                <span>{t("common.navbar.our_work")}</span>
+              </a>
+            </Link>
           </div>
         </div>
 
@@ -65,12 +86,16 @@ const Footer = ({ t }) => {
           </div>
 
           <div className="row-footer-links">
-            <a href="/blog" className="row-footer-link">
-              <span>Blog</span>
-            </a>
-            <a href="/get-in-touch" className="row-footer-link">
-              <span>{t("common.footer.meetup")}</span>
-            </a>
+            <Link href="/blog">
+              <a className="row-footer-link">
+                <span>Blog</span>
+              </a>
+            </Link>
+            <Link href="/get-in-touch">
+              <a className="row-footer-link">
+                <span>{t("common.footer.meetup")}</span>
+              </a>
+            </Link>
           </div>
         </div>
 
@@ -108,9 +133,11 @@ const Footer = ({ t }) => {
           data-clutchcompany-id="1252668"
         ></div>
 
-        <a href="/">
-          <img className="somnio-logo" src="/assets/images/common/logo.png" alt="" />
-        </a>
+        <Link href="/">
+          <a>
+            <img className="somnio-logo" src="/assets/images/common/logo.png" alt="" />
+          </a>
+        </Link>
 
         <div className="social-network-group">
           <a target="_blank" href=" https://www.facebook.com/Somnio-Software-101920285002535">
