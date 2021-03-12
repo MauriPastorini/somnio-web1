@@ -71,8 +71,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
+                data-toggle="collapse"
+                data-target="#flush-collapseOne"
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
@@ -83,7 +83,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseOne"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlush1"
+              data-parent="#accordionFlush1"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_1.question_1.content.text_1")}</p>
@@ -105,8 +105,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
+                data-toggle="collapse"
+                data-target="#flush-collapseTwo"
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
@@ -117,7 +117,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseTwo"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlush1"
+              data-parent="#accordionFlush1"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_1.question_2.content.text_1")}</p>
@@ -132,8 +132,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
+                data-toggle="collapse"
+                data-target="#flush-collapseThree"
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
@@ -144,7 +144,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseThree"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlush1"
+              data-parent="#accordionFlush1"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_1.question_3.content.text_1")}</p>
@@ -166,8 +166,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne2"
+                data-toggle="collapse"
+                data-target="#flush-collapseOne2"
                 aria-expanded="false"
                 aria-controls="flush-collapseOne2"
               >
@@ -178,7 +178,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseOne2"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingOne2"
-              data-bs-parent="#accordionFlush2"
+              data-parent="#accordionFlush2"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_2.question_1.content.text_1")}</p>
@@ -195,8 +195,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo2"
+                data-toggle="collapse"
+                data-target="#flush-collapseTwo2"
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo2"
               >
@@ -207,7 +207,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseTwo2"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingTwo2"
-              data-bs-parent="#accordionFlush2"
+              data-parent="#accordionFlush2"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_2.question_2.content.text_1")}</p>
@@ -229,8 +229,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne3"
+                data-toggle="collapse"
+                data-target="#flush-collapseOne3"
                 aria-expanded="false"
                 aria-controls="flush-collapseOne3"
               >
@@ -241,7 +241,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseOne3"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingOne3"
-              data-bs-parent="#accordionFlush3"
+              data-parent="#accordionFlush3"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_3.question_1.content.text_1")}</p>
@@ -253,8 +253,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo3"
+                data-toggle="collapse"
+                data-target="#flush-collapseTwo3"
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo3"
               >
@@ -265,7 +265,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseTwo3"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingTwo3"
-              data-bs-parent="#accordionFlush3"
+              data-parent="#accordionFlush3"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_3.question_2.content.text_1")}</p>
@@ -277,8 +277,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree3"
+                data-toggle="collapse"
+                data-target="#flush-collapseThree3"
                 aria-expanded="false"
                 aria-controls="flush-collapseThree3"
               >
@@ -289,7 +289,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseThree3"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingThree3"
-              data-bs-parent="#accordionFlush3"
+              data-parent="#accordionFlush3"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_3.question_3.content.text_1")}</p>
@@ -302,8 +302,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFour3"
+                data-toggle="collapse"
+                data-target="#flush-collapseFour3"
                 aria-expanded="false"
                 aria-controls="flush-collapseFour3"
               >
@@ -314,7 +314,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseFour3"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingFour3"
-              data-bs-parent="#accordionFlush3"
+              data-parent="#accordionFlush3"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_3.question_4.content.text_1")}</p>
@@ -326,8 +326,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFive3"
+                data-toggle="collapse"
+                data-target="#flush-collapseFive3"
                 aria-expanded="false"
                 aria-controls="flush-collapseFive3"
               >
@@ -338,7 +338,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseFive3"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingFive3"
-              data-bs-parent="#accordionFlush3"
+              data-parent="#accordionFlush3"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_3.question_5.content.text_1")}</p>
@@ -350,8 +350,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseSix3"
+                data-toggle="collapse"
+                data-target="#flush-collapseSix3"
                 aria-expanded="false"
                 aria-controls="flush-collapseSix3"
               >
@@ -362,7 +362,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseSix3"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingSix3"
-              data-bs-parent="#accordionFlush3"
+              data-parent="#accordionFlush3"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_3.question_6.content.text_1")}</p>
@@ -382,8 +382,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne4"
+                data-toggle="collapse"
+                data-target="#flush-collapseOne4"
                 aria-expanded="false"
                 aria-controls="flush-collapseOne4"
               >
@@ -394,7 +394,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseOne4"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingOne4"
-              data-bs-parent="#accordionFlush4"
+              data-parent="#accordionFlush4"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_4.question_1.content.text_1")}</p>
@@ -407,8 +407,8 @@ const FaqContentSection = ({ t }) => {
               <button
                 className="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo4"
+                data-toggle="collapse"
+                data-target="#flush-collapseTwo4"
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo4"
               >
@@ -419,7 +419,7 @@ const FaqContentSection = ({ t }) => {
               id="flush-collapseTwo4"
               className="accordion-collapse collapse"
               aria-labelledby="flush-headingTwo4"
-              data-bs-parent="#accordionFlush4"
+              data-parent="#accordionFlush4"
             >
               <div className="accordion-body">
                 <p>{t("faq.content.section_4.question_2.content.text_1")}</p>
@@ -484,6 +484,13 @@ const FaqContentSection = ({ t }) => {
               border: none;
               border-bottom: 1px solid #8e7cb2;
               border-radius: 0;
+              background: transparent;
+              width: 100%;
+              text-align: start;
+              padding-bottom: 10px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
 
               span {
                 margin-right: 20px;
@@ -492,7 +499,7 @@ const FaqContentSection = ({ t }) => {
 
             .accordion-button:not(.collapsed) {
               color: unset;
-              background-color: transparent;
+              background: transparent;
             }
 
             .accordion-button:focus {
@@ -526,7 +533,7 @@ const FaqContentSection = ({ t }) => {
               border: none;
 
               .accordion-body {
-                padding-left: 40px;
+                padding-left: 25px;
               }
             }
 
