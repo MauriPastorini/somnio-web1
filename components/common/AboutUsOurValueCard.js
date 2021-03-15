@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const AboutUsOurValueCard = ({ img, title, text, classImgName }) => (
+const AboutUsOurValueCard = ({ img, title, text, classImgName, altImg }) => (
   <div className="AboutUsOurValueCard">
-    <img src={`/assets/images/about-us/${img}`} className={`our-value-card__img ${classImgName}`} alt="" />
+    <img src={`/assets/images/about-us/${img}`} className={`our-value-card__img ${classImgName}`} alt={altImg} />
     <h3 className="our-value-card__title">{title}</h3>
     <p className="our-value-card__text">{text}</p>
     <style jsx>{`

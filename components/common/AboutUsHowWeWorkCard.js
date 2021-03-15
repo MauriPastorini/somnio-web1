@@ -5,7 +5,7 @@ const AboutUsHowWeWorkCard = ({ title, text, img }) => (
   <div className="AboutUsHowWeWorkCard">
     <img src="/assets/images/about-us/howwework-card-corn.svg" className="how-we-work-card-corn" alt="" />
     <img src={`/assets/images/about-us/${img}`} className="how-we-work-card-corn--img" alt="" />
-    <h2>{title}</h2>
+    <h3>{title}</h3>
     <p>{text}</p>
     <style jsx>{`
       .AboutUsHowWeWorkCard {
@@ -25,7 +25,7 @@ const AboutUsHowWeWorkCard = ({ title, text, img }) => (
           }
         }
 
-        h2 {
+        h3 {
           color: #ffffff;
           font-size: 38px;
           font-weight: bold;
@@ -67,7 +67,7 @@ const AboutUsHowWeWorkCard = ({ title, text, img }) => (
             }
           }
 
-          h2 {
+          h3 {
             font-size: 22px;
             margin-left: 0;
           }

@@ -9,36 +9,42 @@ const AboutUsOurValuesSection = ({ t }) => {
       classImgName: "passion_shadow",
       title: t("about_us.our_values.value_1.title"),
       text: t("about_us.our_values.value_1.text"),
+      altImg:"Passion | One of our main values"
     },
     {
       img: "value-quality.svg",
       classImgName: "quality_shadow",
       title: t("about_us.our_values.value_2.title"),
       text: t("about_us.our_values.value_2.text"),
+      altImg:"Quality | One of our main values"
     },
     {
       img: "value-truts.svg",
       classImgName: "trust_shadow",
       title: t("about_us.our_values.value_6.title"),
       text: t("about_us.our_values.value_6.text"),
+      altImg:"Trust | One of our main values"
     },
     {
       img: "value-empathy.svg",
       classImgName: "communication_shadow",
       title: t("about_us.our_values.value_3.title"),
       text: t("about_us.our_values.value_3.text"),
+      altImg:"Empathy | One of our main values"
     },
     {
       img: "value-team.svg",
       classImgName: "team_shadow",
       title: t("about_us.our_values.value_5.title"),
       text: t("about_us.our_values.value_5.text"),
+      altImg:"Team Synergy | One of our main values"
     },
     {
       img: "value-communication.svg",
       classImgName: "communication_shadow",
       title: t("about_us.our_values.value_4.title"),
       text: t("about_us.our_values.value_4.text"),
+      altImg:"Clear Communication | One of our main values"
     },
   ];
 
@@ -55,7 +61,7 @@ const AboutUsOurValuesSection = ({ t }) => {
 
       <div className="grid-content custom-container">
         {value.map((r, i) => (
-          <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} />
+          <AboutUsOurValueCard key={i} img={r.img} title={r.title} text={r.text} classImgName={r.classImgName} altImg={r.altImg}/>
         ))}
       </div>
 

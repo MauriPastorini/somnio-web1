@@ -9,7 +9,7 @@ const AboutUsHeaderSection = ({ t }) => {
 
       <div className="text-and-image custom-container">
         <div className="header-img-wrapper">
-          <img src={`/assets/images/about-us/header-img.svg`} alt="" className="header__img img-fluid" />
+          <img src={`/assets/images/about-us/header-img.svg`} alt="Our team, our house | Somnio Software" className="header__img img-fluid" />
         </div>
 
         <div className="header-text-wrapper" data-aos="fade-left">

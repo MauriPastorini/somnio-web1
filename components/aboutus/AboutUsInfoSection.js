@@ -6,7 +6,7 @@ const AboutUsInfoSection = ({ t }) => {
     <section className="AboutUsInfoSection">
       <img src="/assets/images/about-us/about-us-info-dots1.svg" className="dots" alt="" />
       <div className="text-and-img custom-container">
-        <img src="/assets/images/common/logo-2.png" className="info__img" alt="" />
+        <img src="/assets/images/common/logo-2.png" className="info__img" alt="Somnio Software Logo" />
         <p className="info__text" data-aos="fade-left">
           {t("about_us.info.text")}
         </p>

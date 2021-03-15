@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const AboutUsTeamPersonCard = ({ img, name, position }) => (
   <div className="AboutUsTeamPersonCard">
-    <img src={`/assets/images/about-us/${img}`} className="team-person__img" alt="" />
+    <img src={`/assets/images/about-us/lu.jpg`} className="team-person__img" alt="" />
     <h4 className="team-person__name">{name}</h4>
     <p className="team-person__position">{position}</p>
     <style jsx>{`
@@ -11,10 +11,14 @@ const AboutUsTeamPersonCard = ({ img, name, position }) => (
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 103px;
+        margin-bottom: 45px;
 
         .team-person__img {
-          margin-bottom: 49px;
+          margin-bottom: 51px;
+          border-radius: 16px;
+          width: 100%;
+          height: auto;
+          max-width: 310px;
         }
   
         .team-person__name {
@@ -36,21 +40,19 @@ const AboutUsTeamPersonCard = ({ img, name, position }) => (
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin-bottom: 40px;
+          margin-bottom: 37px;
   
           .team-person__img {
-            width: 111px;
-            height: auto;
-            margin-bottom: 6px;
+            margin-bottom: 37px;
           }
     
-          .team-person__name {
-            font-size: 14px;
-          }
+          // .team-person__name {
+          //   font-size: 14px;
+          // }
     
-          .team-person__position {
-            font-size: 12px;
-          }
+          // .team-person__position {
+          //   font-size: 12px;
+          // }
         }
       }
 

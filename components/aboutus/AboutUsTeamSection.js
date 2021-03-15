@@ -68,8 +68,8 @@ const data = [
 const AboutUsTeamSection = ({ t }) => {
   return (
     <section className="AboutUsTeamSection" id="team">
-      <img src="/assets/images/about-us/about-us-team-path1.svg" className="path1" alt="" />
-      <img src="/assets/images/about-us/about-us-team-path2.png" className="path2" alt="" />
+      {/* <img src="/assets/images/about-us/about-us-team-path1.svg" className="path1" alt="" /> */}
+      {/* <img src="/assets/images/about-us/about-us-team-path2.png" className="path2" alt="" /> */}
       <img src="/assets/images/about-us/about-us-team-dots1.svg" className="dots1" alt="" />
       <img src="/assets/images/about-us/about-us-team-dots2.svg" className="dots2" alt="" />
 
@@ -80,7 +80,7 @@ const AboutUsTeamSection = ({ t }) => {
         </div>
         <div className="row team-card-list">
           {data.map((d, i) => (
-            <div key={i} className="col-lg-3 col-md-4 col-6">
+            <div key={i} className="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
               <AboutUsTeamPersonCard img={d.img} name={d.name} position={d.position} />
             </div>
           ))}
@@ -92,15 +92,15 @@ const AboutUsTeamSection = ({ t }) => {
           padding-top: 125px;
           padding-bottom: 50px;
           
-          .path1 {
-            position: absolute;
-            left: 0;
-          }
+          // .path1 {
+          //   position: absolute;
+          //   left: 0;
+          // }
 
-          .path2 {
-            position: absolute;
-            right: 0;
-          }
+          // .path2 {
+          //   position: absolute;
+          //   right: 0;
+          // }
 
           .dots1 {
             position: absolute;
@@ -119,7 +119,7 @@ const AboutUsTeamSection = ({ t }) => {
           }
 
           .team-card-list {
-            max-width: 1350px !important;
+            // max-width: 1350px !important;
             margin: 0 auto;
           }
         }
@@ -130,13 +130,13 @@ const AboutUsTeamSection = ({ t }) => {
             padding-top: 77px;
             padding-bottom: 46px;
             
-            .path1 {
-              display: none;
-            }
+            // .path1 {
+            //   display: none;
+            // }
 
-            .path2 {
-              display: none;
-            }
+            // .path2 {
+            //   display: none;
+            // }
 
             .dots1 {
               display: none;

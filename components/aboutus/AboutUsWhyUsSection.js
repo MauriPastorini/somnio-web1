@@ -27,6 +27,7 @@ const AboutUsWhyUsSection = ({ t }) => {
 
             h2 {
               margin: 0;
+              font-size: 54px;
             }
           }
 
